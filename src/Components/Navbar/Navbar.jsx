@@ -1,18 +1,44 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo from "../../assets/logo.png";
 import './navbar.css';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        if (window.innerWidth <= 768) {
+            setIsMenuOpen(!isMenuOpen);
+        }
+    };
+
+    const smoothScrollOrNavigate = (event, targetId) => {
+        event.preventDefault();
+
+        if (location.pathname === "/") {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        else {
+            navigate("/", { state: { scrollTo: targetId } });
+        }
+        closeMenu();
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     };
 
     return (
         <div className="navbar-container">
             <div className="logo">
-                <img src="https://via.placeholder.com/150" alt="logo" />
+                <Link to="/">
+                    <img src={logo} alt="logo" />
+                </Link>
                 <div className="hamburger" onClick={toggleMenu}>
                     {isMenuOpen ? (
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -26,17 +52,25 @@ function Navbar() {
                 </div>
             </div>
             <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-                <Link to="/about" className="nav-item" onClick={toggleMenu}>ABOUT</Link>
-                <Link to="/event" className="nav-item" onClick={toggleMenu}>EVENT</Link>
-                <Link to="/sponsors" className="nav-item" onClick={toggleMenu}>SPONSORS</Link>
-                <Link to="/guests" className="nav-item" onClick={toggleMenu}>GUESTS</Link>
-                <Link to="/team" className="nav-item" onClick={toggleMenu}>TEAM</Link>
-                <Link to="/contact" className="nav-item" onClick={toggleMenu}>CONTACT</Link>
+                <li className="nav-item">
+                    <a href="#about" onClick={(e) => smoothScrollOrNavigate(e, "about")}>ABOUT</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#event" onClick={(e) => smoothScrollOrNavigate(e, "event")}>EVENT</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#sponsors" onClick={(e) => smoothScrollOrNavigate(e, "sponsors")}>SPONSORS</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#guests" onClick={(e) => smoothScrollOrNavigate(e, "guests")}>GUESTS</a>
+                </li>
+                <li className="nav-item">
+                    <Link to="/team" onClick={closeMenu}>TEAM</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/contact" onClick={closeMenu}>CONTACT</Link>
+                </li>
             </div>
-            {/* <div className="reg-log">
-                    <Link to="/register" className="btn register">REGISTER</Link>
-                    <Link to="/login" className="btn login">LOGIN</Link>
-                </div> */}
         </div>
     );
 }
