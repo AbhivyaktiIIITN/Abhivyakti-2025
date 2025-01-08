@@ -1,0 +1,7 @@
+.club-div:hover {
+    p{
+        left: 150px;
+        top: 150px;
+        bottom: 0;
+    }
+}
