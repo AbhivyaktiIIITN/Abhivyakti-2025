@@ -56,7 +56,7 @@ function Navbar() {
                     <a href="#about" onClick={(e) => smoothScrollOrNavigate(e, "about")}>ABOUT</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#event" onClick={(e) => smoothScrollOrNavigate(e, "event")}>EVENT</a>
+                    <Link to="/event" onClick={closeMenu}>EVENT</Link>
                 </li>
                 <li className="nav-item">
                     <a href="#sponsors" onClick={(e) => smoothScrollOrNavigate(e, "sponsors")}>SPONSORS</a>
