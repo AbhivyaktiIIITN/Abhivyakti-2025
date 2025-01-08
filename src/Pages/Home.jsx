@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import Hero from '../Components/Hero/Hero'
+import Hero from '../Components/HomePage/Hero/Hero'
+import EventsSection from '../Components/HomePage/EventSection/EventsSection'
+import '../css/home.css'
 
 function Home() {
     return (
-        <div>
+        <div className="home-container">
             <Navbar />
             <Hero />
-            <Hero />
+            <EventsSection />
         </div>
     )
 }

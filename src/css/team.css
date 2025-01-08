@@ -1,0 +1,155 @@
+.team-container {
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%),
+        url("../assets/DarkBg.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top;
+    color: #ffffff;
+    padding-bottom: 1px;
+    padding-top: 10vh;
+}
+
+.team-container .animation {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.team-container .title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.team-container .team-section {
+    margin: 40px 0;
+}
+
+.team-container .name-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-container .team-name {
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 40%;
+    font-weight: bold;
+    background: linear-gradient(180deg, #fdfdfb, #fcf105);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-container .line1 {
+    flex-grow: 1;
+    width: 15%;
+    border-bottom: 1px solid #ffcc00;
+    transform: translateY(-50%);
+}
+
+.team-container .line2 {
+    flex-grow: 1;
+    width: 15%;
+    border-bottom: 1px solid #fdfdfd;
+    transform: translateY(-50%);
+}
+
+.team-container .members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.team-container .member {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 25%;
+}
+
+.team-container .member-name {
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.team-container .member-role {
+    font-size: 24px;
+    color: #ccc;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .team-container {
+        padding-top: 15vh;
+    }
+
+    .team-container .animation {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+
+    .team-container .members:nth-child(2) {
+        order: 1;
+    }
+
+    .team-container .members:nth-child(1) {
+        order: 2;
+    }
+
+    .team-container .team-name {
+        font-size: 30px;
+        width: 60%;
+        white-space: nowrap;
+    }
+
+    .team-container .line1,
+    .team-container .line2 {
+        width: 10%;
+    }
+
+    .team-container .members {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-container .member {
+        width: 100%;
+    }
+
+    .team-container .member-name {
+        font-size: 32px;
+    }
+
+    .team-container .member-role {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .team-container .members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-container .member-name {
+        font-size: 28px;
+    }
+
+    .team-container .member-role {
+        font-size: 16px;
+    }
+}

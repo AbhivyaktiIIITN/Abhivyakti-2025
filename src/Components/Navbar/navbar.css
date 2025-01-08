@@ -55,8 +55,15 @@
     padding-top: 10vh;
 }
 
+.navbar-container .nav-menu li  a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
 .navbar-container .nav-item {
     text-decoration: none;
+    list-style: none;
     font-size: 16px;
     color: #ffffff;
     padding: 10px 0;
