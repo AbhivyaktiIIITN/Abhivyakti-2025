@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useAnimate } from 'framer-motion';
 import Navbar from '../Components/Navbar/Navbar';
 import '../css/team.css';
-import teamsData from "../assets/TeamPage/TeamData";
-import t1 from '../assets/TeamPage/animation/t1.png';
-import t2 from '../assets/TeamPage/animation/t2.png';
-import t3 from '../assets/TeamPage/animation/t3.png';
-import t4 from '../assets/TeamPage/animation/t4.png';
-import t5 from '../assets/TeamPage/animation/t5.png';
-import t6 from '../assets/TeamPage/animation/t6.png';
+import teamsData from "../assets/Data/TeamData.js";
+import t1 from '/assets/TeamPage/t1.png';
+import t2 from '/assets/TeamPage/t2.png';
+import t3 from '/assets/TeamPage/t3.png';
+import t4 from '/assets/TeamPage/t4.png';
+import t5 from '/assets/TeamPage/t5.png';
+import t6 from '/assets/TeamPage/t6.png';
 
 function Team() {
     useEffect(() => {

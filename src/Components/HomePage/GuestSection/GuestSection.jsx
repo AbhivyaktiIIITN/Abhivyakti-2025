@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./guestsection.css";
-import cardsData from "../../../assets/HomePage/Guests/GuestData";
-import logo from "../../../assets/HomePage/Guests/clubLogo.png";
-import gh from "../../../assets/HomePage/Guests/gh.png";
+import cardsData from "../../../assets/Data/GuestData";
+import logo from "/assets/HomePage/Guests/clubLogo.png";
+import gh from "/assets/HomePage/Guests/gh.png";
 
 const GuestSection = () => {
     const sectionRef = useRef(null);

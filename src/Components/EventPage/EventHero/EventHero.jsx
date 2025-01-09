@@ -40,26 +40,26 @@ const EventHero = () => {
     >
       <img
         className="w-1/2 z-40"
-        src={`/images/eventsPage/hero/mainAB.png`}
+        src={`/assets/EventsPage/hero/mainAB.png`}
       />
       <img
         className="w-1/2 z-10 absolute mt-6 ml-2"
-        src={`/images/eventsPage/hero/shadowAB.png`}
+        src={`/assets/EventsPage/hero/shadowAB.png`}
         id="shadow"
       />
       <img
         className="w-80 z-50 absolute top-[500px] left-[-50rem] rotate-[60deg]"
-        src={`/images/eventsPage/hero/hand.png`}
+        src={`/assets/EventsPage/hero/hand.png`}
         id="hand"
       />
       <img
         className="w-1/2 z-20 absolute left-[-50rem] top-[500px]"
-        src={`/images/eventsPage/hero/grafitti.png`}
+        src={`/assets/EventsPage/hero/grafitti.png`}
         id="grafitti"
       />
       <img
         className="w-[35rem] z-20 absolute left-[19rem] top-[-1000px] rotate-180 scale-x-100 drop-shadow-arrow"
-        src={`/images/eventsPage/hero/arrow.png`}
+        src={`/assets/EventsPage/hero/arrow.png`}
         id="arrow"
       />
       <p

@@ -174,7 +174,7 @@ const ClubSelector = () => {
                                 >
                                     {/* <img
                                         className="h-full aspect-square"
-                                        src={`/images/eventsPage/estoria/statue.png`}
+                                        src={`/assets/EventsPage/estoria/statue.png`}
                                     /> */}
                                     <p
                                         className="-rotate-90 absolute top-8 -right-3 duration-500"

@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './eventssection.css';
-import tl from '../../../assets/HomePage/Events/tl.png';
-import subtxt from '../../../assets/HomePage/Events/subtxt.png';
-import cb1 from '../../../assets/HomePage/Events/cb3.png';
-import cb2 from '../../../assets/HomePage/Events/cb3.png';
-import cb3 from '../../../assets/HomePage/Events/cb3.png';
-import cb4 from '../../../assets/HomePage/Events/cb3.png';
-import cb5 from '../../../assets/HomePage/Events/cb3.png';
-import cb6 from '../../../assets/HomePage/Events/cb3.png';
+import tl from '/assets/HomePage/Events/tl.png';
+import subtxt from '/assets/HomePage/Events/subtxt.png';
+import cb1 from '/assets/HomePage/Events/cb3.png';
+import cb2 from '/assets/HomePage/Events/cb3.png';
+import cb3 from '/assets/HomePage/Events/cb3.png';
+import cb4 from '/assets/HomePage/Events/cb3.png';
+import cb5 from '/assets/HomePage/Events/cb3.png';
+import cb6 from '/assets/HomePage/Events/cb3.png';
 
 const EventsSection = () => {
     const sectionRef = useRef(null);
