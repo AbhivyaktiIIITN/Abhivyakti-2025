@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.guest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15vh;
+    overflow: hidden;
+}
+
+.guest-container .header-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.guest-container .header {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.guest-container .header.slide-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.guest-container img {
+    width: 20vw;
+}
+
+.guest-container .card {
+    position: relative;
+    width: 300px;
+    height: 470px;
+    margin: 10px;
+    perspective: 1000px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+
+.guest-container .card.single-card {
+    margin: 0 auto;
+}
+
+.guest-container .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.guest-container .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.guest-container .card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.guest-container .card-front,
+.guest-container .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.guest-container .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guest-container .card-back {
+    background: linear-gradient(to right top, #fdfdfb, #222222);
+    transform: rotateY(180deg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.guest-container .card-back img {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.guest-container .card-back h4 {
+    font-family: "Oswald", serif;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -5px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: #fdfdfb;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.guest-container .card-back p {
+    font-size: 18px;
+    font-weight: 800;
+    word-spacing: 1px;
+    line-height: 20px;
+    margin: 0px 15px;
+    color: #fdfdfb;
+    -webkit-text-stroke: 1px #000;
+    text-fill-color: #fdfdfb;
+}
+
+@media (max-width: 768px) {
+    .guest-container {
+        padding-top: 10vh;
+    }
+
+    .guest-container img {
+        width: 25vw;
+    }
+
+    .guest-container .card-row {
+        gap: 40px;
+    }
+
+    .guest-container .card-back h4 {
+        font-size: 60px;
+    }
+
+    .guest-container .card-back p {
+        font-size: 20px;
+        margin: 0px 10px;
+        -webkit-text-stroke: 0.7px #000;
+    }
+}
+
+@media (max-width: 400px) {
+    .guest-container {
+        padding-top: 12vh;
+    }
+
+    .guest-container img {
+        width: 30vw;
+    }
+
+    .guest-container .card {
+        width: 250px;
+        height: 395px;
+    }
+
+    .guest-container .card-back img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .guest-container .card-back h4 {
+        font-size: 50px;
+    }
+
+    .guest-container .card-back p {
+        font-size: 15px;
+        margin: 0px 5px;
+        -webkit-text-stroke: 0.5px #000;
+    }
+}
