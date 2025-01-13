@@ -4,6 +4,7 @@ import Hero from '../Components/HomePage/Hero/Hero'
 import EventsSection from '../Components/HomePage/EventSection/EventsSection'
 import GuestSection from '../Components/HomePage/GuestSection/GuestSection'
 import SponsorsSection from '../Components/HomePage/SponsorSection/SponsorsSection'
+import Footer from '../Components/Footer/Footer'
 import '../css/home.css'
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
             <SponsorsSection />
             <GuestSection />
             <EventsSection />
+            <Footer />
         </div>
     )
 }

@@ -68,7 +68,7 @@ function Navbar() {
                     <Link to="/team" onClick={closeMenu}>TEAM</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact" onClick={closeMenu}>CONTACT</Link>
+                    <a href="#contact" onClick={(e) => smoothScrollOrNavigate(e, "contact")}>CONTACT</a>
                 </li>
             </div>
         </div>
