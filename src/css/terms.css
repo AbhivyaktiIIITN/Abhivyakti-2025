@@ -2,7 +2,6 @@
 
 .terms-container{
     color: #fdfdfb;
-    font-family: "Crimson Pro", serif;
     background-image:
         linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%),
         url("/assets/DarkBg.jpg");
@@ -14,6 +13,7 @@
 
 .terms-container .data{
     padding: 5rem 10rem;
+    font-family: "Crimson Pro", serif;
 }
 
 .terms-container .data h1{
