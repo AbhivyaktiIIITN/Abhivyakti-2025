@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./sponsorsection.css";
-import { SponsorsData } from "../../../assets/Data/SponsorsData";
+import { SponsorsData } from "../../../assets/Data/sponsorsData";
 import sh from "/assets/HomePage/Sponsors/sh.png";
 
 function SponsorsSection() {
