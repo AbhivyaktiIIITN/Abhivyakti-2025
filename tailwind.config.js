@@ -11,7 +11,8 @@ export default {
       },
       dropShadow: {
         'arrow': '5px 5px 1px rgba(255, 255, 255)',
-        'title': '-0px -3px 2px #FFF700'
+        'title': '-0px -3px 2px #FFF700',
+        'club-name': '0px 0px 2px #000000'
       },
       backdropBlur: {
         100: '100px'
@@ -24,6 +25,10 @@ export default {
           '0%': { width: 'auto', left: 'auto' },
           '100%': { width: '100%', left: '0' }
         }
+      },
+      screens: {
+        'xs' : '470px',
+        '2xs' : '350px'
       }
     },
   },
