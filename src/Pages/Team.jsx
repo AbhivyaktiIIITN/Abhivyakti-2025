@@ -9,6 +9,7 @@ import t3 from '/assets/TeamPage/t3.png';
 import t4 from '/assets/TeamPage/t4.png';
 import t5 from '/assets/TeamPage/t5.png';
 import t6 from '/assets/TeamPage/t6.png';
+import Hero from '../Components/PageHero/Hero.jsx';
 
 function Team() {
     useEffect(() => {
@@ -18,39 +19,39 @@ function Team() {
         });
     }, []);
 
-    const [startAnimation, setStartAnimation] = useState(false);
-    const [scope, animate] = useAnimate();
+    // const [startAnimation, setStartAnimation] = useState(false);
+    // const [scope, animate] = useAnimate();
 
-    const onMouseEnter = async () => {
-        setStartAnimation(true);
+    // const onMouseEnter = async () => {
+    //     setStartAnimation(true);
 
-        await animate("#hand", { left: '2.5rem', top: '6rem' }, { duration: 0.5 });
-        await animate("#grafitti", { top: 0, left: '10rem' }, { duration: 0.5 });
-        animate("#hand", { left: '-50rem', top: '500px' }, { duration: 1 });
-        await animate("#arrow", { top: '100px', rotate: 360, left: '19rem' }, { duration: 0.5 });
-        await animate("#team", { top: '590px', rotate: 360, left: '54rem' }, { duration: 0.5 });
-        animate("#events", { bottom: '10rem', left: '51rem', rotate: 0, opacity: 1 }, { duration: 0.5 });
-    };
+    //     await animate("#hand", { left: '2.5rem', top: '6rem' }, { duration: 0.5 });
+    //     await animate("#grafitti", { top: 0, left: '10rem' }, { duration: 0.5 });
+    //     animate("#hand", { left: '-50rem', top: '500px' }, { duration: 1 });
+    //     await animate("#arrow", { top: '100px', rotate: 360, left: '19rem' }, { duration: 0.5 });
+    //     await animate("#team", { top: '590px', rotate: 360, left: '54rem' }, { duration: 0.5 });
+    //     animate("#events", { bottom: '10rem', left: '51rem', rotate: 0, opacity: 1 }, { duration: 0.5 });
+    // };
 
-    const onMouseLeave = async () => {
-        setStartAnimation(false);
+    // const onMouseLeave = async () => {
+    //     setStartAnimation(false);
 
-        await animate("#hand", { left: '2.5rem', top: '6rem' }, { duration: 0.5 });
-        animate("#hand", { left: '-50rem', top: '500px' }, { duration: 0.7 });
-        animate("#grafitti", { top: '500px', left: "-50rem" }, { duration: 0.7 });
-        animate("#arrow", { top: '500px', left: "-50rem" }, { duration: 0.7 });
-        animate("#team", { top: '500px', left: "-50rem" }, { duration: 0.7 });
-        await animate("#events", { bottom: '500px', left: '-50rem' }, { duration: 0.7 });
+    //     await animate("#hand", { left: '2.5rem', top: '6rem' }, { duration: 0.5 });
+    //     animate("#hand", { left: '-50rem', top: '500px' }, { duration: 0.7 });
+    //     animate("#grafitti", { top: '500px', left: "-50rem" }, { duration: 0.7 });
+    //     animate("#arrow", { top: '500px', left: "-50rem" }, { duration: 0.7 });
+    //     animate("#team", { top: '500px', left: "-50rem" }, { duration: 0.7 });
+    //     await animate("#events", { bottom: '500px', left: '-50rem' }, { duration: 0.7 });
 
-        animate("#arrow", { top: '-1000px', left: "19rem", rotate: 180 }, { duration: 0 });
-        animate("#events", { bottom: '10rem', left: '33rem', rotate: 20, opacity: 0 }, { duration: 0 });
-    };
+    //     animate("#arrow", { top: '-1000px', left: "19rem", rotate: 180 }, { duration: 0 });
+    //     animate("#events", { bottom: '10rem', left: '33rem', rotate: 20, opacity: 0 }, { duration: 0 });
+    // };
 
     return (
         <>
             <Navbar />
             <div className="team-container">
-                <div className="animation w-screen h-screen flex flex-col justify-center items-center"
+                {/* <div className="animation w-screen h-screen flex flex-col justify-center items-center"
                     ref={scope}
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}>
@@ -78,7 +79,8 @@ function Team() {
                         className="w-[10rem] z-10 absolute left-[50rem] top-[-100px] rotate-180"
                         src={t6} id="team" alt="Team"
                     />
-                </div>
+                </div> */}
+                <Hero page={"teams"}/>
                 {teamsData.map((team, index) => (
                     <div key={index} className="team-section">
                         <div className="name-box">
