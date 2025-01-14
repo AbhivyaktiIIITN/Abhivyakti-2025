@@ -10,7 +10,8 @@ export default {
         'custom-gradient': 'linear-gradient(96.67deg, #FAF100 0%, #FDC400 49.98%, #FFA600 99.97%)',
       },
       dropShadow: {
-        'arrow': '5px 5px 1px rgba(255, 255, 255)'
+        'arrow': '5px 5px 1px rgba(255, 255, 255)',
+        'title': '-0px -3px 2px #FFF700'
       },
       backdropBlur: {
         100: '100px'

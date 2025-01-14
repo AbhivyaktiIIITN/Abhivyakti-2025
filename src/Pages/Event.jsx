@@ -1,16 +1,20 @@
 import React from 'react';
-import EventHero from '../Components/EventPage/EventHero/EventHero';
+import Hero from '../Components/PageHero/Hero';
 import ClubSelector from '../Components/EventPage/ClubSelector/ClubSelector';
 import '../css/event.css'
+import Navbar from '../Components/Navbar/Navbar';
 
 const Event = () => {
   return (
-    <div
-      className="w-screen h-screen"
-    >
-      <EventHero/>
-      <ClubSelector />
-    </div>
+    <>
+      <Navbar />
+      <div
+        className="w-screen h-screen"
+      >
+        <Hero page={"events"} />
+        <ClubSelector />
+      </div>
+    </>
   );
 };
 
