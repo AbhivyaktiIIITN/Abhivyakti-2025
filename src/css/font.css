@@ -11,3 +11,13 @@
   font-weight: 800;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Humane-bold";
+  src: url('/fonts/Humane-Bold.ttf') format("truetype");
+  font-display: block;
+}
+
+.humane-bold-font {
+  font-family: "Humane-bold";
+}
