@@ -33,7 +33,7 @@ const ClubSelector = () => {
             e.target.style.left = '0'
 
             artform.style.bottom = '20rem'
-            artform.style.right = '46.5rem'
+            artform.style.left = '10.5rem'
             artform.style.rotate = '90deg'
             artform.style.fontSize = '2rem'
 
@@ -47,7 +47,8 @@ const ClubSelector = () => {
             e.target.style.top = '0'
             
             artform.style.bottom = '24rem'
-            artform.style.right = '9.5rem'
+            // artform.style.right = 'auto'
+            artform.style.left = '5.5rem'
             artform.style.fontSize = '2rem'
 
             clubName.style.bottom = '17rem'
@@ -72,8 +73,11 @@ const ClubSelector = () => {
             e.target.style.width = `calc((100% / ${clubs.length}) - 2px)`
             e.target.style.left = `calc((100% / ${clubs.length}) * ${index} + ${index * 2}px)`
 
-            artform.style.bottom = '27rem'
-            artform.style.right = '-0.75rem'
+            artform.style.bottom = '25rem'
+            artform.style.insetInlineEnd = '0'
+            setTimeout(() => {
+                artform.style.left = 'initial'
+            }, 500);
             artform.style.rotate = '0deg'
             artform.style.fontSize = '1rem'
 
@@ -86,8 +90,11 @@ const ClubSelector = () => {
             e.target.style.height = `calc((100% / ${clubs.length}) - 2px)`
             e.target.style.top = `calc((100% / ${clubs.length}) * ${index})`
             
-            artform.style.bottom = '5rem'
-            artform.style.right = '1.25rem'
+            artform.style.bottom = '6rem'
+            artform.style.right = '0.75rem'
+            setTimeout(() => {
+                artform.style.left = 'initial'
+            }, 500);
             artform.style.fontSize = '1rem'
 
             clubName.style.bottom = '-0.5rem'
@@ -106,7 +113,7 @@ const ClubSelector = () => {
                 }}
             >
                 <div
-                    className="w-full h-full md:h-2/3 rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
+                    className="w-full min-h-[800px] h-full md:min-h-[500px] md:h-2/3 rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
                 // onMouseLeave={() => setClickedClub(null)}
                 >
                     {
@@ -130,7 +137,7 @@ const ClubSelector = () => {
                                         src={`/assets/EventsPage/estoria/statue.png`}
                                     /> */}
                                     <p
-                                        className="md:-rotate-90 absolute bottom-20 md:bottom-[27rem] right-5 md:-right-3 duration-500 urbanist-font text-white text-[1rem] drop-shadow-club-name"
+                                        className="md:-rotate-90 absolute bottom-24 md:bottom-[25rem] right-3 md:end-0 duration-500 urbanist-font text-white text-[1rem] drop-shadow-club-name"
                                         id="artform"
                                     >
                                         {club.artform}
