@@ -143,7 +143,7 @@ const ClubSelector = () => {
                                         {club.artform}
                                     </p>
                                     <p
-                                        className="text-8xl md:text-9xl text-white drop-shadow-club-name md:-rotate-90 absolute -bottom-2 md:bottom-16 left-6 md:left-5 md:right-0 duration-500 humane-bold-font"
+                                        className="text-8xl md:text-9xl text-white drop-shadow-club-name md:-rotate-90 absolute -bottom-2 md:bottom-16 left-6 md:left-5 md:right-0 duration-500 humane-bold-font whitespace-nowrap"
                                         id="club-name"
                                     >
                                         {club.name}
