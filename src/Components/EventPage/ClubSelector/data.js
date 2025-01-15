@@ -1,7 +1,7 @@
 export const clubs = [
     {
-        name: "estoria",
-        artform: "drama",
+        name: "dtaraxia",
+        artform: "dance",
         color: "#FE5013",
         exploreGradient: "",
         events: [
@@ -17,8 +17,8 @@ export const clubs = [
         ]
     },
     {
-        name: "estoria",
-        artform: "drama",
+        name: "probe",
+        artform: "photography",
         color: "#FF006E",
         exploreGradient: "",
         events: [
@@ -51,8 +51,8 @@ export const clubs = [
         ]
     },
     {
-        name: "estoria",
-        artform: "drama",
+        name: "orator",
+        artform: "debate",
         color: "#2237C6",
         exploreGradient: "",
         events: [
@@ -74,8 +74,8 @@ export const clubs = [
         ]
     },
     {
-        name: "estoria",
-        artform: "drama",
+        name: "crescendo",
+        artform: "music",
         color: "#34FA46",
         exploreGradient: "",
         events: [
@@ -91,8 +91,8 @@ export const clubs = [
         ]
     },
     {
-        name: "estoria",
-        artform: "drama",
+        name: "ab central",
+        artform: "cultural",
         color: "#FAF100",
         exploreGradient: "",
         events: [
