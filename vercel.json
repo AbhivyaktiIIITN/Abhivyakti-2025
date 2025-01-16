@@ -1,36 +1,8 @@
 {
-    "routes": [
+    "rewrites": [
         {
-            "src": "/",
-            "dest": "/"
-        },
-        {
-            "src": "/home",
-            "dest": "/home"
-        },
-        {
-            "src": "/event",
-            "dest": "/event"
-        },
-        {
-            "src": "/team",
-            "dest": "/team"
-        },
-        {
-            "src": "/eventdetail",
-            "dest": "/eventdetail"
-        },
-        {
-            "src": "/terms",
-            "dest": "/terms"
-        },
-        {
-            "src": "/developers",
-            "dest": "/developers"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/"
+            "source": "/(.*)",
+            "destination": "/"
         }
     ]
 }
