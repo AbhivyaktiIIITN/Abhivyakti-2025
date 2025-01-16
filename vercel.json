@@ -1,31 +1,31 @@
 {
     "routes": [
         {
-            "src": "^/$",
+            "src": "/",
             "dest": "/"
         },
         {
-            "src": "^/home$",
+            "src": "/home",
             "dest": "/home"
         },
         {
-            "src": "^/event$",
+            "src": "/event",
             "dest": "/event"
         },
         {
-            "src": "^/team$",
+            "src": "/team",
             "dest": "/team"
         },
         {
-            "src": "^/eventdetail$",
+            "src": "/eventdetail",
             "dest": "/eventdetail"
         },
         {
-            "src": "^/terms$",
+            "src": "/terms",
             "dest": "/terms"
         },
         {
-            "src": "^/developers$",
+            "src": "/developers",
             "dest": "/developers"
         },
         {
