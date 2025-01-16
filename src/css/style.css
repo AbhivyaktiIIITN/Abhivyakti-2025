@@ -1,85 +1,26 @@
-/* #main {
-    position: relative;
-    overflow: hidden;
-    background-color: black;
-} */
-
-/* #page1 {
-    height: 70vh;
-    width: 100vw;
-    position: relative;
-}
-
-#page1 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-} */
-
 #page2 {
-    position: relative;
-    height: 100vh;
+    height: 80vh;
+    max-height: 1000px;
     width: 700vw;
-    /* background-color: rgba(255, 0, 0, 0.33); */
-    overflow-x: hidden;
-    /* Set hidden for scroll pinning */
+    display: flex;
+    align-items: end;
+    
 }
 
 #page2 .horizontal {
     height: 80%;
     width: 100%; /* Enough width to allow horizontal scrolling */
 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
-
-    gap:1vw;
-
-    color: blanchedalmond;
 }
 
-
-
-.loading h4 {
-    position: absolute;
-    bottom: 55px;
-    left: 160px;
-    font-size: 1.2vw;
-    letter-spacing: -1.6px;
-    font-weight: 500;
-    /* background: peachpuff; */
+.gradient-text {
+    background: linear-gradient(to bottom, #FDFDFB, #FAF100);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
-.text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: auto;
+.img-radial-gradient {
+    background: radial-gradient(circle, #F22FB0 , transparent 50%);
 }
-
-.text h4 {
-    text-transform: uppercase;
-    /* letter-spacing: -2px; */
-    font-size: 1.4vw;
-    font-weight: 900;
-    width: auto;
-    color: rgb(21, 255, 0);
-    height: fit-content;
-}
-
-.text h1 {
-    text-transform: uppercase;
-    /* letter-spacing: -6px; */
-    font-size: 6vw;
-    font-weight: 900;
-    line-height: 1;
-    color: blanchedalmond;
-    /* background: palegreen; */
-    height: fit-content;
-    height: fit-content;
-}
-
