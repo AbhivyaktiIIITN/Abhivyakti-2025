@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./guestsection.css";
 import cardsData from "../../../assets/Data/GuestData";
-import logo from "/assets/HomePage/Guests/clubLogo.png";
+import aboutPic from "/assets/HomePage/Guests/about.png";
 import gh from "/assets/HomePage/Guests/gh.png";
 
 const GuestSection = () => {
@@ -65,8 +65,7 @@ const GuestSection = () => {
                             <img src={firstCard.image} alt="Guest" />
                         </div>
                         <div className="card-back">
-                            <img src={logo} alt="" />
-                            <h4>ABOUT</h4>
+                            <img src={aboutPic} alt="" />
                             <p>{firstCard.about}</p>
                         </div>
                     </div>
@@ -85,8 +84,7 @@ const GuestSection = () => {
                                 <img src={card.image} alt={`Guest`} />
                             </div>
                             <div className="card-back">
-                                <img src={logo} alt="" />
-                                <h4>ABOUT</h4>
+                                <img src={aboutPic} alt="" />
                                 <p>{card.about}</p>
                             </div>
                         </div>
