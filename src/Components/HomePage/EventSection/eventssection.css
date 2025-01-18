@@ -62,7 +62,6 @@
 .events-section .card {
     height: 100%;
     perspective: 1000px;
-    cursor: pointer;
     scroll-snap-align: center;
     border-radius: 18px;
 }
@@ -106,6 +105,7 @@
 .events-section .card-front {
     transition: background-image 1s ease, box-shadow 1s ease;
     background-size: cover;
+    cursor: pointer;
 }
 
 .events-section .card:hover .card-front {
@@ -117,6 +117,62 @@
     color: #fff;
     transform: rotateY(180deg);
     transition: box-shadow 1s ease;
+    background-size: cover;
+}
+
+.events-section .card-back .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.events-section .card-back .details .event-head {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.events-section .card-back .details .evnt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.events-section .card-back .details .evnt .evnt-name {
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+    font-family: "Urbanist", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.events-section .card-back .details .evnt .evnt-desc {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.events-section .card-back .details a {
+    width: 40%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.events-section .card-back .details button:nth-child(2) {
+    background: transparent;
 }
 
 .events-section .scroll-button {
@@ -172,6 +228,15 @@
     .events-section .card-4,
     .events-section .card-5 {
         margin-right: 40px;
+    }
+
+    .events-section .card-back .details .evnt .evnt-name {
+        font-size: 16px;
+    }
+
+    .events-section .card-back .details .evnt .evnt-desc {
+        margin-bottom: 5px;
+        font-size: 12px;
     }
 
     .events-section .scroll-button {
@@ -295,4 +360,28 @@
 .events-section .cf6:hover,
 .events-section .cb6:hover {
     box-shadow: 0 0 30px #faf100;
+}
+
+.events-section .card-1 .cb1 {
+    background-image: url("../../../assets/HomePage/Events/cb1.png");
+}
+
+.events-section .card-2 .cb2 {
+    background-image: url("../../../assets/HomePage/Events/cb2.png");
+}
+
+.events-section .card-3 .cb3 {
+    background-image: url("../../../assets/HomePage/Events/cb3.png");
+}
+
+.events-section .card-4 .cb4 {
+    background-image: url("../../../assets/HomePage/Events/cb4.png");
+}
+
+.events-section .card-5 .cb5 {
+    background-image: url("../../../assets/HomePage/Events/cb5.png");
+}
+
+.events-section .card-6 .cb6 {
+    background-image: url("../../../assets/HomePage/Events/cb6.png");
 }
