@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    color: #ffffff;
+    color: #8f8a8a;
     height: fit-content;
     padding: 8vh 15vw 5vh 15vw;
     width: 100vw;
@@ -13,10 +13,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #fbfbfd;
 }
 
-.footer-container .main-body{
+.footer-container .main-body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -24,57 +23,127 @@
     max-width: 1050px;
 }
 
-.footer-container .logo{
+.footer-container .logo {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-container .footer{
+.footer-container .footer {
     display: flex;
     justify-content: space-around;
     text-align: center;
     width: 60%;
-    padding-left: 5% ;
+    padding-left: 5%;
     height: 100%;
 }
 
-.footer-container .footer h1{
+.footer-container .footer h1 {
     font-size: 27px;
     font-weight: 600;
     margin-bottom: 1.5rem;
     cursor: pointer;
 }
 
-.footer-container .footer p{
+.footer-container .footer p {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 5px;
     cursor: pointer;
 }
 
-.footer-container .footer p:hover{
+.footer-container .footer p:hover {
     background: linear-gradient(to right, #FAF100 0%, #FDC400 50%, #FFA600 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.footer-container .copyright{
+.footer-container .copyright {
     margin-top: 2rem;
     font-size: 14px;
     font-weight: 400;
     color: #535353;
+    order: 2; /* Ensure it comes last in desktop view */
 }
 
-.footer-container .student{
+.footer-container .student {
     background: linear-gradient(to right, #FAF100 0%, #FDC400 50%, #FFA600 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+/* Left Animation Section */
+.left-animation-section img {
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+/* Right Animation Section */
+.right-animation-section img {
+    width: 140%;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+.footer-container {
+    background-color: #1a1a1a;
+    color: #fcfafa;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f8f5f5;
+}
+
+.footer p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #fcfafa;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #f7f4f4;
+    order: 1; /* Ensure it comes last on mobile view */
+}
+
+/* Remove hover scaling effect for the images */
+.left-animation-section img,
+.right-animation-section img {
+    transition: transform 2s ease-in-out;
+}
+
+/* Remove hover effect scaling */
+.left-animation-section:hover img,
+.right-animation-section:hover img {
+    transform: none;
+}
+
+@media (max-width: 320px) {
     .footer-container {
         padding: 6vh 8vw 4vh 8vw;
     }
@@ -91,7 +160,7 @@
 
     .footer-container .footer {
         width: 100%;
-        padding-left: 0% ;
+        padding-left: 0%;
         flex-direction: column;
     }
 
@@ -104,8 +173,16 @@
         font-size: 16px;
     }
 
-    .footer-container .copyright{
+    .footer-container .copyright {
         margin-top: 2rem;
         font-size: 18px;
+        order: 3; /* Ensure it comes last on mobile */
+        margin-top: 3rem; /* Add space above for better separation */
+    }
+
+    /* Hide Images and Clouds in Mobile View */
+    .left-animation-section,
+    .right-animation-section {
+        display: none;
     }
 }
