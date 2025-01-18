@@ -59,7 +59,7 @@ const ClubSelector = () => {
         }
     }
 
-    const mouseOut = (e, index, club) => {
+    const mouseOut = (e, index) => {
 
         e.target.style.zIndex = '0'
         e.target.style.transitionDelay = '0.5s'
@@ -80,7 +80,7 @@ const ClubSelector = () => {
 
         setTimeout(() => {
             image.style.display = 'none'
-            image.src = '/assets/EventsPage/estoria/statue.png'
+            image.src = clickedClub.statue1
             image.style.transform = 'scaleX(1)'
         }, 500);
 
@@ -117,34 +117,33 @@ const ClubSelector = () => {
             clubName.style.left = '1.5rem'
             clubName.style.fontSize = '4.5rem'
         }
+
+        setClickedClub(null)
     }
 
     const onClickSelector = (element, club) => {
         setClickedClub(club)
 
-        console.log(element)
-
-        element.style.backgroundImage = `url("/assets/EventsPage/estoria/bg.png"), linear-gradient(140deg, white -10%, ${club.color})`
+        element.style.backgroundImage = `url(${club.bg}), linear-gradient(140deg, white -10%, ${club.color})`
         element.style.backgroundPostion = 'center'
         element.style.backgroundRepeat = 'no-repeat'
         element.style.backgroundSize = 'cover'
 
         const image = element.querySelector('#image')
         image.style.transform = 'scaleX(-1)'
-        image.src = '/assets/EventsPage/estoria/statue2.png'
+        image.src = club.statue2
     }
 
     return (
-        <div className="w-screen h-screen flex-col place-items-center mt-52">
+        <div className="w-screen h-screen flex-col place-items-center md:mt-52">
             <div
                 className='w-[95%] md:min-w-[768px] md:w-2/3 h-screen'
                 onMouseLeave={() => {
-                    setClickedClub(null)
                     mouseOut(hoverEvent, hoverIndex)
                 }}
             >
                 <div
-                    className="w-full min-h-[600px] h-1/3 md:min-h-[500px] md:h-2/3 rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
+                    className="w-full min-h-[600px] h-1/3 md:min-h-[500px] md:h-[65%] rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
                 // onMouseLeave={() => setClickedClub(null)}
                 >
                     {
@@ -255,10 +254,10 @@ const ClubSelector = () => {
                                             solo drama competition
                                         </p>
                                         <div
-                                            className="w-full sm:w-56 flex justify-between font-bold text-[0.5rem] 2xs:text-xs sm:text-md"
+                                            className="w-full sm:w-56 flex justify-between font-bold text-[0.5rem] 2xs:text-xs sm:text-[1rem]"
                                         >
                                             <a
-                                                className="border-white border-2 rounded-md px-3 py-1"
+                                                className="border-white border-2 rounded-md px-3 py-1 xs:py-2"
                                                 href=""
                                                 target="_blank"
                                                 style={{
@@ -268,7 +267,7 @@ const ClubSelector = () => {
                                                 explore
                                             </a>
                                             <a
-                                                className="border-white border-2 rounded-md px-3 py-1"
+                                                className="border-white border-2 rounded-md px-3 py-1 xs:py-2"
                                                 href=""
                                                 target="_blank"
                                             >
@@ -305,14 +304,13 @@ const SelectorCard = ({ club, index, mouseEnter, onClickSelector }) => {
         >
             <img
                 className="w-[400px] md:w-[400px] -z-0 right-0 hidden bg-transparent"
-                src={`/assets/EventsPage/estoria/statue.png`}
+                src={club.statue1}
                 id="image"
                 onClick={(e) => onClickSelector(e.target.parentElement, club)}
             />
             <p
-                className="md:-rotate-90 absolute bottom-16 md:bottom-[25rem] right-3 md:end-0 duration-500 urbanist-font text-white text-[1rem] drop-shadow-club-name bg-transparent"
+                className="md:-rotate-90 absolute bottom-16 md:bottom-[25rem] right-3 md:end-0 duration-500 urbanist-font text-white text-[1rem] md:text-lg xl:text-xl drop-shadow-club-name bg-transparent"
                 id="artform"
-
                 onClick={(e) => onClickSelector(e.target.parentElement, club)}
             >
                 {club.artform}
@@ -320,7 +318,6 @@ const SelectorCard = ({ club, index, mouseEnter, onClickSelector }) => {
             <p
                 className="text-7xl md:text-9xl text-white drop-shadow-club-name md:-rotate-90 absolute -bottom-2 md:bottom-16 left-6 md:left-5 md:right-0 duration-500 humane-bold-font whitespace-nowrap bg-transparent"
                 id="club-name"
-
                 onClick={(e) => onClickSelector(e.target.parentElement, club)}
             >
                 {club.name}
