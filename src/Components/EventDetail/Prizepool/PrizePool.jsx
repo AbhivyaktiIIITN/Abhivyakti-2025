@@ -31,7 +31,7 @@ const PrizePool = ({ prizes, additionalPrizes }) => {
       <div className="text-white py-10 px-4 w-full lg:w-1/2 " ref={sectionRef}>
         <div
           className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
-            animate ? "opacity-100 translate-y-0" : ""
+            animate ? "opacity-100 translate-y-0 -translate-y-0" : ""
           }`}
         >
           <img src={PrizePoolImg} alt="" className="h-52 sm:h-72" />
