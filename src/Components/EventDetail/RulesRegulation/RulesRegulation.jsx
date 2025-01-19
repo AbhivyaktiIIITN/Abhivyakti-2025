@@ -32,7 +32,7 @@ const RulesRegulation = (props) => {
     <div className="w-full min-h-screen relative text-white px-4 lg:px-16 py-10 flex flex-wrap justify-center">
       <div className="w-2/3 h-full sm:w-1/2 " ref={sectionRef}>
         <div className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
-    animate ? "opacity-100 translate-y-0" : ""
+    animate ? "opacity-100 translate-y-0 -translate-y-0" : ""
   }`}>
           <img src={RulesAndRegulationImg} alt="Rules and Regulations" className="h-52 sm:h-72" />
         </div>
