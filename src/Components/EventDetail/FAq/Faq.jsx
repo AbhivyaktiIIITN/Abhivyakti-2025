@@ -1,15 +1,41 @@
-import React, { useState } from "react";
-import FaqImg from "../../../../public/assets/EventDetail/FAQ.png";
-const FAQ = ({ title, items }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+import React, { useState,useRef,useEffect } from "react";
+import FaqImg from "/assets/EventDetail/FAQ.png";
+const FAQ = ({items}) => {
+   const sectionRef = useRef(null);
+    const [animate, setAnimate] = useState(false);
+    const [openIndex, setOpenIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    const toggleFAQ = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+    };
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setAnimate(true);
+          } else {
+            setAnimate(false);
+          }
+        },
+        { threshold: 0.2 }
+      );
+  
+      if (sectionRef.current) {
+        observer.observe(sectionRef.current);
+      }
+  
+      return () => {
+        if (sectionRef.current) {
+          observer.unobserve(sectionRef.current);
+        }
+      };
+    }, []);
 
   return (
-    <div className="w-full h-fit flex flex-col items-center text-white py-10 px-4 relative">
-       <div className="w-full flex flex-wrap justify-center ">
+    <div className="w-full h-fit flex flex-col items-center text-white py-10 px-4 relative" ref={sectionRef}>
+       <div className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
+            animate ? "opacity-100 translate-y-0" : ""
+          }`}>
           <img src={FaqImg} alt="" className="h-52 sm:h-80" />
         </div>
       <div className="w-full max-w-3xl space-y-4">
@@ -21,7 +47,7 @@ const FAQ = ({ title, items }) => {
             
           >
             <div
-              className="flex justify-between items-center sm:px-10 sm:py-5 px-5 py-3"
+              className="flex justify-between items-center sm:px-10 sm:py-4 px-5 py-3"
            
             >
               <h2 className="text-base md:text-xl font-semibold p-1">{item.question}</h2>
