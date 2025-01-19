@@ -6,145 +6,144 @@ import "./clubSelector.css"
 import "../../../css/font.css"
 
 const ClubSelector = () => {
-
-    const [clickedClub, setClickedClub] = useState(null)
-    const [hoverIndex, setHoverIndex] = useState(null)
-    const [hoverEvent, setHoverEvent] = useState(null)
-    const [animate, setAnimate] = useState(false)
+    const [clickedClub, setClickedClub] = useState(null);
+    const [hoverIndex, setHoverIndex] = useState(null);
+    const [hoverEvent, setHoverEvent] = useState(null);
+    const [animate, setAnimate] = useState(false);
+    const [lastMouseEnterTime, setLastMouseEnterTime] = useState(0);
 
     const mouseEnter = (e, index) => {
+        const currentTime = Date.now();
+        if (currentTime - lastMouseEnterTime < 1000) return;
+        setLastMouseEnterTime(currentTime);
 
-        e.target.style.zIndex = '50'
-        e.target.style.transitionDelay = '0s'
-        setHoverIndex(index)
-        setHoverEvent(e)
-        setAnimate(true)
+        e.target.style.zIndex = '50';
+        e.target.style.transitionDelay = '0s';
+        setHoverIndex(index);
+        setHoverEvent(e);
+        setAnimate(true);
 
-        const artform = e.target.querySelector("#artform")
-        const clubName = e.target.querySelector("#club-name")
-        const image = e.target.querySelector("#image")
+        const artform = e.target.querySelector("#artform");
+        const clubName = e.target.querySelector("#club-name");
+        const image = e.target.querySelector("#image");
 
-        artform.style.transitionDelay = '0s'
-        clubName.style.transitionDelay = '0s'
-        image.style.transitionDelay = '0s'
+        artform.style.transitionDelay = '0s';
+        clubName.style.transitionDelay = '0s';
+        image.style.transitionDelay = '0s';
 
-        image.style.display = 'initial'
+        image.style.display = 'initial';
 
         if (window.matchMedia("(min-width: 768px)").matches) {
-            e.target.style.width = '100%'
-            e.target.style.left = '0'
+            e.target.style.width = '100%';
+            e.target.style.left = '0';
 
-            artform.style.bottom = '20rem'
-            artform.style.left = '10.5rem'
-            artform.style.rotate = '90deg'
-            artform.style.fontSize = '2rem'
+            artform.style.bottom = '20rem';
+            artform.style.left = '10.5rem';
+            artform.style.rotate = '90deg';
+            artform.style.fontSize = '2rem';
 
-            clubName.style.bottom = '8rem'
-            clubName.style.left = '10.5rem'
-            clubName.style.right = '0rem'
-            clubName.style.rotate = '90deg'
-            clubName.style.fontSize = '12rem'
+            clubName.style.bottom = '8rem';
+            clubName.style.left = '10.5rem';
+            clubName.style.right = '0rem';
+            clubName.style.rotate = '90deg';
+            clubName.style.fontSize = '12rem';
         } else {
-            e.target.style.height = '100%'
-            e.target.style.top = '0'
+            e.target.style.height = '100%';
+            e.target.style.top = '0';
 
-            artform.style.bottom = '24rem'
-            // artform.style.right = 'auto'
-            artform.style.left = '3rem'
-            artform.style.fontSize = '2rem'
+            artform.style.bottom = '24rem';
+            artform.style.left = '3rem';
+            artform.style.fontSize = '2rem';
 
-            clubName.style.bottom = '19rem'
-            clubName.style.left = '3rem'
-            clubName.style.fontSize = '6rem'
+            clubName.style.bottom = '19rem';
+            clubName.style.left = '3rem';
+            clubName.style.fontSize = '6rem';
         }
-    }
+    };
 
     const mouseOut = (e, index) => {
-
-        e.target.style.zIndex = '0'
-        e.target.style.transitionDelay = '0.5s'
-
-        setTimeout(() => {
-            e.target.style.backgroundImage = `linear-gradient(140deg, white -10%, ${clubs[index].color})`
-        }, 500);
-
-        setAnimate(false)
-
-        const artform = e.target.querySelector("#artform")
-        const clubName = e.target.querySelector("#club-name")
-        const image = e.target.querySelector("#image")
-
-        artform.style.transitionDelay = '0.5s'
-        clubName.style.transitionDelay = '0.5s'
-        image.style.transitionDelay = '0.5s'
+        e.target.style.zIndex = '0';
+        e.target.style.transitionDelay = '0.5s';
 
         setTimeout(() => {
-            image.style.display = 'none'
-            image.src = clickedClub.statue1
-            image.style.transform = 'scaleX(1)'
+            e.target.style.backgroundImage = `linear-gradient(140deg, white -10%, ${clubs[index].color})`;
         }, 500);
 
+        setAnimate(false);
+
+        const artform = e.target.querySelector("#artform");
+        const clubName = e.target.querySelector("#club-name");
+        const image = e.target.querySelector("#image");
+
+        artform.style.transitionDelay = '0.5s';
+        clubName.style.transitionDelay = '0.5s';
+        image.style.transitionDelay = '0.5s';
+
+        setTimeout(() => {
+            image.style.display = 'none';
+            image.src = clickedClub.statue1;
+            image.style.transform = 'scaleX(1)';
+        }, 500);
 
         if (window.matchMedia("(min-width: 768px)").matches) {
-            e.target.style.width = `calc((100% / ${clubs.length}) - 2px)`
-            e.target.style.left = `calc((100% / ${clubs.length}) * ${index} + ${index * 2}px)`
+            e.target.style.width = `calc((100% / ${clubs.length}) - 2px)`;
+            e.target.style.left = `calc((100% / ${clubs.length}) * ${index} + ${index * 2}px)`;
 
-            artform.style.bottom = '25rem'
-            artform.style.insetInlineEnd = '0'
+            artform.style.bottom = '25rem';
+            artform.style.insetInlineEnd = '0';
             setTimeout(() => {
-                artform.style.left = 'initial'
+                artform.style.left = 'initial';
             }, 500);
-            artform.style.rotate = '0deg'
-            artform.style.fontSize = '1rem'
+            artform.style.rotate = '0deg';
+            artform.style.fontSize = '1rem';
 
-            clubName.style.bottom = '4rem'
-            clubName.style.left = '1.25rem'
-            clubName.style.right = '0rem'
-            clubName.style.rotate = '0deg'
-            clubName.style.fontSize = '8rem'
+            clubName.style.bottom = '4rem';
+            clubName.style.left = '1.25rem';
+            clubName.style.right = '0rem';
+            clubName.style.rotate = '0deg';
+            clubName.style.fontSize = '8rem';
         } else {
-            e.target.style.height = `calc((100% / ${clubs.length}) - 2px)`
-            e.target.style.top = `calc((100% / ${clubs.length}) * ${index})`
+            e.target.style.height = `calc((100% / ${clubs.length}) - 2px)`;
+            e.target.style.top = `calc((100% / ${clubs.length}) * ${index})`;
 
-            artform.style.bottom = '4rem'
-            artform.style.right = '0.75rem'
+            artform.style.bottom = '4rem';
+            artform.style.right = '0.75rem';
             setTimeout(() => {
-                artform.style.left = 'initial'
+                artform.style.left = 'initial';
             }, 500);
-            artform.style.fontSize = '1rem'
+            artform.style.fontSize = '1rem';
 
-            clubName.style.bottom = '-0.5rem'
-            clubName.style.left = '1.5rem'
-            clubName.style.fontSize = '4.5rem'
+            clubName.style.bottom = '-0.5rem';
+            clubName.style.left = '1.5rem';
+            clubName.style.fontSize = '4.5rem';
         }
 
-        setClickedClub(null)
-    }
+        setClickedClub(null);
+    };
 
     const onClickSelector = (element, club) => {
-        setClickedClub(club)
+        if(element.zIndex === '0') return;
+        setClickedClub(club);
 
-        element.style.backgroundImage = `url(${club.bg}), linear-gradient(140deg, white -10%, ${club.color})`
-        element.style.backgroundPostion = 'center'
-        element.style.backgroundRepeat = 'no-repeat'
-        element.style.backgroundSize = 'cover'
+        element.style.backgroundImage = `url(${club.bg}), linear-gradient(140deg, white -10%, ${club.color})`;
+        element.style.backgroundPosition = 'center';
+        element.style.backgroundRepeat = 'no-repeat';
+        element.style.backgroundSize = 'cover';
 
-        const image = element.querySelector('#image')
-        image.style.transform = 'scaleX(-1)'
-        image.src = club.statue2
-    }
+        const image = element.querySelector('#image');
+        image.src = club.statue2;
+    };
 
     return (
         <div className="w-screen h-screen flex-col place-items-center md:mt-52">
             <div
                 className='w-[95%] md:min-w-[768px] md:w-2/3 h-screen'
                 onMouseLeave={() => {
-                    mouseOut(hoverEvent, hoverIndex)
+                    mouseOut(hoverEvent, hoverIndex);
                 }}
             >
                 <div
                     className="w-full min-h-[600px] h-1/3 md:min-h-[500px] md:h-[65%] rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
-                // onMouseLeave={() => setClickedClub(null)}
                 >
                     {
                         clubs.map((club, index) => (
@@ -156,42 +155,6 @@ const ClubSelector = () => {
                                     mouseEnter={mouseEnter}
                                     onClickSelector={onClickSelector}
                                 />
-                                {/* <div
-                                    key={index}
-                                    className="club-div md:h-full flex items-end justify-end rounded-xl absolute duration-500 cursor-pointer uppercase"
-                                    style={{
-                                        '--index': index,
-                                        '--length': clubs.length,
-                                        backgroundImage: `linear-gradient(140deg, white -10%, ${club.color})`,
-                                        width: `calc((100% / ${clubs.length}) - 2px)`, // dividing by the number of clubs minus the gap
-                                        left: `calc((100% / ${clubs.length}) * ${index} + ${index * 2}px)` // calculating position with gap
-                                    }}
-                                    onMouseEnter={(e) => mouseEnter(e, index)}
-                                    onClick={(e) => onClickSelector(e.target, club)}
-                                >
-                                    <img
-                                        className="w-[400px] md:w-[400px] -z-0 right-0 hidden bg-transparent"
-                                        src={`/assets/EventsPage/estoria/statue.png`}
-                                        id="image"
-                                    // onClick={(e) => onClickSelector(e.target.parentElement, club)}
-                                    />
-                                    <p
-                                        className="md:-rotate-90 absolute bottom-16 md:bottom-[25rem] right-3 md:end-0 duration-500 urbanist-font text-white text-[1rem] drop-shadow-club-name bg-transparent"
-                                        id="artform"
-
-                                    // onClick={(e) => onClickSelector(e.target.parentElement, club)}
-                                    >
-                                        {club.artform}
-                                    </p>
-                                    <p
-                                        className="text-7xl md:text-9xl text-white drop-shadow-club-name md:-rotate-90 absolute -bottom-2 md:bottom-16 left-6 md:left-5 md:right-0 duration-500 humane-bold-font whitespace-nowrap bg-transparent"
-                                        id="club-name"
-
-                                    // onClick={(e) => onClickSelector(e.target.parentElement, club)}
-                                    >
-                                        {club.name}
-                                    </p>
-                                </div> */}
                             </>
                         ))
                     }
@@ -202,7 +165,6 @@ const ClubSelector = () => {
                             <motion.div
                                 key={index}
                                 className="w-full h-32   xs:h-48 flex rounded-xl mb-2 backdrop-blur-100"
-                                // onMouseLeave={() => setClickedClub(null)}
                                 initial={{
                                     y: '-9rem',
                                     opacity: 0
@@ -285,9 +247,8 @@ const ClubSelector = () => {
     );
 };
 
-
 const SelectorCard = ({ club, index, mouseEnter, onClickSelector }) => {
-    const ref = useRef(null)
+    const ref = useRef(null);
     return (
         <div
             ref={ref}
@@ -323,7 +284,7 @@ const SelectorCard = ({ club, index, mouseEnter, onClickSelector }) => {
                 {club.name}
             </p>
         </div>
-    )
-}
+    );
+};
 
 export default ClubSelector;
