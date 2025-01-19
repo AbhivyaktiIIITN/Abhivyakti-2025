@@ -13,4 +13,5 @@ body{
     background-image: url('/assets/EventsPage/pageBg.png');
     background-position: center;
     overflow-x: hidden;
+    user-select: none;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, useAnimate } from "framer-motion"
 import "../../css/font.css"
 
@@ -52,6 +52,15 @@ const Hero = ({ page }) => {
     }
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      onMouseEnter()
+    }, 0)
+    return () => {
+      onMouseLeave()
+    }
+  }, [])
+
   return (
     <div
       className="w-screen h-screen flex justify-center items-center overflow-hidden"
@@ -59,8 +68,8 @@ const Hero = ({ page }) => {
       <div
         className="min-w-[300px] w-[50vw] sm:min-w-[600px] sm:w-[33vw] flex justify-center items-center relative"
         ref={scope}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
+      // onMouseEnter={onMouseEnter}
+      // onMouseLeave={onMouseLeave}
       >
         <img
           className="z-40"
