@@ -1,17 +1,19 @@
 #page2 {
-    height: 80vh;
+    /* padding-top: 20vh; */
+    height: 100vh;
     max-height: 1000px;
     width: 700vw;
     display: flex;
     align-items: end;
+    /* background: #FDFDFB; */
     
 }
 
 #page2 .horizontal {
-    height: 80%;
-    width: 100%; /* Enough width to allow horizontal scrolling */
-
+    height: 100vh;
+    width: 700vw; /* Enough width to allow horizontal scrolling */
     display: flex;
+    gap: 20px;
     align-items: center;
 }
 
