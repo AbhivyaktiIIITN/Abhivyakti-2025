@@ -9,7 +9,7 @@ import grafftiDrip from "/assets/EventDetail/grafftiDrip.png";
 const EventIntro = (props) => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center relative">
-      <img src={grafftiDrip} alt="" className="absolute w-full h-full opacity-30 object-center sm:object-center"/>
+      <img src={grafftiDrip} alt="Grafiiti Drip" className="absolute md:w-full h-auto top-0 opacity-30 object-center sm:object-center"/>
       <div className="w-3/4 h-auto z-10 pt-10 sm:pt-0 md:pt-0 lg:pt-0 space-y-10">
         <div className="w-full h-auto flex flex-wrap justify-between z-10 gap-5 md:gap-0 lg:gap-0 sm:gap-0">
           <div className="w-full md:w-1/2 lg:w-1/2 h-auto text-sm md:text-base lg:text-xl flex flex-wrap md:justify-end justify-start lg:justify-end">
