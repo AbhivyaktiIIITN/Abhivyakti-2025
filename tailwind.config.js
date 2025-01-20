@@ -18,12 +18,17 @@ export default {
         100: '100px'
       },
       animation: {
-        width: 'width'
+        width: 'width',
+        pulse: 'pulse 1s infinite'
       },
       keyframes: {
         width: {
           '0%': { width: 'auto', left: 'auto' },
           '100%': { width: '100%', left: '0' }
+        },
+        pulse: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' }
         }
       },
       screens: {
