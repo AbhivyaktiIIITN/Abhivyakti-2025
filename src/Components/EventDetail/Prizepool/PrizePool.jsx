@@ -1,13 +1,41 @@
-import React from "react";
-import PrizePoolImg from "../../../../public/assets/EventDetail/Prizepool.png"
+import React,{ useEffect, useRef, useState } from "react";
+import PrizePoolImg from "/assets/EventDetail/Prizepool.png";
 const PrizePool = ({ prizes, additionalPrizes }) => {
+  const sectionRef = useRef(null);
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimate(true);
+        } else {
+          setAnimate(false);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   return (
     <div className="w-full h-fit flex flex-col items-center justify-center relative mt-60 ">
-      <div className="text-white py-10 px-4 w-full lg:w-1/2 ">
-
-          <div className="w-full flex flex-wrap justify-center ">
-            <img src={PrizePoolImg} alt="" className="h-52 sm:h-72" />
-          </div>
+      <div className="text-white py-10 px-4 w-full lg:w-1/2 " ref={sectionRef}>
+        <div
+          className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
+            animate ? "opacity-100 translate-y-0 -translate-y-0" : ""
+          }`}
+        >
+          <img src={PrizePoolImg} alt="" className="h-52 sm:h-72" />
+        </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           {prizes.map((prize, index) => (
             <div className="flex flex-col items-center " key={index}>

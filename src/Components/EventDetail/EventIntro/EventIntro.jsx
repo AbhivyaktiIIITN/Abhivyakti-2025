@@ -1,15 +1,15 @@
 
 import React from "react";
-import AlertIcon from "../../../../public/assets/EventDetail/AlertIcon.png";
-import TeamSizeIcon from "../../../../public/assets/EventDetail/TeamSizeIcon.png";
-import FeeIcon from "../../../../public/assets/EventDetail/FeeIcon.png";
-import PrizeIcon from "../../../../public/assets/EventDetail/PrizeIcon.png";
-import grafftiDrip from "../../../../public/assets/EventDetail/grafftiDrip.png";
+import AlertIcon from "/assets/EventDetail/AlertIcon.png";
+import TeamSizeIcon from "/assets/EventDetail/TeamSizeIcon.png";
+import FeeIcon from "/assets/EventDetail/FeeIcon.png";
+import PrizeIcon from "/assets/EventDetail/PrizeIcon.png";
+import grafftiDrip from "/assets/EventDetail/grafftiDrip.png";
 
 const EventIntro = (props) => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center relative">
-      <img src={grafftiDrip} alt="" className="absolute w-full h-full opacity-30"/>
+      <img src={grafftiDrip} alt="" className="absolute w-full h-full opacity-30 object-center sm:object-center"/>
       <div className="w-3/4 h-auto z-10 pt-10 sm:pt-0 md:pt-0 lg:pt-0 space-y-10">
         <div className="w-full h-auto flex flex-wrap justify-between z-10 gap-5 md:gap-0 lg:gap-0 sm:gap-0">
           <div className="w-full md:w-1/2 lg:w-1/2 h-auto text-sm md:text-base lg:text-xl flex flex-wrap md:justify-end justify-start lg:justify-end">
@@ -54,11 +54,11 @@ const EventIntro = (props) => {
           <button className="w-40 h-12 rounded-lg text-white font-semibold bg-custom-gradient border-2 border-white">
             Register
           </button>
-          <button className="w-40 h-12 rounded-lg text-white font-semibold border-2 border-white bg-black flex items-center justify-center gap-2">
+          <button className="w-44 h-12 rounded-lg text-white font-semibold border-2 border-white bg-black flex items-center justify-center gap-2 p-2 ">
             <span>
               <img src="/assets/EventDetail/Unstop.png" alt="un logo" className="w-10 h-8 rounded-full object-contain" />
             </span>
-            <span>EXPLORE</span>
+            <span className="text-sm sm:text-base">EXPLORE</span>
           </button>
         </div>
       </div>
