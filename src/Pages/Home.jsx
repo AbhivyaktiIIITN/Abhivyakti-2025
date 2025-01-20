@@ -6,7 +6,7 @@ import GuestSection from '../Components/HomePage/GuestSection/GuestSection'
 import SponsorsSection from '../Components/HomePage/SponsorSection/SponsorsSection'
 import Footer from '../Components/Footer/Footer'
 import '../css/home.css'
-import Speaker from '../Components/Speaker/speaker'
+import SpeakerHorizontalScrollCarousel from '../Components/Speaker/speakerHorizontalScroll'
 import AboutSection from '../Components/HomePage/AboutSection/AboutSection'
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
             <SponsorsSection />
             <GuestSection />
             <EventsSection />
-            <Speaker/>
+            <SpeakerHorizontalScrollCarousel/>
             <Footer />
         </div>
     )
