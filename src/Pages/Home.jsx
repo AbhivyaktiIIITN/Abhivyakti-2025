@@ -18,7 +18,7 @@ function Home() {
             <SponsorsSection />
             <GuestSection />
             <EventsSection />
-            <Speaker/>
+            {/* <Speaker/> */}
             <Footer />
         </div>
     )

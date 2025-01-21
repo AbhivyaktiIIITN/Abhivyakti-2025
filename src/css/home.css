@@ -6,4 +6,5 @@
     background-repeat: repeat-y;
     background-position: top;
     color: #ffffff;
+    overflow-x: hidden;
 }
