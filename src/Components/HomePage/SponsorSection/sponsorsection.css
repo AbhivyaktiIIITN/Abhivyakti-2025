@@ -24,8 +24,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    margin-bottom: 50px;
+    width: 18%;
+    margin-bottom: 25px;
     color: #02203c;
 }
 
@@ -54,11 +54,12 @@
 }
 
 .top-marquee {
-    margin-left: 200px;
+    margin-left: 0px;
+    margin-bottom: 35px;
 }
 
 .bottom-marquee {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-right: 200px;
 }
 
@@ -68,7 +69,7 @@
     justify-content: space-around;
     white-space: nowrap;
     width: 100%;
-    animation: scrollX 5s linear infinite;
+    animation: scrollX 10s linear infinite;
 }
 
 .marquee-group.reverse {

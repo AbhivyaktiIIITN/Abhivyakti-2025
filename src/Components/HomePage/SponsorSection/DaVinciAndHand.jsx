@@ -40,7 +40,7 @@ function DaVinciAndHand({ animate }) {
 
     return (
         <motion.div
-            className="absolute z-10 bottom-0 right-0 md:w-[20vw] w-1/2 md:h-1/2 h-1/2"
+            className="absolute z-10 bottom-0 right-0 md:w-[20vw] w-1/2 md:h-[25vw] h-1/2"
             aria-label="davinci + hand"
             variants={variants.daVinciAndHand}
             initial="hidden"
@@ -48,7 +48,7 @@ function DaVinciAndHand({ animate }) {
             viewport={{ visible: 0.5 }}
         >
             <motion.div className="absolute object-contain h-full w-full " aria-label="daVinci">
-                <img className="h-full w-auto absolute right-0" src={DaVinci} alt="DaVinci" />
+                <img className="h-full w-auto absolute right-0 shadow-red-600 drop-shadow-2xl" src={DaVinci} alt="DaVinci" />
             </motion.div>
             <motion.div
                 className="bottom-0 right-0 rotate-12 absolute object-contain h-1/2 w-auto "

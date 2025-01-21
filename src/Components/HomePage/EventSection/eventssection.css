@@ -4,7 +4,7 @@
 }
 
 .events-section .title .header {
-    width: 70%;
+    width: 50%;
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     padding-top: 15vh;
     opacity: 0;
     transform: translateY(500px);
-    transition: all 2s ease;
+    transition: all 0.75s ease;
 }
 
 .events-section .title .header.slide-in {
