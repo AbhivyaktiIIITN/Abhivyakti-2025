@@ -2,7 +2,6 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "../../css/font.css";
 import "../../css/style.css";
-import PastSpeakerCard from "./PastSpeakerCard";
 import { speakers } from "./data";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -12,14 +11,14 @@ const SpeakerHorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-[100vh] items-center overflow-hidden  w-fit">
-        <motion.div style={{ x }} className="flex gap-4 items-center   w-fit">
+      <div className="sticky top-0 flex h-[100vh] items-center">
+        <motion.div style={{ x }} className="flex gap-4 items-center w-fit">
           <div className="sm:w-[1000px] w-[300px] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 ">
-            <p className="text-5xl sm:text-6xl md:text-8xl capitalize mb-10 gradient-text   min-w-[200px] w-full">
+            <p className="text-5xl sm:text-6xl md:text-8xl capitalize mb-10 gradient-text min-w-[200px] w-full">
               about theme
             </p>
             <p className="text-base sm:text-2xl md:text-3xl font-normal   p-2">
@@ -83,7 +82,7 @@ const SpeakerHorizontalScrollCarousel = () => {
           {speakers.map((speaker, index) => {
             return (
               <div
-                className="md:w-[70vw] w-[100vw] flex justify-between items-center card-wrapper sm:ml-20 sm:mr-20 "
+                className="md:w-[80vw] w-[100vw] flex justify-between items-center card-wrapper sm:ml-20 sm:mr-20 "
                 key={index}
               >
                 <div className="w-1/2 h-full flex flex-col urbanist-font text-white p-10 gap-5 ">
@@ -101,16 +100,18 @@ const SpeakerHorizontalScrollCarousel = () => {
                     </a>
                   </div>
                 </div>
-                <div >
+                <div>
                   <img
                     src={speaker.image}
                     alt=""
                     className="img-radial-gradient"
                   />
                 </div>
+                
               </div>
             );
           })}
+          <div className="sm:w-0 sm:h-0 w-56 h-full"></div> {/*to add padding to right side for mobile view of speaker scroll section */}
         </motion.div>
       </div>
      

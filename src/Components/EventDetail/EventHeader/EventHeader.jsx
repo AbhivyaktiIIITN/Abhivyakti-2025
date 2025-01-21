@@ -3,7 +3,7 @@ import React from "react";
 const EventHeader = (props) => {
   return (
     <div
-      className="w-full h-[250px] sm:h-[489px] bg-contain bg-center bg-no-repeat"
+      className="w-full h-[240px] sm:h-[489px] bg-contain bg-center bg-no-repeat"
       style={{
         background:`${props.bgUrlRight}`,
       }}
@@ -22,7 +22,7 @@ const EventHeader = (props) => {
 
         <div className="w-1/3 h-2/3 sm:h-full flex flex-col items-center justify-end">
           <div className="w-2/5 absolute sm:h-2/3 flex flex-wrap items-end justify-end content-center">
-            <div className="flex justify-start items-end space-x-4 mb-2 w-full">
+            <div className="flex justify-start items-end space-x-4 w-full">
               <span className="w-2/4 h-[20px] sm:h-[50px] font-bold ">
                 <img src={props.clubName} alt="" className="bg-contain bg-no-repeat w-full h-full"/>
               </span>
@@ -33,7 +33,7 @@ const EventHeader = (props) => {
                 }}
               ></div>
             </div>
-            <div className="w-full h-[70px] sm:h-[190px] md:h-[200px] ">
+            <div className="w-full h-[70px] sm:h-[190px] md:h-[200px] mb-2">
               <img src={props.eventName} alt="eventName" className="bg-contain bg-no-repeat w-full h-full"/>
             </div>
             <div className="w-full h-[20px] sm:h-[50px]">

@@ -1,5 +1,6 @@
 import React,{ useEffect, useRef, useState } from "react";
 import PrizePoolImg from "/assets/EventDetail/Prizepool.png";
+import "../Prizepool/prizePool.css";
 const PrizePool = ({ prizes, additionalPrizes }) => {
   const sectionRef = useRef(null);
   const [animate, setAnimate] = useState(false);
@@ -30,8 +31,8 @@ const PrizePool = ({ prizes, additionalPrizes }) => {
     <div className="w-full h-fit flex flex-col items-center justify-center relative mt-60 ">
       <div className="text-white py-10 px-4 w-full lg:w-1/2 " ref={sectionRef}>
         <div
-          className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
-            animate ? "opacity-100 translate-y-0 " : ""
+          className={`w-full flex flex-wrap justify-center opacity-0 header ${
+            animate ? "slide-in" : ""
           }`}
         >
           <img src={PrizePoolImg} alt="" className="h-52 sm:h-72 mb-12" />
