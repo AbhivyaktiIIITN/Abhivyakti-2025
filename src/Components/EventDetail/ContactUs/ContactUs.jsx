@@ -1,6 +1,6 @@
 import React,{ useEffect, useRef, useState }  from "react";
 import ContactUsImg from "/assets/EventDetail/ContactUs.png"
-
+import "../ContactUs/contactUs.css"
 const ContactUs = ({ contacts,onSubmit }) => {
    const sectionRef = useRef(null);
       const [animate, setAnimate] = useState(false);
@@ -39,8 +39,8 @@ const ContactUs = ({ contacts,onSubmit }) => {
   return (
     <div className="w-full h-fit flex flex-col items-center justify-center relative">
       <div className="text-white py-10 px-4 w-full lg:w-1/2 flex flex-col items-center" ref={sectionRef}>
-        <div className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
-            animate ? "opacity-100 translate-y-0 -translate-y-0" : ""
+        <div className={`w-full flex flex-wrap justify-center opacity-0 header ${
+            animate ? "slide-in" : ""
           }`}>
           <img src={ContactUsImg} alt="Contact Us" className="h-52 sm:h-80" />
         </div>

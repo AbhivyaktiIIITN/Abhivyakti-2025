@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import RulesAndRegulationImg from "/assets/EventDetail/RulesAndRegulation.png";
-
+import "../RulesRegulation/rules.css";
 const RulesRegulation = (props) => {
    const sectionRef = useRef(null);
       const [animate, setAnimate] = useState(false);
@@ -31,8 +31,8 @@ const RulesRegulation = (props) => {
   return (
     <div className="w-full min-h-screen relative text-white px-4 lg:px-16 py-10 flex flex-wrap justify-center">
       <div className="w-2/3 h-full sm:w-1/2 flex flex-col " ref={sectionRef}>
-        <div className={`w-full flex flex-wrap justify-center opacity-0 translate-y-24 transition-all duration-1000 ease-in-out ${
-    animate ? "opacity-100 translate-y-0 " : ""
+        <div className={`w-full flex flex-wrap justify-center opacity-0 header ${
+    animate ? "slide-in" : ""
   }`}>
           <img src={RulesAndRegulationImg} alt="Rules and Regulations" className="h-48 sm:h-64 mb-12" />
         </div>

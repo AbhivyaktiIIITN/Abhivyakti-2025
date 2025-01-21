@@ -8,6 +8,7 @@ import EventTimeline from "../Components/EventDetail/Timeline/EventTimeline";
 import PrizePool from "../Components/EventDetail/Prizepool/PrizePool";
 import FAQ from "../Components/EventDetail/FAq/Faq";
 import ContactUs from "../Components/EventDetail/ContactUs/ContactUs";
+import Navbar from "../Components/Navbar/Navbar";
 
 
 const EventDetail = (props) => {
@@ -22,6 +23,7 @@ const EventDetail = (props) => {
                 backgroundImage: `url(${Darkbg})`,
             }}
         >
+          <Navbar/>
             <EventHeader
 
                 clubName={props.event.eventheader.clubName}
