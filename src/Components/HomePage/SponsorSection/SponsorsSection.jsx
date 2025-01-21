@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import "./sponsorsection.css";
 import { SponsorsData } from "../../../assets/Data/sponsorsData";
 import sh from "/assets/HomePage/Sponsors/sh.png";
+// import TempComponent from "../../tempo/TempComponent";
+
+import MonaLisaAndHand from "./MonaLisaAndHand";
+import DaVinciAndHand from "./DaVinciAndHand";
 
 function SponsorsSection() {
     const sectionRef = useRef(null);
@@ -12,7 +16,7 @@ function SponsorsSection() {
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setAnimate(true);
-                } 
+                }
                 else {
                     setAnimate(false);
                 }
@@ -32,12 +36,16 @@ function SponsorsSection() {
     }, []);
 
     return (
-        <div ref={sectionRef} className="sponsor-container" id="sponsors">
-            <div className="wrapper">
+        <div ref={sectionRef} className="sponsor-container  overflow-hidden" id="sponsors" >
+            {/* <TempComponent /> */}
+            <div div className="wrapper pb-12 relative " >
+                <MonaLisaAndHand animate={animate} />
+                <DaVinciAndHand animate={animate} />
                 <div className="text">
                     <img src={sh} alt="" className={`header ${animate ? "slide-in" : ""}`} />
                 </div>
-                <div className="marquee top-marquee">
+                <div className="marquee top-marquee ">
+
                     <div className="marquee-group">
                         {SponsorsData.left.map((el, idx) => (
                             <div key={idx} className="image-group">
@@ -69,8 +77,8 @@ function SponsorsSection() {
                         ))}
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 }
 

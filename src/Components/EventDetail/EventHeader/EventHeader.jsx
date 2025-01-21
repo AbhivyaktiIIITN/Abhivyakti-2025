@@ -3,51 +3,49 @@ import React from "react";
 const EventHeader = (props) => {
   return (
     <div
-      className="w-full h-[250px] sm:h-[489px] bg-contain bg-center bg-no-repeat"
+      className="w-full h-[240px] sm:h-[489px] bg-contain bg-center bg-no-repeat"
       style={{
-        background: "linear-gradient(90deg, #FDFDFB 0%, #9747FF 100%)",
+        background:`${props.bgUrlRight}`,
       }}
     >
       <div
         className="w-full h-full bg-cover bg-center bg-no-repeat flex flex-row items-end"
         style={{
-          backgroundImage: `url(/assets/EventDetail/Event-bg.png)`,
+          backgroundImage: `${props.bgUrlLeft}`,
         }}
       >
         <img
-          src="/assets/EventDetail/statue-left.png"
+          src={props.leftStatueUrl}
           alt="Statue Left"
-          className="w-1/3 min-w-[100px] h-2/3 sm:h-full"
+          className="w-1/3 min-w-[100px] h-[80%] sm:h-[90%]"
         />
 
-        <div className="w-1/3 h-2/3 sm:h-full flex flex-col items-center justify-center text-center text-white">
-          <div className="w-full space-y-4">
-            <div className="flex justify-center items-center space-x-4">
-              <span className="text-xl sm:text-2xl lg:text-4xl font-bold">
-                {props.clubName}
+        <div className="w-1/3 h-2/3 sm:h-full flex flex-col items-center justify-end">
+          <div className="w-2/5 absolute sm:h-2/3 flex flex-wrap items-end justify-end content-center">
+            <div className="flex justify-start items-end space-x-4 w-full">
+              <span className="w-2/4 h-[20px] sm:h-[50px] font-bold ">
+                <img src={props.clubName} alt="" className="bg-contain bg-no-repeat w-full h-full"/>
               </span>
-              {props.ClubLogo && (
-                <div
-                  className="w-12 sm:w-20 lg:w-36 h-12 sm:h-20 lg:h-36 bg-cover bg-center bg-no-repeat"
-                  style={{
-                    backgroundImage: `url(${props.ClubLogo})`,
-                  }}
-                ></div>
-              )}
+              <div
+                className="w-12 sm:w-20 lg:w-36 h-10 sm:h-20 lg:h-20 bg-contain bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: `url(${props.ClubLogo})`,
+                }}
+              ></div>
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-8xl font-extrabold">
-              {props.eventName}
-            </h1>
-            <p className="text-lg sm:text-2xl lg:text-4xl font-medium">
-              {props.eventDescription}
-            </p>
+            <div className="w-full h-[70px] sm:h-[190px] md:h-[200px] mb-2">
+              <img src={props.eventName} alt="eventName" className="bg-contain bg-no-repeat w-full h-full"/>
+            </div>
+            <div className="w-full h-[20px] sm:h-[50px]">
+              <img src={props.eventDescription} alt="eventdescription" className="bg-contain bg-no-repeat w-full h-full"/>
+            </div>
           </div>
         </div>
 
         <img
-          src="/assets/EventDetail/statue-right.png"
+          src={props.rightStatueUrl}
           alt="Statue Right"
-          className="w-1/3 h-2/3 sm:h-full min-w-[100px]"
+          className="w-1/3 min-w-[100px]  h-[80%] sm:h-[90%]" 
         />
       </div>
     </div>
