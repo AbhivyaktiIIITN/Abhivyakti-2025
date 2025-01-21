@@ -6,3 +6,95 @@
     background-position: center top;
     background-repeat: no-repeat;
 }
+
+.hero-container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.2);
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.14;
+}
+
+.gradient-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    opacity: 0.8;
+}
+
+.frame-wrapper {
+    position: absolute;
+    top: 57%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:30%; 
+    aspect-ratio: 1; 
+    overflow: hidden;
+    pointer-events: none;
+    mix-blend-mode:multiply
+}
+
+.frame-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.inner-frame-image {
+    position: absolute;
+    height: 80%;
+    object-fit: contain; 
+}
+
+.main-title-wrapper {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+.shine{
+    background: rgb(22,0,0);
+    background: radial-gradient(circle, rgba(22,0,0,0) 0%, rgba(254,170,0,1) 73%, rgba(0,0,0,0) 100%);
+}
+
+.color-class {
+  background-color:rgba(206, 3, 255, 0.56);
+  backdrop-filter: grayscale(6%) opacity(97%) saturate(59%) sepia(7%);
+}
