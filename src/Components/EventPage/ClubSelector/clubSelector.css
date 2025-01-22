@@ -1,7 +1,16 @@
-.club-div:hover {
+/* .club-div:hover {
     p{
         left: 150px;
         top: 150px;
         bottom: 0;
+    }
+} */
+
+@media (max-width: 768px) {
+    .club-div {
+        width: 100% !important; /* Full width */
+        left: 0 !important; /* Align to the left */
+        height: calc((100% / var(--length)) - 2px);
+        top: calc((100% / var(--length)) * var(--index)) ; /* Position below each other */
     }
 }

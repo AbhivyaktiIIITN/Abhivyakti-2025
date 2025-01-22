@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 768px) {
     .team-container {
-        padding-top: 15vh;
+        padding-top: 0vh;
     }
 
     .team-container .animation {

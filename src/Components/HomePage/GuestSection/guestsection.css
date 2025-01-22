@@ -83,7 +83,8 @@
 }
 
 .guest-container .card-back {
-    background: linear-gradient(to right top, #fdfdfb, #222222);
+    background: url("/assets/HomePage/Guests/guestFlip.png");
+    background-size: cover;
     transform: rotateY(180deg);
     text-align: center;
     display: flex;
@@ -92,31 +93,20 @@
 }
 
 .guest-container .card-back img {
-    height: 60px;
-    width: 60px;
+    width: 60%;
     position: absolute;
-    top: 10px;
-    left: 15px;
-}
-
-.guest-container .card-back h4 {
-    font-family: "Oswald", serif;
-    font-size: 80px;
-    font-weight: 400;
-    letter-spacing: -5px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    color: #fdfdfb;
-    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .guest-container .card-back p {
+    font-family: "Urbanist", serif;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 900;
     word-spacing: 1px;
     line-height: 20px;
-    margin: 0px 15px;
+    margin: 190px 15px 0px 15px;
     color: #fdfdfb;
     -webkit-text-stroke: 1px #000;
     text-fill-color: #fdfdfb;
@@ -127,21 +117,17 @@
         padding-top: 10vh;
     }
 
-    .guest-container img {
-        width: 25vw;
-    }
-
     .guest-container .card-row {
         gap: 40px;
     }
 
-    .guest-container .card-back h4 {
-        font-size: 60px;
+    .guest-container .card-back img {
+        width: 50%;
     }
 
     .guest-container .card-back p {
         font-size: 20px;
-        margin: 0px 10px;
+        margin: 180px 10px 0px 10px;
         -webkit-text-stroke: 0.7px #000;
     }
 }
@@ -151,27 +137,14 @@
         padding-top: 12vh;
     }
 
-    .guest-container img {
-        width: 30vw;
-    }
-
     .guest-container .card {
         width: 250px;
         height: 395px;
     }
 
-    .guest-container .card-back img {
-        height: 50px;
-        width: 50px;
-    }
-
-    .guest-container .card-back h4 {
-        font-size: 50px;
-    }
-
     .guest-container .card-back p {
         font-size: 15px;
-        margin: 0px 5px;
+        margin: 150px 5px 0px 5px;
         -webkit-text-stroke: 0.5px #000;
     }
 }

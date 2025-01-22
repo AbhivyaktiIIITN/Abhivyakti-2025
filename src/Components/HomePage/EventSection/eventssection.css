@@ -4,7 +4,7 @@
 }
 
 .events-section .title .header {
-    width: 70%;
+    width: 50%;
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     padding-top: 15vh;
     opacity: 0;
     transform: translateY(500px);
-    transition: all 2s ease;
+    transition: all 0.75s ease;
 }
 
 .events-section .title .header.slide-in {
@@ -62,7 +62,6 @@
 .events-section .card {
     height: 100%;
     perspective: 1000px;
-    cursor: pointer;
     scroll-snap-align: center;
     border-radius: 18px;
 }
@@ -106,6 +105,7 @@
 .events-section .card-front {
     transition: background-image 1s ease, box-shadow 1s ease;
     background-size: cover;
+    cursor: pointer;
 }
 
 .events-section .card:hover .card-front {
@@ -117,6 +117,62 @@
     color: #fff;
     transform: rotateY(180deg);
     transition: box-shadow 1s ease;
+    background-size: cover;
+}
+
+.events-section .card-back .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.events-section .card-back .details .event-head {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.events-section .card-back .details .evnt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.events-section .card-back .details .evnt .evnt-name {
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+    font-family: "Urbanist", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.events-section .card-back .details .evnt .evnt-desc {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.events-section .card-back .details a {
+    width: 40%;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.events-section .card-back .details button:nth-child(2) {
+    background: transparent;
 }
 
 .events-section .scroll-button {
@@ -174,6 +230,15 @@
         margin-right: 40px;
     }
 
+    .events-section .card-back .details .evnt .evnt-name {
+        font-size: 16px;
+    }
+
+    .events-section .card-back .details .evnt .evnt-desc {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
     .events-section .scroll-button {
         width: 40px;
         height: 200px;
@@ -220,11 +285,11 @@
 }
 
 .events-section .card-1 .cf1 {
-    background-image: url("../../../assets/HomePage/Events/cf1.png");
+    background-image: url("/assets/HomePage/Events/cf1.png");
 }
 
 .events-section .card-1:hover .cf1 {
-    background-image: url("../../../assets/HomePage/Events/cf1.png");
+    background-image: url("/assets/HomePage/Events/ch1.png");
 }
 
 .events-section .cf1:hover,
@@ -233,11 +298,11 @@
 }
 
 .events-section .card-2 .cf2 {
-    background-image: url("../../../assets/HomePage/Events/cf2.png");
+    background-image: url("/assets/HomePage/Events/cf2.png");
 }
 
 .events-section .card-2:hover .cf2 {
-    background-image: url("../../../assets/HomePage/Events/cf2.png");
+    background-image: url("/assets/HomePage/Events/ch2.png");
 }
 
 .events-section .cf2:hover,
@@ -246,11 +311,11 @@
 }
 
 .events-section .card-3 .cf3 {
-    background-image: url("../../../assets/HomePage/Events/cf3.png");
+    background-image: url("/assets/HomePage/Events/cf3.png");
 }
 
 .events-section .card-3:hover .cf3 {
-    background-image: url("../../../assets/HomePage/Events/ch3.png");
+    background-image: url("/assets/HomePage/Events/ch3.png");
 }
 
 .events-section .cf3:hover,
@@ -259,11 +324,11 @@
 }
 
 .events-section .card-4 .cf4 {
-    background-image: url("../../../assets/HomePage/Events/cf4.png");
+    background-image: url("/assets/HomePage/Events/cf4.png");
 }
 
 .events-section .card-4:hover .cf4 {
-    background-image: url("../../../assets/HomePage/Events/cf4.png");
+    background-image: url("/assets/HomePage/Events/ch4.png");
 }
 
 .events-section .cf4:hover,
@@ -272,11 +337,11 @@
 }
 
 .events-section .card-5 .cf5 {
-    background-image: url("../../../assets/HomePage/Events/cf5.png");
+    background-image: url("/assets/HomePage/Events/cf5.png");
 }
 
 .events-section .card-5:hover .cf5 {
-    background-image: url("../../../assets/HomePage/Events/cf5.png");
+    background-image: url("/assets/HomePage/Events/ch5.png");
 }
 
 .events-section .cf5:hover,
@@ -285,14 +350,38 @@
 }
 
 .events-section .card-6 .cf6 {
-    background-image: url("../../../assets/HomePage/Events/cf6.png");
+    background-image: url("/assets/HomePage/Events/cf6.png");
 }
 
 .events-section .card-6:hover .cf6 {
-    background-image: url("../../../assets/HomePage/Events/cf6.png");
+    background-image: url("/assets/HomePage/Events/ch6.png");
 }
 
 .events-section .cf6:hover,
 .events-section .cb6:hover {
     box-shadow: 0 0 30px #faf100;
+}
+
+.events-section .card-1 .cb1 {
+    background-image: url("/assets/HomePage/Events/cb1.png");
+}
+
+.events-section .card-2 .cb2 {
+    background-image: url("/assets/HomePage/Events/cb2.png");
+}
+
+.events-section .card-3 .cb3 {
+    background-image: url("/assets/HomePage/Events/cb3.png");
+}
+
+.events-section .card-4 .cb4 {
+    background-image: url("/assets/HomePage/Events/cb4.png");
+}
+
+.events-section .card-5 .cb5 {
+    background-image: url("/assets/HomePage/Events/cb5.png");
+}
+
+.events-section .card-6 .cb6 {
+    background-image: url("/assets/HomePage/Events/cb6.png");
 }

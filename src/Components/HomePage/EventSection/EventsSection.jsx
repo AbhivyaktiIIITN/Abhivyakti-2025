@@ -2,12 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import './eventssection.css';
 import tl from '/assets/HomePage/Events/tl.png';
 import subtxt from '/assets/HomePage/Events/subtxt.png';
-import cb1 from '/assets/HomePage/Events/cb3.png';
-import cb2 from '/assets/HomePage/Events/cb3.png';
-import cb3 from '/assets/HomePage/Events/cb3.png';
-import cb4 from '/assets/HomePage/Events/cb3.png';
-import cb5 from '/assets/HomePage/Events/cb3.png';
-import cb6 from '/assets/HomePage/Events/cb3.png';
+import head from '/assets/HomePage/Events/head.png';
+import { eventData } from './eventsData';
 
 const EventsSection = () => {
     const sectionRef = useRef(null);
@@ -26,7 +22,7 @@ const EventsSection = () => {
                     setAnimate(false);
                 }
             },
-            { threshold: 0.5 }
+            { threshold: 0.15 }
         );
 
         if (sectionRef.current) {
@@ -85,8 +81,6 @@ const EventsSection = () => {
         return card ? card.offsetWidth : 0;
     };
 
-    const cardImages = [cb1, cb2, cb3, cb4, cb5, cb6];
-
     return (
         <div className="events-section" id="event" ref={sectionRef}>
             <div className="title">
@@ -98,15 +92,37 @@ const EventsSection = () => {
                     &#8249;
                 </button>
                 <div className="card-scroll-container" ref={scrollContainerRef}>
-                    {cardImages.map((image, i) => (
+                    {eventData.map(({ cardId, gradient, events, exploreLink }) => (
                         <div
-                            key={i}
-                            className={`card card-${i + 1} ${flippedCards[i] ? 'flipped' : ''}`}
-                            onClick={() => handleCardClick(i)}
+                            key={cardId}
+                            className={`card card-${cardId} ${flippedCards[cardId] ? 'flipped' : ''}`}
+                            onClick={() => handleCardClick(cardId)}
                         >
                             <div className="card-inner">
-                                <div className={`card-front cf${i + 1} ch${i + 1}`}></div>
-                                <img src={image} alt="" className={`card-back cb${i + 1}`} />
+                                <div className={`card-front cf${cardId} ch${cardId}`}></div>
+                                <div className={`card-back cb${cardId}`}>
+                                    <div className="details">
+                                        <img src={head} alt="Events" className="event-head" />
+                                        <div className="evnt">
+                                            {events.map((event, idx) => (
+                                                <div key={idx}>
+                                                    <h4 className="evnt-name">{event.name}</h4>
+                                                    <p className="evnt-desc">{event.desc}</p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                        <div className="flex flex-row justify-evenly items-center w-full">
+                                            <a href="/event" style={{ background: gradient }} rel="noopener noreferrer">
+                                                <button>
+                                                    EXPLORE
+                                                </button>
+                                            </a>
+                                            <a href={exploreLink} target="_blank" rel="noopener noreferrer">
+                                                <button>REGISTER</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}
