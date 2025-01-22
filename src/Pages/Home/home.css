@@ -1,7 +1,7 @@
 .hero-container {
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .home-container {
@@ -12,5 +12,5 @@
     background-repeat: repeat-y;
     background-position: top;
     color: #ffffff;
-    overflow-x: hidden;
+    /* overflow: hidden; */
 }

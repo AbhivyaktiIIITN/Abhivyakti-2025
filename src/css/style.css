@@ -26,3 +26,11 @@
 .img-radial-gradient {
     background: radial-gradient(circle, #F22FB0 , transparent 50%);
 }
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    
+}
