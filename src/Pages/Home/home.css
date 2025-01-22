@@ -12,5 +12,11 @@
     background-repeat: repeat-y;
     background-position: top;
     color: #ffffff;
+    min-width: 100%;
     /* overflow: hidden; */
+}
+
+body {
+    min-width:100vw;
+    overflow-x: hidden;
 }
