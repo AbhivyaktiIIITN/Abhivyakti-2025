@@ -10,7 +10,7 @@
 } */
 
 .graffiti-heading {
-    background-image: url('../images/graffitiDrip.png');
+    background-image: url('/assets/HomePage/About/graffitiDrip.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

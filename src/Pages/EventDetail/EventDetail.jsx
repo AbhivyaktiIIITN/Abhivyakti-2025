@@ -1,14 +1,14 @@
 import React from "react";
 import Darkbg from "/assets/EventDetail/dark-bg.png";
 import PurpleDrip from "/assets/EventDetail/purpleDrip.png";
-import RulesRegulation from "../Components/EventDetail/RulesRegulation/RulesRegulation";
-import EventHeader from "../Components/EventDetail/EventHeader/EventHeader";
-import EventIntro from "../Components/EventDetail/EventIntro/EventIntro";
-import EventTimeline from "../Components/EventDetail/Timeline/EventTimeline";
-import PrizePool from "../Components/EventDetail/Prizepool/PrizePool";
-import FAQ from "../Components/EventDetail/FAq/Faq";
-import ContactUs from "../Components/EventDetail/ContactUs/ContactUs";
-import Navbar from "../Components/Navbar/Navbar";
+import RulesRegulation from "../../Components/EventDetail/RulesRegulation/RulesRegulation";
+import EventHeader from "../../Components/EventDetail/EventHeader/EventHeader";
+import EventIntro from "../../Components/EventDetail/EventIntro/EventIntro";
+import EventTimeline from "../../Components/EventDetail/Timeline/EventTimeline";
+import PrizePool from "../../Components/EventDetail/Prizepool/PrizePool";
+import FAQ from "../../Components/EventDetail/FAq/Faq";
+import ContactUs from "../../Components/EventDetail/ContactUs/ContactUs";
+import Navbar from "../../Components/Navbar/Navbar";
 
 
 const EventDetail = (props) => {
@@ -23,9 +23,8 @@ const EventDetail = (props) => {
                 backgroundImage: `url(${Darkbg})`,
             }}
         >
-          <Navbar/>
+            <Navbar />
             <EventHeader
-
                 clubName={props.event.eventheader.clubName}
                 eventName={props.event.eventheader.eventName}
                 eventDescription={props.event.eventheader.eventDescription}
