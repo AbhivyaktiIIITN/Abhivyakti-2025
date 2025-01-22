@@ -23,7 +23,7 @@ function Footer() {
     }, []);
 
     return (
-        <div className="footer-container" id="contact" style={{ height: '60vh' }}>
+        <div className="footer-container" id="contact" style={{}}>
             <div
                 className="footer-animation-section"
                 style={{
@@ -38,11 +38,12 @@ function Footer() {
                     style={{
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
-                        height: '110%',
-                        width: '40vw',
+                        height: '38vh',
+                        width: '50vw',
                         transform: isInView ? 'translateX(0)' : 'translateX(-100vw)',
                         transition: 'transform 1.5s ease-in-out',
                         position: 'relative',
+                        right:'-6%'
                     }}
                 >
                     <img
@@ -50,7 +51,6 @@ function Footer() {
                         alt="Neptune Statue"
                         style={{
                             width: '110%',
-                            height: '100%',
                             objectFit: 'cover',
                         }}
                     />
@@ -58,6 +58,7 @@ function Footer() {
 
                 {/* Main Content Section */}
                 <div className="main-body" style={{ height: '100%' }}>
+                    <div className="flex flex-col md:flex-row">
                     <div className="logo">
                         <img src="/assets/FooterLogo.png" alt="Footer Logo" />
                     </div>
@@ -82,6 +83,13 @@ function Footer() {
                             <p><Link to="/" className="footer-link" target='_blank'>Facebook</Link></p>
                         </div>
                     </div>
+                    </div>
+                    <div className="copyright" >
+                <div style={{ marginBottom: '10px' }} className="student">Abhivyakti 2025 © All rights reserved.</div>
+                <div className='student'>
+                    Developed and Managed by <Link to="/developers" className="student" target='_blank' style={{ color: '#fff', textDecoration: 'underline' }}>Students</Link>
+                </div>
+            </div>
                 </div>
 
                 {/* Right Section with David Statue */}
@@ -90,8 +98,9 @@ function Footer() {
                     style={{
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
-                        height: '110%',
-                        width: '47vw',
+                        height: '38vh',
+                        width: '50vw',
+                        left:'-9%' ,
                         transform: isInView ? 'translateX(0)' : 'translateX(100vw)',
                         transition: 'transform 1.5s ease-in-out',
                         position: 'relative',
@@ -101,34 +110,16 @@ function Footer() {
                         src="/assets/davidStatue.png"
                         alt="David Statue"
                         style={{
-                            width: '90%',
-                            height: '100%',
+                            width: '150%',
+                            
+                            // height: '10%',
                             objectFit: 'cover',
                         }}
                     />
                 </div>
-            </div>
 
-            <div className="copyright" style={{
-                position: 'absolute',
-                bottom: '0',
-                left: '0',
-                width: '100%',
-                padding: '20px',
-                textAlign: 'center',
-                color: 'white',
-                fontSize: '1.2rem',
-                borderRadius: '8px',
-                marginBottom: '0',
-                top: '40vh',
-            }}>
-                <div style={{ marginBottom: '10px' }}>Abhivyakti 2025 © All rights reserved.</div>
-                <div>
-                    Developed and Managed by <Link to="/developers" className="student" target='_blank' style={{ color: '#fff', textDecoration: 'underline' }}>Students</Link>
-                </div>
             </div>
-
-        </div>
+            </div>
     );
 }
 

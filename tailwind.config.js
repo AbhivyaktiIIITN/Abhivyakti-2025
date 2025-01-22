@@ -33,7 +33,8 @@ export default {
       },
       screens: {
         'xs' : '470px',
-        '2xs' : '350px'
+        '2xs' : '350px',
+        'mdlg':'1200px',
       }
     },
   },

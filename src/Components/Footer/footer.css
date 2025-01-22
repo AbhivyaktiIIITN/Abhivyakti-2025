@@ -17,7 +17,7 @@
 
 .footer-container .main-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     max-width: 1050px;
@@ -83,7 +83,7 @@
 
 /* Right Animation Section */
 .right-animation-section img {
-    width: 140%;
+    width: 100%;
     transform: scale(1);
     transition: transform 0.2s ease;
 }
@@ -134,7 +134,11 @@
 /* Remove hover scaling effect for the images */
 .left-animation-section img,
 .right-animation-section img {
-    transition: transform 2s ease-in-out;
+    width: 150%;
+    height: 130%; /* Increased height from 100% */
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 1.5s ease-in-out;
 }
 
 /* Remove hover effect scaling */
@@ -143,7 +147,7 @@
     transform: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
     .footer-container {
         padding: 6vh 8vw 4vh 8vw;
     }
@@ -186,3 +190,58 @@
         display: none;
     }
 }
+@media (min-width: 600px) and (max-width: 1000px) {
+    /* Hide the student class */
+    .footer-container .student {
+        display: none;
+    }
+
+    /* Hide the left and right animation sections */
+    .left-animation-section,
+    .right-animation-section {
+        display: none;
+    }
+
+    /* Hide the "Developed and Managed by" div */
+    .footer-container .developed-by {
+        display: none;
+    }
+
+    /* Ensure horizontal alignment for other sections */
+    .footer-container .main-body {
+        flex-direction: row;
+        justify-content: space-between; /* Distribute sections evenly */
+        align-items: flex-start; /* Align items to the top */
+        padding: 5px; /* Apply 5px padding */
+    }
+
+    .footer-container {
+        padding: 5px; /* Set the container padding to 5px */
+    }
+
+    .footer-container .logo,
+    .footer-container .footer {
+        width: auto; /* Adjust width to content */
+        margin: 0 1rem; /* Add spacing between sections */
+        padding: 5px; /* Apply 5px padding */
+    }
+
+    /* Add gap between Quick Link, Contact Us, and Follow Us */
+    .footer-container .footer {
+        display: flex;
+        flex-direction: row; /* Align footer items horizontally */
+        justify-content: space-around; /* Spread items evenly */
+        width: auto;
+        gap: 3rem; /* Increase gap between sections */
+        padding: 5px; /* Apply 5px padding */
+    }
+
+    .footer-container .footer > div {
+        margin: 0 1rem; /* Add spacing between each column */
+        padding: 5px; /* Apply 5px padding */
+    }
+}
+
+
+
+
