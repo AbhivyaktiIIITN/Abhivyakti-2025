@@ -27,6 +27,7 @@ function Home() {
     }, [location]);
 
     return (
+        <>
         <div className="home-container">
             <Navbar />
             <Hero />
@@ -37,6 +38,7 @@ function Home() {
             <SpeakerHorizontalScrollCarousel />
             <Footer />
         </div>
+        </>
     )
 }
 
