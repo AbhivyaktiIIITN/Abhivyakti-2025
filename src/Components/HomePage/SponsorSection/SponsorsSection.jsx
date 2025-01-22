@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./sponsorsection.css";
-import { SponsorsData } from "../../../assets/Data/sponsorsData";
+import { SponsorsData } from "./sponsorsData";
 import sh from "/assets/HomePage/Sponsors/sh.png";
-// import TempComponent from "../../tempo/TempComponent";
 
 import MonaLisaAndHand from "./MonaLisaAndHand";
 import DaVinciAndHand from "./DaVinciAndHand";

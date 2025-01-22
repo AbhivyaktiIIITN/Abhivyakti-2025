@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import Navbar from '../Components/Navbar/Navbar';
-import '../css/team.css';
-import teamsData from "../assets/Data/TeamData.js";
-import Hero from '../Components/PageHero/Hero.jsx';
-import Footer from '../Components/Footer/Footer.jsx';
+import Navbar from '../../Components/Navbar/Navbar.jsx';
+import teamsData from "../../assets/Data/TeamData.js";
+import Hero from '../../Components/PageHero/Hero.jsx';
+import Footer from '../../Components/Footer/Footer.jsx';
+import './team.css';
 
 function Team() {
     useEffect(() => {

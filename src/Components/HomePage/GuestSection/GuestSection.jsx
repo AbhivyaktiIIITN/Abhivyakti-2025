@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./guestsection.css";
-import cardsData from "../../../assets/Data/GuestData";
+import cardsData from "./GuestData";
 import aboutPic from "/assets/HomePage/Guests/about.png";
 import gh from "/assets/HomePage/Guests/gh.png";
 

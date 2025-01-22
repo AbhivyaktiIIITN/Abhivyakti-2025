@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import DaVinci from "./DaVinci.png";
-import HandDown from "./handDown.png";
+import DaVinci from "/assets/HomePage/Sponsors/DaVinci.png";
+import HandDown from "/assets/HomePage/Sponsors/handDown.png";
 
 function DaVinciAndHand({ animate }) {
     const variants = {

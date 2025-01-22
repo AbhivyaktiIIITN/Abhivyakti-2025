@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import MonaLisa from "./monaLisa.png";
-import HandUp from "./handUp.png";
+import MonaLisa from "/assets/HomePage/Sponsors/monaLisa.png";
+import HandUp from "/assets/HomePage/Sponsors/handUp.png";
 
 function MonaLisaAndHand({ animate }) {
     const variants = {

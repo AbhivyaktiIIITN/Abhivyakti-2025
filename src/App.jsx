@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import "./css/app.css";
-import Event from "./Pages/Event";
-import Team from "./Pages/Team";
+import Event from "./Pages/Event/Event";
+import Team from "./Pages/Team/Team";
 import EventDetail from "./Pages/EventDetail";
-import Terms from "./Pages/Terms";
+import Terms from "./Pages/Terms/Terms";
 
 function App() {
   return (
