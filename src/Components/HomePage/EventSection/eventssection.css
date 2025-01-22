@@ -57,6 +57,12 @@
     scroll-snap-type: x mandatory;
     padding: 2rem;
     box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.events-section .card-scroll-container.fade-in {
+    opacity: 1;
 }
 
 .events-section .card {

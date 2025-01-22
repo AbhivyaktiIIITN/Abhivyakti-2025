@@ -91,7 +91,7 @@ const EventsSection = () => {
                 <button className="scroll-button left" onClick={scrollLeft}>
                     &#8249;
                 </button>
-                <div className="card-scroll-container" ref={scrollContainerRef}>
+                <div className={`card-scroll-container ${animate ? 'fade-in' : ''}`} ref={scrollContainerRef}>
                     {eventData.map(({ cardId, gradient, events, exploreLink }) => (
                         <div
                             key={cardId}
