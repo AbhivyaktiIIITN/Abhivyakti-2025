@@ -14,10 +14,10 @@ const SpeakerHorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-[100vh] items-center">
-        <motion.div style={{ x }} className="flex gap-4 items-center w-fit">
-          <div className="sm:w-[1000px] w-[300px] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 ">
+    <section ref={targetRef} className="relative h-[200vh]">
+      <div className="sticky top-0 flex h-[80vh] sm:h-[100vh] items-center overflow-scroll no-scrollbar overflow-x-hidden overflow-y-hidden">
+        <motion.div style={{ x }} className="flex gap-4 items-center w-fit h-full sm:mt-0 mt-52">
+          <div className="sm:w-[1000px] w-[300px] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 ml-2">
             <p className="text-5xl sm:text-6xl md:text-8xl capitalize mb-10 gradient-text min-w-[200px] w-full">
               about theme
             </p>
@@ -38,42 +38,42 @@ const SpeakerHorizontalScrollCarousel = () => {
               alt="gallery image"
             />
           </div>
-          <div className="w-[500px] sm:w-[790px] h-[80vh]  flex items-center ">
+          <div className="w-[500px] sm:w-[790px] h-[80vh] flex items-center ">
             <p className="text-5xl sm:text-8xl text-white capitalize whitespace-nowrap urbanist-font">
               past glimpses
             </p>
           </div>
-          <div className="w-[250vw] sm:w-[90vw] sm:h-[80vh] h-[50vh] grayscale grid grid-cols-1 sm:grid-cols-1 gap-1 sm:mt-16">
-            <div className="w-full h-full flex gap-4 ">
+          <div className="w-[250vw] sm:w-[90vw] sm:h-[80vh] h-[60vh] grayscale grid grid-cols-1 sm:grid-cols-1 sm:mt-16 gap-1"> 
+            <div className="w-full h-1/4 grid grid-cols-3 gap-1 items-center">
               <img
-                className="w-1/4 min-w-[250px] aspect-auto"
+                className="aspect-auto"
                 src="\assets\HomePage\temp.jpeg"
                 alt="gallery image"
               />
               <img
-                className="w-1/4 min-w-[250px] aspect-auto"
+                className="aspect-auto"
                 src="\assets\HomePage\temp.jpeg"
                 alt="gallery image"
               />
               <img
-                className="w-1/4 min-w-[250px] aspect-auto"
+                className="aspect-auto"
                 src="\assets\HomePage\temp.jpeg"
                 alt="gallery image"
               />
             </div>
-            <div className="w-full h-full flex gap-4 p-2">
+            <div className="w-fullh-1/2 grid grid-cols-3 gap-1">
               <img
-                className="w-1/4 min-w-[250px] aspect-auto"
+                className="aspect-auto"
                 src="\assets\HomePage\temp.jpeg"
                 alt="gallery image"
               />
               <img
-                className="w-1/4 min-w-[250px] aspect-auto"
+                className="aspect-auto"
                 src="\assets\HomePage\temp.jpeg"
                 alt="gallery image"
               />
               <img
-                className="w-1/4 min-w-[250px] aspect-auto"
+                className=" aspect-auto"
                 src="\assets\HomePage\temp.jpeg"
                 alt="gallery image"
               />
@@ -82,7 +82,7 @@ const SpeakerHorizontalScrollCarousel = () => {
           {speakers.map((speaker, index) => {
             return (
               <div
-                className="md:w-[80vw] w-[100vw] flex justify-between items-center card-wrapper sm:ml-20 sm:mr-20 "
+                className="md:w-[80vw] w-[100vw] flex justify-between items-center card-wrapper sm:ml-20 sm:mr-20 mr-10"
                 key={index}
               >
                 <div className="w-1/2 h-full flex flex-col urbanist-font text-white p-10 gap-5 ">
@@ -111,7 +111,7 @@ const SpeakerHorizontalScrollCarousel = () => {
               </div>
             );
           })}
-          <div className="sm:w-0 sm:h-0 w-56 h-full"></div> {/*to add padding to right side for mobile view of speaker scroll section */}
+          <div className="sm:w-0 sm:h-0 w-40 h-full"></div>
         </motion.div>
       </div>
      
