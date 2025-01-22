@@ -1,13 +1,13 @@
 .footer-container {
     background-image:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%),
-        url("/assets/FooterBg.png");
+        url("/assets/FooterSection/FooterBg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     color: #8f8a8a;
     height: fit-content;
-    padding: 8vh 15vw 5vh 15vw;
+    padding: 8vh 15vw 0vh 15vw;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,7 @@
     justify-content: space-around;
     width: 100%;
     max-width: 1050px;
+    z-index: 10;
 }
 
 .footer-container .logo {
@@ -37,6 +38,7 @@
     width: 60%;
     padding-left: 5%;
     height: 100%;
+    color: #fbfbfd;
 }
 
 .footer-container .footer h1 {
@@ -51,6 +53,7 @@
     font-weight: 400;
     margin-bottom: 5px;
     cursor: pointer;
+    color: #fcfafa;
 }
 
 .footer-container .footer p:hover {
@@ -60,14 +63,17 @@
 }
 
 .footer-container .copyright {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 14px;
     font-weight: 400;
     color: #535353;
-    order: 2; /* Ensure it comes last in desktop view */
+    order: 2;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.footer-container .student {
+.footer-container .developer {
     background: linear-gradient(to right, #FAF100 0%, #FDC400 50%, #FFA600 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -88,60 +94,16 @@
     transition: transform 0.2s ease;
 }
 
-.footer-container {
-    background-color: #1a1a1a;
-    color: #fcfafa;
-    position: relative;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-}
-
-.footer h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #f8f5f5;
-}
-
-.footer p {
-    font-size: 18px;
-    margin: 5px 0;
-    color: #fcfafa;
-}
-
-.footer-link {
-    text-decoration: none;
-    color: #ccc;
-    transition: color 0.3s;
-}
-
-.footer-link:hover {
-    color: #fff;
-}
-
-.copyright {
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #f7f4f4;
-    order: 1; /* Ensure it comes last on mobile view */
-}
-
-/* Remove hover scaling effect for the images */
 .left-animation-section img,
 .right-animation-section img {
     width: 150%;
-    height: 130%; /* Increased height from 100% */
+    height: fit-content;
+    min-height: 100%;
     object-fit: cover;
     transform: scale(1);
     transition: transform 1.5s ease-in-out;
 }
 
-/* Remove hover effect scaling */
 .left-animation-section:hover img,
 .right-animation-section:hover img {
     transform: none;
@@ -155,11 +117,14 @@
     .footer-container .main-body {
         flex-direction: column;
         align-items: center;
+        color: #fbfbfd;
     }
 
     .footer-container .logo {
         width: 80%;
         margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-container .footer {
@@ -180,68 +145,59 @@
     .footer-container .copyright {
         margin-top: 2rem;
         font-size: 18px;
-        order: 3; /* Ensure it comes last on mobile */
-        margin-top: 3rem; /* Add space above for better separation */
+        order: 3;
+        margin-top: 3rem;
     }
 
-    /* Hide Images and Clouds in Mobile View */
     .left-animation-section,
     .right-animation-section {
         display: none;
     }
 }
+
 @media (min-width: 600px) and (max-width: 1000px) {
-    /* Hide the student class */
     .footer-container .student {
         display: none;
     }
 
-    /* Hide the left and right animation sections */
     .left-animation-section,
     .right-animation-section {
         display: none;
     }
 
-    /* Hide the "Developed and Managed by" div */
     .footer-container .developed-by {
         display: none;
     }
 
-    /* Ensure horizontal alignment for other sections */
     .footer-container .main-body {
         flex-direction: row;
-        justify-content: space-between; /* Distribute sections evenly */
-        align-items: flex-start; /* Align items to the top */
-        padding: 5px; /* Apply 5px padding */
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 5px;
     }
 
     .footer-container {
-        padding: 5px; /* Set the container padding to 5px */
+        padding: 5px;
     }
 
     .footer-container .logo,
     .footer-container .footer {
-        width: auto; /* Adjust width to content */
-        margin: 0 1rem; /* Add spacing between sections */
-        padding: 5px; /* Apply 5px padding */
+        width: auto;
+        margin: 0 1rem;
+        padding: 5px;
     }
 
-    /* Add gap between Quick Link, Contact Us, and Follow Us */
     .footer-container .footer {
         display: flex;
-        flex-direction: row; /* Align footer items horizontally */
-        justify-content: space-around; /* Spread items evenly */
+        flex-direction: row;
+        justify-content: space-around;
         width: auto;
-        gap: 3rem; /* Increase gap between sections */
-        padding: 5px; /* Apply 5px padding */
+        gap: 3rem;
+        padding: 5px;
     }
 
-    .footer-container .footer > div {
-        margin: 0 1rem; /* Add spacing between each column */
-        padding: 5px; /* Apply 5px padding */
+    .footer-container .footer>div {
+        margin: 0 1rem;
+        padding: 5px;
     }
 }
-
-
-
-
