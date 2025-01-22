@@ -17,9 +17,9 @@ function SponsorsSection() {
                 if (entry.isIntersecting) {
                     setAnimate(true);
                 }
-                else {
-                    setAnimate(false);
-                }
+                // else {
+                //     setAnimate(false);
+                // }
             },
             { threshold: 0.5 }
         );
