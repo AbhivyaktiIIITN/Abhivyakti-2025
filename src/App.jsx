@@ -5,6 +5,7 @@ import Event from "./Pages/Event/Event";
 import Team from "./Pages/Team/Team";
 import EventDetail from "./Pages/EventDetail/EventDetail";
 import Terms from "./Pages/Terms/Terms";
+import Developers from "./Pages/Developer/Developers";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/event" element={<Event />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="/developers" element={<Developers />} />
                 <Route
                     path="/eventdetail"
                     element={
