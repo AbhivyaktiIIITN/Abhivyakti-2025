@@ -1,16 +1,22 @@
 export const SponsorsData = {
-    left: [
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
+    "left": [
+        "/assets/HomePage/Sponsors/SponsorPic/past/ongc.jpg",
+        "/assets/HomePage/Sponsors/SponsorPic/past/easeMyTrip.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/benq.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/lavie.jpg",
+        "/assets/HomePage/Sponsors/SponsorPic/past/decathlon.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/harleyDavidson.jpg",
+        "/assets/HomePage/Sponsors/SponsorPic/past/koreanMaggiNoodles.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/abhibus.png"
     ],
-    right: [
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/21/full/1716283484-8346.jpg?im=FitAndFill=(826,465)",
-    ],
+    "right": [
+        "/assets/HomePage/Sponsors/SponsorPic/past/kolourfly.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/giveMyCertificate.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/gfg.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/ape.jpg",
+        "/assets/HomePage/Sponsors/SponsorPic/past/skechers.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/ixigo.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/iiitiansNetwork.png",
+        "/assets/HomePage/Sponsors/SponsorPic/past/shreeCompSystems.jpg"
+    ]
 };
