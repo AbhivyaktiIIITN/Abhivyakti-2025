@@ -6,7 +6,7 @@ import EventsSection from '../../Components/HomePage/EventSection/EventsSection'
 import GuestSection from '../../Components/HomePage/GuestSection/GuestSection'
 import SponsorsSection from '../../Components/HomePage/SponsorSection/SponsorsSection'
 import Footer from '../../Components/Footer/Footer'
-import SpeakerHorizontalScrollCarousel from '../../Components/Speaker/speakerHorizontalScroll'
+import SpeakerHorizontalScrollCarousel from '../../Components/HomePage/SpeakerSection/speakerHorizontalScroll'
 import AboutSection from '../../Components/HomePage/AboutSection/AboutSection'
 import './home.css'
 
@@ -28,16 +28,16 @@ function Home() {
 
     return (
         <>
-        <div className="home-container">
-            <Navbar />
-            <Hero />
-            <AboutSection />
-            <SponsorsSection />
-            <GuestSection />
-            <EventsSection />
-            <SpeakerHorizontalScrollCarousel />
-            <Footer />
-        </div>
+            <div className="home-container">
+                <Navbar />
+                <Hero />
+                <AboutSection />
+                <SponsorsSection />
+                <GuestSection />
+                <EventsSection />
+                <SpeakerHorizontalScrollCarousel />
+                <Footer />
+            </div>
         </>
     )
 }

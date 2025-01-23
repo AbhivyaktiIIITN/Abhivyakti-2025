@@ -37,5 +37,5 @@ export const speakers = [
         linkedin: "",
         facebook: "",
         image: "/assets/HomePage/temp2.png"
-    }, 
+    },
 ]
