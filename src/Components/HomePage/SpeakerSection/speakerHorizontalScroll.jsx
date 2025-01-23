@@ -31,10 +31,10 @@ const SpeakerHorizontalScrollCarousel = () => {
                             boundary-pushing.
                         </p>
                     </div>
-                    <div className="w-[500px] sm:w-[1000px] h-[80vh] grayscale sm:ml-40 flex items-center p-10 justify-center sm:mt-16">
+                    <div className="w-[500px] sm:w-[1000px] h-[80vh] sm:ml-40 flex items-center p-10 justify-center sm:mt-16">
                         <img
-                            className="w-11/12 aspect-auto"
-                            src="\assets\HomePage\temp.jpeg"
+                            className="sm:h-[40vh] w-auto md:h-[80vh] aspect-auto"
+                            src="/assets/HomePage/HorizontalScroll/pastGlimpse/1.JPG"
                             alt="gallery image"
                         />
                     </div>
@@ -43,38 +43,38 @@ const SpeakerHorizontalScrollCarousel = () => {
                             past glimpses
                         </p>
                     </div>
-                    <div className="w-[250vw] sm:w-[90vw] sm:h-[80vh] h-[60vh] grayscale grid grid-cols-1 sm:grid-cols-1 sm:mt-16 gap-1">
-                        <div className="w-full h-1/4 grid grid-cols-3 gap-1 items-center">
+                    <div className="md:w-auto sm:w-[90vw] sm:h-[40vh] md:h-[70vh] grid grid-cols-1 sm:grid-cols-1 gap-2">
+                        <div className="w-full h-1/4 grid grid-cols-3 gap-2 items-center">
                             <img
-                                className="aspect-auto"
-                                src="\assets\HomePage\temp.jpeg"
+                                className="aspect-video w-52 h-auto md:w-auto md:h-60"
+                                src="/assets/HomePage/HorizontalScroll/pastGlimpse/2.JPG"
                                 alt="gallery image"
                             />
                             <img
-                                className="aspect-auto"
-                                src="\assets\HomePage\temp.jpeg"
+                                className="aspect-video w-52 h-auto md:w-auto md:h-60"
+                                src="/assets/HomePage/HorizontalScroll/pastGlimpse/3.JPG"
                                 alt="gallery image"
                             />
                             <img
-                                className="aspect-auto"
-                                src="\assets\HomePage\temp.jpeg"
+                                className="aspect-video w-52 h-auto md:w-auto md:h-60"
+                                src="/assets/HomePage/HorizontalScroll/pastGlimpse/4.JPG"
                                 alt="gallery image"
                             />
                         </div>
-                        <div className="w-fullh-1/2 grid grid-cols-3 gap-1">
+                        <div className="w-fullh-1/2 grid grid-cols-3 gap-2">
                             <img
-                                className="aspect-auto"
-                                src="\assets\HomePage\temp.jpeg"
+                                className="aspect-video w-52 h-auto md:w-auto md:h-60"
+                                src="/assets/HomePage/HorizontalScroll/pastGlimpse/5.JPG"
                                 alt="gallery image"
                             />
                             <img
-                                className="aspect-auto"
-                                src="\assets\HomePage\temp.jpeg"
+                                className="aspect-video w-52 h-auto md:w-auto md:h-60"
+                                src="/assets/HomePage/HorizontalScroll/pastGlimpse/6.JPG"
                                 alt="gallery image"
                             />
                             <img
-                                className=" aspect-auto"
-                                src="\assets\HomePage\temp.jpeg"
+                                className=" aspect-video w-52 h-auto md:w-auto md:h-60"
+                                src="/assets/HomePage/HorizontalScroll/pastGlimpse/7.jpg"
                                 alt="gallery image"
                             />
                         </div>
