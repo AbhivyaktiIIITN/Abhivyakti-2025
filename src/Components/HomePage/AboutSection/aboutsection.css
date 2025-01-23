@@ -37,7 +37,7 @@
     align-items: flex-start;
     width: 50%;
     margin: 0 auto; */
-    animation: statueEnter 1s ease-out;
+    /* animation: statueEnter 1s ease-out; */
 }
 
 /* .statue-red {
@@ -81,10 +81,10 @@
     width: 50%;
     border-radius: 8px;
     gap: 15px; */
-    animation: containerEnter 1s ease-out;
     /* position: relative;
     z-index: 1;
     margin-left: 20vh; */
+    /* animation: containerEnter 1s ease-out; */
 }
 
 @keyframes containerEnter {
