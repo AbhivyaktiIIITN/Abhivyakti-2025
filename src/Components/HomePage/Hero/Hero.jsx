@@ -195,139 +195,139 @@ function Hero() {
         <div className="image-wrapper">
           <div>
             <img
-              src="src/assets/museumWall.png"
+              src="/assets/HeroLanding/museumWall.png"
               alt="museum"
               id="image-wrapper"
-              className="background-image"
+              className="background-image h-screen w-auto object-cover lg:h-auto lg:w-screen"
             />
             <img
-              src="src/assets/noise.png"
+              src="assets/HeroLanding/noise.png"
               alt="noise overlay"
-              className="overlay-image z-20"
+              className="overlay-image z-20 h-screen w-auto object-cover lg:h-auto lg:w-screen"
             />
             <div className="gradient-effect"></div>
           </div>
           <img
-            src="src/assets/blueTone.png"
+            src="assets/HeroLanding/blueTone.png"
             alt="blue tone"
             id="blue-tone"
             className="absolute min-h-screen z-30 top-1"
             style={{ opacity: 0 }}
           />
           <img
-            src="src/assets/brickWall.png"
+            src="assets/HeroLanding/brickWall.png"
             alt="brick wall"
             id="brick-wall"
-            className="absolute min-h-screen top-1"
+            className="absolute top-1 h-screen w-auto object-cover lg:h-auto lg:w-screen"
             style={{ opacity: 0 }}
           />
           <img
-            src="src/assets/graffitiLayer.png"
+            src="assets/HeroLanding/graffitiLayer.png"
             alt="graffitiLayer"
             id="graffiti-Layer"
-            className="color-class absolute min-h-screen top-1 mix-blend-plus-darker"
+            className="color-class absolute h-screen w-auto object-cover lg:h-auto lg:w-screen top-1 mix-blend-normal"
             style={{ opacity: 0}}
           />
-          <div className="frame-wrapper z-40" id="full-frame">
+          <div className="frame-wrapper z-40 lg:w-[30%] min-w-[400px] lg:left-[51%] lg:top-[57%] top-[56.5%] left-[52%]" id="full-frame">
             <img
-              src="src/assets/frame.png"
+              src="assets/HeroLanding/frame.png"
               alt="frame"
               id="frame"
               className="frame-image"
             />
             <img
-              src="src/assets/frameImg.jpeg"
+              src="assets/HeroLanding/frameImg.jpeg"
               alt="framed content"
               id="framed-content"
               className="inner-frame-image"
             />
           </div>
           <img
-            src="src/assets/radialShine.png"
+            src="assets/HeroLanding/radialShine.png"
             alt="radial shine"
             className="absolute z-20 top-[15%] left-[24.5%] w-[55%] h-auto"
             id="radial-shine"
             style={{ opacity: 0 }}
           />
-          <div className="main-title-wrapper z-50 cursor-pointer">
+          <div className="main-title-wrapper z-50 cursor-pointer md:w-1/2 w-[400px]">
             <img
-              src="src/assets/abhivyaktiNoShine.png"
+              src="assets/HeroLanding/abhivyaktiNoShine.png"
               alt="main title preload"
               className="absolute"
               id="main-title-preload"
             />
             <img
-              src="src/assets/abhivyaktiShine.png"
+              src="assets/HeroLanding/abhivyaktiShine.png"
               alt="main title shine"
               className="absolute"
               id="main-title-shine"
               style={{ opacity: 0 }}
             />
             <img
-            src="src/assets/abhivyakti.png"
+            src="assets/HeroLanding/abhivyakti.png"
             alt="abhivyakti"
             id="abhivyakti"
             className="absolute"
             style={{ opacity: 0 }}
           />
             <img
-              src="src/assets/2025.png"
+              src="assets/HeroLanding/2025.png"
               alt="year"
-              className="absolute w-[8.5vw] top-[11vw] left-[20.5vw] z-30"
+              className="absolute md:w-[8.5vw] md:top-[11vw] md:left-[20.5vw] z-30 w-1/4 left-[35%] top-[90px]"
               id="year"
             />
             <img
-              src="src/assets/2025Pink.png"
+              src="assets/HeroLanding/2025Pink.png"
               alt="year pink"
-              className="absolute w-[12.2vw] top-[9.3vw] left-[18.6vw] z-30"
+              className="absolute md:w-[12.2vw] md:top-[9.3vw] md:left-[18.6vw] z-30 w-[35.6%] left-[29.9%] top-[71px]"
               id="year-pink"
               style={{ opacity: 0 }}
             />
             <img
-              src="src/assets/artMovement.png"
+              src="assets/HeroLanding/artMovement.png"
               alt="art movement"
-              className="absolute w-[13vw] top-[11vw] left-[18vw] z-10"
+              className="absolute md:w-[13vw] md:top-[11vw] md:left-[18vw] z-10 w-[40%] left-[30%] top-[90px]"
               id="art-movement"
             />
             <img
-              src="src/assets/underground.png"
+              src="assets/HeroLanding/underground.png"
               alt="underground"
-              className="absolute w-[11.5vw] top-[11vw] left-[10vw] z-30"
+              className="absolute lg:w-[11.5vw] lg:top-[11vw] lg:left-[10vw] z-30 w-[33%] top-[110px]"
               id="underground"
               style={{ opacity: 0 }}
             />
             <img
-              src="src/assets/undergroundArtMovementPink.png"
+              src="assets/HeroLanding/undergroundArtMovementPink.png"
               alt="undergroundArtMovementPink"
-              className="absolute w-[25vw] top-[11vw] left-[12vw]"
+              className="absolute lg:w-[25vw] lg:top-[11vw] lg:left-[12vw] w-[79%] left-[15%] top-[90px]"
               id="underground-Art-Movement-Pink"
               style={{ opacity: 0 }}
             />
             <img
-              src="src/assets/man.png"
+              src="assets/HeroLanding/man.png"
               alt="mans"
-              className="absolute w-[70vw] h-auto top-[7vw] left-[1%] z-40"
+              className="absolute lg:w-[70vw] lg:h-auto lg:top-[7vw] lg:left-[1%] z-40 lg:translate-y-40vw top-[100px] md:top-[0px] w-[400px] h-[600px] "
               id="mans"
-              style={{ opacity: 0, transform: "translateY(40vw)" }}
+              style={{ opacity: 0}}
             />
             <img
-              src="src/assets/graffitiGuy.png"
+              src="assets/HeroLanding/graffitiGuy.png"
               alt="graffiti guy"
-              className="absolute w-[70vw] h-auto top-[7vw] left-[1%] z-40"
+              className="absolute lg:w-[70vw] lg:h-auto lg:top-[7vw] lg:left-[1%] z-40 w-[500px] h-[600px] top-[100px] left-[0%]"
               id="graffiti-guy"
               style={{ opacity: 0, transform: "translateY(40vw)" }}
             />
             <img
-              src="src/assets/sprayHandLong.png"
+              src="assets/HeroLanding/sprayHandLong.png"
               alt="spray hand long"
-              className="absolute top-[16vw] left-[-700%] z-40"
+              className="absolute lg:top-[16vw] lg:left-[-700%] z-40 top-[105vw]"
               id="spray-hand-long"
               style={{ opacity: 0 }}
             />
             <img
-              src="src/assets/graffitiManSpray.png"
+              src="assets/HeroLanding/graffitiManSpray.png"
               alt="graffiti man spray"
-              className="absolute w-[35vw] top-[292vw] left-[7.5vw] md:left-[8vw] z-10"
+              className="absolute lg:w-[35vw] lg:top-[292vw] lg:left-[7.5vw] w-[400px] h-auto md:left-[4vw] z-10 top-[290vw]"
               id="graffiti-man-spray"
               style={{ opacity: 1 }}
             />
