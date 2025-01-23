@@ -19,8 +19,8 @@ export const members = [
         name: "Yash Verma",
         role: "Developer",
         githubLink: "https://github.com/YashVerma-code",
-        linkedinLink: "",
-        dataImage: images[6]
+        linkedinLink: "https://www.linkedin.com/in/yash-verma/",
+        dataImage: images[2]
     },
     {
         name: "Saksham Agrawal",
@@ -40,7 +40,7 @@ export const members = [
         name: "Priyanshu Dixit",
         role: "Developer",
         githubLink: "https://github.com/PD-scripts",
-        linkedinLink: "",
-        dataImage: images[6]
+        linkedinLink: "https://www.linkedin.com/in/priyanshu-dixit/",
+        dataImage: images[5]
     }
 ];
