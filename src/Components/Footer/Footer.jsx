@@ -1,57 +1,66 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import "./footer.css";
+import './footer.css';
 
 function Footer() {
-    const [isInView, setIsInView] = useState(false);
+    const [showMask, setShowMask] = useState(false);
+    const [inView, setInView] = useState(false);
+    const footerRef = useRef(null);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const footer = document.getElementById('contact');
-            const footerPosition = footer.getBoundingClientRect();
-            if (footerPosition.top <= window.innerHeight && footerPosition.bottom >= 0) {
-                setIsInView(true);
-            }
-            else {
-                setIsInView(false);
-            }
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (footerRef.current) {
+            observer.observe(footerRef.current);
+        }
+
+        return () => {
+            if (footerRef.current) observer.unobserve(footerRef.current);
         };
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-
-        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const handleFooterClick = () => {
+        setShowMask(true);
+    };
+
     return (
-        <div className="footer-container" id="contact" style={{}}>
-            <div
-                className="footer-animation-section"
-                style={{
-                    height: '100%',
-                    display: 'flex',
-                    position: 'relative',
-                }}
-            >
-                {/* Left Section with Neptune Statue */}
-                <div
-                    className="left-animation-section"
+        <div className="footer-container" id="contact" ref={footerRef} onClick={handleFooterClick} style={{ cursor: 'pointer' }}>
+            <div className="footer-animation-section" style={{ height: '100%', display: 'flex', position: 'relative', }} >
+                <div className="left-animation-section"
                     style={{
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
-                        width: '50vw',
-                        transform: isInView ? 'translateX(0)' : 'translateX(-100vw)',
-                        transition: 'transform 1.5s ease-in-out',
+                        width: '30vw',
                         position: 'relative',
-                        right: '-8%'
+                        right: '0%',
                     }}
                 >
-                    <img
-                        src="/assets/FooterSection/neptuneStatue.png"
-                        alt="Neptune Statue"
+                    <img src="/assets/FooterSection/neptuneStatue.png" alt="Neptune Statue" className="neptune-image"
                         style={{
                             width: '110%',
                             objectFit: 'cover',
+                            transform: inView ? 'translateX(0)' : 'translateX(-50%)',
+                            opacity: inView ? 1 : 0,
+                            transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out',
+                        }}
+                    />
+
+                    <img src="/assets/FooterSection/neptuneMask.png" alt="Neptune Mask" className="neptune-mask"
+                        style={{
+                            width: '110%',
+                            objectFit: 'cover',
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            opacity: showMask ? 1 : 0,
+                            transition: 'opacity 0.5s ease-in-out',
                         }}
                     />
                 </div>
@@ -83,7 +92,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="copyright" >
+                    <div className="copyright">
                         <div className="student">Abhivyakti 2025 © All rights reserved.</div>
                         <div className='student'>
                             Developed and Managed by <Link to="/developers" className="developer" target='_blank'>Students</Link>
@@ -91,29 +100,36 @@ function Footer() {
                     </div>
                 </div>
 
-                {/* Right Section with David Statue */}
-                <div
-                    className="right-animation-section"
+                <div className="right-animation-section"
                     style={{
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
-                        width: '50vw',
-                        left: '-9%',
-                        transform: isInView ? 'translateX(0)' : 'translateX(100vw)',
-                        transition: 'transform 1.5s ease-in-out',
+                        width: '30vw',
+                        left: '0%',
                         position: 'relative',
                     }}
                 >
-                    <img
-                        src="/assets/FooterSection/davidStatue.png"
-                        alt="David Statue"
+                    <img src="/assets/FooterSection/davidStatue.png" alt="David Statue" className="david-image"
                         style={{
-                            width: '150%',
+                            width: '100%',
                             objectFit: 'cover',
+                            transform: inView ? 'translateX(0)' : 'translateX(50%)',
+                            opacity: inView ? 1 : 0,
+                            transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out',
+                        }}
+                    />
+                    <img src="/assets/FooterSection/davidMask.png" alt="David Mask" className="david-mask"
+                        style={{
+                            width: '100%',
+                            objectFit: 'cover',
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            opacity: showMask ? 1 : 0,
+                            transition: 'opacity 0.5s ease-in-out',
                         }}
                     />
                 </div>
-
             </div>
         </div>
     );
