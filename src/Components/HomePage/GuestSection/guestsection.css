@@ -29,7 +29,7 @@
 }
 
 .guest-container img {
-    width: 15vw;
+    width: 12rem;
 }
 
 .guest-container .card {
@@ -115,6 +115,10 @@
 @media (max-width: 768px) {
     .guest-container {
         padding-top: 10vh;
+    }
+
+    .guest-container img {
+        width: 7rem;
     }
 
     .guest-container .card-row {
