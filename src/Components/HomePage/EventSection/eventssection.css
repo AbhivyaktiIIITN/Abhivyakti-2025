@@ -143,7 +143,7 @@
 
 .events-section .card-back .details .evnt {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -161,7 +161,7 @@
 .events-section .card-back .details .evnt .evnt-desc {
     font-size: 15px;
     line-height: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .events-section .card-back .details a {

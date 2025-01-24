@@ -3,17 +3,19 @@ export const eventData = [
         cardId: 1,
         gradient: "linear-gradient(90deg, #fe6d3b, #FE5013)",
         events: [
-            { name: "Innovation", desc: "Tech innovations and applications" },
-            { name: "AI", desc: "Transforming industries with AI" },
+            { name: "Show Stopper", desc: "Solo Dance Competition" },
+            { name: "Dance Squad", desc: "Group Dance Competition" },
+            { name: "Melody Hustle", desc: "Duet Dance Competition" },
         ],
         exploreLink: "https://unstop.com/"
     },
     {
         cardId: 2,
-        gradient: "linear-gradient(90deg, #fc529c, #FF006E)",
+        gradient: "linear-gradient(90deg, #fc529c, #df0a66)",
         events: [
-            { name: "Marketing", desc: "Effective strategies for startups" },
-            { name: "Branding", desc: "Building personal brands online" },
+            { name: "Interactive Story Making", desc: "Your Narrative, Their Choice" },
+            { name: "AdMads", desc: "Unleash your inner marketing guru" },
+            { name: "Photography Competition", desc: "Capture the world through your lens" },
         ],
         exploreLink: "https://unstop.com/"
     },
@@ -21,7 +23,10 @@ export const eventData = [
         cardId: 3,
         gradient: "linear-gradient(90deg, #A658E0, #641AA5)",
         events: [
-            { name: "Pitch", desc: "Compete and showcase startups" },
+            { name: "Bahumukhi", desc: "MonoActing Competition" },
+            { name: "Aavahan", desc: "Stage Play Competition" },
+            { name: "Dahaad", desc: "Street Play Competiton" },
+            { name: "Rasdhaara", desc: "Poetry Competition" },
         ],
         exploreLink: "https://unstop.com/"
     },
@@ -29,9 +34,7 @@ export const eventData = [
         cardId: 4,
         gradient: "linear-gradient(90deg, #5d6cd3, #2237C6)",
         events: [
-            { name: "Cybersecurity", desc: "Intro to protecting data" },
-            { name: "Privacy", desc: "Ethics of digital privacy" },
-            { name: "Protection", desc: "Securing data and systems" },
+            { name: "MUN 3.0", desc: "Debate, Diplomacy, Collaboration, Strategy." },
         ],
         exploreLink: "https://unstop.com/"
     },
@@ -39,9 +42,10 @@ export const eventData = [
         cardId: 5,
         gradient: "linear-gradient(90deg, #32CD32, #228B22)",
         events: [
-            { name: "Sustainability", desc: "Eco-friendly innovations" },
-            { name: "Energy", desc: "Exploring renewable sources" },
-            { name: "Waste", desc: "Reducing waste in industries" },
+            { name: "Singers Show-down", desc: "Solo Singing" },
+            { name: "Musical Armageddon", desc: "Band Battle" },
+            { name: "Chords of Chaos", desc: "Instrumental" },
+            { name: "Beat Barracks", desc: "12 Hours BGM Making" },
         ],
         exploreLink: "https://unstop.com/"
     },
@@ -49,9 +53,10 @@ export const eventData = [
         cardId: 6,
         gradient: "linear-gradient(90deg, #f0ea40, #d0c903)",
         events: [
-            { name: "Leadership", desc: "Master leadership skills" },
-            { name: "Negotiation", desc: "Enhance your negotiation tactics" },
-            { name: "Conflict", desc: "Resolving team conflicts effectively" },
+            { name: "Mr. & Ms. ABHIVYAKTI", desc: "Showcasing charm and talent." },
+            { name: "Cosplay", desc: "Express creativity through characters." },
+            { name: "Rap Battle", desc: "Rhythmic lyrics and flow." },
+            { name: "Talk Show", desc: "Engaging discussions and insights." },
         ],
         exploreLink: "https://unstop.com/"
     },
