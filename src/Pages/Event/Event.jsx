@@ -17,7 +17,7 @@ const Event = () => {
         <>
             <Navbar />
             <div
-                className="w-screen h-screen"
+                className="w-screen h-screen overflow-x-hidden"
             >
                 <Hero page={"events"} />
                 <ClubSelector />

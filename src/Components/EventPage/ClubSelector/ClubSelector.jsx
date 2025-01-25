@@ -140,7 +140,7 @@ const ClubSelector = () => {
     };
 
     return (
-        <div className="w-screen min-h-screen h-auto flex-col place-items-center md:mt-52">
+        <div className="w-screen min-h-screen h-auto flex-col place-items-center md:mt-52 overflow-x-hidden">
             <div
                 className={`w-[95%] md:min-w-[768px] md:w-2/3 h-h-[${eventCount * 8}rem] xs:min-h-screen xs:h-[${eventCount * 12}rem] mb-40`}
                 onMouseLeave={() => {
