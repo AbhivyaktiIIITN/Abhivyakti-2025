@@ -12,6 +12,12 @@ import './home.css'
 
 function Home() {
     const location = useLocation();
+    
+    useEffect(() => {
+        if (location.pathname === "/" && location.state?.scrollToTop) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    }, [location]);
 
     useEffect(() => {
         if (location.state?.scrollTo) {
