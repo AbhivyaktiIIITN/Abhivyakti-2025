@@ -205,10 +205,10 @@ const ClubSelector = () => {
                                         <p>prize pool</p>
                                     </div>
                                     <div
-                                        className={`-mt-1 xs:-mt-2 w-full flex justify-between font-bold text-sm ${event.title.length > 6 && "text-[0.7rem]"} ${event.title.length > 10 && "text-[0.49rem] leading-3"} 2xs:text-md xs:text-2xl sm:text-4xl`}
+                                        className={`-mt-1 xs:-mt-2 w-full flex justify-between font-bold text-sm ${event.title.length > 6 && "text-[0.65rem]"} ${event.title.length > 10 && "text-[0.49rem] leading-3"} 2xs:text-md xs:text-2xl sm:text-4xl`}
                                     >
                                         <p>{event.title}</p>
-                                        <p className="flex items-baseline gap-1">{event.prizePool}</p>
+                                        <p className="flex items-baseline"><FaIndianRupeeSign className='text-[10px] sm:text-[20px] mr-[2px]'/>{event.prizePool}</p>
                                     </div>
                                     <div
                                         className="-mt-1 xs:-mt-2 flex flex-col justify-between grow"
