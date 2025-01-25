@@ -139,7 +139,7 @@ export const EventDropDownDetails = {
         },
         {
             title:  "Rasdhaara",
-            mode: "offline",
+            mode: "online",
             type: "Verse Rendition",
             prizePool: "₹ 2,500",
             exploreLink: "/events/rasdhaara",
