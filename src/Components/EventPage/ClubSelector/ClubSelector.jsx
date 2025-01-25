@@ -13,6 +13,7 @@ const ClubSelector = () => {
     const [hoverEvent, setHoverEvent] = useState(null);
     const [animate, setAnimate] = useState(false);
     const [lastMouseEnterTime, setLastMouseEnterTime] = useState(0);
+    const [eventCount, setEventCount] = useState(0)
 
     const mouseEnter = (e, index) => {
         const currentTime = Date.now();
@@ -124,7 +125,8 @@ const ClubSelector = () => {
     };
 
     const onClickSelector = (element, club) => {
-        if (element.zIndex === '0') return;
+        if (element.zIndex === '0' || element.style.zIndex !== '50') return;
+        setEventCount(EventDropDownDetails[club.name].length)
         setClickedClub(club);
         setClubDropDown(EventDropDownDetails[club.name]);
 
@@ -138,9 +140,9 @@ const ClubSelector = () => {
     };
 
     return (
-        <div className="w-screen h-[200vh] flex-col place-items-center md:mt-52">
+        <div className="w-screen min-h-screen h-auto flex-col place-items-center md:mt-52">
             <div
-                className='w-[95%] md:min-w-[768px] md:w-2/3 h-[150vh]'
+                className={`w-[95%] md:min-w-[768px] md:w-2/3 h-h-[${eventCount * 8}rem] xs:min-h-screen xs:h-[${eventCount * 12}rem] mb-40`}
                 onMouseLeave={() => {
                     mouseOut(hoverEvent, hoverIndex);
                 }}
@@ -167,7 +169,7 @@ const ClubSelector = () => {
                         clickedClub && clubDropDown.map((event, index) => (
                             <motion.div
                                 key={index}
-                                className="w-full h-32   xs:h-48 flex rounded-xl mb-2 backdrop-blur-100"
+                                className="w-full h-32 xs:h-48 flex rounded-xl mb-2 backdrop-blur-100"
                                 initial={{
                                     y: '-9rem',
                                     opacity: 0
@@ -203,7 +205,7 @@ const ClubSelector = () => {
                                         <p>prize pool</p>
                                     </div>
                                     <div
-                                        className="-mt-1 xs:-mt-2 w-full flex justify-between font-bold text-sm 2xs:text-md xs:text-2xl sm:text-4xl"
+                                        className={`-mt-1 xs:-mt-2 w-full flex justify-between font-bold text-sm ${event.title.length > 6 && "text-[0.7rem]"} ${event.title.length > 10 && "text-[0.49rem] leading-3"} 2xs:text-md xs:text-2xl sm:text-4xl`}
                                     >
                                         <p>{event.title}</p>
                                         <p className="flex items-baseline gap-1">{event.prizePool}</p>
