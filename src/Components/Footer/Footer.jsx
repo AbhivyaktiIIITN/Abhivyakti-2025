@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './footer.css';
 
 function Footer() {
     const [showMask, setShowMask] = useState(false);
     const [inView, setInView] = useState(false);
     const footerRef = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -28,6 +29,16 @@ function Footer() {
 
     const handleFooterClick = () => {
         setShowMask(true);
+    };
+
+    const handleHomeClick = (e) => {
+        e.preventDefault();
+        if (window.location.pathname !== "/") {
+            navigate("/", { state: { scrollToTop: true } });
+        }
+        else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
     };
 
     return (
@@ -75,20 +86,20 @@ function Footer() {
                                 <h1>Quick Links</h1>
                                 <p><Link to="/event" className="footer-link">Register</Link></p>
                                 <p><Link to="/event" className="footer-link">Explore</Link></p>
-                                <p><Link to="/" className="footer-link">Home</Link></p>
+                                <p> <a href="#hero" className="footer-link" onClick={handleHomeClick} > Home </a> </p>
                                 <p><Link to="/terms" className="footer-link">Terms & Conditions</Link></p>
                             </div>
                             <div className="contact">
                                 <h1>Contact Us</h1>
                                 <p><Link to="/" className="footer-link" target='_blank'>abhivyakti@iiitn.ac.in</Link></p>
-                                <p><Link to="/" className="footer-link" target='_blank'>+91 6969696969</Link></p>
+                                <p><Link to="/" className="footer-link" target='_blank'>+91 8356950713</Link></p>
                             </div>
                             <div className="follow">
                                 <h1>Follow Us</h1>
-                                <p><Link to="/" className="footer-link" target='_blank'>Instagram</Link></p>
-                                <p><Link to="/" className="footer-link" target='_blank'>LinkedIn</Link></p>
-                                <p><Link to="/" className="footer-link" target='_blank'>Twitter</Link></p>
-                                <p><Link to="/" className="footer-link" target='_blank'>Facebook</Link></p>
+                                <p><Link to="https://www.instagram.com/abhivyakti_iiitn?igsh=MWczeWMwa3RyZGQ5NQ==" className="footer-link" target='_blank'>Instagram</Link></p>
+                                {/* <p><Link to="/" className="footer-link" target='_blank'>LinkedIn</Link></p> */}
+                                <p><Link to="https://x.com/AIiitn?t=HOLPsW4JHG7oHz5wcK7DnQ&s=09" className="footer-link" target='_blank'>Twitter</Link></p>
+                                <p><Link to="https://www.facebook.com/share/1B24yc1Ucv/" className="footer-link" target='_blank'>Facebook</Link></p>
                             </div>
                         </div>
                     </div>
