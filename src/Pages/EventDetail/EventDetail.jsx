@@ -26,7 +26,7 @@ const EventDetail = (props) => {
     };
     return (
         <div
-            className="w-full min-h-screen bg-cover bg-no-repeat bg-center"
+            className="w-full min-h-screen bg-cover bg-no-repeat bg-center overflow-x-hidden"
             style={{
                 backgroundImage: `url(${Darkbg})`,
             }}

@@ -138,15 +138,15 @@ const ClubSelector = () => {
     };
 
     return (
-        <div className="w-screen h-screen flex-col place-items-center md:mt-52">
+        <div className="w-screen h-[200vh] flex-col place-items-center md:mt-52">
             <div
-                className='w-[95%] md:min-w-[768px] md:w-2/3 h-screen'
+                className='w-[95%] md:min-w-[768px] md:w-2/3 h-[150vh]'
                 onMouseLeave={() => {
                     mouseOut(hoverEvent, hoverIndex);
                 }}
             >
                 <div
-                    className="w-full min-h-[600px] h-1/3 md:min-h-[500px] md:h-[65%] rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
+                    className="w-full min-h-[600px] h-1/3 md:min-h-[500px] md:h-[65%] md:max-h-[650px] rounded-xl flex justify-between mb-2 items-center relative overflow-hidden"
                 >
                     {
                         clubs.map((club, index) => (

@@ -6,13 +6,13 @@ export const chordsOfChaos = {
         eventShortDescription: "Instrumental",
         clubLogo: "/assets/EventDetail/crescendo/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/crescendo/Event-bg.png",
-        bgUrlRight: "linear-gradient(90deg, #FDFDFB 0%, #34FA46 100%)",
+        bgUrlRight: "linear-gradient(90deg,#FDFDFB 0%, #34FA46 100%)",
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
 
     eventIntroData: {
-        deadline: "15 Feb 2025",    
+        deadline: "15 Feb 2025",
         teamSize: "1-5 Members",
         fee: "₹ 200",
         prizePool: "₹ 15,000",

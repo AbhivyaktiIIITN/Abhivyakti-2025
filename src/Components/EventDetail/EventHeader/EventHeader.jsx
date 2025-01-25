@@ -17,12 +17,12 @@ const EventHeader = ({
 
   const adjustedFontSize =
     combinedLength > maxLength
-      ? "text-[30px] sm:text-[150px] md:text-[180px]"
-      : "text-[50px] sm:text-[190px] md:text-[200px]";
+      ? "text-[30px] sm:text-[70px] md:text-[100px] lg:text-[180px]"
+      : "text-[50px] sm:text-[70px] md:text-[120px] lg:text-[200px]";
 
   return (
     <div
-      className="w-full h-[240px] 2xl:h-screen bg-contain bg-center bg-no-repeat"
+      className="w-full h-[25vh] md:h-[50vh] lg:h-[70vh] 2xl:h-[70vh] bg-contain bg-center bg-no-repeat mt-[64px]"
       style={{
         background: `${bgUrlRight}`,
       }}
@@ -40,7 +40,7 @@ const EventHeader = ({
         />
 
         <div className="w-1/3 h-2/3 sm:h-full flex flex-col items-center justify-end">
-          <div className="w-2/5 absolute sm:h-2/3 flex flex-wrap items-end justify-end content-center">
+          <div className="w-2/5 absolute sm:h-1/4 md:h-2/3 flex flex-wrap items-end justify-end content-center">
             <div className="flex justify-start items-end space-x-4 w-full">
               <span className="w-2/4 h-[20px] sm:h-[50px] font-bold humane-bold-font text-white">
                 <h2 className="text-[20px] md:text-[50px] [line-height:0.8em] w-fit md:[letter-spacing:3px] uppercase [letter-spacing:0.2px] md:[-webkit-text-stroke:1px_black] [-webkit-text-stroke:0.55px_black] text-white humane-bold-font flex">
