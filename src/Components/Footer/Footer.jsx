@@ -92,7 +92,7 @@ function Footer() {
                             <div className="contact">
                                 <h1>Contact Us</h1>
                                 <p><Link to="/" className="footer-link" target='_blank'>abhivyakti@iiitn.ac.in</Link></p>
-                                <p><Link to="/" className="footer-link" target='_blank'>+91 8356950713</Link></p>
+                                <p><Link to="/" className="footer-link" target='_blank'>+91 7506103104</Link></p>
                             </div>
                             <div className="follow">
                                 <h1>Follow Us</h1>

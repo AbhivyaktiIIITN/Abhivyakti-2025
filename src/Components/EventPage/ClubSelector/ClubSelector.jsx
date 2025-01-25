@@ -124,7 +124,7 @@ const ClubSelector = () => {
     };
 
     const onClickSelector = (element, club) => {
-        if(element.zIndex === '0') return;
+        if (element.zIndex === '0') return;
         setClickedClub(club);
         setClubDropDown(EventDropDownDetails[club.name]);
 
@@ -191,7 +191,7 @@ const ClubSelector = () => {
                             >
                                 <img
                                     className="h-full aspect-square rounded-s-xl"
-                                    src = {event.img}
+                                    src={event.img}
                                 />
                                 <div
                                     className="w-full h-full flex flex-col gap-0 rounded-e-xl p-5 uppercase text-[#FDFDFB]"
