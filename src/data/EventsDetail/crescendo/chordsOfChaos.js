@@ -1,7 +1,7 @@
 export const chordsOfChaos = {
     eventHeaderData: {
-        eventName: "Chords of",
-        eventName2: "Chaos",
+        eventName: "Chords",
+        eventName2: "of Chaos",
         clubName: "Crescendo",
         eventShortDescription: "Instrumental",
         clubLogo: "/assets/EventDetail/crescendo/ClubLogo.png",
