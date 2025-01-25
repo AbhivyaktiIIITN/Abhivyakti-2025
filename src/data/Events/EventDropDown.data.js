@@ -86,7 +86,7 @@ export const EventDropDownDetails = {
             prizePool: "₹ 10,000",
             exploreLink: "/events/mun",
             unstopLink: "https://unstop.com/p/mun-30-abhivyakti-2025-iiit-nagpur-1319894",
-            img: "/assets/EventsPage/crescendo/mun.png",
+        img: "/assets/EventsPage/orator/mun.png",
         },
     ],
     probe: [

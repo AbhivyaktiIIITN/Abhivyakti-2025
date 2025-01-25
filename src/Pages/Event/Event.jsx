@@ -21,6 +21,7 @@ const Event = () => {
             >
                 <Hero page={"events"} />
                 <ClubSelector />
+                <Footer/>
             </div>
         </>
     );

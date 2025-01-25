@@ -49,21 +49,20 @@ const EventIntro = ({ deadline, teamSize, fee, prizePool, description, unstopLin
                         <p>{description}</p>
                     </div>
                 </div>
-
-                <div className="w-full h-auto flex flex-row justify-center items-center py-5 gap-5">
-                    <a href={unstopLink} target="_blank" rel="noreferrer">
-                        <button className="w-40 h-12 rounded-lg text-white font-semibold bg-custom-gradient border-2 border-white">
-                            Register
-                        </button>
-                    </  a>
-                    <a href={unstopLink} target="_blank" rel="noreferrer">
-                        <button className="w-44 h-12 rounded-lg text-white font-semibold border-2 border-white bg-black flex items-center justify-center gap-2 p-2 ">
-                            <span>
-                                <img src="/assets/EventDetail/Unstop.png" alt="un logo" className="w-10 h-8 rounded-full object-contain" />
-                            </span>
-                            <span className="text-sm sm:text-base">EXPLORE</span>
-                        </button>
-                    </a>
+        <div className="w-full h-auto flex flex-row justify-center items-center py-5 gap-5">
+          <a href={unstopLink} target="_blank" rel="noreferrer">
+            <button className="w-32 h-10 sm:w-40 sm:h-12 rounded-lg text-white font-semibold bg-custom-gradient border-2 border-white">
+              Register
+            </button>
+          </  a>
+          <a href={unstopLink} target="_blank" rel="noreferrer">
+            <button className="w-36 h-10 sm:w-44 sm:h-12 rounded-lg text-white font-semibold border-2 border-white bg-black flex items-center justify-center gap-2 p-2 ">
+              <span>
+                <img src="/assets/EventDetail/Unstop.png" alt="un logo" className="w-10 h-8 rounded-full object-contain" />
+              </span>
+              <span className="text-sm sm:text-base">EXPLORE</span>
+            </button>
+          </a>
                 </div>
             </div>
         </div>
