@@ -5,5 +5,5 @@ import { singersShowDown } from "./singerShowdown";
 export const crescendo = {
     chordsOfChaos,
     musicalArmageddon,
-    singersShowDown,
+    singersShowdown: singersShowDown,
 };
