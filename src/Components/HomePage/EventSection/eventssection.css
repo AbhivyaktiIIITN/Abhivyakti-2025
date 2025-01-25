@@ -276,6 +276,15 @@
         height: 392px;
     }
 
+    .events-section .card-back .details .evnt {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .events-section .card-back .details .evnt .evnt-desc {
+        margin-bottom: 0px;
+    }
+
     .events-section .scroll-button {
         width: 30px;
         height: 150px;

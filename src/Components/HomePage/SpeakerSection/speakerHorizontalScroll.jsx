@@ -15,23 +15,18 @@ const SpeakerHorizontalScrollCarousel = () => {
 
     return (
         <section ref={targetRef} className="relative h-[200vh]">
-            <div className="sticky top-0 flex h-[80vh] sm:h-[100vh] items-center overflow-scroll no-scrollbar overflow-x-hidden overflow-y-hidden">
-                <motion.div style={{ x }} className="flex gap-4 items-center w-fit h-full sm:mt-0 mt-52">
-                    <div className="sm:w-[1000px] w-[300px] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 ml-2">
-                        <p className="text-5xl sm:text-6xl md:text-8xl capitalize mb-10 gradient-text min-w-[200px] w-full">
-                            about theme
+            <div className="sticky top-0 flex md:h-[100vh] sm:h-[100vh] items-center overflow-scroll no-scrollbar overflow-x-hidden overflow-y-hidden">
+                <motion.div style={{ x }} className="flex gap-4 items-center w-fit h-full sm:mt-20 md:mt-16">
+                    <div className="sm:w-[1000px] w-[95vw] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 md:ml-20 mr-10">
+                        <p className="text-5xl text-center sm:text-6xl md:text-8xl capitalize sm:mb-10 md:mb-4 gradient-text min-w-[200px] w-full">
+                            About Theme
                         </p>
-                        <p className="text-base sm:text-2xl md:text-3xl font-normal   p-2">
-                            The Underground Art Movement challenges mainstream norms, using
-                            unconventional mediums like graffiti and digital art to address
-                            rebellion, identity, and social issues. It rejects
-                            commercialization, focusing on authentic self-expression and a DIY
-                            ethos. Rooted in counterculture, it influences fashion, music, and
-                            culture, evolving with the digital age to remain accessible and
-                            boundary-pushing.
-                        </p>
+                        <p className="text-base sm:text-xl md:text-2xl font-normal p-2 text-justify">
+                            {/* The Underground Art Movement is a celebration of bold and rebellious creativity that thrives beyond mainstream platforms and conventions. It is a tribute to the power of art born in the streets, back alleys, and hidden urban corners, where self-expression is raw, unfiltered, and unapologetically authentic. This movement challenges societal norms and pushes boundaries by using unconventional mediums like graffiti, street murals, digital art, and urban installations to voice themes of rebellion, identity, and pressing social issues. */}
+                            {/* The Underground Art Movement rejects commercialization, embracing a DIY ethos that values authenticity and individuality. It amplifies underrepresented voices, fostering community and inspiring trends in fashion, music, and art. Rooted in counterculture, it adapts to the digital age to remain innovative, boundary-pushing, and accessible, symbolizing freedom, creativity, and the courage to defy expectations. */}
+                            The Underground Art Movement celebrates bold, rebellious creativity thriving beyond mainstream conventions. It honors art born in streets, alleys, and hidden urban corners, where self-expression is raw, authentic, and unfiltered. This movement challenges societal norms through unconventional mediums like graffiti, murals, digital art, and installations, addressing themes of rebellion, identity, and social issues. Rejecting commercialization, it embraces a DIY ethos valuing individuality and authenticity. Rooted in counterculture, it amplifies underrepresented voices, inspiring trends in fashion, music, and art while evolving with the digital age to symbolize freedom and innovation.                        </p>
                     </div>
-                    <div className="w-[500px] sm:w-[1000px] h-[80vh] sm:ml-40 flex items-center p-10 justify-center sm:mt-16">
+                    <div className="w-[500px] sm:w-[1000px] h-[90vh] sm:ml-56 flex items-center justify-center sm:mt-16 md:mt-8">
                         <img
                             className="sm:h-[40vh] w-auto md:h-[80vh] aspect-auto"
                             src="/assets/HomePage/HorizontalScroll/pastGlimpse/1.JPG"
@@ -43,7 +38,7 @@ const SpeakerHorizontalScrollCarousel = () => {
                             past glimpses
                         </p>
                     </div>
-                    <div className="md:w-auto sm:w-[90vw] sm:h-[40vh] md:h-[70vh] grid grid-cols-1 sm:grid-cols-1 gap-2">
+                    <div className="md:w-auto sm:w-[90vw] sm:h-[40vh] md:h-[80vh] grid grid-cols-1 sm:grid-cols-1 gap-2">
                         <div className="w-full h-1/4 grid grid-cols-3 gap-2 items-center">
                             <img
                                 className="aspect-video w-52 h-auto md:w-auto md:h-60"

@@ -61,8 +61,8 @@ const Aboutsection = () => {
                 // animate={{ opacity: 1 }}
                 // transition={{ duration: 0.5 }}
                 >
-                    <p>
-                        Abhivyakti, IIIT Nagpur's annual cultural event, is a dynamic fusion of art, talent, and diversity. It provides a platform for students to express their creativity and celebrate their uniqueness. From intercollege competitions to inspiring speakers, Abhivyakti is a journey from passion to stardom. It's a path where persistence conquers obstacles, leading to a constellation of success.
+                    <p className="text-justify sm:text-md md:text-xl ">
+                        Abhivyakti, the annual cultural fest of IIIT Nagpur, is a grand celebration of creativity, artistry, and cultural diversity. True to its name, meaning "expression," it offers students a vibrant platform to showcase their talents, push boundaries, and foster camaraderie. As one of the most awaited campus events, it transforms the institute into a lively hub of energy and artistic brilliance. The fest features electrifying concerts, mesmerizing dances, captivating plays, and stunning art exhibitions, inspiring participants to explore their potential and celebrate creativity in unique, memorable ways.
                     </p>
                 </motion.div>
             </motion.div>
