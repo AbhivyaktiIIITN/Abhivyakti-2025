@@ -40,7 +40,7 @@ function DaVinciAndHand({ animate }) {
 
     return (
         <motion.div
-            className="absolute z-10 bottom-0 right-0 md:w-[20vw] w-1/2 md:h-[25vw] h-1/2"
+            className="absolute z-10 hidden sm:visible bottom-0 right-0 md:w-[20vw] w-1/2 md:h-[25vw] h-1/2"
             aria-label="davinci + hand"
             variants={variants.daVinciAndHand}
             initial="hidden"

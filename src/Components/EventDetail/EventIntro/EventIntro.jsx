@@ -6,10 +6,10 @@ import FeeIcon from "/assets/EventDetail/FeeIcon.png";
 import PrizeIcon from "/assets/EventDetail/PrizeIcon.png";
 import grafftiDrip from "/assets/EventDetail/grafftiDrip.png";
 
-const EventIntro = (props) => {
+const EventIntro = ({ deadline, teamSize, fee, prizePool, description, unstopLink }) => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center relative">
-      <img src={grafftiDrip} alt="Grafiiti Drip" className="absolute md:w-full h-auto top-0 opacity-30 object-center sm:object-center"/>
+      <img src={grafftiDrip} alt="Grafiiti Drip" className="absolute md:w-full h-auto top-0 opacity-30 object-center sm:object-center" />
       <div className="w-3/4 h-auto z-10 pt-10 sm:pt-0 md:pt-0 lg:pt-0 space-y-10">
         <div className="w-full h-auto flex flex-wrap justify-between z-10 gap-5 md:gap-0 lg:gap-0 sm:gap-0">
           <div className="w-full md:w-1/2 lg:w-1/2 h-auto text-sm md:text-base lg:text-xl flex flex-wrap md:justify-end justify-start lg:justify-end">
@@ -18,48 +18,52 @@ const EventIntro = (props) => {
                 <img src={AlertIcon} alt="Deadline" className="w-7 h-7" />
                 <div className="flex flex-col space-y-1">
                   <span className="font-semibold">Registration Deadline:</span>
-                  <span>{props.deadline}</span>
+                  <span>{deadline}</span>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
                 <img src={TeamSizeIcon} alt="Team Size" className="w-7 h-7" />
                 <div className="flex flex-col space-y-1">
                   <span className="font-semibold">Team Size:</span>
-                  <span>{props.teamSize}</span>
+                  <span>{teamSize}</span>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
                 <img src={FeeIcon} alt="Fee" className="w-7 h-7" />
                 <div className="flex flex-col space-y-1">
                   <span className="font-semibold">Registration Fee:</span>
-                  <span>{props.fee}</span>
+                  <span>{fee}</span>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
                 <img src={PrizeIcon} alt="Prize" className="w-7 h-7" />
                 <div className="flex flex-col space-y-1">
                   <span className="font-semibold">Prize Pool:</span>
-                  <span>{props.prizePoll}</span>
+                  <span>{prizePool}</span>
                 </div>
               </li>
             </ul>
           </div>
 
           <div className="w-full md:w-1/2 lg:w-1/2 h-auto px-5 text-white text-base md:text-base lg:text-lg  flex flex-wrpa justify-center items-center">
-            <p>{props.description}</p>
+            <p>{description}</p>
           </div>
         </div>
 
         <div className="w-full h-auto flex flex-row justify-center items-center py-5 gap-5">
-          <button className="w-40 h-12 rounded-lg text-white font-semibold bg-custom-gradient border-2 border-white">
-            Register
-          </button>
-          <button className="w-44 h-12 rounded-lg text-white font-semibold border-2 border-white bg-black flex items-center justify-center gap-2 p-2 ">
-            <span>
-              <img src="/assets/EventDetail/Unstop.png" alt="un logo" className="w-10 h-8 rounded-full object-contain" />
-            </span>
-            <span className="text-sm sm:text-base">EXPLORE</span>
-          </button>
+          <a href={unstopLink} target="_blank" rel="noreferrer">
+            <button className="w-40 h-12 rounded-lg text-white font-semibold bg-custom-gradient border-2 border-white">
+              Register
+            </button>
+          </  a>
+          <a href={unstopLink} target="_blank" rel="noreferrer">
+            <button className="w-44 h-12 rounded-lg text-white font-semibold border-2 border-white bg-black flex items-center justify-center gap-2 p-2 ">
+              <span>
+                <img src="/assets/EventDetail/Unstop.png" alt="un logo" className="w-10 h-8 rounded-full object-contain" />
+              </span>
+              <span className="text-sm sm:text-base">EXPLORE</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

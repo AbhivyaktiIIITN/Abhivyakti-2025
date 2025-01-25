@@ -4,9 +4,11 @@ import { FaIndianRupeeSign } from 'react-icons/fa6';
 import { clubs } from "./data"
 import "./clubSelector.css"
 import "../../../css/font.css"
+import { EventDropDownDetails } from '../../../data/Events/EventDropDown.data';
 
 const ClubSelector = () => {
     const [clickedClub, setClickedClub] = useState(null);
+    const [clubDropDown, setClubDropDown] = useState([]);
     const [hoverIndex, setHoverIndex] = useState(null);
     const [hoverEvent, setHoverEvent] = useState(null);
     const [animate, setAnimate] = useState(false);
@@ -124,6 +126,7 @@ const ClubSelector = () => {
     const onClickSelector = (element, club) => {
         if(element.zIndex === '0') return;
         setClickedClub(club);
+        setClubDropDown(EventDropDownDetails[club.name]);
 
         element.style.backgroundImage = `url(${club.bg}), linear-gradient(140deg, white -10%, ${club.color})`;
         element.style.backgroundPosition = 'center';
@@ -161,7 +164,7 @@ const ClubSelector = () => {
                 </div >
                 <AnimatePresence>
                     {
-                        clickedClub && clickedClub.events.map((event, index) => (
+                        clickedClub && clubDropDown.map((event, index) => (
                             <motion.div
                                 key={index}
                                 className="w-full h-32   xs:h-48 flex rounded-xl mb-2 backdrop-blur-100"
@@ -182,15 +185,13 @@ const ClubSelector = () => {
                                     opacity: 0,
                                     transition: {
                                         duration: 0.1,
-                                        delay: 0.08 * (clickedClub.events.length - 1 - index)
+                                        delay: 0.08 * (clubDropDown.length - 1 - index)
                                     }
                                 }}
                             >
-                                <div
+                                <img
                                     className="h-full aspect-square rounded-s-xl"
-                                    style={{
-                                        backgroundImage: `linear-gradient(140deg, white -10%, ${clickedClub.color})`
-                                    }}
+                                    src = {event.img}
                                 />
                                 <div
                                     className="w-full h-full flex flex-col gap-0 rounded-e-xl p-5 uppercase text-[#FDFDFB]"
@@ -198,14 +199,14 @@ const ClubSelector = () => {
                                     <div
                                         className="w-full flex justify-between font-light text-[10px] 2xs:text-[12px] text-[#C8C8C8]"
                                     >
-                                        <p>offline</p>
+                                        <p>{event.mode}</p>
                                         <p>prize pool</p>
                                     </div>
                                     <div
                                         className="-mt-1 xs:-mt-2 w-full flex justify-between font-bold text-sm 2xs:text-md xs:text-2xl sm:text-4xl"
                                     >
-                                        <p>monoact</p>
-                                        <p className="flex items-baseline gap-1"><FaIndianRupeeSign className='text-xs sm:text-lg' /> 25,000</p>
+                                        <p>{event.title}</p>
+                                        <p className="flex items-baseline gap-1">{event.prizePool}</p>
                                     </div>
                                     <div
                                         className="-mt-1 xs:-mt-2 flex flex-col justify-between grow"
@@ -213,14 +214,14 @@ const ClubSelector = () => {
                                         <p
                                             className="font-normal text-[0.6rem] 2xs:text-xs xs:text-md text-wrap sm:text-xl"
                                         >
-                                            solo drama competition
+                                            {event.type}
                                         </p>
                                         <div
                                             className="w-full sm:w-56 flex justify-between font-bold text-[0.5rem] 2xs:text-xs sm:text-[1rem]"
                                         >
                                             <a
                                                 className="border-white border-2 rounded-md px-3 py-1 xs:py-2"
-                                                href=""
+                                                href={event.exploreLink}
                                                 target="_blank"
                                                 style={{
                                                     backgroundImage: `linear-gradient(to right, white -70%, ${clickedClub.exploreGradient})`
@@ -230,7 +231,7 @@ const ClubSelector = () => {
                                             </a>
                                             <a
                                                 className="border-white border-2 rounded-md px-3 py-1 xs:py-2"
-                                                href=""
+                                                href={event.unstopLink}
                                                 target="_blank"
                                             >
                                                 register

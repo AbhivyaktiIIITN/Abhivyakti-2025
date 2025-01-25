@@ -138,10 +138,19 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
     .sponsor-container {
         padding-top: 5vh;
         margin-bottom: 0vh;
+    }
+
+    .top-marquee {
+        margin-left: 200px;
+    }
+
+    .bottom-marquee {
+        margin-top: 40px;
+        margin-right: 200px;
     }
 
     .text {

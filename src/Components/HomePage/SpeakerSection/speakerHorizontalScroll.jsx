@@ -14,7 +14,7 @@ const SpeakerHorizontalScrollCarousel = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[200vh]">
+        <section ref={targetRef} className="relative h-[550vh]">
             <div className="sticky top-0 flex md:h-[100vh] sm:h-[100vh] items-center overflow-scroll no-scrollbar overflow-x-hidden overflow-y-hidden">
                 <motion.div style={{ x }} className="flex gap-4 items-center w-fit h-full sm:mt-20 md:mt-16">
                     <div className="sm:w-[1000px] w-[95vw] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 md:ml-20 mr-10">

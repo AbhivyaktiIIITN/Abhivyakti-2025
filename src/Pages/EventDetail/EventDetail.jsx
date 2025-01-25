@@ -9,10 +9,18 @@ import PrizePool from "../../Components/EventDetail/Prizepool/PrizePool";
 import FAQ from "../../Components/EventDetail/FAq/Faq";
 import ContactUs from "../../Components/EventDetail/ContactUs/ContactUs";
 import Navbar from "../../Components/Navbar/Navbar";
+import { useParams } from "react-router-dom";
+import { eventDetailData } from "../../data/EventsDetail/EventDetail.data";
 
 
 const EventDetail = (props) => {
 
+    const { id } = useParams();
+    console.log(id);
+    const eventData = eventDetailData[id];
+
+    const { eventHeaderData, eventIntroData, eventTimelineData, eventRulesAndRegulationData, eventPrizeData, eventFaqData, eventContactData } = eventData;
+    console.log(eventData);
     const handleFormSubmit = (formData) => {
         console.log("Form Submitted:", formData);
     };
@@ -25,40 +33,30 @@ const EventDetail = (props) => {
         >
             <Navbar />
             <EventHeader
-                clubName={props.event.eventheader.clubName}
-                eventName={props.event.eventheader.eventName}
-                eventDescription={props.event.eventheader.eventDescription}
-                ClubLogo={props.event.eventheader.ClubLogo}
-                bgUrlRight={props.event.eventheader.bgUrlRight}
-                bgUrlLeft={props.event.eventheader.bgUrlLeft}
-                leftStatueUrl={props.event.eventheader.leftStatueUrl}
-                rightStatueUrl={props.event.eventheader.rightStatueUrl}
+                {...eventHeaderData}
             />
-
             <EventIntro
-                deadline={props.event.eventintro.deadline}
-                teamSize={props.event.eventintro.teamSize}
-                fee={props.event.eventintro.fee}
-                prizePoll={props.event.eventintro.prizePoll}
-                description={props.event.eventintro.description}
+                {...eventIntroData}
             />
 
-            <EventTimeline events={props.event.eventTimeline.events}
-            />
+            <EventTimeline {...eventTimelineData} />
 
-            <RulesRegulation rounds={props.event.eventRulesAndRegulation.roundsData} judgingCriteria={props.event.eventRulesAndRegulation.judgingCriteriaData} />
+
+            <RulesRegulation {...eventRulesAndRegulationData} />
             <div className="w-full min-h-screen grid grid-cols-1 gap-1 items-center relative ">
                 <img
                     src={PurpleDrip}
                     alt="purpledrip"
                     className="absolute w-full h-full opacity-30 object-fill sm:object-fill"
                 />
-                <PrizePool prizes={props.event.eventPrize.prizeData} additionalPrizes={props.event.eventPrize.additionalPrizes} />
-                <FAQ items={props.event.eventFaq.faqItems} />
+                <PrizePool {...eventPrizeData} />
                 <ContactUs
-                    contacts={props.event.eventContact.contacts}
+                    {...eventContactData}
                     onSubmit={handleFormSubmit}
                 />
+                {/* 
+                <FAQ items={props.event.eventFaq.faqItems} />
+                */}
             </div>
         </div>
     );

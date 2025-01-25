@@ -37,9 +37,8 @@ function MonaLisaAndHand({ animate }) {
         }
     }
     return (
-
         <motion.div
-            className="absolute left-0 top-0 md:w-[25vw] w-1/2 h-1/2 md:h-[25vw] "
+            className="absolute hidden sm:visible left-0 top-0 md:w-[25vw] w-1/2 h-1/2 md:h-[25vw]"
             aria-label="mona-lisa + hand"
             variants={variants.monLisaAndHand}
             initial="hidden"

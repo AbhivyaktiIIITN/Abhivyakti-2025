@@ -44,7 +44,7 @@ const Aboutsection = () => {
     }, []);
 
     return (
-        <div ref={scope} id="about" className="body-wrapper w-screen h-[130vh] md:h-screen flex flex-col md:flex-row justify-center items-center relative p-20">
+        <div ref={scope} id="about" className="body-wrapper w-screen h-[130vh] md:h-screen flex flex-col md:flex-row justify-center items-center relative p-20 overflow-hidden">
             <div className="graffitiDrip-container absolute top-0 w-full -z-2">
                 <img src={graffitiDrip} alt="Graffiti Drip" className="graffitiDrip w-full h-screen" />
             </div>

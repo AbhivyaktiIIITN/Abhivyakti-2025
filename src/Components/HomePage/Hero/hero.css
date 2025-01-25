@@ -106,3 +106,15 @@
   background-color:rgba(206, 3, 255, 0.56);
   backdrop-filter: grayscale(6%) opacity(97%) saturate(59%) sepia(7%);
 }
+
+@media screen and (max-width: 768px) {
+    .image-wrapper {
+        height: 100vh;
+        width: auto;
+        
+    }
+    .main-title-wrapper {
+        top: 10%;
+    }
+    
+}
