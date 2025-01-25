@@ -18,8 +18,8 @@ const EventTimeLine = ({ eventTimeline }) => {
     };
 
     return (
-        <div className="w-full min-h-screen flex flex-col items-center justify-center relative mt-10">
-            <div className="text-white p-6 w-full sm:w-1/2">
+        <div className="w-full min-h-[600px] h-auto flex flex-col items-center justify-center relative">
+            <div className="text-white px-6 w-full sm:w-1/2">
                 <VerticalTimeline layout="1-column-left" lineColor="#B57DFE" className="w-full" >
                     {
                         eventTimeline.map((data, index) => (
