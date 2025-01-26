@@ -39,21 +39,11 @@ const ContactUs = ({ contacts, onSubmit }) => {
     };
 
     return (
-        <div className="w-full h-fit flex flex-col items-center justify-center relative urbanist-font">
-            <div
-                className="text-white py-10 px-4 w-full lg:w-1/2 flex flex-col items-center"
-                ref={sectionRef}
-            >
-                <div
-                    className={`w-full flex flex-wrap justify-center opacity-0 header ${
-                        animate ? "slide-in" : ""
-                    }`}
-                >
-                    <img
-                        src={ContactUsImg}
-                        alt="Contact Us"
-                        className="h-52 sm:h-80"
-                    />
+        <div className="w-full h-fit flex flex-col items-center justify-center relative urbanist-font font-normal">
+            <div className="text-white py-10 px-4 w-full lg:w-1/2 flex flex-col items-center" ref={sectionRef}>
+                <div className={`w-full flex flex-wrap justify-center opacity-0 header ${animate ? "slide-in" : ""
+                    }`}>
+                    <img src={ContactUsImg} alt="Contact Us" className="h-52 sm:h-80" />
                 </div>
                 <div className="w-full max-w-3xl space-y-4 flex  items-center justify-center gap-2 place-items-center">
                     <div className="flex flex-wrap gap-8">
