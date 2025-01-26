@@ -48,7 +48,7 @@ function Navbar() {
     };
 
     return (
-        <div className="navbar-container urbanist-font">
+        <div className="navbar-container urbanist-font font-normal">
             <div className="logo">
                 <a href="/" onClick={handleLogoClick}>
                     {" "}

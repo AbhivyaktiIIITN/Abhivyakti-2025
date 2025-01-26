@@ -81,11 +81,7 @@ const EventsSection = () => {
     };
 
     return (
-        <div
-            className="events-section urbanist-font"
-            id="event"
-            ref={sectionRef}
-        >
+        <div className="events-section urbanist-font font-normal" id="event" ref={sectionRef}>
             <div className="title">
                 <img
                     src={tl}

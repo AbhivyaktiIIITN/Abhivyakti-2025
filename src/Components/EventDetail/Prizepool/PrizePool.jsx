@@ -30,11 +30,8 @@ const PrizePool = ({ prizeData, additionalPrizes }) => {
         };
     }, []);
     return (
-        <div className="w-full h-fit flex flex-col items-center justify-center relative mt-60 urbanist-font">
-            <div
-                className="text-white py-10 px-4 w-full lg:w-1/2 "
-                ref={sectionRef}
-            >
+        <div className="w-full h-fit flex flex-col items-center justify-center relative mt-60 urbanist-font font-normal">
+            <div className="text-white py-10 px-4 w-full lg:w-1/2 " ref={sectionRef}>
                 <div
                     className={`w-full flex flex-wrap justify-center opacity-0 header ${
                         animate ? "slide-in" : ""
