@@ -1,5 +1,5 @@
 export const SponsorsData = {
-    "left": [
+    left: [
         "/assets/HomePage/Sponsors/SponsorPic/past/ongc.jpg",
         "/assets/HomePage/Sponsors/SponsorPic/past/easeMyTrip.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/benq.png",
@@ -7,9 +7,9 @@ export const SponsorsData = {
         "/assets/HomePage/Sponsors/SponsorPic/past/decathlon.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/harleyDavidson.jpg",
         "/assets/HomePage/Sponsors/SponsorPic/past/koreanMaggiNoodles.png",
-        "/assets/HomePage/Sponsors/SponsorPic/past/abhibus.png"
+        "/assets/HomePage/Sponsors/SponsorPic/past/abhibus.png",
     ],
-    "right": [
+    right: [
         "/assets/HomePage/Sponsors/SponsorPic/past/kolourfly.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/giveMyCertificate.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/gfg.png",
@@ -17,6 +17,6 @@ export const SponsorsData = {
         "/assets/HomePage/Sponsors/SponsorPic/past/skechers.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/ixigo.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/iiitiansNetwork.png",
-        "/assets/HomePage/Sponsors/SponsorPic/past/shreeCompSystems.jpg"
-    ]
+        "/assets/HomePage/Sponsors/SponsorPic/past/shreeCompSystems.jpg",
+    ],
 };

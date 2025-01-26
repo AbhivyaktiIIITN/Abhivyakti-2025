@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-.terms-container{
+.terms-container {
     color: #fdfdfb;
-    background-image:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%),
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 100%
+        ),
         url("/assets/DarkBg.jpg");
     background-size: 100% auto;
     background-repeat: repeat-y;
@@ -11,12 +14,12 @@
     color: #ffffff;
 }
 
-.terms-container .data{
+.terms-container .data {
     padding: 5rem 10rem;
     font-family: "Crimson Pro", serif;
 }
 
-.terms-container .data h1{
+.terms-container .data h1 {
     text-align: center;
     font-weight: bold;
     font-size: 72px;
@@ -25,49 +28,49 @@
     margin-bottom: 5rem;
 }
 
-.terms-container .data h2{
+.terms-container .data h2 {
     font-size: 28px;
     font-weight: 500;
 }
 
-.terms-container .data .rule{
+.terms-container .data .rule {
     font-size: 20px;
     font-weight: 200;
 }
 
-.terms-container .data .p1{
-    margin-bottom: 4rem
+.terms-container .data .p1 {
+    margin-bottom: 4rem;
 }
 
-.terms-container .data .p2{
-    margin-bottom: 3rem
+.terms-container .data .p2 {
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 768px) {
-    .terms-container .data{
+    .terms-container .data {
         padding: 3rem 2rem;
     }
-    
-    .terms-container .data h1{
+
+    .terms-container .data h1 {
         font-size: 36px;
         text-wrap: nowrap;
     }
 
-    .terms-container .data h2{
+    .terms-container .data h2 {
         font-size: 20px;
         margin-bottom: 5px;
     }
-    
-    .terms-container .data .rule{
+
+    .terms-container .data .rule {
         font-size: 14px;
         text-align: justify;
     }
 
-    .terms-container .data .p1{
-        margin-bottom: 2rem
+    .terms-container .data .p1 {
+        margin-bottom: 2rem;
     }
-    
-    .terms-container .data .p2{
-        margin-bottom: 1rem
+
+    .terms-container .data .p2 {
+        margin-bottom: 1rem;
     }
 }

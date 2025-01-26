@@ -18,7 +18,8 @@ export const melodyHustle = {
         prizePool: "₹ 20,000",
         description:
             "Two dancers, one beat, infinite magic! Melody Hustle is your chance to showcase perfect harmony and electrifying chemistry. Tell your story through synchronized steps and mesmerizing moves. Grab your partner and set the stage ablaze. Together, create moments that leave the crowd cheering!",
-        unstopLink: "https://unstop.com/events/melody-hustle-abhivyakti-2025-iiit-nagpur-1302807",
+        unstopLink:
+            "https://unstop.com/events/melody-hustle-abhivyakti-2025-iiit-nagpur-1302807",
     },
 
     eventTimelineData: {
@@ -30,7 +31,7 @@ export const melodyHustle = {
             {
                 title: "Round 2: Finals",
                 date: new Date("27 Feb 2025"),
-                date2: new Date("28 Feb 2025") // Add the specific date if available
+                date2: new Date("28 Feb 2025"), // Add the specific date if available
             },
         ],
     },
@@ -123,6 +124,4 @@ export const melodyHustle = {
             },
         ],
     },
-
-   
-}
+};

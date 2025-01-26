@@ -3,7 +3,7 @@ import "./guestsection.css";
 import cardsData from "./GuestData";
 import aboutPic from "/assets/HomePage/Guests/about.png";
 import gh from "/assets/HomePage/Guests/gh.png";
-import "../../../css/font.css"
+import "../../../css/font.css";
 
 const GuestSection = () => {
     const sectionRef = useRef(null);
@@ -20,7 +20,7 @@ const GuestSection = () => {
                 //     setAnimate(false);
                 // }
             },
-            { threshold: 0.2 }
+            { threshold: 0.2 },
         );
 
         if (sectionRef.current) {
@@ -34,7 +34,9 @@ const GuestSection = () => {
         };
     }, []);
     const handleCardClick = (index) => {
-        setFlippedCardIndex((prevIndex) => (prevIndex === index ? null : index));
+        setFlippedCardIndex((prevIndex) =>
+            prevIndex === index ? null : index,
+        );
     };
 
     const handleMouseLeave = () => {
@@ -46,7 +48,11 @@ const GuestSection = () => {
     const remainingCards = isOdd ? cardsData.slice(1) : cardsData;
 
     return (
-        <div className="guest-container urbanist-font" id="guests" ref={sectionRef}>
+        <div
+            className="guest-container urbanist-font"
+            id="guests"
+            ref={sectionRef}
+        >
             <div className="header-wrapper">
                 <img
                     src={gh}

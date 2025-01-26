@@ -7,17 +7,25 @@ export const eventData = [
             { name: "Dance Squad", desc: "Group Dance Competition" },
             { name: "Melody Hustle", desc: "Duet Dance Competition" },
         ],
-        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
         cardId: 2,
         gradient: "linear-gradient(90deg, #fc529c, #df0a66)",
         events: [
-            { name: "Interactive Story Making", desc: "Your Narrative, Their Choice" },
+            {
+                name: "Interactive Story Making",
+                desc: "Your Narrative, Their Choice",
+            },
             { name: "AdMads", desc: "Unleash your inner marketing guru" },
-            { name: "Photography Competition", desc: "Capture the world through your lens" },
+            {
+                name: "Photography Competition",
+                desc: "Capture the world through your lens",
+            },
         ],
-        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
         cardId: 3,
@@ -28,15 +36,20 @@ export const eventData = [
             { name: "Dahaad", desc: "Street Play Competiton" },
             { name: "Rasdhaara", desc: "Poetry Competition" },
         ],
-        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
         cardId: 4,
         gradient: "linear-gradient(90deg, #5d6cd3, #2237C6)",
         events: [
-            { name: "MUN 3.0", desc: "Debate, Diplomacy, Collaboration, Strategy." },
+            {
+                name: "MUN 3.0",
+                desc: "Debate, Diplomacy, Collaboration, Strategy.",
+            },
         ],
-        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
         cardId: 5,
@@ -47,17 +60,22 @@ export const eventData = [
             { name: "Chords of Chaos", desc: "Instrumental" },
             { name: "Beat Barracks", desc: "12 Hours BGM Making" },
         ],
-        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
         cardId: 6,
         gradient: "linear-gradient(90deg, #f0ea40, #d0c903)",
         events: [
-            { name: "Mr. & Ms. ABHIVYAKTI", desc: "Showcasing charm and talent." },
+            {
+                name: "Mr. & Ms. ABHIVYAKTI",
+                desc: "Showcasing charm and talent.",
+            },
             { name: "Cosplay", desc: "Express creativity through characters." },
             { name: "Rap Battle", desc: "Rhythmic lyrics and flow." },
             { name: "Talk Show", desc: "Engaging discussions and insights." },
         ],
-        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
 ];

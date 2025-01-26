@@ -68,7 +68,7 @@ export const rapBattle = {
                 ],
             },
         ],
-        judgingCriteriaData: []
+        judgingCriteriaData: [],
     },
 
     eventPrizeData: {
@@ -79,10 +79,7 @@ export const rapBattle = {
                 imageSrc: "/assets/EventDetail/abcentral/First.png",
             },
         ],
-        additionalPrizes: [
-            
-            "Participation Certificate",
-        ],
+        additionalPrizes: ["Participation Certificate"],
     },
 
     eventContactData: {

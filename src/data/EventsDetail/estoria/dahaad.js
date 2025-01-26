@@ -18,7 +18,8 @@ export const dahaad = {
         prizePool: "₹ 25,000",
         description:
             "Dahaad is a street play competition that takes theater to the streets, turning open spaces into powerful stages. This event challenges teams to engage audiences with bold performances, strong storytelling, and impactful messages.\n\nFocusing on live acting, voice modulation, and real-time audience connection, Dahaad offers a platform to showcase social, cultural, or emotional themes in a relatable and dramatic way. Bring stories to life with passion, creativity, and awareness in this exciting street theater experience!",
-        unstopLink: "https://unstop.com/events/dahaad-abhivyakti-2025-iiit-nagpur-1303297",
+        unstopLink:
+            "https://unstop.com/events/dahaad-abhivyakti-2025-iiit-nagpur-1303297",
     },
 
     eventTimelineData: {

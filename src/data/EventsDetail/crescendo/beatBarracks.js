@@ -10,7 +10,7 @@ export const beatBarracks = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-    
+
     eventIntroData: {
         deadline: "24 hours before the event starts",
         teamSize: "1-3 Members",
@@ -18,7 +18,8 @@ export const beatBarracks = {
         prizePool: "₹ 2000",
         description:
             "Step into a realm of creativity and innovation with 'Beat Barracks: The Background Score Battle!' Participants will craft original compositions using cutting-edge music production software, blending artistry with technology. The top scores will be showcased in our social media content, immortalizing the talent of our champions. Don’t miss this electrifying event where imagination takes center stage and beats forge unforgettable stories!",
-        unstopLink: "https://unstop.com/events/beats-barrack-abhivyakti-2025-iiit-nagpur-1302560",
+        unstopLink:
+            "https://unstop.com/events/beats-barrack-abhivyakti-2025-iiit-nagpur-1302560",
     },
 
     eventTimelineData: {
@@ -95,7 +96,6 @@ export const beatBarracks = {
                 prizeAmount: "₹ 2,000",
                 imageSrc: "/assets/EventDetail/crescendo/First.png",
             },
-            
         ],
         additionalPrizes: ["Top scores will be showcased on social media."],
     },
@@ -121,4 +121,4 @@ export const beatBarracks = {
         ageLimit: "No specific age limit",
         note: "Open to all students and music enthusiasts.",
     },
-}
+};

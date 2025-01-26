@@ -11,5 +11,5 @@ export const eventDetailData = {
     mun,
     ...dtaraxia,
     ...crescendo,
-    ...abCentral
+    ...abCentral,
 };

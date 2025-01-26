@@ -11,6 +11,8 @@
         width: 100% !important; /* Full width */
         left: 0 !important; /* Align to the left */
         height: calc((100% / var(--length)) - 2px);
-        top: calc((100% / var(--length)) * var(--index)) ; /* Position below each other */
+        top: calc(
+            (100% / var(--length)) * var(--index)
+        ); /* Position below each other */
     }
 }

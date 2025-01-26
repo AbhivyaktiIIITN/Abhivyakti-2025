@@ -18,7 +18,8 @@ export const chordsOfChaos = {
         prizePool: "₹ 15,000",
         description:
             "Chords of Chaos is more than a competition – it’s a stage for emerging instrumental virtuosos to dazzle the world. Whether you strum the strings of a guitar, dance across the keys of a piano, master the bow of a violin, or create magic with any other instrument, this is your moment to shine. Welcoming both soloists and ensembles, get ready to witness a symphony of talent, passion, and unbridled creativity that will leave the audience spellbound!",
-        unstopLink: "https://unstop.com/events/chord-of-chaos-abhivyakti-2025-iiit-nagpur-1301115",
+        unstopLink:
+            "https://unstop.com/events/chord-of-chaos-abhivyakti-2025-iiit-nagpur-1301115",
     },
 
     eventTimelineData: {
@@ -30,7 +31,7 @@ export const chordsOfChaos = {
             {
                 title: "Finals (Offline in Campus)",
                 date: new Date("27 Feb 2025"),
-                date2: new Date("28 Feb 2025") // Add the specific date if available
+                date2: new Date("28 Feb 2025"), // Add the specific date if available
             },
         ],
     },
@@ -96,7 +97,7 @@ export const chordsOfChaos = {
                 position: "2nd Runner Up",
                 prizeAmount: "Worth 2,000",
                 imageSrc: "/assets/EventDetail/crescendo/Third.png",
-            }
+            },
         ],
         additionalPrizes: ["Participation certificates"],
     },
@@ -117,4 +118,4 @@ export const chordsOfChaos = {
             },
         ],
     },
-}
+};

@@ -77,7 +77,7 @@
 .events-section .card-3,
 .events-section .card-4,
 .events-section .card-5 {
-    margin-right: calc((100% - 870px)/2);
+    margin-right: calc((100% - 870px) / 2);
 }
 
 .events-section .card.flipped .card-inner {
@@ -109,7 +109,9 @@
 }
 
 .events-section .card-front {
-    transition: background-image 1s ease, box-shadow 1s ease;
+    transition:
+        background-image 1s ease,
+        box-shadow 1s ease;
     background-size: cover;
     cursor: pointer;
 }
@@ -157,7 +159,6 @@
     text-transform: uppercase;
 }
 
-
 .events-section .card-back .details .evnt .evnt-desc {
     font-size: 15px;
     line-height: 20px;
@@ -197,7 +198,9 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    transition: transform 0.2s, background-color 0.2s;
+    transition:
+        transform 0.2s,
+        background-color 0.2s;
 }
 
 .events-section .scroll-button.left {

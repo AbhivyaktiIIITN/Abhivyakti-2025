@@ -18,7 +18,8 @@ export const mrAndMsAbhivyakti = {
         prizePool: "₹10,000",
         description:
             "Mr. & Ms. Abhivyakti is a competition that celebrates individuality, talent, and values. Through a blend of creative expression and insightful perspectives, this event provides a platform for participants to shine and leave their mark.",
-        unstopLink: "https://unstop.com/events/mr-ms-abhivyakti-abhivyakti-2025-iiit-nagpur-1350342",
+        unstopLink:
+            "https://unstop.com/events/mr-ms-abhivyakti-abhivyakti-2025-iiit-nagpur-1350342",
     },
 
     eventTimelineData: {
@@ -40,7 +41,7 @@ export const mrAndMsAbhivyakti = {
                     "The shortlisted participants will compete in a fashion show on campus.",
                     "The winners will be selected based on their performance in the fashion show.",
                 ],
-            }
+            },
         ],
     },
 
@@ -93,4 +94,4 @@ export const mrAndMsAbhivyakti = {
         ageLimit: "22 years or below",
         note: "This rule ensures a fair platform for showcasing young talent.",
     },
-}
+};

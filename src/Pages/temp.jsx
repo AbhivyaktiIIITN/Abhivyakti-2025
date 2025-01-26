@@ -8,10 +8,9 @@ import EventTimeline from "../Components/EventDetail/Timeline/EventTimeline";
 import PrizePool from "../Components/EventDetail/Prizepool/PrizePool";
 import FAQ from "../Components/EventDetail/FAq/Faq";
 import ContactUs from "../Components/EventDetail/ContactUs/ContactUs";
-import Navbar from '../Components/Navbar/Navbar'
+import Navbar from "../Components/Navbar/Navbar";
 
 const EventDetail = (props) => {
-
     const handleFormSubmit = (formData) => {
         console.log("Form Submitted:", formData);
     };
@@ -24,7 +23,6 @@ const EventDetail = (props) => {
         >
             <Navbar />
             <EventHeader
-
                 clubName={props.event.eventheader.clubName}
                 eventName={props.event.eventheader.eventName}
                 eventDescription={props.event.eventheader.eventDescription}
@@ -43,17 +41,24 @@ const EventDetail = (props) => {
                 description={props.event.eventintro.description}
             />
 
-            <EventTimeline events={props.event.eventTimeline.events}
-            />
+            <EventTimeline events={props.event.eventTimeline.events} />
 
-            <RulesRegulation rounds={props.event.eventRulesAndRegulation.roundsData} judgingCriteria={props.event.eventRulesAndRegulation.judgingCriteriaData} />
+            <RulesRegulation
+                rounds={props.event.eventRulesAndRegulation.roundsData}
+                judgingCriteria={
+                    props.event.eventRulesAndRegulation.judgingCriteriaData
+                }
+            />
             <div className="w-full min-h-screen grid grid-cols-1 gap-1 items-center relative ">
                 <img
                     src={PurpleDrip}
                     alt="purpledrip"
                     className="absolute w-full h-full opacity-30 object-fill sm:object-fill"
                 />
-                <PrizePool prizes={props.event.eventPrize.prizeData} additionalPrizes={props.event.eventPrize.additionalPrizes} />
+                <PrizePool
+                    prizes={props.event.eventPrize.prizeData}
+                    additionalPrizes={props.event.eventPrize.additionalPrizes}
+                />
                 <FAQ items={props.event.eventFaq.faqItems} />
                 <ContactUs
                     contacts={props.event.eventContact.contacts}

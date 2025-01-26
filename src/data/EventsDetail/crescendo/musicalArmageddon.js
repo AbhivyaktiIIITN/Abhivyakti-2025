@@ -30,7 +30,7 @@ export const musicalArmageddon = {
             {
                 title: "Finals (Offline in Campus)",
                 date: new Date("27 Feb 2025"),
-                date2: new Date("28 Feb 2025") // Add the specific date if available
+                date2: new Date("28 Feb 2025"), // Add the specific date if available
             },
         ],
     },
@@ -97,7 +97,7 @@ export const musicalArmageddon = {
                 position: "2nd Runner Up",
                 prizeAmount: "Worth 5,000",
                 imageSrc: "/assets/EventDetail/crescendo/Third.png",
-            }
+            },
         ],
         additionalPrizes: ["Participation certificates"],
     },
@@ -123,4 +123,4 @@ export const musicalArmageddon = {
         ageLimit: "22 years or below",
         note: "All participants competing in the ABHIVYAKTI finals and online competition must be 22 years of age or below.",
     },
-}
+};

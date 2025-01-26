@@ -12,14 +12,20 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import { eventDetailData } from "../../data/EventsDetail/EventDetail.data";
 
-
 const EventDetail = (props) => {
-
     const { id } = useParams();
     console.log(id);
     const eventData = eventDetailData[id];
 
-    const { eventHeaderData, eventIntroData, eventTimelineData, eventRulesAndRegulationData, eventPrizeData, eventFaqData, eventContactData } = eventData;
+    const {
+        eventHeaderData,
+        eventIntroData,
+        eventTimelineData,
+        eventRulesAndRegulationData,
+        eventPrizeData,
+        eventFaqData,
+        eventContactData,
+    } = eventData;
     console.log(eventData);
     const handleFormSubmit = (formData) => {
         console.log("Form Submitted:", formData);
@@ -32,15 +38,10 @@ const EventDetail = (props) => {
             }}
         >
             <Navbar />
-            <EventHeader
-                {...eventHeaderData}
-            />
-            <EventIntro
-                {...eventIntroData}
-            />
+            <EventHeader {...eventHeaderData} />
+            <EventIntro {...eventIntroData} />
 
             <EventTimeline {...eventTimelineData} />
-
 
             <RulesRegulation {...eventRulesAndRegulationData} />
             <div className="w-full min-h-screen grid grid-cols-1 gap-1 items-center relative ">
@@ -50,10 +51,7 @@ const EventDetail = (props) => {
                     className="absolute w-full h-full opacity-30 object-fill sm:object-fill"
                 />
                 <PrizePool {...eventPrizeData} />
-                <ContactUs
-                    {...eventContactData}
-                    onSubmit={handleFormSubmit}
-                />
+                <ContactUs {...eventContactData} onSubmit={handleFormSubmit} />
                 {/* 
                 <FAQ items={props.event.eventFaq.faqItems} />
                 */}

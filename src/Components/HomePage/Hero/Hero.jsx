@@ -14,7 +14,7 @@ function Hero() {
         await animate(
             "#mans",
             { y: "0vw", opacity: 1 },
-            { type: "spring", stiffness: 100, damping: 12, duration: 1, }
+            { type: "spring", stiffness: 100, damping: 12, duration: 1 },
         );
     };
 
@@ -28,10 +28,9 @@ function Hero() {
             await animate(
                 "#mans",
                 { y: "40vw", opacity: 0 },
-                { type: "spring", stiffness: 100, damping: 12, duration: 1, }
+                { type: "spring", stiffness: 100, damping: 12, duration: 1 },
             );
-        }
-        else {
+        } else {
             animate("#blue-tone", { opacity: 0 }, { duration: 1 });
             animate("#brick-wall", { opacity: 0 }, { duration: 0.5 });
             animate("#graffiti-Layer", { opacity: 0 }, { duration: 0.5 });
@@ -40,18 +39,23 @@ function Hero() {
             await animate("#abhivyakti", { opacity: 0 }, { duration: 0.5 });
             animate(
                 "#spray-hand-long",
-                { x: "-688%", y: "0", opacity: 1 }, { duration: 3 }
+                { x: "-688%", y: "0", opacity: 1 },
+                { duration: 3 },
             );
             await animate(
                 "#mans",
                 { y: "40vw", opacity: 0 },
-                { type: "spring", stiffness: 100, damping: 12, duration: 1, }
+                { type: "spring", stiffness: 100, damping: 12, duration: 1 },
             );
-            animate("#graffiti-man-spray", { y: "0", opacity: 1 }, { duration: 1 });
+            animate(
+                "#graffiti-man-spray",
+                { y: "0", opacity: 1 },
+                { duration: 1 },
+            );
             animate(
                 "#graffiti-guy",
                 { y: "40vw", opacity: 0 },
-                { type: "spring", stiffness: 100, damping: 12, duration: 1, }
+                { type: "spring", stiffness: 100, damping: 12, duration: 1 },
             );
             animate("#art-movement", { opacity: 1, x: "0" }, { duration: 0.3 });
             animate("#underground", { opacity: 0, x: "0" }, { duration: 0.3 });
@@ -59,7 +63,11 @@ function Hero() {
             animate("#year", { opacity: 1 }, { duration: 0.4 });
             animate("#year-pink", { opacity: 0 }, { duration: 0.4 });
             animate("#image-wrapper", { opacity: 1 }, { duration: 0.4 });
-            animate("#radial-shine", { opacity: 0, y: "0%" }, { duration: 0.4 });
+            animate(
+                "#radial-shine",
+                { opacity: 0, y: "0%" },
+                { duration: 0.4 },
+            );
             animate("#framed-content", { y: "0%" }, { duration: 0.4 });
             animate("#frame", { y: "0%" }, { duration: 0.4 });
 
@@ -76,53 +84,59 @@ function Hero() {
         await animate(
             "#spray-hand-long",
             { x: "688%", opacity: 1 },
-            { type: "spring", stiffness: 120, damping: 14, duration: 1 }
+            { type: "spring", stiffness: 120, damping: 14, duration: 1 },
         );
 
         animate(
             "#graffiti-man-spray",
             { y: "-270vw" },
-            { type: "spring", stiffness: 120, damping: 14, duration: 1 }
+            { type: "spring", stiffness: 120, damping: 14, duration: 1 },
         );
 
         animate(
             "#art-movement",
             { x: "46%" },
-            { type: "spring", stiffness: 100, damping: 12, duration: 1 }
+            { type: "spring", stiffness: 100, damping: 12, duration: 1 },
         );
 
         animate(
             "#underground",
             { x: "18%", opacity: 1 },
-            { type: "spring", stiffness: 100, damping: 12, duration: 1 }
+            { type: "spring", stiffness: 100, damping: 12, duration: 1 },
         );
 
         await animate(
             "#spray-hand-long",
             { y: "45%" },
-            { type: "spring", stiffness: 80, damping: 12, duration: 1 }
+            { type: "spring", stiffness: 80, damping: 12, duration: 1 },
         );
 
         animate(
             "#framed-content",
             { y: "-600%" },
-            { type: "spring", stiffness: 50, damping: 12, duration: 2 }
+            { type: "spring", stiffness: 50, damping: 12, duration: 2 },
         );
         animate(
             "#frame",
             { y: "-700%" },
-            { type: "spring", stiffness: 50, damping: 12, duration: 2 }
+            { type: "spring", stiffness: 50, damping: 12, duration: 2 },
         );
         animate(
             "#radial-shine",
             { y: "-700%" },
-            { type: "spring", stiffness: 50, damping: 12, duration: 2 }
+            { type: "spring", stiffness: 50, damping: 12, duration: 2 },
         );
 
         animate(
             "#spray-hand-long",
             { x: "900%", y: "20%", opacity: 1 },
-            { type: "spring", stiffness: 50, damping: 12, duration: 1, ease: "easeIn" }
+            {
+                type: "spring",
+                stiffness: 50,
+                damping: 12,
+                duration: 1,
+                ease: "easeIn",
+            },
         );
 
         animate("#image-wrapper", { opacity: 0 });
@@ -137,14 +151,20 @@ function Hero() {
         animate(
             "#mans",
             { y: "40vw", opacity: 0 },
-            { type: "spring", stiffness: 100, damping: 12, duration: 1, }
+            { type: "spring", stiffness: 100, damping: 12, duration: 1 },
         );
         await animate("#graffiti-Layer", { opacity: 0.3 });
         animate("#graffiti-man-spray", { opacity: 1 });
         animate(
             "#graffiti-guy",
             { y: "0vw", opacity: 1 },
-            { type: "spring", stiffness: 100, damping: 12, duration: 1, delay: 1 }
+            {
+                type: "spring",
+                stiffness: 100,
+                damping: 12,
+                duration: 1,
+                delay: 1,
+            },
         );
     };
 
@@ -197,7 +217,10 @@ function Hero() {
                         className="color-class absolute h-auto w-auto object-cover lg:h-auto lg:w-screen top-1 mix-blend-normal"
                         style={{ opacity: 0 }}
                     />
-                    <div className="frame-wrapper z-40 lg:w-[30%] min-w-[400px] lg:left-[51%] lg:top-[57%] top-[56.5%] left-[52%]" id="full-frame">
+                    <div
+                        className="frame-wrapper z-40 lg:w-[30%] min-w-[400px] lg:left-[51%] lg:top-[57%] top-[56.5%] left-[52%]"
+                        id="full-frame"
+                    >
                         <img
                             src="assets/HeroLanding/frame.png"
                             alt="frame"
@@ -284,7 +307,10 @@ function Hero() {
                             alt="graffiti guy"
                             className="absolute lg:w-[70vw] lg:h-auto lg:top-[7vw] lg:left-[1%] z-40 w-[500px] h-[600px] top-[100px] left-[0%]"
                             id="graffiti-guy"
-                            style={{ opacity: 0, transform: "translateY(40vw)" }}
+                            style={{
+                                opacity: 0,
+                                transform: "translateY(40vw)",
+                            }}
                         />
                         <img
                             src="assets/HeroLanding/sprayHandLong.png"

@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { members } from './members.js';
-import './developers.css';
-import "../../css/font.css"
+import React, { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { members } from "./members.js";
+import "./developers.css";
+import "../../css/font.css";
 
 function Developers() {
     return (
@@ -23,7 +23,7 @@ function Developers() {
             </div>
         </div>
     );
-};
+}
 
 const Card = ({ dev }) => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -66,7 +66,7 @@ const Card = ({ dev }) => {
         setMouseLeaveDelay(
             setTimeout(() => {
                 setMousePos({ mouseX: 0, mouseY: 0 });
-            }, 1000)
+            }, 1000),
         );
     };
 
@@ -90,11 +90,27 @@ const Card = ({ dev }) => {
                     <h1>{dev.role}</h1>
                     <p>{dev.name}</p>
                     <div className="icons">
-                        <a href={dev.githubLink} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} size="2x" className="sicon" />
+                        <a
+                            href={dev.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                size="2x"
+                                className="sicon"
+                            />
                         </a>
-                        <a href={dev.linkedinLink} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="sicon" />
+                        <a
+                            href={dev.linkedinLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon
+                                icon={faLinkedin}
+                                size="2x"
+                                className="sicon"
+                            />
                         </a>
                     </div>
                 </div>

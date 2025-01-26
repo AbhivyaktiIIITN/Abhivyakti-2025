@@ -3,5 +3,5 @@ import { audienceOdyssey } from "./audienceOdyssey";
 
 export const probe = {
     audienceOdyssey: audienceOdyssey,
-    admads: admads
-}
+    admads: admads,
+};

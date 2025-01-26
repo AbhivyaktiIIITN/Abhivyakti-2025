@@ -18,7 +18,8 @@ export const admads = {
         prizePool: "₹ 25,000",
         description:
             "Step into the spotlight and let your creativity shine! AdMads is your stage to showcase a stunning advertisement that blends compelling storytelling, creativity, and marketing flair. Unleash your inner marketing guru and make your mark on the Abhivyakti’25 stage with ads that captivate, engage, and leave a lasting impression!",
-        unstopLink: "https://unstop.com/events/admads-abhivyakti-2025-iiit-nagpur-1303135",
+        unstopLink:
+            "https://unstop.com/events/admads-abhivyakti-2025-iiit-nagpur-1303135",
     },
 
     eventTimelineData: {
@@ -85,9 +86,11 @@ export const admads = {
                 position: "2nd Runner Up",
                 prizeAmount: "Worth 5,000",
                 imageSrc: "/assets/EventDetail/probe/Third.png",
-            }
+            },
         ],
-        additionalPrizes: ["Participation certificates for all eligible entries"],
+        additionalPrizes: [
+            "Participation certificates for all eligible entries",
+        ],
     },
 
     eventContactData: {
@@ -106,4 +109,4 @@ export const admads = {
             },
         ],
     },
-}
+};

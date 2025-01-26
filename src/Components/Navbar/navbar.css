@@ -55,7 +55,7 @@
     padding-top: 10vh;
 }
 
-.navbar-container .nav-menu li  a{
+.navbar-container .nav-menu li a {
     text-decoration: none;
     list-style: none;
     color: #ffffff;
@@ -67,11 +67,18 @@
     font-size: 16px;
     color: #ffffff;
     padding: 10px 0;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
 }
 
 .navbar-container .nav-item:hover {
-    background: linear-gradient(to right, #FAF100 0%, #FDC400 50%, #FFA600 100%);
+    background: linear-gradient(
+        to right,
+        #faf100 0%,
+        #fdc400 50%,
+        #ffa600 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
