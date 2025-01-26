@@ -23,7 +23,7 @@ const EventHeader = ({
 
   return (
     <div
-      className="w-full h-[25vh] sm:h-[35vh] md:h-[50vh] lg:h-[70vh] lg:min-h-[800px] 2xl:h-[90vh] bg-contain bg-center bg-no-repeat mt-[64px]"
+      className="w-full h-[25vh] sm:h-[35vh] md:h-[50vh] lg:h-[70vh] lg:min-h-[600px] 2xl:h-[90vh] bg-contain bg-center bg-no-repeat mt-[64px]"
       style={{
         background: `${bgUrlRight}`,
       }}
