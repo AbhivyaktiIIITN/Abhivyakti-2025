@@ -18,7 +18,8 @@ export const rasdhaara = {
         prizePool: "₹ 2500",
         description:
             "Express your creativity in Rasdhaara, where your words come to life! This competition invites poets to showcase their talent through powerful verses, whether it's a heartfelt message, a thought-provoking theme, or a burst of creativity.\n\nWith no limits to your imagination, share your unique voice on themes that matter to you. From personal reflections to social commentary, let your poetry captivate and inspire. Join us in this virtual platform, where every line can make an impact. Compete with the best and let your words shine!",
-        unstopLink: "https://unstop.com/events/rasdhaara-abhivyakti-2025-iiit-nagpur-1303299",
+        unstopLink:
+            "https://unstop.com/events/rasdhaara-abhivyakti-2025-iiit-nagpur-1303299",
     },
 
     eventTimelineData: {

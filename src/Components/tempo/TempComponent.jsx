@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import MonaLisa from "./monaLisa.png";
 import HandUp from "./handUp.png";
-import "../../css/font.css"
+import "../../css/font.css";
 
 function TempComponent() {
     const variants = {
@@ -49,20 +49,39 @@ function TempComponent() {
                     animate="visible"
                     viewport={{ visible: 0.5 }}
                 >
-                    <motion.div className="absolute object-contain h-full w-full " aria-label="mona-lisa">
-                        <img className="h-full w-auto " src={MonaLisa} alt="Mona Lisa" />
+                    <motion.div
+                        className="absolute object-contain h-full w-full "
+                        aria-label="mona-lisa"
+                    >
+                        <img
+                            className="h-full w-auto "
+                            src={MonaLisa}
+                            alt="Mona Lisa"
+                        />
                     </motion.div>
                     <motion.div
                         className="bottom-0 -rotate-12 absolute object-contain h-1/2 w-auto "
                         aria-label="hand"
                         variants={variants.handOnly}
                         initial="visible"
-                        animate={["visible", "visbile2", "visible3", "visible4"]}
+                        animate={[
+                            "visible",
+                            "visbile2",
+                            "visible3",
+                            "visible4",
+                        ]}
                     >
-                        <img className="h-full w-auto " src={HandUp} alt="Mona Lisa" />
+                        <img
+                            className="h-full w-auto "
+                            src={HandUp}
+                            alt="Mona Lisa"
+                        />
                     </motion.div>
                 </motion.div>
-                <motion.div className="absolute bottom-0 right-0 md:w-[25vw] md:h-1/2 bg-green-600" aria-label="mona-lisa + hand">
+                <motion.div
+                    className="absolute bottom-0 right-0 md:w-[25vw] md:h-1/2 bg-green-600"
+                    aria-label="mona-lisa + hand"
+                >
                     <motion.div aria-label="mona-lisa"></motion.div>
                     <motion.div aria-label="hand"></motion.div>
                 </motion.div>

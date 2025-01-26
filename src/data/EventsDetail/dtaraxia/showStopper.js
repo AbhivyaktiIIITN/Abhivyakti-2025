@@ -18,7 +18,8 @@ export const showStopper = {
         prizePool: "₹ 18,000",
         description:
             "Be the star of the night and own the stage at Showstopper! Let your moves speak louder than words and captivate the audience. It’s your moment to shine, dazzle, and leave everyone spellbound. Dance with passion, grace, and energy that steals the show. Make it unforgettable—be the ultimate Showstopper!",
-        unstopLink: "https://unstop.com/events/showstopper-abhivyakti-2025-iiit-nagpur-1302784",
+        unstopLink:
+            "https://unstop.com/events/showstopper-abhivyakti-2025-iiit-nagpur-1302784",
     },
 
     eventTimelineData: {
@@ -30,7 +31,7 @@ export const showStopper = {
             {
                 title: "Round 2: Finals",
                 date: new Date("27 Feb 2025"),
-                date2: new Date("28 Feb 2025") // Add the specific date if available
+                date2: new Date("28 Feb 2025"), // Add the specific date if available
             },
         ],
     },
@@ -114,7 +115,7 @@ export const showStopper = {
                 position: "2nd Runner Up",
                 prizeAmount: "Worth 3,000",
                 imageSrc: "/assets/EventDetail/dtaraxia/Third.png",
-            }
+            },
         ],
         additionalPrizes: ["Participation certificates"],
     },
@@ -135,6 +136,4 @@ export const showStopper = {
             },
         ],
     },
-
-   
-}
+};

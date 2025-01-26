@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import DaVinci from "/assets/HomePage/Sponsors/DaVinci.png";
 import HandDown from "/assets/HomePage/Sponsors/handDown.png";
 
@@ -18,7 +18,7 @@ function DaVinciAndHand({ animate }) {
                     delay: 0.5,
                     duration: 0.5,
                 },
-            }
+            },
         },
 
         handDownOnly: {
@@ -35,7 +35,7 @@ function DaVinciAndHand({ animate }) {
                     duration: 0.5,
                 },
             },
-        }
+        },
     };
 
     return (
@@ -47,20 +47,35 @@ function DaVinciAndHand({ animate }) {
             animate={animate ? "visible" : "hidden"}
             viewport={{ visible: 0.5 }}
         >
-            <motion.div className="absolute object-contain h-full w-full " aria-label="daVinci">
-                <img className="h-full w-auto absolute right-0 shadow-red-600 drop-shadow-2xl" src={DaVinci} alt="DaVinci" />
+            <motion.div
+                className="absolute object-contain h-full w-full "
+                aria-label="daVinci"
+            >
+                <img
+                    className="h-full w-auto absolute right-0 shadow-red-600 drop-shadow-2xl"
+                    src={DaVinci}
+                    alt="DaVinci"
+                />
             </motion.div>
             <motion.div
                 className="bottom-0 right-0 rotate-12 absolute object-contain h-1/2 w-auto "
                 aria-label="hand"
                 variants={variants.handDownOnly}
                 initial="visible"
-                animate={animate ? ["visible", "visbile2", "visible3", "visible4"] : "visible"}
+                animate={
+                    animate
+                        ? ["visible", "visbile2", "visible3", "visible4"]
+                        : "visible"
+                }
             >
-                <img className="h-full w-auto " src={HandDown} alt="DaVinci hand down for animation" />
+                <img
+                    className="h-full w-auto "
+                    src={HandDown}
+                    alt="DaVinci hand down for animation"
+                />
             </motion.div>
         </motion.div>
-    )
+    );
 }
 
-export default DaVinciAndHand
+export default DaVinciAndHand;

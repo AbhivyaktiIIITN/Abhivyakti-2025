@@ -1,75 +1,160 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence, useAnimate } from "framer-motion"
-import "../../css/font.css"
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence, useAnimate } from "framer-motion";
+import "../../css/font.css";
 
 const Hero = ({ page }) => {
-
-    const [scope, animate] = useAnimate()
+    const [scope, animate] = useAnimate();
 
     const onMouseEnter = async (e) => {
-
         if (window.matchMedia("(min-width: 768px)").matches) {
-
-            animate("#hand", { left: '-70%', top: '-70%' }, { duration: 1.5 })
-            await animate("#grafitti", { top: '-10rem', right: 0, left: '-8rem' }, { duration: 1.5 })
-            animate("#hand", { left: '-700%', top: '700%' }, { duration: 2 })
-            await animate("#arrow", { top: '-10rem', right: 0, left: '-8rem', scaleX: -1, rotate: 360 }, { duration: 1 })
-            animate("#events", { bottom: '-5.5rem', left: '23rem', opacity: 1 }, { duration: 1 })
-
+            animate("#hand", { left: "-70%", top: "-70%" }, { duration: 1.5 });
+            await animate(
+                "#grafitti",
+                { top: "-10rem", right: 0, left: "-8rem" },
+                { duration: 1.5 },
+            );
+            animate("#hand", { left: "-700%", top: "700%" }, { duration: 2 });
+            await animate(
+                "#arrow",
+                {
+                    top: "-10rem",
+                    right: 0,
+                    left: "-8rem",
+                    scaleX: -1,
+                    rotate: 360,
+                },
+                { duration: 1 },
+            );
+            animate(
+                "#events",
+                { bottom: "-5.5rem", left: "23rem", opacity: 1 },
+                { duration: 1 },
+            );
         } else {
-
-            animate("#hand", { left: '-70%', top: '-70%' }, { duration: 1.5 })
-            await animate("#grafitti", { top: '-5rem', right: 0, left: '-5rem' }, { duration: 1.5 })
-            animate("#hand", { left: '-700%', top: '700%' }, { duration: 2 })
-            await animate("#arrow", { top: '-5rem', right: 0, left: '-5rem', scaleX: -1, rotate: 360 }, { duration: 1 })
-            animate("#events", { bottom: '-2.5rem', left: '10rem', opacity: 1 }, { duration: 1 })
+            animate("#hand", { left: "-70%", top: "-70%" }, { duration: 1.5 });
+            await animate(
+                "#grafitti",
+                { top: "-5rem", right: 0, left: "-5rem" },
+                { duration: 1.5 },
+            );
+            animate("#hand", { left: "-700%", top: "700%" }, { duration: 2 });
+            await animate(
+                "#arrow",
+                {
+                    top: "-5rem",
+                    right: 0,
+                    left: "-5rem",
+                    scaleX: -1,
+                    rotate: 360,
+                },
+                { duration: 1 },
+            );
+            animate(
+                "#events",
+                { bottom: "-2.5rem", left: "10rem", opacity: 1 },
+                { duration: 1 },
+            );
         }
-    }
+    };
 
     const onMouseLeave = async (e) => {
-
         if (window.matchMedia("(min-width: 768px)").matches) {
+            await animate(
+                "#hand",
+                { left: "-70%", top: "-70%" },
+                { duration: 1.5 },
+            );
+            animate("#hand", { left: "-700%", top: "700%" }, { duration: 2 });
+            animate(
+                "#grafitti",
+                { left: "-700%", top: "700%", bottom: 0, right: 0 },
+                { duration: 2 },
+            );
+            animate(
+                "#arrow",
+                { left: "-700%", top: "700%", bottom: 0, right: 0 },
+                { duration: 1 },
+            );
+            await animate(
+                "#events",
+                { left: "-700%", top: "700%", opacity: 1 },
+                { duration: 1 },
+            );
 
-            await animate("#hand", { left: '-70%', top: '-70%' }, { duration: 1.5 })
-            animate("#hand", { left: '-700%', top: '700%' }, { duration: 2 })
-            animate("#grafitti", { left: '-700%', top: '700%', bottom: 0, right: 0 }, { duration: 2 })
-            animate("#arrow", { left: '-700%', top: '700%', bottom: 0, right: 0 }, { duration: 1 })
-            await animate("#events", { left: '-700%', top: '700%', opacity: 1 }, { duration: 1 })
-
-            animate("#arrow", { top: '-700%', right: 0, left: '-8rem', rotate: 180, scaleX: -1 }, { duration: 0 })
-            animate("#events", { left: '-5.5rem', bottom: '18rem', top: '14rem', opacity: 0 }, { duration: 0 })
-
+            animate(
+                "#arrow",
+                {
+                    top: "-700%",
+                    right: 0,
+                    left: "-8rem",
+                    rotate: 180,
+                    scaleX: -1,
+                },
+                { duration: 0 },
+            );
+            animate(
+                "#events",
+                { left: "-5.5rem", bottom: "18rem", top: "14rem", opacity: 0 },
+                { duration: 0 },
+            );
         } else {
+            await animate(
+                "#hand",
+                { left: "-70%", top: "-70%" },
+                { duration: 1.5 },
+            );
+            animate("#hand", { left: "-700%", top: "700%" }, { duration: 2 });
+            animate(
+                "#grafitti",
+                { left: "-700%", top: "700%", bottom: 0, right: 0 },
+                { duration: 2 },
+            );
+            animate(
+                "#arrow",
+                { left: "-700%", top: "700%", bottom: 0, right: 0 },
+                { duration: 1 },
+            );
+            await animate(
+                "#events",
+                { left: "-700%", top: "700%", opacity: 1 },
+                { duration: 1 },
+            );
 
-            await animate("#hand", { left: '-70%', top: '-70%' }, { duration: 1.5 })
-            animate("#hand", { left: '-700%', top: '700%' }, { duration: 2 })
-            animate("#grafitti", { left: '-700%', top: '700%', bottom: 0, right: 0 }, { duration: 2 })
-            animate("#arrow", { left: '-700%', top: '700%', bottom: 0, right: 0 }, { duration: 1 })
-            await animate("#events", { left: '-700%', top: '700%', opacity: 1 }, { duration: 1 })
-
-            animate("#arrow", { top: '-700%', right: 0, left: '-8rem', rotate: 180, scaleX: -1 }, { duration: 0 })
-            animate("#events", { left: '5rem', bottom: '-2.5rem', top: '6.5rem', opacity: 0 }, { duration: 0 })
+            animate(
+                "#arrow",
+                {
+                    top: "-700%",
+                    right: 0,
+                    left: "-8rem",
+                    rotate: 180,
+                    scaleX: -1,
+                },
+                { duration: 0 },
+            );
+            animate(
+                "#events",
+                { left: "5rem", bottom: "-2.5rem", top: "6.5rem", opacity: 0 },
+                { duration: 0 },
+            );
         }
-    }
+    };
 
     useEffect(() => {
         setTimeout(() => {
-            onMouseEnter()
-        }, 0)
+            onMouseEnter();
+        }, 0);
         return () => {
-            onMouseLeave()
-        }
-    }, [])
+            onMouseLeave();
+        };
+    }, []);
 
     return (
-        <div
-            className="w-screen h-screen flex justify-center items-center overflow-hidden"
-        >
+        <div className="w-screen h-screen flex justify-center items-center overflow-hidden">
             <div
                 className="min-w-[300px] w-[50vw] sm:min-w-[600px] sm:w-[33vw] flex justify-center items-center relative"
                 ref={scope}
-            // onMouseEnter={onMouseEnter}
-            // onMouseLeave={onMouseLeave}
+                // onMouseEnter={onMouseEnter}
+                // onMouseLeave={onMouseLeave}
             >
                 <img
                     className="z-40"

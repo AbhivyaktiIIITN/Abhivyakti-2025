@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import ContactUsImg from "/assets/EventDetail/ContactUs.png"
-import "../ContactUs/contactUs.css"
-import "../../../css/font.css"
+import ContactUsImg from "/assets/EventDetail/ContactUs.png";
+import "../ContactUs/contactUs.css";
+import "../../../css/font.css";
 
 const ContactUs = ({ contacts, onSubmit }) => {
     const sectionRef = useRef(null);
@@ -15,7 +15,7 @@ const ContactUs = ({ contacts, onSubmit }) => {
                     setAnimate(false);
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0.2 },
         );
 
         if (sectionRef.current) {
@@ -31,9 +31,9 @@ const ContactUs = ({ contacts, onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = {
-            name: (e.currentTarget.elements.namedItem("name")).value,
-            contact: (e.currentTarget.elements.namedItem("contact")).value,
-            queries: (e.currentTarget.elements.namedItem("queries")).value,
+            name: e.currentTarget.elements.namedItem("name").value,
+            contact: e.currentTarget.elements.namedItem("contact").value,
+            queries: e.currentTarget.elements.namedItem("queries").value,
         };
         onSubmit(formData);
     };
@@ -48,11 +48,20 @@ const ContactUs = ({ contacts, onSubmit }) => {
                 <div className="w-full max-w-3xl space-y-4 flex  items-center justify-center gap-2 place-items-center">
                     <div className="flex flex-wrap gap-8">
                         {contacts.map((contact, index) => (
-                            <div key={index} className="space-y-2 p-5 flex flex-col">
+                            <div
+                                key={index}
+                                className="space-y-2 p-5 flex flex-col"
+                            >
                                 <h1 className="text-xl">{contact.title}</h1>
-                                <p className=" text-2xl font-bold">{contact.name}</p>
-                                <a href={`tel:${contact.phone}`}>{contact.phone}</a>
-                                <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                                <p className=" text-2xl font-bold">
+                                    {contact.name}
+                                </p>
+                                <a href={`tel:${contact.phone}`}>
+                                    {contact.phone}
+                                </a>
+                                <a href={`mailto:${contact.email}`}>
+                                    {contact.email}
+                                </a>
                             </div>
                         ))}
                     </div>

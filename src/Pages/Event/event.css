@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-image: url('/assets/EventsPage/pageBg.png');
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("/assets/EventsPage/pageBg.png");
     background-position: center;
     overflow-x: hidden;
     user-select: none;

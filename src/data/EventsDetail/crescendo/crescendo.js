@@ -7,5 +7,5 @@ export const crescendo = {
     chordsOfChaos,
     musicalArmageddon,
     singersShowdown: singersShowDown,
-    beatBarracks
+    beatBarracks,
 };

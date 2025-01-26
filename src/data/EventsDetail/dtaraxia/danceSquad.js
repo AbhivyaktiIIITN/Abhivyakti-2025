@@ -18,7 +18,8 @@ export const danceSquad = {
         prizePool: "₹ 25,000",
         description:
             "Strength in unity, power in moves—welcome to Dance Squad! Showcase your squad’s energy, coordination, and creativity on stage. Let your formations and flawless grooves captivate the audience. This is where every step becomes a statement. Bring your squad, own the rhythm, and rule the stage!",
-        unstopLink: "https://unstop.com/events/dance-squad-abhivyakti-2025-iiit-nagpur-1302815",
+        unstopLink:
+            "https://unstop.com/events/dance-squad-abhivyakti-2025-iiit-nagpur-1302815",
     },
 
     eventTimelineData: {
@@ -122,5 +123,4 @@ export const danceSquad = {
             },
         ],
     },
-
 };

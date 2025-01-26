@@ -16,7 +16,10 @@ const SpeakerHorizontalScrollCarousel = () => {
     return (
         <section ref={targetRef} className="relative h-[550vh] urbanist-font font-normal">
             <div className="sticky top-0 flex md:h-[100vh] sm:h-[100vh] items-center overflow-scroll no-scrollbar overflow-x-hidden overflow-y-hidden">
-                <motion.div style={{ x }} className="flex gap-4 items-center w-fit h-full sm:mt-20 md:mt-16">
+                <motion.div
+                    style={{ x }}
+                    className="flex gap-4 items-center w-fit h-full sm:mt-20 md:mt-16"
+                >
                     <div className="sm:w-[1000px] w-[95vw] h-[80vh] flex flex-col justify-center items-center urbanist-font text-white sm:ml-40 md:ml-20 mr-10">
                         <p className="text-5xl text-center sm:text-6xl md:text-8xl capitalize sm:mb-10 md:mb-4 gradient-text min-w-[200px] w-full">
                             About Theme
@@ -24,7 +27,21 @@ const SpeakerHorizontalScrollCarousel = () => {
                         <p className="text-base sm:text-xl md:text-2xl font-normal p-2 text-justify">
                             {/* The Underground Art Movement is a celebration of bold and rebellious creativity that thrives beyond mainstream platforms and conventions. It is a tribute to the power of art born in the streets, back alleys, and hidden urban corners, where self-expression is raw, unfiltered, and unapologetically authentic. This movement challenges societal norms and pushes boundaries by using unconventional mediums like graffiti, street murals, digital art, and urban installations to voice themes of rebellion, identity, and pressing social issues. */}
                             {/* The Underground Art Movement rejects commercialization, embracing a DIY ethos that values authenticity and individuality. It amplifies underrepresented voices, fostering community and inspiring trends in fashion, music, and art. Rooted in counterculture, it adapts to the digital age to remain innovative, boundary-pushing, and accessible, symbolizing freedom, creativity, and the courage to defy expectations. */}
-                            The Underground Art Movement is a celebration of bold and rebellious creativity that thrives beyond mainstream platforms and conventions. It is a tribute to the power of art born in the streets, back alleys, and hidden urban corners, where self-expression is raw, unfiltered, and unapologetically authentic.This Movement challenges societal norms using unconventional mediums like graffiti, digital art, and urban installations to highlight themes of rebellion, identity, and social issues. Rejecting commercialization, it embraces a DIY ethos, amplifies underrepresented voices, and influences trends in fashion, music, and art. Rooted in counterculture, it evolves with the digital age, symbolizing freedom, creativity, and defiance.
+                            The Underground Art Movement is a celebration of
+                            bold and rebellious creativity that thrives beyond
+                            mainstream platforms and conventions. It is a
+                            tribute to the power of art born in the streets,
+                            back alleys, and hidden urban corners, where
+                            self-expression is raw, unfiltered, and
+                            unapologetically authentic.This Movement challenges
+                            societal norms using unconventional mediums like
+                            graffiti, digital art, and urban installations to
+                            highlight themes of rebellion, identity, and social
+                            issues. Rejecting commercialization, it embraces a
+                            DIY ethos, amplifies underrepresented voices, and
+                            influences trends in fashion, music, and art. Rooted
+                            in counterculture, it evolves with the digital age,
+                            symbolizing freedom, creativity, and defiance.
                         </p>
                     </div>
                     <div className="w-[500px] sm:w-[1000px] h-[90vh] sm:ml-56 flex items-center justify-center sm:mt-16 md:mt-8">
@@ -110,7 +127,6 @@ const SpeakerHorizontalScrollCarousel = () => {
                     <div className="sm:w-0 sm:h-0 w-40 h-full"></div>
                 </motion.div>
             </div>
-
         </section>
     );
 };

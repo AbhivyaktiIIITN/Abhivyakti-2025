@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './eventssection.css';
-import tl from '/assets/HomePage/Events/tl.png';
-import subtxt from '/assets/HomePage/Events/subtxt.png';
-import head from '/assets/HomePage/Events/head.png';
-import { eventData } from './eventsData';
-import "../../../css/font.css"
+import React, { useEffect, useRef, useState } from "react";
+import "./eventssection.css";
+import tl from "/assets/HomePage/Events/tl.png";
+import subtxt from "/assets/HomePage/Events/subtxt.png";
+import head from "/assets/HomePage/Events/head.png";
+import { eventData } from "./eventsData";
+import "../../../css/font.css";
 
 const EventsSection = () => {
     const sectionRef = useRef(null);
@@ -23,7 +23,7 @@ const EventsSection = () => {
                 //     setAnimate(false);
                 // }
             },
-            { threshold: 0.15 }
+            { threshold: 0.15 },
         );
 
         if (sectionRef.current) {
@@ -47,14 +47,13 @@ const EventsSection = () => {
             setTimeout(() => {
                 scrollContainerRef.current.scrollBy({
                     left: -getCardWidth(),
-                    behavior: 'smooth',
+                    behavior: "smooth",
                 });
             }, animationDelay);
-        }
-        else {
+        } else {
             scrollContainerRef.current.scrollBy({
                 left: -getCardWidth(),
-                behavior: 'smooth',
+                behavior: "smooth",
             });
         }
     };
@@ -65,68 +64,98 @@ const EventsSection = () => {
             setTimeout(() => {
                 scrollContainerRef.current.scrollBy({
                     left: getCardWidth(),
-                    behavior: 'smooth',
+                    behavior: "smooth",
                 });
             }, animationDelay);
-        }
-        else {
+        } else {
             scrollContainerRef.current.scrollBy({
                 left: getCardWidth(),
-                behavior: 'smooth',
+                behavior: "smooth",
             });
         }
     };
 
     const getCardWidth = () => {
-        const card = scrollContainerRef.current.querySelector('.card');
+        const card = scrollContainerRef.current.querySelector(".card");
         return card ? card.offsetWidth : 0;
     };
 
     return (
         <div className="events-section urbanist-font font-normal" id="event" ref={sectionRef}>
             <div className="title">
-                <img src={tl} alt="" className={`header ${animate ? 'slide-in' : ''}`} />
-                <img src={subtxt} alt="" className={`sub ${animate ? 'fade-in' : ''}`} />
+                <img
+                    src={tl}
+                    alt=""
+                    className={`header ${animate ? "slide-in" : ""}`}
+                />
+                <img
+                    src={subtxt}
+                    alt=""
+                    className={`sub ${animate ? "fade-in" : ""}`}
+                />
             </div>
             <div className="card-scroll-wrapper">
                 <button className="scroll-button left" onClick={scrollLeft}>
                     &#8249;
                 </button>
-                <div className={`card-scroll-container ${animate ? 'fade-in' : ''}`} ref={scrollContainerRef}>
-                    {eventData.map(({ cardId, gradient, events, exploreLink }) => (
-                        <div
-                            key={cardId}
-                            className={`card card-${cardId} ${flippedCards[cardId] ? 'flipped' : ''}`}
-                            onClick={() => handleCardClick(cardId)}
-                        >
-                            <div className="card-inner">
-                                <div className={`card-front cf${cardId} ch${cardId}`}></div>
-                                <div className={`card-back cb${cardId}`}>
-                                    <div className="details">
-                                        <img src={head} alt="Events" className="event-head" />
-                                        <div className="evnt">
-                                            {events.map((event, idx) => (
-                                                <div key={idx}>
-                                                    <h4 className="evnt-name">{event.name}</h4>
-                                                    <p className="evnt-desc">{event.desc}</p>
-                                                </div>
-                                            ))}
-                                        </div>
-                                        <div className="flex flex-row justify-evenly items-center w-full">
-                                            <a href="/event" style={{ background: gradient }} rel="noopener noreferrer">
-                                                <button>
-                                                    EXPLORE
-                                                </button>
-                                            </a>
-                                            <a href={exploreLink} target="_blank" rel="noopener noreferrer">
-                                                <button>REGISTER</button>
-                                            </a>
+                <div
+                    className={`card-scroll-container ${animate ? "fade-in" : ""}`}
+                    ref={scrollContainerRef}
+                >
+                    {eventData.map(
+                        ({ cardId, gradient, events, exploreLink }) => (
+                            <div
+                                key={cardId}
+                                className={`card card-${cardId} ${flippedCards[cardId] ? "flipped" : ""}`}
+                                onClick={() => handleCardClick(cardId)}
+                            >
+                                <div className="card-inner">
+                                    <div
+                                        className={`card-front cf${cardId} ch${cardId}`}
+                                    ></div>
+                                    <div className={`card-back cb${cardId}`}>
+                                        <div className="details">
+                                            <img
+                                                src={head}
+                                                alt="Events"
+                                                className="event-head"
+                                            />
+                                            <div className="evnt">
+                                                {events.map((event, idx) => (
+                                                    <div key={idx}>
+                                                        <h4 className="evnt-name">
+                                                            {event.name}
+                                                        </h4>
+                                                        <p className="evnt-desc">
+                                                            {event.desc}
+                                                        </p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <div className="flex flex-row justify-evenly items-center w-full">
+                                                <a
+                                                    href="/event"
+                                                    style={{
+                                                        background: gradient,
+                                                    }}
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <button>EXPLORE</button>
+                                                </a>
+                                                <a
+                                                    href={exploreLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <button>REGISTER</button>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ),
+                    )}
                 </div>
                 <button className="scroll-button right" onClick={scrollRight}>
                     &#8250;

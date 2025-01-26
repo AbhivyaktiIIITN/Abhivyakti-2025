@@ -6,7 +6,7 @@ import sh from "/assets/HomePage/Sponsors/sh.png";
 import MonaLisaAndHand from "./MonaLisaAndHand";
 import DaVinciAndHand from "./DaVinciAndHand";
 
-import "../../../css/font.css"
+import "../../../css/font.css";
 
 function SponsorsSection() {
     const sectionRef = useRef(null);
@@ -22,7 +22,7 @@ function SponsorsSection() {
                 //     setAnimate(false);
                 // }
             },
-            { threshold: 0.5 }
+            { threshold: 0.5 },
         );
 
         if (sectionRef.current) {
@@ -39,25 +39,36 @@ function SponsorsSection() {
     return (
         <div ref={sectionRef} className="sponsor-container overflow-hidden urbanist-font font-normal" id="sponsors" >
             {/* <TempComponent /> */}
-            <div div className="wrapper pb-12 relative " >
+            <div div className="wrapper pb-12 relative ">
                 <MonaLisaAndHand animate={animate} />
                 <DaVinciAndHand animate={animate} />
                 <div className="text">
-                    <img src={sh} alt="" className={`header ${animate ? "slide-in" : ""}`} />
+                    <img
+                        src={sh}
+                        alt=""
+                        className={`header ${animate ? "slide-in" : ""}`}
+                    />
                 </div>
                 <div className="marquee top-marquee ">
-
                     <div className="marquee-group">
                         {SponsorsData.left.map((el, idx) => (
                             <div key={idx} className="image-group">
-                                <img src={el} alt={`company-${idx}`} className="image" />
+                                <img
+                                    src={el}
+                                    alt={`company-${idx}`}
+                                    className="image"
+                                />
                             </div>
                         ))}
                     </div>
                     <div className="marquee-group">
                         {SponsorsData.left.map((el, idx) => (
                             <div key={idx} className="image-group">
-                                <img src={el} alt={`company-${idx}`} className="image" />
+                                <img
+                                    src={el}
+                                    alt={`company-${idx}`}
+                                    className="image"
+                                />
                             </div>
                         ))}
                     </div>
@@ -66,20 +77,28 @@ function SponsorsSection() {
                     <div className="marquee-group reverse">
                         {SponsorsData.right.map((el, idx) => (
                             <div key={idx} className="image-group">
-                                <img src={el} alt={`company-${idx}`} className="image" />
+                                <img
+                                    src={el}
+                                    alt={`company-${idx}`}
+                                    className="image"
+                                />
                             </div>
                         ))}
                     </div>
                     <div className="marquee-group reverse delay">
                         {SponsorsData.right.map((el, idx) => (
                             <div key={idx} className="image-group">
-                                <img src={el} alt={`company-${idx}`} className="image" />
+                                <img
+                                    src={el}
+                                    alt={`company-${idx}`}
+                                    className="image"
+                                />
                             </div>
                         ))}
                     </div>
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     );
 }
 

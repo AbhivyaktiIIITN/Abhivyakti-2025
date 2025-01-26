@@ -5,7 +5,7 @@ export const speakers = [
         insta: "",
         linkedin: "",
         facebook: "",
-        image: "/assets/HomePage/temp2.png"
+        image: "/assets/HomePage/temp2.png",
     },
     {
         name: "speaker xyz",
@@ -13,7 +13,7 @@ export const speakers = [
         insta: "",
         linkedin: "",
         facebook: "",
-        image: "/assets/HomePage/temp2.png"
+        image: "/assets/HomePage/temp2.png",
     },
     {
         name: "speaker xyz",
@@ -21,7 +21,7 @@ export const speakers = [
         insta: "",
         linkedin: "",
         facebook: "",
-        image: "/assets/HomePage/temp2.png"
+        image: "/assets/HomePage/temp2.png",
     },
     {
         name: "speaker xyz",
@@ -29,13 +29,14 @@ export const speakers = [
         insta: "",
         linkedin: "",
         facebook: "",
-        image: "/assets/HomePage/temp2.png"
-    }, {
+        image: "/assets/HomePage/temp2.png",
+    },
+    {
         name: "speaker xyz",
         about: "about speaker/performance",
         insta: "",
         linkedin: "",
         facebook: "",
-        image: "/assets/HomePage/temp2.png"
+        image: "/assets/HomePage/temp2.png",
     },
-]
+];

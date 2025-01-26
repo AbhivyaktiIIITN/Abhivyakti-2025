@@ -1,180 +1,163 @@
 const teamsData = [
     {
-        name: 'SAC-Coordinators',
+        name: "SAC-Coordinators",
         members: [
-            { name: 'Dr Anil Kushwah', role: 'SAC Coordinator' },
-            { name: 'Dr Snehal B Shinde', role: 'SAC Co-Coordinator' },
+            { name: "Dr Anil Kushwah", role: "SAC Coordinator" },
+            { name: "Dr Snehal B Shinde", role: "SAC Co-Coordinator" },
         ],
     },
     {
-        name: 'SAC Team',
+        name: "SAC Team",
         members: [
-            { name: 'Harsh Suhan', role: 'General Secretary' },
-            { name: 'Atharva Wadekar', role: 'Cultural Secretary' },
-            { name: 'Aayush Jain', role: 'Technical Secretary' },
-            { name: 'Sujal Ahirrao', role: 'Financial Secretary' },
-            { name: 'Abhishek Sarkar', role: 'ERC' },
-            { name: 'Abhinay Bandaru', role: 'Sports Secretary' },
+            { name: "Harsh Suhan", role: "General Secretary" },
+            { name: "Atharva Wadekar", role: "Cultural Secretary" },
+            { name: "Aayush Jain", role: "Technical Secretary" },
+            { name: "Sujal Ahirrao", role: "Financial Secretary" },
+            { name: "Abhishek Sarkar", role: "ERC" },
+            { name: "Abhinay Bandaru", role: "Sports Secretary" },
         ],
     },
     {
-        name: 'Corporate Team',
+        name: "Corporate Team",
         members: [
-            { name: 'Aahil Parkar', role: 'Lead' },
-            { name: 'Aryan Aggarwal', role: 'Co-Lead' },
+            { name: "Aahil Parkar", role: "Lead" },
+            { name: "Aryan Aggarwal", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Public Relations [PR]',
+        name: "Public Relations [PR]",
         members: [
-            { name: 'Himanshu Singh', role: 'Lead' },
-            { name: 'Pradyumna Shirsath', role: 'Co-Lead' },
+            { name: "Himanshu Singh", role: "Lead" },
+            { name: "Pradyumna Shirsath", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Marketing',
+        name: "Marketing",
         members: [
-            { name: 'Krishna Singh Thakur', role: 'Lead' },
-            { name: 'Ninad Kulkarni', role: 'Co-Lead' },
+            { name: "Krishna Singh Thakur", role: "Lead" },
+            { name: "Ninad Kulkarni", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Event Management [Operations]',
+        name: "Event Management [Operations]",
+        members: [{ name: "Sujay Kamble", role: "Lead" }],
+    },
+    {
+        name: "Event Management [Logistics]",
+        members: [{ name: "Keyur Londhe", role: "Lead" }],
+    },
+    {
+        name: "Event Management [Stage]",
         members: [
-            { name: 'Sujay Kamble', role: 'Lead' },
+            { name: "Harsh Jaiswal", role: "Lead" },
+            { name: "Akshat Singh Chauhan", role: "Lead" },
         ],
     },
     {
-        name: 'Event Management [Logistics]',
+        name: "Hospitality",
+        members: [{ name: "Akshit Gangwar", role: "Lead" }],
+    },
+    {
+        name: "Stalls Operations",
+        members: [{ name: "Amitabh Mane", role: "Lead" }],
+    },
+    {
+        name: "Content and Anchoring",
         members: [
-            { name: 'Keyur Londhe', role: 'Lead' },
+            { name: "Kushagra Srivastava", role: "Lead" },
+            { name: "Mithilesh Tapkire", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Event Management [Stage]',
+        name: "Decor",
         members: [
-            { name: 'Harsh Jaiswal', role: 'Lead' },
-            { name: 'Akshat Singh Chauhan', role: 'Lead' },
+            { name: "Sumedh Sabne", role: "Lead" },
+            { name: "Navya Srivastava", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Hospitality',
+        name: "Design",
         members: [
-            { name: 'Akshit Gangwar', role: 'Lead' },
+            { name: "Vedant Barapatre", role: "Lead" },
+            { name: "Ashay Tiwari", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Stalls Operations',
+        name: "Photography and Videography",
         members: [
-            { name: 'Amitabh Mane', role: 'Lead' },
+            { name: "Ishan Gupta", role: "Lead" },
+            { name: "Sanket Chaudhari", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Content and Anchoring',
+        name: "Social Media",
+        members: [{ name: "Vaibhav Jaiswal", role: "Lead" }],
+    },
+    {
+        name: "Web-Development",
         members: [
-            { name: 'Kushagra Srivastava', role: 'Lead' },
-            { name: 'Mithilesh Tapkire', role: 'Co-Lead' },
+            { name: "Supratit Datta", role: "Lead" },
+            { name: "Nikhil Mishra", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Decor',
+        name: "Dimensions",
         members: [
-            { name: 'Sumedh Sabne', role: 'Lead' },
-            { name: 'Navya Srivastava', role: 'Co-Lead' },
+            { name: "Devashish Athawale", role: "Lead" },
+            { name: "Sahil Sonar", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Design',
+        name: "Crispr",
         members: [
-            { name: 'Vedant Barapatre', role: 'Lead' },
-            { name: 'Ashay Tiwari', role: 'Co-Lead' },
+            { name: "Shrut Jain", role: "Lead" },
+            { name: "Jaiwardhan Bhola", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Photography and Videography',
+        name: "Estoria",
+        members: [{ name: "Aditya Shrivastava", role: "Estoria Lead" }],
+    },
+    {
+        name: "Crescendo",
+        members: [{ name: "Rhythm Agrawal", role: "Crescendo Lead" }],
+    },
+    {
+        name: "D-Taraxia",
+        members: [{ name: "Jwalit Lal", role: "D-Taraxia Lead" }],
+    },
+    {
+        name: "Elevate",
         members: [
-            { name: 'Ishan Gupta', role: 'Lead' },
-            { name: 'Sanket Chaudhari', role: 'Co-Lead' },
+            { name: "Ayush Ajgaonkar", role: "Lead" },
+            { name: "Debdip Mukharjee", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Social Media',
+        name: "Dotslash",
         members: [
-            { name: 'Vaibhav Jaiswal', role: 'Lead' },
+            { name: "Gopal Kalawate", role: "Lead" },
+            { name: "Muin Sayyad", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Web-Development',
+        name: "Strokes",
         members: [
-            { name: 'Supratit Datta', role: 'Lead' },
-            { name: 'Nikhil Mishra', role: 'Co-Lead' },
+            { name: "Sumeet Kumar", role: "Lead" },
+            { name: "Ashay Tiwari", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Dimensions',
+        name: "Probe",
         members: [
-            { name: 'Devashish Athawale', role: 'Lead' },
-            { name: 'Sahil Sonar', role: 'Co-Lead' },
+            { name: "Ishan Gupta", role: "Lead" },
+            { name: "Sanket Chaudhari", role: "Co-Lead" },
+            { name: "Fahad Ahmed", role: "Co-Lead" },
         ],
     },
     {
-        name: 'Crispr',
-        members: [
-            { name: 'Shrut Jain', role: 'Lead' },
-            { name: 'Jaiwardhan Bhola', role: 'Co-Lead' },
-        ],
-    }, {
-        name: 'Estoria',
-        members: [
-            { name: 'Aditya Shrivastava', role: 'Estoria Lead' },
-        ],
-    },
-    {
-        name: 'Crescendo',
-        members: [
-            { name: 'Rhythm Agrawal', role: 'Crescendo Lead' },
-        ],
-    },
-    {
-        name: 'D-Taraxia',
-        members: [
-            { name: 'Jwalit Lal', role: 'D-Taraxia Lead' },
-        ],
-    },
-    {
-        name: 'Elevate',
-        members: [
-            { name: 'Ayush Ajgaonkar', role: 'Lead' },
-            { name: 'Debdip Mukharjee', role: 'Co-Lead' },
-        ],
-    },
-    {
-        name: 'Dotslash',
-        members: [
-            { name: 'Gopal Kalawate', role: 'Lead' },
-            { name: 'Muin Sayyad', role: 'Co-Lead' },
-        ],
-    },
-    {
-        name: 'Strokes',
-        members: [
-            { name: 'Sumeet Kumar', role: 'Lead' },
-            { name: 'Ashay Tiwari', role: 'Co-Lead' },
-        ],
-    },
-    {
-        name: 'Probe',
-        members: [
-            { name: 'Ishan Gupta', role: 'Lead' },
-            { name: 'Sanket Chaudhari', role: 'Co-Lead' },
-            { name: 'Fahad Ahmed', role: 'Co-Lead' },
-        ],
-    },
-    {
-        name: 'Orator',
-        members: [
-            { name: 'Vaibhav Khanna', role: 'Club Head' },
-        ],
+        name: "Orator",
+        members: [{ name: "Vaibhav Khanna", role: "Club Head" }],
     },
 ];
 

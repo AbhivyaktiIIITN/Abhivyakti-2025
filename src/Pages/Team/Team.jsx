@@ -5,7 +5,7 @@ import Hero from "../../Components/PageHero/Hero.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 import "./team.css";
 import teamsData from "./TeamData.js";
-import "../../css/font.css"
+import "../../css/font.css";
 
 function Team() {
     useEffect(() => {
@@ -61,8 +61,12 @@ function Team() {
                                     variants={sectionVariants}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <div className="member-name">{member.name}</div>
-                                    <div className="member-role">{member.role}</div>
+                                    <div className="member-name">
+                                        {member.name}
+                                    </div>
+                                    <div className="member-role">
+                                        {member.role}
+                                    </div>
                                 </motion.div>
                             ))}
                         </motion.div>

@@ -24,31 +24,42 @@ function App() {
                             event={{
                                 title: "1",
                                 eventheader: {
-                                    clubName: "/assets/EventDetail/estoria/Estoria.png",
-                                    eventName: "/assets/EventDetail/estoria/Monoact.png",
-                                    eventDescription: "/assets/EventDetail/estoria/SoloDrama.png",
-                                    ClubLogo: "/assets/EventDetail/estoria/ClubLogo.png",
-                                    bgUrlRight: "linear-gradient(90deg, #FDFDFB 0%, #9747FF 100%)",
-                                    bgUrlLeft: "url(/assets/EventDetail/estoria/Event-bg.png)",
-                                    leftStatueUrl: "/assets/EventDetail/estoria/statue-left.png",
-                                    rightStatueUrl: "/assets/EventDetail/estoria/statue-right.png",
+                                    clubName:
+                                        "/assets/EventDetail/estoria/Estoria.png",
+                                    eventName:
+                                        "/assets/EventDetail/estoria/Monoact.png",
+                                    eventDescription:
+                                        "/assets/EventDetail/estoria/SoloDrama.png",
+                                    ClubLogo:
+                                        "/assets/EventDetail/estoria/ClubLogo.png",
+                                    bgUrlRight:
+                                        "linear-gradient(90deg, #FDFDFB 0%, #9747FF 100%)",
+                                    bgUrlLeft:
+                                        "url(/assets/EventDetail/estoria/Event-bg.png)",
+                                    leftStatueUrl:
+                                        "/assets/EventDetail/estoria/statue-left.png",
+                                    rightStatueUrl:
+                                        "/assets/EventDetail/estoria/statue-right.png",
                                 },
                                 eventPrize: {
                                     prizeData: [
                                         {
                                             position: "First Place",
                                             prizeAmount: "₹ 25,000",
-                                            imageSrc: "/assets/EventDetail/estoria/First.png",
+                                            imageSrc:
+                                                "/assets/EventDetail/estoria/First.png",
                                         },
                                         {
                                             position: "Second Place",
                                             prizeAmount: "₹ 15,000",
-                                            imageSrc: "/assets/EventDetail/estoria/Second.png",
+                                            imageSrc:
+                                                "/assets/EventDetail/estoria/Second.png",
                                         },
                                         {
                                             position: "Third Place",
                                             prizeAmount: "₹ 10,000",
-                                            imageSrc: "/assets/EventDetail/estoria/Third.png",
+                                            imageSrc:
+                                                "/assets/EventDetail/estoria/Third.png",
                                         },
                                     ],
                                     additionalPrizes: [
@@ -143,28 +154,26 @@ function App() {
                                 eventFaq: {
                                     faqItems: [
                                         {
-                                            question: "What is the event about?",
-                                            answer:
-                                                "The event is a competition where participants showcase their skills.",
+                                            question:
+                                                "What is the event about?",
+                                            answer: "The event is a competition where participants showcase their skills.",
                                         },
                                         {
                                             question: "Who can participate?",
-                                            answer:
-                                                "Anyone who registers before the deadline can participate.",
+                                            answer: "Anyone who registers before the deadline can participate.",
                                         },
                                         {
                                             question: "What is the prize pool?",
-                                            answer:
-                                                "The total prize pool is ₹50,000 distributed among the top 3 winners.",
+                                            answer: "The total prize pool is ₹50,000 distributed among the top 3 winners.",
                                         },
                                         {
-                                            question: "When is the event scheduled?",
+                                            question:
+                                                "When is the event scheduled?",
                                             answer: "The event will take place on 10th February 2024.",
                                         },
                                         {
                                             question: "How can I register?",
-                                            answer:
-                                                "You can register on our website by filling out the registration form.",
+                                            answer: "You can register on our website by filling out the registration form.",
                                         },
                                     ],
                                 },

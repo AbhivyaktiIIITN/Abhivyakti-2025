@@ -18,7 +18,8 @@ export const audienceOdyssey = {
         prizePool: "₹25,000",
         description:
             "Step into the world of interactive storytelling with this thrilling filmmaking challenge! Participants will create a short film featuring at least one pivotal decision point where viewers get to influence the direction of the narrative. This event combines creativity and innovation, giving the audience the power to shape the story.",
-        unstopLink: "https://unstop.com/p/interactive-story-telling-abhivyakti-2025-iiit-nagpur-1303161",
+        unstopLink:
+            "https://unstop.com/p/interactive-story-telling-abhivyakti-2025-iiit-nagpur-1303161",
     },
 
     eventTimelineData: {
@@ -85,9 +86,11 @@ export const audienceOdyssey = {
                 position: "2nd Runner Up",
                 prizeAmount: "Worth 5,000",
                 imageSrc: "/assets/EventDetail/probe/Third.png",
-            }
+            },
         ],
-        additionalPrizes: ["Participation certificates for all eligible entries"],
+        additionalPrizes: [
+            "Participation certificates for all eligible entries",
+        ],
     },
 
     eventContactData: {
@@ -106,4 +109,4 @@ export const audienceOdyssey = {
             },
         ],
     },
-}
+};
