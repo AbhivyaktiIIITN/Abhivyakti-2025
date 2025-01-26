@@ -79,7 +79,7 @@ const EventHeader = ({
         <img
           src={rightStatueUrl}
           alt="Statue Right"
-          className="w-1/3 min-w-[100px] h-[80%] sm:h-[90%]"
+          className="w-1/3 min-w-[100px]  h-[80%] sm:h-[90%]" 
         />
       </div>
     </div>
