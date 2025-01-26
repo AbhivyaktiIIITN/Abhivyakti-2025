@@ -43,7 +43,7 @@ function Footer() {
     };
 
     return (
-        <div className="footer-container urbanist-font" id="contact" ref={footerRef} onClick={handleFooterClick} style={{ cursor: 'pointer' }}>
+        <div className="footer-container urbanist-font font-normal" id="contact" ref={footerRef} onClick={handleFooterClick} style={{ cursor: 'pointer' }}>
             <div className="footer-animation-section" style={{ height: '100%', display: 'flex', position: 'relative', }} >
                 <div className="left-animation-section"
                     style={{

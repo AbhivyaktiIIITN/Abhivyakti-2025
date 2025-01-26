@@ -31,7 +31,7 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
         };
     }, []);
     return (
-        <div className="w-full min-h-screen relative text-white px-4 lg:px-16 py-10 flex flex-wrap justify-center urbanist-font">
+        <div className="w-full min-h-screen relative text-white px-4 lg:px-16 py-10 flex flex-wrap justify-center urbanist-font font-normal">
             <div className="w-2/3 h-full sm:w-1/2 flex flex-col " ref={sectionRef}>
                 <div className={`w-full flex flex-wrap justify-center opacity-0 header ${animate ? "slide-in" : ""
                     }`}>

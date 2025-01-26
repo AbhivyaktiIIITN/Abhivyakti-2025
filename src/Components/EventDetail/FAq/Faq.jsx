@@ -35,7 +35,7 @@ const FAQ = ({ items }) => {
     }, []);
 
     return (
-        <div className="w-full h-fit flex flex-col items-center text-white py-10 px-4 relative urbanist-font" ref={sectionRef}>
+        <div className="w-full h-fit flex flex-col items-center text-white py-10 px-4 relative urbanist-font font-normal" ref={sectionRef}>
             <div className={`w-full flex flex-wrap justify-center opacity-0 header ${animate ? "slide-in" : ""
                 }`}>
                 <img src={FaqImg} alt="" className="h-52 sm:h-80 mb-14" />

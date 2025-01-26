@@ -39,7 +39,7 @@ function TempComponent() {
     };
 
     return (
-        <div className="min-w-screen md:h-[75vh] mb-12 urbanist-font">
+        <div className="min-w-screen md:h-[75vh] mb-12 urbanist-font font-normal">
             <div className="relative w-full h-full ">
                 <motion.div
                     className="absolute left-0 top-0 md:w-[20vw] md:h-3/4 bg-yellow-200"

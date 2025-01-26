@@ -19,7 +19,7 @@ const EventTimeLine = ({ eventTimeline }) => {
     };
 
     return (
-        <div className="w-full min-h-[600px] h-auto flex flex-col items-center justify-center relative urbanist-font">
+        <div className="w-full min-h-[600px] h-auto flex flex-col items-center justify-center relative urbanist-font font-normal">
             <div className="text-white px-6 w-full sm:w-1/2">
                 <VerticalTimeline layout="1-column-left" lineColor="#B57DFE" className="w-full" >
                     {
