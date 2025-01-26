@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from "/assets/logo.png";
 import './navbar.css';
+import "../../css/font.css"
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +50,7 @@ function Navbar() {
     };
 
     return (
-        <div className="navbar-container">
+        <div className="navbar-container urbanist-font">
             <div className="logo">
                 <a href="/" onClick={handleLogoClick}> <img src={logo} alt="logo" /> </a>
                 <div className="hamburger" onClick={toggleMenu}>

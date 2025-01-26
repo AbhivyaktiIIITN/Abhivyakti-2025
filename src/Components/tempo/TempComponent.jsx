@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import MonaLisa from "./monaLisa.png";
 import HandUp from "./handUp.png";
+import "../../css/font.css"
 
 function TempComponent() {
     const variants = {
@@ -38,7 +39,7 @@ function TempComponent() {
     };
 
     return (
-        <div className="min-w-screen md:h-[75vh] mb-12">
+        <div className="min-w-screen md:h-[75vh] mb-12 urbanist-font">
             <div className="relative w-full h-full ">
                 <motion.div
                     className="absolute left-0 top-0 md:w-[20vw] md:h-3/4 bg-yellow-200"

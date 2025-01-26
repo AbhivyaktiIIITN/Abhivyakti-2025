@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './footer.css';
+import "../../css/font.css"
 
 function Footer() {
     const [showMask, setShowMask] = useState(false);
@@ -42,7 +43,7 @@ function Footer() {
     };
 
     return (
-        <div className="footer-container" id="contact" ref={footerRef} onClick={handleFooterClick} style={{ cursor: 'pointer' }}>
+        <div className="footer-container urbanist-font" id="contact" ref={footerRef} onClick={handleFooterClick} style={{ cursor: 'pointer' }}>
             <div className="footer-animation-section" style={{ height: '100%', display: 'flex', position: 'relative', }} >
                 <div className="left-animation-section"
                     style={{

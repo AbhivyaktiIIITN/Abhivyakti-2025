@@ -6,6 +6,8 @@ import sh from "/assets/HomePage/Sponsors/sh.png";
 import MonaLisaAndHand from "./MonaLisaAndHand";
 import DaVinciAndHand from "./DaVinciAndHand";
 
+import "../../../css/font.css"
+
 function SponsorsSection() {
     const sectionRef = useRef(null);
     const [animate, setAnimate] = useState(false);
@@ -35,7 +37,7 @@ function SponsorsSection() {
     }, []);
 
     return (
-        <div ref={sectionRef} className="sponsor-container  overflow-hidden" id="sponsors" >
+        <div ref={sectionRef} className="sponsor-container overflow-hidden urbanist-font" id="sponsors" >
             {/* <TempComponent /> */}
             <div div className="wrapper pb-12 relative " >
                 <MonaLisaAndHand animate={animate} />

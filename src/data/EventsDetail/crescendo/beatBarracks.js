@@ -3,7 +3,7 @@ export const beatBarracks = {
         eventName: "Beat",
         eventName2: "Barracks",
         clubName: "Crescendo",
-        eventShortDescription: "",
+        eventShortDescription: "bgm making",
         clubLogo: "/assets/EventDetail/crescendo/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/crescendo/Event-bg.png",
         bgUrlRight: "linear-gradient(90deg, #FDFDFB 0%, #34FA46 100%)",

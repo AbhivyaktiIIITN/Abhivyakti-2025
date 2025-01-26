@@ -140,7 +140,7 @@ const ClubSelector = () => {
     };
 
     return (
-        <div className="w-screen min-h-screen h-auto flex-col place-items-center md:mt-52 overflow-x-hidden">
+        <div className="w-screen min-h-screen h-auto flex-col place-items-center md:mt-52 overflow-x-hidden urbanist-font">
             <div
                 className={`w-[95%] md:min-w-[768px] md:w-2/3 h-h-[${eventCount * 8}rem] xs:min-h-screen xs:h-[${eventCount * 12}rem] mb-40`}
                 onMouseLeave={() => {
@@ -205,13 +205,13 @@ const ClubSelector = () => {
                                         <p>prize pool</p>
                                     </div>
                                     <div
-                                        className={`-mt-1 xs:-mt-2 w-full flex justify-between font-bold text-sm ${event.title.length > 6 && "text-[0.65rem]"} ${event.title.length > 10 && "text-[0.49rem] leading-3"} 2xs:text-md xs:text-2xl sm:text-4xl`}
+                                        className={`-mt-0.5 xs:-mt-2 w-full flex justify-between font-bold text-sm ${event.title.length > 6 && "text-[0.65rem]"} ${event.title.length > 10 && "text-[0.49rem] leading-3"} 2xs:text-md xs:text-2xl sm:text-4xl`}
                                     >
                                         <p>{event.title}</p>
                                         <p className="flex items-baseline"><FaIndianRupeeSign className='text-[10px] sm:text-[20px] mr-[2px]'/>{event.prizePool}</p>
                                     </div>
                                     <div
-                                        className="-mt-1 xs:-mt-2 flex flex-col justify-between grow"
+                                        className="-mt-0.5 xs:-mt-2 flex flex-col justify-between grow"
                                     >
                                         <p
                                             className="font-normal text-[0.6rem] 2xs:text-xs xs:text-md text-wrap sm:text-xl"

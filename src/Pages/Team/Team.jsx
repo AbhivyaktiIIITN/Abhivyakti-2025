@@ -5,6 +5,7 @@ import Hero from "../../Components/PageHero/Hero.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 import "./team.css";
 import teamsData from "./TeamData.js";
+import "../../css/font.css"
 
 function Team() {
     useEffect(() => {
@@ -27,7 +28,7 @@ function Team() {
     return (
         <>
             <Navbar />
-            <div className="team-container">
+            <div className="team-container urbanist-font">
                 <Hero page={"teams"} />
                 {teamsData.map((team, index) => (
                     <motion.div

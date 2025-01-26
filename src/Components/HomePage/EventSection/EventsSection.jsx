@@ -4,6 +4,7 @@ import tl from '/assets/HomePage/Events/tl.png';
 import subtxt from '/assets/HomePage/Events/subtxt.png';
 import head from '/assets/HomePage/Events/head.png';
 import { eventData } from './eventsData';
+import "../../../css/font.css"
 
 const EventsSection = () => {
     const sectionRef = useRef(null);
@@ -82,7 +83,7 @@ const EventsSection = () => {
     };
 
     return (
-        <div className="events-section" id="event" ref={sectionRef}>
+        <div className="events-section urbanist-font" id="event" ref={sectionRef}>
             <div className="title">
                 <img src={tl} alt="" className={`header ${animate ? 'slide-in' : ''}`} />
                 <img src={subtxt} alt="" className={`sub ${animate ? 'fade-in' : ''}`} />
