@@ -23,7 +23,7 @@ const EventHeader = ({
 
   return (
     <div
-      className="w-full h-[25vh] sm:h-[35vh] md:h-[50vh] lg:h-[70vh] lg:min-h-[600px] 2xl:h-[90vh] bg-contain bg-center bg-no-repeat mt-[64px]"
+      className="w-full h-[25vh] min-h-[200px] sm:h-[35vh] sm:min-h-[300px] md:h-[50vh] md:min-h-[400px] lg:h-[70vh] lg:min-h-[600px] 2xl:h-[90vh] bg-contain bg-center bg-no-repeat mt-[64px]"
       style={{
         background: `${bgUrlRight}`,
       }}
@@ -41,7 +41,7 @@ const EventHeader = ({
         />
 
         <div className="w-1/3 h-2/3 sm:h-full flex flex-col items-center justify-end">
-          <div className="w-2/5 absolute sm:h-1/4 md:h-1/2 md:min-h-[500px] flex flex-wrap items-end justify-end content-center">
+          <div className="w-2/5 absolute sm:h-1/4 sm:min-h-[300px] md:h-1/2 md:min-h-[500px] flex flex-wrap items-end justify-end content-center">
             <div className="flex justify-start items-end space-x-4 w-full">
               <span className="w-2/4 h-[20px] sm:h-[50px] font-bold humane-bold-font text-white">
                 <h2 className="text-[20px] sm:text-[50px] md:text-[50px] [line-height:0.8em] w-fit md:[letter-spacing:3px] uppercase [letter-spacing:0.2px] md:[-webkit-text-stroke:1px_black] [-webkit-text-stroke:0.3px_black] text-white humane-bold-font flex">
