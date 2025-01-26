@@ -180,7 +180,7 @@ function Hero() {
                         src="assets/HeroLanding/blueTone.png"
                         alt="blue tone"
                         id="blue-tone"
-                        className="absolute min-h-screen z-30 top-1"
+                        className="absolute min-h-full z-30 top-1"
                         style={{ opacity: 0 }}
                     />
                     <img
