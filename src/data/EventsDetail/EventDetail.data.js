@@ -1,4 +1,4 @@
-import { abCentral } from "./abcentral/abcentral,js";
+import { abCentral } from "./abcentral/abcentral";
 import { crescendo } from "./crescendo/crescendo";
 import { dtaraxia } from "./dtaraxia/dtaraxia";
 import { estoria } from "./estoria/estoria";
