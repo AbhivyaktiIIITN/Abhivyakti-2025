@@ -97,9 +97,9 @@ function Footer() {
                             <div className="follow">
                                 <h1>Follow Us</h1>
                                 <p><Link to="https://www.instagram.com/abhivyakti_iiitn?igsh=MWczeWMwa3RyZGQ5NQ==" className="footer-link" target='_blank'>Instagram</Link></p>
-                                {/* <p><Link to="/" className="footer-link" target='_blank'>LinkedIn</Link></p> */}
+                                <p><Link to="https://www.linkedin.com/in/abhivyakti-iiit-nagpur-b12b20260/?trk=public_profile_browsemap&originalSubdomain=in" className="footer-link" target='_blank'>LinkedIn</Link></p>
                                 <p><Link to="https://x.com/AIiitn?t=HOLPsW4JHG7oHz5wcK7DnQ&s=09" className="footer-link" target='_blank'>Twitter</Link></p>
-                                <p><Link to="https://www.facebook.com/share/1B24yc1Ucv/" className="footer-link" target='_blank'>Facebook</Link></p>
+                                {/* <p><Link to="https://www.facebook.com/share/1B24yc1Ucv/" className="footer-link" target='_blank'>Facebook</Link></p> */}
                             </div>
                         </div>
                     </div>

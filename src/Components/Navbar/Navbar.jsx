@@ -29,6 +29,21 @@ function Navbar() {
         closeMenu();
     };
 
+    const handleLogoClick = (event) => {
+        event.preventDefault();
+
+        if (location.pathname === "/") {
+            const heroElement = document.getElementById("hero");
+            if (heroElement) {
+                heroElement.scrollIntoView({ behavior: "smooth" });
+            }
+        } 
+        else {
+            navigate("/");
+        }
+        closeMenu();
+    };
+
     const closeMenu = () => {
         setIsMenuOpen(false);
     };
@@ -36,9 +51,7 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <div className="logo">
-                <Link to="/">
-                    <img src={logo} alt="logo" />
-                </Link>
+                <a href="/" onClick={handleLogoClick}> <img src={logo} alt="logo" /> </a>
                 <div className="hamburger" onClick={toggleMenu}>
                     {isMenuOpen ? (
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

@@ -7,7 +7,7 @@ export const eventData = [
             { name: "Dance Squad", desc: "Group Dance Competition" },
             { name: "Melody Hustle", desc: "Duet Dance Competition" },
         ],
-        exploreLink: "https://unstop.com/"
+        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
     },
     {
         cardId: 2,
@@ -17,7 +17,7 @@ export const eventData = [
             { name: "AdMads", desc: "Unleash your inner marketing guru" },
             { name: "Photography Competition", desc: "Capture the world through your lens" },
         ],
-        exploreLink: "https://unstop.com/"
+        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
     },
     {
         cardId: 3,
@@ -28,7 +28,7 @@ export const eventData = [
             { name: "Dahaad", desc: "Street Play Competiton" },
             { name: "Rasdhaara", desc: "Poetry Competition" },
         ],
-        exploreLink: "https://unstop.com/"
+        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
     },
     {
         cardId: 4,
@@ -36,7 +36,7 @@ export const eventData = [
         events: [
             { name: "MUN 3.0", desc: "Debate, Diplomacy, Collaboration, Strategy." },
         ],
-        exploreLink: "https://unstop.com/"
+        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
     },
     {
         cardId: 5,
@@ -47,7 +47,7 @@ export const eventData = [
             { name: "Chords of Chaos", desc: "Instrumental" },
             { name: "Beat Barracks", desc: "12 Hours BGM Making" },
         ],
-        exploreLink: "https://unstop.com/"
+        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
     },
     {
         cardId: 6,
@@ -58,6 +58,6 @@ export const eventData = [
             { name: "Rap Battle", desc: "Rhythmic lyrics and flow." },
             { name: "Talk Show", desc: "Engaging discussions and insights." },
         ],
-        exploreLink: "https://unstop.com/"
+        exploreLink: "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
     },
 ];

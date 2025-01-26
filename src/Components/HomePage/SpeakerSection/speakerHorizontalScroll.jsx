@@ -75,7 +75,7 @@ const SpeakerHorizontalScrollCarousel = () => {
                             />
                         </div>
                     </div>
-                    {speakers.map((speaker, index) => {
+                    {/* {speakers.map((speaker, index) => {
                         return (
                             <div
                                 className="md:w-[80vw] w-[100vw] flex justify-between items-center card-wrapper sm:ml-20 sm:mr-20 mr-10"
@@ -106,7 +106,7 @@ const SpeakerHorizontalScrollCarousel = () => {
 
                             </div>
                         );
-                    })}
+                    })} */}
                     <div className="sm:w-0 sm:h-0 w-40 h-full"></div>
                 </motion.div>
             </div>

@@ -53,8 +53,8 @@ const GuestSection = () => {
                     className={`header ${animate ? "slide-in" : ""}`}
                 />
             </div>
-
-            {firstCard && (
+            <div className="soon text-4xl mt-16">To be Revealed Soon</div>
+            {/* {firstCard && (
                 <div
                     className={`card single-card ${flippedCardIndex === 0 ? "flipped" : ""}`}
                     onClick={() => handleCardClick(0)}
@@ -90,7 +90,7 @@ const GuestSection = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 };
