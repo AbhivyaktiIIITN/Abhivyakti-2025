@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import RulesAndRegulationImg from "/assets/EventDetail/RulesAndRegulation.png";
 import "../RulesRegulation/rules.css";
+import "../../../css/font.css"
+
 const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
     const sectionRef = useRef(null);
     const [animate, setAnimate] = useState(false);
@@ -29,7 +31,7 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
         };
     }, []);
     return (
-        <div className="w-full min-h-screen relative text-white px-4 lg:px-16 py-10 flex flex-wrap justify-center">
+        <div className="w-full min-h-screen relative text-white px-4 lg:px-16 py-10 flex flex-wrap justify-center urbanist-font">
             <div className="w-2/3 h-full sm:w-1/2 flex flex-col " ref={sectionRef}>
                 <div className={`w-full flex flex-wrap justify-center opacity-0 header ${animate ? "slide-in" : ""
                     }`}>

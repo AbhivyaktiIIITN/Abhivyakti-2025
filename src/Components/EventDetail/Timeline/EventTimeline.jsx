@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Icon from "/assets/EventDetail/TimelineIcon.png"
 import { convertDate } from './../../../utils/convertDate';
+import "../../../css/font.css"
 
 const EventTimeLine = ({ eventTimeline }) => {
     const [activeIndex, setActiveIndex] = useState(-1);
@@ -18,7 +19,7 @@ const EventTimeLine = ({ eventTimeline }) => {
     };
 
     return (
-        <div className="w-full min-h-[600px] h-auto flex flex-col items-center justify-center relative">
+        <div className="w-full min-h-[600px] h-auto flex flex-col items-center justify-center relative urbanist-font">
             <div className="text-white px-6 w-full sm:w-1/2">
                 <VerticalTimeline layout="1-column-left" lineColor="#B57DFE" className="w-full" >
                     {

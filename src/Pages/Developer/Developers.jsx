@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { members } from './members.js';
 import './developers.css';
+import "../../css/font.css"
 
 function Developers() {
     return (
@@ -71,7 +72,7 @@ const Card = ({ dev }) => {
 
     return (
         <div
-            className="card-wrap"
+            className="card-wrap urbanist-font"
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

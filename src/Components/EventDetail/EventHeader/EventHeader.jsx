@@ -17,7 +17,7 @@ const EventHeader = ({
 
   const adjustedFontSize =
     combinedLength > maxLength
-      ? "text-[30px] sm:text-[70px] md:text-[100px] lg:text-[180px]"
+      ? "text-[30px] sm:text-[70px] md:text-[100px] lg:text-[150px] xl:text-[180px]"
       : "text-[50px] sm:text-[70px] md:text-[120px] lg:text-[200px]";
 
   return (

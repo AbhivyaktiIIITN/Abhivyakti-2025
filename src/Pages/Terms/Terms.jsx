@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import "./terms.css"
+import "../../css/font.css"
 
 function Terms() {
 
@@ -15,7 +16,7 @@ function Terms() {
     return (
         <div className="terms-container">
             <Navbar />
-            <div className="data">
+            <div className="data urbanist-font">
                 <h1 className="">Terms & Conditions</h1>
 
                 <p className="rule p1">These terms and conditions outline the rules and regulations for the use of the Cultural fest, IIIT Nagpur Website, located at [Link of website]</p>

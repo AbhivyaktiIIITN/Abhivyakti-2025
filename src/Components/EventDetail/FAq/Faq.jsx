@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import FaqImg from "/assets/EventDetail/FAQ.png";
 import "../FAq/faq.css";
+import "../../../css/font.css"
+
 const FAQ = ({ items }) => {
     const sectionRef = useRef(null);
     const [animate, setAnimate] = useState(false);
@@ -33,7 +35,7 @@ const FAQ = ({ items }) => {
     }, []);
 
     return (
-        <div className="w-full h-fit flex flex-col items-center text-white py-10 px-4 relative" ref={sectionRef}>
+        <div className="w-full h-fit flex flex-col items-center text-white py-10 px-4 relative urbanist-font" ref={sectionRef}>
             <div className={`w-full flex flex-wrap justify-center opacity-0 header ${animate ? "slide-in" : ""
                 }`}>
                 <img src={FaqImg} alt="" className="h-52 sm:h-80 mb-14" />
