@@ -1,3 +1,4 @@
+import { abCentral } from "./abcentral/abcentral,js";
 import { crescendo } from "./crescendo/crescendo";
 import { dtaraxia } from "./dtaraxia/dtaraxia";
 import { estoria } from "./estoria/estoria";
@@ -9,5 +10,6 @@ export const eventDetailData = {
     ...probe,
     mun,
     ...dtaraxia,
-    ...crescendo
+    ...crescendo,
+    ...abCentral
 };

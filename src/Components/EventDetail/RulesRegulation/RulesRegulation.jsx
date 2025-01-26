@@ -58,52 +58,52 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
                     ))}
                     <div className="mb-8 flex flex-col">
                         {
-                        
+
                             judgingCriteriaData.length > 0 &&
-                            judgingCriteriaData[0].title === "Committees" ? (
+                                judgingCriteriaData[0].title === "Committees" ? (
                                 <>
-                                <h2 className="text-2xl font-semibold mb-4">Available Committes:</h2>
-                                {
-                                    judgingCriteriaData.map((round, index) => {
-                                        // console.log(round.criteria);
-                                        return (
-                                            <div className="m-0 md:ml-16 sm:ml-16 lg:ml-16" key={index}>
-                                                <h3 className="text-xl font-semibold mb-2 py-5">{round.title}</h3>
-                                                {
-                                                    round.criteria &&
-                                                    round.criteria.map((criteria, index) => (
-                                                        <ul key={index} className="list-disc p-0 md:pl-16 sm:pl-16 lg:pl-16 space-y-2">
-                                                            <li>{criteria}</li>
-                                                        </ul>
-                                                    ))
-                                                }
-                                            </div>
-                                        );
-                                    })
-                                }
-                            </>
-                            ) :
-                            <>
-                                <h2 className="text-2xl font-semibold mb-4">Judging Criteria:</h2>
-                                {
-                                    judgingCriteriaData.map((round, index) => {
-                                        // console.log(round.criteria);
-                                        return (
-                                            <div className="m-0 md:ml-16 sm:ml-16 lg:ml-16" key={index}>
-                                                <h3 className="text-xl font-semibold mb-2 py-5">{round.title}</h3>
-                                                {
-                                                    round.criteria &&
-                                                    round.criteria.map((criteria, index) => (
-                                                        <ul key={index} className="list-disc p-0 md:pl-16 sm:pl-16 lg:pl-16 space-y-2">
-                                                            <li>{criteria}</li>
-                                                        </ul>
-                                                    ))
-                                                }
-                                            </div>
-                                        );
-                                    })
-                                }
-                            </>
+                                    <h2 className="text-2xl font-semibold mb-4">Available Committes:</h2>
+                                    {
+                                        judgingCriteriaData.map((round, index) => {
+                                            // console.log(round.criteria);
+                                            return (
+                                                <div className="m-0 md:ml-16 sm:ml-16 lg:ml-16" key={index}>
+                                                    <h3 className="text-xl font-semibold mb-2 py-5">{round.title}</h3>
+                                                    {
+                                                        round.criteria &&
+                                                        round.criteria.map((criteria, index) => (
+                                                            <ul key={index} className="list-disc p-0 md:pl-16 sm:pl-16 lg:pl-16 space-y-2">
+                                                                <li>{criteria}</li>
+                                                            </ul>
+                                                        ))
+                                                    }
+                                                </div>
+                                            );
+                                        })
+                                    }
+                                </>
+                            ) : (judgingCriteriaData.length > 0 &&
+                                <>
+                                    <h2 className="text-2xl font-semibold mb-4">Judging Criteria:</h2>
+                                    {
+                                        judgingCriteriaData.map((round, index) => {
+                                            // console.log(round.criteria);
+                                            return (
+                                                <div className="m-0 md:ml-16 sm:ml-16 lg:ml-16" key={index}>
+                                                    <h3 className="text-xl font-semibold mb-2 py-5">{round.title}</h3>
+                                                    {
+                                                        round.criteria &&
+                                                        round.criteria.map((criteria, index) => (
+                                                            <ul key={index} className="list-disc p-0 md:pl-16 sm:pl-16 lg:pl-16 space-y-2">
+                                                                <li>{criteria}</li>
+                                                            </ul>
+                                                        ))
+                                                    }
+                                                </div>
+                                            );
+                                        })
+                                    }
+                                </>)
                         }
                     </div>
                 </div>
