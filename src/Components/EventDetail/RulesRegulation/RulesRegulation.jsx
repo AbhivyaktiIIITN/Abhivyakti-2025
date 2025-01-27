@@ -44,7 +44,7 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
                             </h3>
                             <ul className="list-disc m-0 md:ml-16 sm:ml-16 lg:ml-16 space-y-2">
                                 {round.rules.map((rule, ruleIndex) => (
-                                    <li key={ruleIndex}>{rule}</li>
+                                    <li className={`${round.highlight && round.highlight.includes(ruleIndex) && "font-extrabold"}`} key={ruleIndex}>{rule}</li>
                                 ))}
                                 {round.disallowedProps && (
                                     <>

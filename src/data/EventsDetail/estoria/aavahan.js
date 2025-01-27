@@ -2,7 +2,7 @@ export const aavahan = {
     eventHeaderData: {
         eventName: "Aavahan",
         eventName2: "",
-        clubName: "Estoria",
+        clubName: "Estória",
         eventShortDescription: "Stage play competition",
         clubLogo: "/assets/EventDetail/estoria/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/estoria/Event-bg.png",

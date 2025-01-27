@@ -1,8 +1,8 @@
 export const showStopper = {
     eventHeaderData: {
-        eventName: "Show ",
-        eventName2: "Stopper",
-        clubName: "Dtaraxia",
+        eventName: "Showstopper",
+        eventName2: "",
+        clubName: "D-taraxia",
         eventShortDescription: "Solo Dance Competition",
         clubLogo: "/assets/EventDetail/dtaraxia/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/dtaraxia/Event-bg.png",
@@ -14,7 +14,7 @@ export const showStopper = {
     eventIntroData: {
         deadline: "15 Feb 2025",
         teamSize: "1 Member",
-        fee: "₹ 300",
+        fee: "₹ 200",
         prizePool: "₹ 18,000",
         description:
             "Be the star of the night and own the stage at Showstopper! Let your moves speak louder than words and captivate the audience. It’s your moment to shine, dazzle, and leave everyone spellbound. Dance with passion, grace, and energy that steals the show. Make it unforgettable—be the ultimate Showstopper!",
@@ -40,6 +40,7 @@ export const showStopper = {
         roundsData: [
             {
                 title: "Round 1: Online Elimination",
+                highlight: [1,6],
                 rules: [
                     "Participants have to submit a video of them performing for 1-1.5 minutes.",
                     "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",
@@ -52,8 +53,10 @@ export const showStopper = {
             },
             {
                 title: "Round 2: Finals (Non-Classical Category)",
+                highlight: [1],
                 rules: [
                     "Time limit for this round is 4-6 minutes (can be adjusted based on participation).",
+                    "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",
                     "Participants must prepare their performance with at least 1 prop, which should be used for at least 20 seconds.",
                     "All dance forms are allowed in this round.",
                     "Prop usage will be one of the judging criteria in this round.",
@@ -62,8 +65,10 @@ export const showStopper = {
             },
             {
                 title: "Round 2: Finals (Classical Category)",
+                highlight: [1],
                 rules: [
                     "Time limit for this round is 4-6 minutes (can be adjusted based on participation).",
+                    "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",
                     "Special emphasis will be given to facial expressions (bhava) and body language (abhinaya) as key judging criteria.",
                     "Participants must perform in proper classical attire and makeup, showcasing the essence of their chosen classical dance form.",
                     "Adherence to the taal (rhythm) and precision in movements will play a significant role in scoring.",
@@ -129,7 +134,7 @@ export const showStopper = {
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
-                title: "Dtaraxia",
+                title: "D-taraxia",
                 name: "Aditi Arya",
                 phone: "+91 7024161222",
                 email: "dtaraxia@iiitn.ac.in",

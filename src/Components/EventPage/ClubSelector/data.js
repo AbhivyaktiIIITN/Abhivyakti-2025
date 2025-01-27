@@ -1,6 +1,6 @@
 export const clubs = [
     {
-        name: "dtaraxia",
+        name: "d-taraxia",
         artform: "dance",
         color: "#FE5013",
         exploreGradient: "#CC2200",
@@ -128,7 +128,7 @@ export const clubs = [
         ],
     },
     {
-        name: "estoria",
+        name: "estória",
         artform: "drama",
         color: "#9747FF",
         exploreGradient: "#440977",
