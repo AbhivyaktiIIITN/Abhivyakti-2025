@@ -24,12 +24,12 @@ const EventDetail = (props) => {
         window.addEventListener("DOMContentLoaded", () => {
             setLoading(false)
         })
-        if (!loading) {
-            return (
-                <Loader />
-            )
-        }
     }, [])
+    if (loading) {
+        return (
+            <Loader />
+        )
+    }
 
     const {
         eventHeaderData,

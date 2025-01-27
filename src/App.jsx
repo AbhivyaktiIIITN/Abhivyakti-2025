@@ -205,7 +205,7 @@ function App() {
                     }
                 />
                 <Route path="/terms" element={<Terms />} />
-                <Route path="/loading" element={<Loader/>} />
+                {/* <Route path="/loading" element={<Loader/>} /> */}
             </Routes>
         </div>
     );
