@@ -20,7 +20,7 @@ export const eventData = [
             },
             { name: "AdMads", desc: "Unleash your inner marketing guru" },
             {
-                name: "Photography Competition",
+                name: "Photography Challenge",
                 desc: "Capture the world through your lens",
             },
         ],
@@ -44,7 +44,7 @@ export const eventData = [
         gradient: "linear-gradient(90deg, #5d6cd3, #2237C6)",
         events: [
             {
-                name: "MUN 3.0",
+                name: "IIITN MUN 3.0",
                 desc: "Debate, Diplomacy, Collaboration, Strategy.",
             },
         ],

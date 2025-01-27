@@ -97,10 +97,10 @@ export const EventDropDownDetails = {
     ],
     orator: [
         {
-            title: "MUN 3.0",
+            title: "IIITN MUN 3.0",
             mode: "offline",
-            type: "Debate",
-            prizePool: "10,000",
+            type: "DIPLOMACY",
+            prizePool: "1,20,000",
             exploreLink: "/events/mun",
             unstopLink:
                 "https://unstop.com/p/mun-30-abhivyakti-2025-iiit-nagpur-1319894",
@@ -128,6 +128,16 @@ export const EventDropDownDetails = {
                 "https://unstop.com/p/admads-abhivyakti-2025-iiit-nagpur-1303135",
             img: "/assets/EventsPage/probe/admads.png",
         },
+        {
+            title: "Photography Challenge",
+            mode: "Online",
+            type: "Ad making",
+            prizePool: "7,500",
+            exploreLink: "/events/photographyChallenge",
+            unstopLink:
+                "https://unstop.com/p/admads-abhivyakti-2025-iiit-nagpur-1303135",
+            img: "/assets/EventsPage/probe/photographyChallenge.png",
+        }
     ],
     estória: [
         {
