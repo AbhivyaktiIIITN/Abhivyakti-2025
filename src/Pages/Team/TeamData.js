@@ -39,6 +39,13 @@ const teamsData = [
         ],
     },
     {
+        name: "Web-Development",
+        members: [
+            { name: "Supratit Datta", role: "Lead" },
+            { name: "Nikhil Mishra", role: "Co-Lead" },
+        ],
+    },
+    {
         name: "Event Management [Operations]",
         members: [{ name: "Sujay Kamble", role: "Lead" }],
     },
@@ -92,13 +99,6 @@ const teamsData = [
     {
         name: "Social Media",
         members: [{ name: "Vaibhav Jaiswal", role: "Lead" }],
-    },
-    {
-        name: "Web-Development",
-        members: [
-            { name: "Supratit Datta", role: "Lead" },
-            { name: "Nikhil Mishra", role: "Co-Lead" },
-        ],
     },
     {
         name: "Dimensions",
