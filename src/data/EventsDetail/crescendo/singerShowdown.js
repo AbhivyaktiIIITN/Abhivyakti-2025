@@ -15,12 +15,12 @@ export const singersShowDown = {
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "1 Member",
-        fee: "₹ 100",
-        prizePool: "₹ 10,000",
+        fee: "₹ 200",
+        prizePool: "₹ 15,000",
         description:
             "Step into the spotlight at Singers Show-down, where solo talents rise to the occasion in a battle of voices! Prepare to be enthralled as extraordinary singers take the stage, captivating hearts and minds with their soulful melodies and electrifying performances. From stirring ballads to powerful pop anthems, this is your chance to witness raw vocal brilliance and the birth of a new star. Get ready for an evening brimming with musical magic that will echo long after the final note!",
         unstopLink:
-            "https://unstop.com/events/singers-showdown-abhivyakti-2025-iiit-nagpur-1301115",
+            "https://unstop.com/events/singers-show-down-abhivyakti-2025-iiit-nagpur-1301100",
     },
 
     eventTimelineData: {
@@ -48,6 +48,7 @@ export const singersShowDown = {
                     "In case of original composition, it should be mentioned as it includes extra marks.",
                     "Exceeding the time limit by 60 seconds will lead to disqualification.",
                     "Participants can optionally perform with an accompanist or a backing track with a predefined instrument list, which should be emailed for fair judgment.",
+                    'Participants must upload a PDF titled in the format: "Team Name/Participant Name_College Name_Event Name.pdf," containing a drive link to their video/audio submission per event rules. Ensure the link has proper access permissions to avoid evaluation issues. The organizing committee is not responsible for submissions thatcannot be accessed.'
                 ],
             },
             {
