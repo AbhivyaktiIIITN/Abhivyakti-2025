@@ -10,8 +10,9 @@ export const singersShowDown = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "1 Member",
         fee: "₹ 100",
@@ -37,6 +38,7 @@ export const singersShowDown = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/crescendo/drip2.png",
         roundsData: [
             {
                 title: "Online Round",

@@ -10,8 +10,9 @@ export const audienceOdyssey = {
         leftStatueUrl: "/assets/EventDetail/probe/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/probe/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/probe/drip1.png",
         deadline: "15th February 2024",
         teamSize: "1-6 participants",
         fee: "₹100 per team",
@@ -37,6 +38,7 @@ export const audienceOdyssey = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/probe/drip2.png",
         roundsData: [
             {
                 title: "Submission Details",

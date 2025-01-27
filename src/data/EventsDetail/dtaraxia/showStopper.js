@@ -10,8 +10,9 @@ export const showStopper = {
         leftStatueUrl: "/assets/EventDetail/dtaraxia/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/dtaraxia/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "1 Member",
         fee: "₹ 200",
@@ -37,6 +38,7 @@ export const showStopper = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/dtaraxia/drip2.png",
         roundsData: [
             {
                 title: "Round 1: Online Elimination",

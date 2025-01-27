@@ -46,8 +46,9 @@ const EventDetail = (props) => {
             <RulesRegulation {...eventRulesAndRegulationData} />
             <div className="w-full min-h-screen grid grid-cols-1 gap-1 items-center relative ">
                 <img
-                    src={PurpleDrip}
-                    alt="purpledrip"
+                    // src={PurpleDrip}
+                    src={eventRulesAndRegulationData.drip}
+                    alt="drip"
                     className="absolute w-full h-full opacity-30 object-fill sm:object-fill"
                 />
                 <PrizePool {...eventPrizeData} />
