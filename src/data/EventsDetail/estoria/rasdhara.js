@@ -2,7 +2,7 @@ export const rasdhaara = {
     eventHeaderData: {
         eventName: "Rasdhaara",
         eventName2: "",
-        clubName: "Estoria",
+        clubName: "Estória",
         eventShortDescription: "Verse Rendition",
         clubLogo: "/assets/EventDetail/estoria/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/estoria/Event-bg.png",

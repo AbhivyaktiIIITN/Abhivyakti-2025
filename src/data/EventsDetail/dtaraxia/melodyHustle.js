@@ -2,7 +2,7 @@ export const melodyHustle = {
     eventHeaderData: {
         eventName: "Melody",
         eventName2: "Hustle",
-        clubName: "Dtaraxia",
+        clubName: "D-taraxia",
         eventShortDescription: "Duet Dance Competition",
         clubLogo: "/assets/EventDetail/dtaraxia/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/dtaraxia/Event-bg.png",
@@ -40,6 +40,7 @@ export const melodyHustle = {
         roundsData: [
             {
                 title: "Round 1: Online Elimination",
+                highlight: [1],
                 rules: [
                     "Participants have to submit a video of them performing for 1-1.5 minutes.",
                     "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",
@@ -53,8 +54,10 @@ export const melodyHustle = {
             },
             {
                 title: "Round 2: Finals",
+                highlight: [1],
                 rules: [
                     "Time duration for this round is 4-7 minutes (+1 minute for stage setup and clearance).",
+                    "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",
                     "This round is a prop round; participants must prepare their performance with at least 1 prop.",
                     "The prop should be used in dance for a total of at least 20 seconds.",
                     "The performance can be an extension of their round 1 performance.",
@@ -117,7 +120,7 @@ export const melodyHustle = {
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
-                title: "Dtaraxia",
+                title: "D-taraxia",
                 name: "Sathvika Bogam",
                 phone: "+919381469800",
                 email: "dtaraxia@iiitn.ac.in",

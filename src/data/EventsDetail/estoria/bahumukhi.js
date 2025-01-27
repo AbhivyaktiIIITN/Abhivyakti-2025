@@ -2,7 +2,7 @@ export const bahumukhi = {
     eventHeaderData: {
         eventName: "Bahumukhi",
         eventName2: "",
-        clubName: "Estoria",
+        clubName: "Estória",
         eventShortDescription: "Solo act competition",
         clubLogo: "/assets/EventDetail/estoria/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/estoria/Event-bg.png",
@@ -12,7 +12,7 @@ export const bahumukhi = {
     },
 
     eventIntroData: {
-        deadline: "20th October 2021",
+        deadline: "15th February 2025",
         teamSize: "Solo",
         fee: "₹ 200",
         prizePool: "₹ 15,000",
@@ -67,6 +67,7 @@ the audience. It's time to step forward and let your talent speak volumes. ",
                 title: "Round 1",
                 rules: [
                     " Participants must submit a 2-4 minutes video performance. ",
+                    "Submitted video must not be edited,",
                     " The script must be submitted along with proper credits. ",
                     " Participants must upload a PDF titled in the format: 'Team Name/Participant \
                     Name_College Name_Event Name.pdf', containing a drive link to their \

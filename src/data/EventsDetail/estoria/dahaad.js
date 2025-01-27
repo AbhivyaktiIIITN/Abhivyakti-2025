@@ -2,7 +2,7 @@ export const dahaad = {
     eventHeaderData: {
         eventName: "Dahaad",
         eventName2: "",
-        clubName: "Estoria",
+        clubName: "Estória",
         eventShortDescription: "Street play competition",
         clubLogo: "/assets/EventDetail/estoria/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/estoria/Event-bg.png",
@@ -101,12 +101,12 @@ export const dahaad = {
         prizeData: [
             {
                 position: "Winner",
-                prizeAmount: "Worth 9,000",
+                prizeAmount: "Worth 15,000",
                 imageSrc: "/assets/EventDetail/estoria/First.png",
             },
             {
                 position: "1st Runner Up",
-                prizeAmount: "Worth 6,000",
+                prizeAmount: "Worth 10,000",
                 imageSrc: "/assets/EventDetail/estoria/Second.png",
             },
         ],

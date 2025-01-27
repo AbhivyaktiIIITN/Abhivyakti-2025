@@ -3,9 +3,9 @@ export const eventData = [
         cardId: 1,
         gradient: "linear-gradient(90deg, #fe6d3b, #FE5013)",
         events: [
-            { name: "Show Stopper", desc: "Solo Dance Competition" },
-            { name: "Dance Squad", desc: "Group Dance Competition" },
+            { name: "Showstopper", desc: "Solo Dance Competition" },
             { name: "Melody Hustle", desc: "Duet Dance Competition" },
+            { name: "Dance Squad", desc: "Group Dance Competition" },
         ],
         exploreLink:
             "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
@@ -31,9 +31,9 @@ export const eventData = [
         cardId: 3,
         gradient: "linear-gradient(90deg, #A658E0, #641AA5)",
         events: [
-            { name: "Bahumukhi", desc: "MonoActing Competition" },
             { name: "Aavahan", desc: "Stage Play Competition" },
             { name: "Dahaad", desc: "Street Play Competiton" },
+            { name: "Bahumukhi", desc: "MonoActing Competition" },
             { name: "Rasdhaara", desc: "Poetry Competition" },
         ],
         exploreLink:

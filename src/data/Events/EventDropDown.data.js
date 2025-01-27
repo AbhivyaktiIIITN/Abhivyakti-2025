@@ -1,10 +1,10 @@
 export const EventDropDownDetails = {
-    dtaraxia: [
+    "d-taraxia": [
         {
-            title: "Show Stopper",
+            title: "Showstopper",
             mode: "offline",
             type: "Solo dance competiton",
-            prizePool: "10,000",
+            prizePool: "18,000",
             exploreLink: "/events/showStopper",
             unstopLink:
                 "https://unstop.com/p/showstopper-abhivyakti-2025-iiit-nagpur-1302784",
@@ -14,7 +14,7 @@ export const EventDropDownDetails = {
             title: "Melody Hustle",
             mode: "offline",
             type: "Duet dance competiton",
-            prizePool: "10,000",
+            prizePool: "20,000",
             exploreLink: "/events/melodyHustle",
             unstopLink:
                 "https://unstop.com/p/melody-hustle-abhivyakti-2025-iiit-nagpur-1302807",
@@ -24,7 +24,7 @@ export const EventDropDownDetails = {
             title: "Dance Squad",
             mode: "offline",
             type: "Group dance competiton",
-            prizePool: "10,000",
+            prizePool: "25,000",
             exploreLink: "/events/danceSquad",
             unstopLink:
                 "https://unstop.com/p/dance-squad-abhivyakti-2025-iiit-nagpur-1302815",
@@ -129,17 +129,7 @@ export const EventDropDownDetails = {
             img: "/assets/EventsPage/probe/admads.png",
         },
     ],
-    estoria: [
-        {
-            title: "Bahumukhi",
-            mode: "offline",
-            type: "Monoact",
-            prizePool: "15,000",
-            exploreLink: "/events/bahumukhi",
-            unstopLink:
-                "https://unstop.com/p/bahumukhi-abhivyakti-2025-iiit-nagpur-1303291",
-            img: "/assets/EventsPage/estoria/bahumukhi.png",
-        },
+    estória: [
         {
             title: "Aavahan",
             mode: "offline",
@@ -159,6 +149,16 @@ export const EventDropDownDetails = {
             unstopLink:
                 "https://unstop.com/events/dahaad-abhivyakti-2025-iiit-nagpur-1303297",
             img: "/assets/EventsPage/estoria/dahaad.png",
+        },
+        {
+            title: "Bahumukhi",
+            mode: "offline",
+            type: "Monoact",
+            prizePool: "15,000",
+            exploreLink: "/events/bahumukhi",
+            unstopLink:
+                "https://unstop.com/p/bahumukhi-abhivyakti-2025-iiit-nagpur-1303291",
+            img: "/assets/EventsPage/estoria/bahumukhi.png",
         },
         {
             title: "Rasdhaara",

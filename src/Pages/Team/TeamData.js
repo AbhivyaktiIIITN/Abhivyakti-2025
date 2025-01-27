@@ -115,8 +115,11 @@ const teamsData = [
         ],
     },
     {
-        name: "Estoria",
-        members: [{ name: "Aditya Shrivastava", role: "Estoria Lead" }],
+        name: "Estória",
+        members: [
+            { name: "Aditya Shrivastava", role: "Estória Lead" },
+            { name: "Aditi Chandak", role: "Estória Co-Lead" }
+        ],
     },
     {
         name: "Crescendo",
@@ -124,7 +127,10 @@ const teamsData = [
     },
     {
         name: "D-Taraxia",
-        members: [{ name: "Jwalit Lal", role: "D-Taraxia Lead" }],
+        members: [
+            { name: "Jwalit Lal", role: "D-Taraxia Lead" },
+            { name: "Aditi Arya", role: "D-Taraxia Co-Lead" }
+        ],
     },
     {
         name: "Elevate",
