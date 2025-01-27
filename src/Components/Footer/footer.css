@@ -1,9 +1,7 @@
 .footer-container {
-    background-image: linear-gradient(
-            to bottom,
+    background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.85) 0%,
-            rgba(0, 0, 0, 0.85) 100%
-        ),
+            rgba(0, 0, 0, 0.85) 100%),
         url("/assets/FooterSection/FooterBg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,12 +59,10 @@
 }
 
 .footer-container .footer p:hover {
-    background: linear-gradient(
-        to right,
-        #faf100 0%,
-        #fdc400 50%,
-        #ffa600 100%
-    );
+    background: linear-gradient(to right,
+            #faf100 0%,
+            #fdc400 50%,
+            #ffa600 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -83,25 +79,21 @@
 }
 
 .footer-container .developer {
-    background: linear-gradient(
-        to right,
-        #faf100 0%,
-        #fdc400 50%,
-        #ffa600 100%
-    );
+    background: linear-gradient(to right,
+            #faf100 0%,
+            #fdc400 50%,
+            #ffa600 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
 
-/* Left Animation Section */
 .left-animation-section img {
     width: 100%;
     transform: scale(1);
     transition: transform 0.3s ease;
 }
 
-/* Right Animation Section */
 .right-animation-section img {
     width: 100%;
     transform: scale(1);
@@ -121,6 +113,58 @@
 .left-animation-section:hover img,
 .right-animation-section:hover img {
     transform: none;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeSlideInOut 1.5s ease forwards;
+    -webkit-text-fill-color: white;
+}
+
+button.footer-link:hover::after {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+@keyframes fadeSlideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
 }
 
 @media (max-width: 600px) {
@@ -211,7 +255,7 @@
         padding: 5px;
     }
 
-    .footer-container .footer > div {
+    .footer-container .footer>div {
         margin: 0 1rem;
         padding: 5px;
     }
