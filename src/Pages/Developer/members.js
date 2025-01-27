@@ -2,6 +2,13 @@ import { images } from "./Images/images";
 
 export const members = [
     {
+        name: "Sumeet Kumar",
+        role: "Designer",
+        githubLink: "https://sumeetportfolio.netlify.app/",
+        linkedinLink: "https://www.linkedin.com/in/sumeet-kumar-a978792bb/",
+        dataImage: images[7],
+    },
+    {
         name: "Supratit Datta",
         role: "Lead",
         githubLink: "https://github.com/SupratitDatta",
