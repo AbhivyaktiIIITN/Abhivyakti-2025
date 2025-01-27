@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Darkbg from "/assets/EventDetail/dark-bg.png";
 import PurpleDrip from "/assets/EventDetail/purpleDrip.png";
 import RulesRegulation from "../../Components/EventDetail/RulesRegulation/RulesRegulation";
@@ -11,11 +11,25 @@ import ContactUs from "../../Components/EventDetail/ContactUs/ContactUs";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import { eventDetailData } from "../../data/EventsDetail/EventDetail.data";
+import Loader from "../../Components/Loader/loader";
 
 const EventDetail = (props) => {
     const { id } = useParams();
     console.log(id);
     const eventData = eventDetailData[id];
+
+    const [loading,setLoading] = useState(true)
+    
+    useEffect(() => {
+        window.addEventListener("DOMContentLoaded", () => {
+            setLoading(false)
+        })
+        if (!loading) {
+            return (
+                <Loader />
+            )
+        }
+    }, [])
 
     const {
         eventHeaderData,

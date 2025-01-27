@@ -4,8 +4,23 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { members } from "./members.js";
 import "./developers.css";
 import "../../css/font.css";
+import Loader from "../../Components/Loader/loader.jsx";
 
 function Developers() {
+    
+    const [loading,setLoading] = useState(true)
+
+    useEffect(() => {
+        window.addEventListener("DOMContentLoaded", () => {
+            setLoading(false)
+        })
+        if (!loading) {
+            return (
+                <Loader />
+            )
+        }
+    }, [])
+
     return (
         <div id="app" className="dev-container">
             <h1 className="title">CONTRIBUTORS</h1>
