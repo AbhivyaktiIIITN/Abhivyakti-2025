@@ -21,12 +21,12 @@ function Terms() {
         window.addEventListener("DOMContentLoaded", () => {
             setLoading(false)
         })
-        if (!loading) {
-            return (
-                <Loader />
-            )
-        }
     }, [])
+    if (loading) {
+        return (
+            <Loader />
+        )
+    }
 
     return (
         <div className="terms-container">

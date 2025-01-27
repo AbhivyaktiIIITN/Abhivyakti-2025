@@ -14,13 +14,14 @@ function Developers() {
         window.addEventListener("DOMContentLoaded", () => {
             setLoading(false)
         })
-        if (!loading) {
-            return (
-                <Loader />
-            )
-        }
     }, [])
-
+    
+    if (loading) {
+        return (
+            <Loader />
+        )
+    }
+    
     return (
         <div id="app" className="dev-container">
             <h1 className="title">CONTRIBUTORS</h1>

@@ -23,12 +23,12 @@ function Team() {
         window.addEventListener("DOMContentLoaded", () => {
             setLoading(false)
         })
-        if (!loading) {
-            return (
-                <Loader />
-            )
-        }
     }, [])
+    if (loading) {
+        return (
+            <Loader />
+        )
+    }
 
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },
