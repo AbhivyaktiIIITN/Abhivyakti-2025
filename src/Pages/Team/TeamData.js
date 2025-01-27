@@ -123,7 +123,10 @@ const teamsData = [
     },
     {
         name: "Crescendo",
-        members: [{ name: "Rhythm Agrawal", role: "Crescendo Lead" }],
+        members: [
+            { name: "Rhythm Agrawal", role: "Crescendo Lead" },
+            { name: "Prakhar Beniwal", role: "Crescendo Co-Lead" }
+        ],
     },
     {
         name: "D-Taraxia",
