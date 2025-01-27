@@ -16,7 +16,7 @@ export const photographyChallenge = {
         deadline: "15th February 2025",
         teamSize: "Individual Participants Only",
         fee: "Free",
-        prizePool: "Details to be Announced",
+        prizePool: "₹ 7,500",
         description: "Showcase your photography skills and creativity in either monochrome, astrophotography, or landscape photography. Participate online and let your work shine!",
         unstopLink: "https://unstop.com/o/C2LOoeT?lb=GW46s6ff&utm_medium=Share&utm_source=shortUrl"
     },
