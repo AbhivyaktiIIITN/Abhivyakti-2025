@@ -10,8 +10,9 @@ export const rasdhaara = {
         leftStatueUrl: "/assets/EventDetail/estoria/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/estoria/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/estoria/drip1.png",
         deadline: "15th February 2025",
         teamSize: "Solo",
         fee: "Free",
@@ -36,6 +37,7 @@ export const rasdhaara = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/estoria/drip2.png",
         roundsData: [
             {
                 title: "Round 1",

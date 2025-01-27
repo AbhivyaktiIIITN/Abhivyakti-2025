@@ -10,8 +10,9 @@ export const beatBarracks = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "24 hours before the event starts",
         teamSize: "1-3 Members",
         fee: "Free",
@@ -45,6 +46,7 @@ export const beatBarracks = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/crescendo/drip2.png",
         roundsData: [
             {
                 title: "Event Format",

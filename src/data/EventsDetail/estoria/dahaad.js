@@ -10,8 +10,9 @@ export const dahaad = {
         leftStatueUrl: "/assets/EventDetail/estoria/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/estoria/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/estoria/drip1.png",
         deadline: "15th February 2025",
         teamSize: "5-20",
         fee: "₹ 300",
@@ -41,6 +42,7 @@ export const dahaad = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/estoria/drip2.png",
         roundsData: [
             {
                 title: "Round 1",

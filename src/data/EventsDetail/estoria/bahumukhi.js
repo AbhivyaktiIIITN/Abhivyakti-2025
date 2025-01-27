@@ -10,8 +10,9 @@ export const bahumukhi = {
         leftStatueUrl: "/assets/EventDetail/estoria/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/estoria/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/estoria/drip1.png",
         deadline: "15th February 2025",
         teamSize: "Solo",
         fee: "₹ 200",
@@ -62,6 +63,7 @@ the audience. It's time to step forward and let your talent speak volumes. ",
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/estoria/drip2.png",
         roundsData: [
             {
                 title: "Round 1",

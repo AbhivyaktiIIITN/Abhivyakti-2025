@@ -10,8 +10,9 @@ export const musicalArmageddon = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "3-8 Members",
         fee: "₹ 400",
@@ -36,6 +37,7 @@ export const musicalArmageddon = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/crescendo/drip2.png",
         roundsData: [
             {
                 title: "Online Round",

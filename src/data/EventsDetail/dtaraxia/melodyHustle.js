@@ -10,8 +10,9 @@ export const melodyHustle = {
         leftStatueUrl: "/assets/EventDetail/dtaraxia/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/dtaraxia/statue-right.png",
     },
-
+    
     eventIntroData: {
+        drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "2 Members",
         fee: "₹ 300",
@@ -37,6 +38,7 @@ export const melodyHustle = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/dtaraxia/drip2.png",
         roundsData: [
             {
                 title: "Round 1: Online Elimination",

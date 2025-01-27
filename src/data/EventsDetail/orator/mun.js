@@ -12,6 +12,7 @@ export const mun = {
     },
 
     eventIntroData: {
+        drip: "/assets/EventDetail/orator/drip1.png",
         deadline: "",
         teamSize: "Solo",
         fee: "₹ 999",
@@ -46,6 +47,7 @@ export const mun = {
     },
 
     eventRulesAndRegulationData: {
+        drip: "/assets/EventDetail/orator/drip2.png",
         roundsData: [
             {
                 title: "Basic Rules and Regulations",
