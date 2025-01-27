@@ -6,7 +6,7 @@ export const members = [
         role: "Designer",
         githubLink: "https://sumeetportfolio.netlify.app/",
         linkedinLink: "https://www.linkedin.com/in/sumeet-kumar-a978792bb/",
-        dataImage: images[7],
+        dataImage: images[6],
     },
     {
         name: "Supratit Datta",

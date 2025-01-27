@@ -11,9 +11,9 @@ function Developers() {
     const [loading,setLoading] = useState(true)
 
     useEffect(() => {
-        window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
             setLoading(false)
-        })
+        }, 1000)
     }, [])
     
     if (loading) {
