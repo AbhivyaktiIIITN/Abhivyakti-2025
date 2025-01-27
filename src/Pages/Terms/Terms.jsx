@@ -18,10 +18,12 @@ function Terms() {
 
     
     useEffect(() => {
-        window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
             setLoading(false)
-        })
+        }, 1000)
+        document.title = "Abhivyakti | Terms & Conditions";
     }, [])
+    
     if (loading) {
         return (
             <Loader />

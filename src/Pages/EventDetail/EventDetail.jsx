@@ -13,18 +13,23 @@ import { useParams } from "react-router-dom";
 import { eventDetailData } from "../../data/EventsDetail/EventDetail.data";
 import Loader from "../../Components/Loader/loader";
 
-const EventDetail = (props) => {
+const EventDetail = () => {
     const { id } = useParams();
-    console.log(id);
+
     const eventData = eventDetailData[id];
 
-    const [loading,setLoading] = useState(true)
-    
+    const [loading, setLoading] = useState(true)
+
     useEffect(() => {
-        window.addEventListener("DOMContentLoaded", () => {
+        
+        setTimeout(() => {
             setLoading(false)
-        })
-    }, [])
+        }, 1000)
+        document.title = `Abhivyakti | ${eventData.eventHeaderData.eventName}`;
+
+        
+    }, []);
+
     if (loading) {
         return (
             <Loader />

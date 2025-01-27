@@ -18,9 +18,10 @@ const Event = () => {
     }, []);
 
     useEffect(() => {
-        window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
             setLoading(false)
-        })
+        }, 1000)
+        document.title = "Abhivyakti | Events";
     }, [])
     if (loading) {
         return (

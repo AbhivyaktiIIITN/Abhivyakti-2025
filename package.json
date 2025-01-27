@@ -5,10 +5,11 @@
     "type": "module",
     "scripts": {
         "dev": "vite --host",
-        "build": "vite build",
+        "build": "npm run generate-sitemap && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "generate-sitemap": "node ./generateSitemap.cjs"
     },
     "dependencies": {
         "@fortawesome/free-brands-svg-icons": "^6.7.2",

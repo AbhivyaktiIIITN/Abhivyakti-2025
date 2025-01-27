@@ -20,9 +20,10 @@ function Team() {
     }, []);
 
     useEffect(() => {
-        window.addEventListener("DOMContentLoaded", () => {
-            setLoading(false)
-        })
+       setTimeout(() => {
+              setLoading(false)
+         }, 1000)
+        document.title = "Abhivyakti | Team";
     }, [])
     if (loading) {
         return (

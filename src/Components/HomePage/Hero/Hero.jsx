@@ -76,9 +76,12 @@ function Hero() {
     };
 
     const onMouseClick = async () => {
+
         if (!scope.current) return;
         setHasClicked(true);
-
+        const audio = new Audio("/audio/1234.mp3");
+        audio.play();
+        
         await animate("#blue-tone", { opacity: 0.4 });
 
         await animate(

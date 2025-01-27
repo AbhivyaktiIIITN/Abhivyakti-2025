@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private
+Allow: /
+Sitemap: https://www.abhivyaktifest.in/sitemap.xml
