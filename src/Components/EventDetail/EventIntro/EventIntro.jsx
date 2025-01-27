@@ -12,6 +12,7 @@ const EventIntro = ({
     fee,
     prizePool,
     description,
+    description2,
     unstopLink,
     drip
 }) => {
@@ -77,8 +78,9 @@ const EventIntro = ({
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-1/2 lg:w-1/2 h-auto px-5 text-white text-base md:text-base lg:text-lg  flex flex-wrpa justify-center items-center">
+                    <div className="w-full md:w-1/2 lg:w-1/2 h-auto px-5 text-white text-base md:text-base lg:text-lg  flex flex-col flex-wrap justify-center items-center">
                         <p>{description}</p>
+                        {description2 && <p className="font-extrabold">{description2}</p>}
                     </div>
                 </div>
                 <div className="w-full h-auto flex flex-row justify-center items-center py-5 gap-5">

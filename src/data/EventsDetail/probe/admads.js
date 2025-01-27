@@ -15,7 +15,7 @@ export const admads = {
         drip: "/assets/EventDetail/probe/drip1.png",
         deadline: "15th February 2025",
         teamSize: "1-5 participants",
-        fee: "₹ 100 per team",
+        fee: "₹ 300 per team",
         prizePool: "₹ 25,000",
         description:
             "Step into the spotlight and let your creativity shine! AdMads is your stage to showcase a stunning advertisement that blends compelling storytelling, creativity, and marketing flair. Unleash your inner marketing guru and make your mark on the Abhivyakti’25 stage with ads that captivate, engage, and leave a lasting impression!",

@@ -1,8 +1,8 @@
 export const mun = {
     eventHeaderData: {
-        eventName: "MUN 3.0",
+        eventName: "IIITN MUN 3.0",
         eventName2: "",
-        clubName: "Orator",
+        clubName: "THE Orator",
         eventShortDescription: "Model United Nations",
         clubLogo: "/assets/EventDetail/orator/ClubLogo.png",
         bgUrlLeft: "/assets/EventDetail/orator/Event-bg.png",
@@ -19,6 +19,9 @@ export const mun = {
         prizePool: "₹ 1,20,000",
         description:
             "Join us for an immersive diplomatic experience and showcase your negotiation and debating skills at IIITN MUN 3.0. Organized by IIIT Nagpur, this event promises engaging committee sessions, networking opportunities, and exciting awards.",
+        description2:
+            "Early Bird Offer 20% OFF on Registration Fees Valid for only first 69 participants Coupon Code - EB69@IIITN_MUN",
+
         unstopLink:
             "https://unstop.com/events/mun-30-abhivyakti-2025-iiit-nagpur-1319894",
     },
@@ -86,12 +89,23 @@ export const mun = {
     eventPrizeData: {
         prizeData: [
             {
-                position: "Total Prize Pool",
-                prizeAmount: "Worth 1,20,000 ",
+                position: "High Commendation",
+                prizeAmount: "",
                 imageSrc: "/assets/EventDetail/orator/First.png",
+            },
+            {
+                position: "Best Delegate",
+                prizeAmount: "",
+                imageSrc: "/assets/EventDetail/orator/Second.png",
+            },
+            {
+                position: "Special Mention",
+                prizeAmount: "",
+                imageSrc: "/assets/EventDetail/orator/Third.png",
             },
         ],
         additionalPrizes: [
+            "Honourable Mention",
             "Certificates",
             "Participation certificates",
             "Trophies",
