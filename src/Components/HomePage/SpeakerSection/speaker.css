@@ -33,6 +33,11 @@
     scrollbar-width: none;
 }
 
+.past-guest{
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
 /* .container {
     width: 600vw;
     height: 100vh;

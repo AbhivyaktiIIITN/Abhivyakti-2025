@@ -92,7 +92,7 @@ const SpeakerHorizontalScrollCarousel = () => {
                             />
                         </div>
                     </div>
-                    {/* {speakers.map((speaker, index) => {
+                    {speakers.map((speaker, index) => {
                         return (
                             <div
                                 className="md:w-[80vw] w-[100vw] flex justify-between items-center card-wrapper sm:ml-20 sm:mr-20 mr-10"
@@ -101,7 +101,7 @@ const SpeakerHorizontalScrollCarousel = () => {
                                 <div className="w-1/2 h-full flex flex-col urbanist-font text-white p-10 gap-5 ">
                                     <p className="text-3xl sm:text-7xl capitalize">{speaker.name}</p>
                                     <p className="text-base sm:text-3xl mt-2 font-normal">{speaker.about}</p>
-                                    <div className="border-l-4 sm:border-l-8 flex mt-2 sm:pl-10 pl-5 gap-2 sm:text-3xl text-xl">
+                                    {/* <div className="border-l-4 sm:border-l-8 flex mt-2 sm:pl-10 pl-5 gap-2 sm:text-3xl text-xl">
                                         <a href={speaker.insta} target="_blank" rel="noreferrer">
                                             <FaInstagram />
                                         </a>
@@ -111,19 +111,14 @@ const SpeakerHorizontalScrollCarousel = () => {
                                         <a href={speaker.facebook} target="_blank" rel="noreferrer">
                                             <FaFacebook />
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div>
-                                    <img
-                                        src={speaker.image}
-                                        alt=""
-                                        className="img-radial-gradient"
-                                    />
+                                    <img src={speaker.image} alt="guest" className="past-guest img-radial-gradient" />
                                 </div>
-
                             </div>
                         );
-                    })} */}
+                    })}
                     <div className="sm:w-0 sm:h-0 w-40 h-full"></div>
                 </motion.div>
             </div>
