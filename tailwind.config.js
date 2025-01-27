@@ -18,6 +18,7 @@ export default {
             animation: {
                 width: "width",
                 pulse: "pulse 1s infinite",
+                fade: "fade 5s infinite"
             },
             keyframes: {
                 width: {
@@ -28,6 +29,10 @@ export default {
                     "0%, 100%": { transform: "scale(1)" },
                     "50%": { transform: "scale(1.05)" },
                 },
+                fade: {
+                    "0%, 100%": { opacity: 1 },
+                    "50%": { opacity: 0 },
+                }
             },
             screens: {
                 xs: "470px",

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../Components/Navbar/Navbar.jsx";
 import Hero from "../../Components/PageHero/Hero.jsx";
@@ -6,14 +6,29 @@ import Footer from "../../Components/Footer/Footer.jsx";
 import "./team.css";
 import teamsData from "./TeamData.js";
 import "../../css/font.css";
+import Loader from "../../Components/Loader/loader.jsx";
 
 function Team() {
+
+    const [loading,setLoading] = useState(true)
+
     useEffect(() => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
     }, []);
+
+    useEffect(() => {
+        window.addEventListener("DOMContentLoaded", () => {
+            setLoading(false)
+        })
+        if (!loading) {
+            return (
+                <Loader />
+            )
+        }
+    }, [])
 
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },

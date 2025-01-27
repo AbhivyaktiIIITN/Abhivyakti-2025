@@ -1,16 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import "./terms.css";
 import "../../css/font.css";
+import Loader from "../../Components/Loader/loader";
 
 function Terms() {
+
+    const [loading,setLoading] = useState(true)
+
     useEffect(() => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
     }, []);
+
+    
+    useEffect(() => {
+        window.addEventListener("DOMContentLoaded", () => {
+            setLoading(false)
+        })
+        if (!loading) {
+            return (
+                <Loader />
+            )
+        }
+    }, [])
 
     return (
         <div className="terms-container">

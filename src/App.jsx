@@ -6,6 +6,7 @@ import Team from "./Pages/Team/Team";
 import EventDetail from "./Pages/EventDetail/EventDetail";
 import Terms from "./Pages/Terms/Terms";
 import Developers from "./Pages/Developer/Developers";
+import Loader from "./Components/Loader/loader";
 
 function App() {
     return (
@@ -204,6 +205,7 @@ function App() {
                     }
                 />
                 <Route path="/terms" element={<Terms />} />
+                <Route path="/loading" element={<Loader/>} />
             </Routes>
         </div>
     );
