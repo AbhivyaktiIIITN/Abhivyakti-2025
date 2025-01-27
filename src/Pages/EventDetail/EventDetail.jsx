@@ -12,6 +12,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import { eventDetailData } from "../../data/EventsDetail/EventDetail.data";
 import Loader from "../../Components/Loader/loader";
+import Footer from "../../Components/Footer/Footer";
 
 const EventDetail = () => {
     const { id } = useParams();
@@ -21,13 +22,13 @@ const EventDetail = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        
+
         setTimeout(() => {
             setLoading(false)
         }, 1000)
         document.title = `Abhivyakti | ${eventData.eventHeaderData.eventName}`;
 
-        
+
     }, []);
 
     if (loading) {
@@ -75,6 +76,7 @@ const EventDetail = () => {
                 {/* 
                 <FAQ items={props.event.eventFaq.faqItems} />
                 */}
+                <div className="z-10"><Footer /></div>
             </div>
         </div>
     );
