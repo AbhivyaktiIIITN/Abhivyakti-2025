@@ -54,7 +54,7 @@ function Footer() {
     };
 
     return (
-        <div className="footer-container urbanist-font font-normal" id="contact" ref={footerRef} onClick={handleFooterClick} style={{ cursor: 'pointer' }}>
+        <div className="footer-container urbanist-font font-normal" id="contact" ref={footerRef} onClick={handleFooterClick}>
             <div className="footer-animation-section" style={{ height: '100%', display: 'flex', position: 'relative', }} >
                 <div className="left-animation-section"
                     style={{
@@ -97,7 +97,7 @@ function Footer() {
                     />
                 </div>
 
-                <div className="main-body" style={{ height: "100%" }}>
+                <div className="main-body">
                     <div className="flex flex-col md:flex-row">
                         <div className="logo">
                             <img
@@ -108,7 +108,7 @@ function Footer() {
                         <div className="footer">
                             <div className="quick">
                                 <h1>Quick Links</h1>
-                                <p> <Link to="/https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835" className="footer-link"> Register </Link> </p>
+                                <p> <Link to="https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835" target="_blank" className="footer-link"> Register </Link> </p>
                                 <p> <Link to="/event" className="footer-link"> Explore </Link> </p>
                                 <p> <a href="#hero" className="footer-link" onClick={handleHomeClick}>Home</a></p>
                                 <p> <Link to="/terms" className="footer-link"> Terms & Conditions </Link> </p>
