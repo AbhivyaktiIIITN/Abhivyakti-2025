@@ -26,7 +26,8 @@ function Navbar() {
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: "smooth" });
             }
-        } else {
+        } 
+        else {
             navigate("/", { state: { scrollTo: targetId } });
         }
         closeMenu();
@@ -40,7 +41,8 @@ function Navbar() {
             if (heroElement) {
                 heroElement.scrollIntoView({ behavior: "smooth" });
             }
-        } else {
+        } 
+        else {
             navigate("/");
         }
         closeMenu();
@@ -54,7 +56,8 @@ function Navbar() {
         const handleScroll = () => {
             if (window.scrollY > 100) {
                 setShowDetails(true);
-            } else {
+            } 
+            else {
                 setShowDetails(false);
             }
         };
@@ -73,7 +76,7 @@ function Navbar() {
                     <img src={logo} alt="logo" />
                 </a>
                 <div
-                    className={`flex abhi transition-all duration-500 ${showDetails ? "visible" : "hidden w-0 h-0"
+                    className={`flex abhi transition-all duration-500 ${showDetails ? "visible" : "hidden"
                         }`}
                 >
                     <img src={abhi} alt="Abhivyakti" className="name slide-in" />
