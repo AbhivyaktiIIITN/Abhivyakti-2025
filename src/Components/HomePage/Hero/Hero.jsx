@@ -195,7 +195,7 @@ function Hero() {
     useEffect(() => {
         setTimeout(() => {
             promptRef.current.style.display = "none"
-        }, 4000);
+        }, 8000);
     }, [])
 
     return (
@@ -208,19 +208,19 @@ function Hero() {
             id="hero"
         >
             <div
-                className="w-fit h-fit absolute m-auto top-0 bottom-[50px] left-[0px] right-0 z-[100] text-white animate-fade-fast flex flex-col justify-center items-center"
+                className="w-fit h-fit absolute m-auto top-0 bottom-[50px] left-[0px] right-0 z-[99] animate-fade-fast flex flex-col justify-center items-center"
                 id="prompt"
                 ref={promptRef}
             >
                 <img
-                    className="w-[70px]"
+                    className="w-[60px]"
                     src="/assets/prompt.png"
                     alt="spray"
                 />
-                <p 
+                <p
                     className="humane-bold-font text-4xl"
                 >
-                    Click Here !!
+                    CLICK HERE !!
                 </p>
             </div>
             <div

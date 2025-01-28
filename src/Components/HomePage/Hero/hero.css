@@ -7,14 +7,16 @@
     background-repeat: no-repeat;
 }
 
-/* #hero {
-    cursor: url(/assets/prompt.png),auto;
-} */
-
 .hero-container {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+#prompt {
+    color: rgb(115, 115, 115);
+    cursor: pointer;
+    letter-spacing: 1px;
 }
 
 .image-wrapper {
@@ -31,6 +33,7 @@
     filter: brightness(0.2);
     position: relative;
 }
+
 /* @media (min-width: 868px) {
     .background-image:{
         height:100vh;
@@ -56,11 +59,9 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    background: radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0) 40%,
-        rgba(0, 0, 0, 0.6) 100%
-    );
+    background: radial-gradient(circle,
+            rgba(0, 0, 0, 0) 40%,
+            rgba(0, 0, 0, 0.6) 100%);
     opacity: 0.8;
 }
 
@@ -99,14 +100,13 @@
     transform: translate(-50%, -50%);
     /* width: 50%; */
 }
+
 .shine {
     background: rgb(22, 0, 0);
-    background: radial-gradient(
-        circle,
-        rgba(22, 0, 0, 0) 0%,
-        rgba(254, 170, 0, 1) 73%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    background: radial-gradient(circle,
+            rgba(22, 0, 0, 0) 0%,
+            rgba(254, 170, 0, 1) 73%,
+            rgba(0, 0, 0, 0) 100%);
 }
 
 .color-class {
@@ -119,6 +119,7 @@
         height: 100vh;
         width: auto;
     }
+
     .main-title-wrapper {
         top: 10%;
     }
