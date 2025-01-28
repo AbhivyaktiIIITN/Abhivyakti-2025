@@ -1,12 +1,23 @@
 import "./hero.css";
 import { useAnimate } from "framer-motion";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
+import "../../../css/font.css"
 
 function Hero() {
     const [scope, animate] = useAnimate();
     const [hasClicked, setHasClicked] = useState(false);
+    const [musicPlayed, setMusicPlayed] = useState(false)
+    const [heroClicked, setHeroClicked] = useState(false)
+
+    const promptRef = useRef(null)
 
     const onMouseEnter = async () => {
+
+        if (heroClicked) return
+
+        // document.querySelector("#hero").style.cursor = "url(/assets/prompt.png) !important"
+
         if (!scope.current || hasClicked) return;
         animate("#radial-shine", { opacity: 1 }, { duration: 0.5 });
         animate("#main-title-preload", { opacity: 0 }, { duration: 0.5 });
@@ -19,6 +30,9 @@ function Hero() {
     };
 
     const onMouseLeave = async () => {
+
+        if (heroClicked) return
+
         if (!scope.current) return;
 
         if (!hasClicked) {
@@ -77,11 +91,18 @@ function Hero() {
 
     const onMouseClick = async () => {
 
+        if (heroClicked) return
+        setHeroClicked(true)
+
+        promptRef.current.style.display = "none"
         if (!scope.current) return;
         setHasClicked(true);
-        const audio = new Audio("/audio/1234.mp3");
-        audio.play();
-        
+        if (!musicPlayed) {
+            const audio = new Audio("/audio/1234.mp3");
+            audio.play();
+        }
+        setMusicPlayed(true)
+
         await animate("#blue-tone", { opacity: 0.4 });
 
         await animate(
@@ -171,6 +192,12 @@ function Hero() {
         );
     };
 
+    useEffect(() => {
+        setTimeout(() => {
+            promptRef.current.style.display = "none"
+        }, 4000);
+    }, [])
+
     return (
         <div
             className="hero-container relative top-10 md:top-0"
@@ -180,6 +207,22 @@ function Hero() {
             onClick={onMouseClick}
             id="hero"
         >
+            <div
+                className="w-fit h-fit absolute m-auto top-0 bottom-[50px] left-[0px] right-0 z-[100] text-white animate-fade-fast flex flex-col justify-center items-center"
+                id="prompt"
+                ref={promptRef}
+            >
+                <img
+                    className="w-[70px]"
+                    src="/assets/prompt.png"
+                    alt="spray"
+                />
+                <p 
+                    className="humane-bold-font text-4xl"
+                >
+                    Click Here !!
+                </p>
+            </div>
             <div
                 className="relative mx-auto max-w-full w-[100vw] h-auto overflow-hidden"
                 style={{ overflow: "hidden" }}

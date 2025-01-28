@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
 }
 
+/* #hero {
+    cursor: url(/assets/prompt.png),auto;
+} */
+
 .hero-container {
     min-height: 100vh;
     position: relative;
