@@ -18,7 +18,8 @@ export default {
             animation: {
                 width: "width",
                 pulse: "pulse 1s infinite",
-                fade: "fade 5s infinite"
+                fade: "fade 5s infinite",
+                "fade-fast": "fade 2s infinite"
             },
             keyframes: {
                 width: {
