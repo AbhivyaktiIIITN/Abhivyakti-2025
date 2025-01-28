@@ -5,25 +5,28 @@ import { members } from "./members.js";
 import "./developers.css";
 import "../../css/font.css";
 import Loader from "../../Components/Loader/loader.jsx";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
 
 function Developers() {
-    
-    const [loading,setLoading] = useState(true)
+
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
         }, 1000)
     }, [])
-    
+
     if (loading) {
         return (
             <Loader />
         )
     }
-    
+
     return (
         <div id="app" className="dev-container">
+            <Navbar />
             <h1 className="title">CONTRIBUTORS</h1>
             <div className="members">
                 <div className="sec-1">
@@ -36,7 +39,13 @@ function Developers() {
                         <Card key={index + 3} dev={dev} />
                     ))}
                 </div>
+                <div className="sec-2 designer">
+                    {members.slice(2, 3).map((dev, index) => (
+                        <Card key={index} dev={dev} />
+                    ))}
+                </div>
             </div>
+            <div className="mt-8"><Footer /></div>
         </div>
     );
 }

@@ -121,7 +121,7 @@ export const danceSquad = {
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
-                title: "D-taraxia",
+                title: "D-Taraxia",
                 name: "Hanithya Ambidi",
                 phone: "+916300882326",
                 email: "dtaraxia@iiitn.ac.in",

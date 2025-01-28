@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "/assets/logo.png";
 import "./navbar.css";
+import abhi from "/assets/Navbar/abhi.png";
+import date from "/assets/Navbar/2025.png";
 import "../../css/font.css";
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showDetails, setShowDetails] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -47,53 +50,47 @@ function Navbar() {
         setIsMenuOpen(false);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setShowDetails(true);
+            } else {
+                setShowDetails(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div className="navbar-container urbanist-font font-normal">
-            <div className="logo">
-                <a href="/" onClick={handleLogoClick}>
-                    {" "}
-                    <img src={logo} alt="logo" />{" "}
+            <div className="logo flex">
+                <a href="/" onClick={handleLogoClick} className="flex">
+                    <img src={logo} alt="logo" />
                 </a>
-                <div className="hamburger" onClick={toggleMenu}>
-                    {isMenuOpen ? (
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="size-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    ) : (
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="size-6"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-                            />
-                        </svg>
-                    )}
+                <div
+                    className={`flex abhi transition-all duration-500 ${showDetails ? "visible" : "hidden w-0 h-0"
+                        }`}
+                >
+                    <img src={abhi} alt="Abhivyakti" className="name slide-in" />
+                    <img src={date} alt="2025" className="date slide-in" />
                 </div>
+                <div className="hamburger" onClick={toggleMenu}>
+                    <div className={`hamburger-lines ${isMenuOpen ? "open" : ""}`}>
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
+                </div>
+
             </div>
             <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
                 <li className="nav-item">
-                    <a
-                        href="#about"
-                        onClick={(e) => smoothScrollOrNavigate(e, "about")}
-                    >
+                    <a href="#about" onClick={(e) => smoothScrollOrNavigate(e, "about")}>
                         ABOUT
                     </a>
                 </li>

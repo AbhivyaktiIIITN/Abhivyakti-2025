@@ -136,7 +136,7 @@ export const showStopper = {
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
-                title: "D-taraxia",
+                title: "D-Taraxia",
                 name: "Aditi Arya",
                 phone: "+91 7024161222",
                 email: "dtaraxia@iiitn.ac.in",

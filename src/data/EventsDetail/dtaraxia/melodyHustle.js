@@ -122,7 +122,7 @@ export const melodyHustle = {
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
-                title: "D-taraxia",
+                title: "D-Taraxia",
                 name: "Sathvika Bogam",
                 phone: "+919381469800",
                 email: "dtaraxia@iiitn.ac.in",

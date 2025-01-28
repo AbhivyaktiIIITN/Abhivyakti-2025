@@ -2,11 +2,11 @@ import { images } from "./Images/images";
 
 export const members = [
     {
-        name: "Sumeet Kumar",
-        role: "Designer",
-        githubLink: "https://sumeetportfolio.netlify.app/",
-        linkedinLink: "https://www.linkedin.com/in/sumeet-kumar-a978792bb/",
-        dataImage: images[6],
+        name: "Nikhil Mishra",
+        role: "Co-Lead",
+        githubLink: "https://github.com/nikhilmishra1710",
+        linkedinLink: "https://www.linkedin.com/in/nikhil-mishra17",
+        dataImage: images[1],
     },
     {
         name: "Supratit Datta",
@@ -16,11 +16,11 @@ export const members = [
         dataImage: images[0],
     },
     {
-        name: "Nikhil Mishra",
-        role: "Co-Lead",
-        githubLink: "https://github.com/nikhilmishra1710",
-        linkedinLink: "https://www.linkedin.com/in/nikhil-mishra17",
-        dataImage: images[1],
+        name: "Sumeet Kumar",
+        role: "Designer",
+        githubLink: "https://sumeetportfolio.netlify.app/",
+        linkedinLink: "https://www.linkedin.com/in/sumeet-kumar-a978792bb/",
+        dataImage: images[6],
     },
     {
         name: "Yash Verma",
