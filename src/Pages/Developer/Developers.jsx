@@ -30,18 +30,18 @@ function Developers() {
             <h1 className="title">CONTRIBUTORS</h1>
             <div className="members">
                 <div className="sec-1">
-                    {members.slice(0, 3).map((dev, index) => (
+                    {members.slice(0, 2).map((dev, index) => (
                         <Card key={index} dev={dev} />
                     ))}
                 </div>
                 <div className="sec-2">
-                    {members.slice(3, 8).map((dev, index) => (
+                    {members.slice(2, 6).map((dev, index) => (
                         <Card key={index + 3} dev={dev} />
                     ))}
                 </div>
-                <div className="sec-2 designer">
-                    {members.slice(2, 3).map((dev, index) => (
-                        <Card key={index} dev={dev} />
+                <div className="sec-3">
+                    {members.slice(6, 7).map((dev, index) => (
+                        <Card key={8} dev={dev} />
                     ))}
                 </div>
             </div>
