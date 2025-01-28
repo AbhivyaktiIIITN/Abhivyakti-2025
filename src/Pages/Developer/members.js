@@ -2,13 +2,6 @@ import { images } from "./Images/images";
 
 export const members = [
     {
-        name: "Nikhil Mishra",
-        role: "Co-Lead",
-        githubLink: "https://github.com/nikhilmishra1710",
-        linkedinLink: "https://www.linkedin.com/in/nikhil-mishra17",
-        dataImage: images[1],
-    },
-    {
         name: "Supratit Datta",
         role: "Lead",
         githubLink: "https://github.com/SupratitDatta",
@@ -16,11 +9,11 @@ export const members = [
         dataImage: images[0],
     },
     {
-        name: "Sumeet Kumar",
-        role: "Designer",
-        githubLink: "https://sumeetportfolio.netlify.app/",
-        linkedinLink: "https://www.linkedin.com/in/sumeet-kumar-a978792bb/",
-        dataImage: images[6],
+        name: "Nikhil Mishra",
+        role: "Co-Lead",
+        githubLink: "https://github.com/nikhilmishra1710",
+        linkedinLink: "https://www.linkedin.com/in/nikhil-mishra17",
+        dataImage: images[1],
     },
     {
         name: "Yash Verma",
@@ -49,5 +42,12 @@ export const members = [
         githubLink: "https://github.com/PD-scripts",
         linkedinLink: "https://www.linkedin.com/in/priyanshu-dixit/",
         dataImage: images[5],
+    },
+    {
+        name: "Sumeet Kumar",
+        role: "Designer",
+        githubLink: "https://sumeetportfolio.netlify.app/",
+        linkedinLink: "https://www.linkedin.com/in/sumeet-kumar-a978792bb/",
+        dataImage: images[6],
     },
 ];
