@@ -12,6 +12,7 @@ export const dahaad = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/estoria/drip1.png",
         deadline: "15th February 2025",
         teamSize: "5-20",

@@ -12,6 +12,7 @@ export const rasdhaara = {
     },
 
     eventIntroData: {
+        isFree: false,
         drip: "/assets/EventDetail/estoria/drip1.png",
         deadline: "15th February 2025",
         teamSize: "Solo",

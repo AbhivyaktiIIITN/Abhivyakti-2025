@@ -12,6 +12,7 @@ export const chordsOfChaos = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "1-5 Members",

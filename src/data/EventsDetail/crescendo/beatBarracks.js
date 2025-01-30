@@ -12,6 +12,7 @@ export const beatBarracks = {
     },
 
     eventIntroData: {
+        isFree: false,
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "24 hours before the event starts",
         teamSize: "1-3 Members",

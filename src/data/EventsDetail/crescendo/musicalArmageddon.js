@@ -1,6 +1,6 @@
 export const musicalArmageddon = {
     eventHeaderData: {
-        eventName: "Musical ",
+        eventName: "Musical",
         eventName2: "Armageddon",
         clubName: "Crescendo",
         eventShortDescription: "Band Battle",
@@ -12,6 +12,7 @@ export const musicalArmageddon = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "3-10 Members",

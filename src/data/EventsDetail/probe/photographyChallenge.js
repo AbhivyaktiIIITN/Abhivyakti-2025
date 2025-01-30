@@ -12,6 +12,7 @@ export const photographyChallenge = {
     },
 
     eventIntroData: {
+        isFree: false,
         drip: "/assets/EventDetail/probe/drip1.png",
         deadline: "15th February 2025",
         teamSize: "Individual Participants Only",

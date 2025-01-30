@@ -12,6 +12,7 @@ export const mrAndMsAbhivyakti = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/abcentral/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "Individual Participation",

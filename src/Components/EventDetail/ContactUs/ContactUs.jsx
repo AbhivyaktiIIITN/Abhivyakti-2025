@@ -55,8 +55,8 @@ const ContactUs = ({ contacts, onSubmit }) => {
                         className="h-52 sm:h-80"
                     />
                 </div>
-                <div className="w-full max-w-3xl space-y-4 flex  items-center justify-center gap-2 place-items-center">
-                    <div className="flex flex-wrap gap-8">
+                <div className="w-full text-center max-w-3xl space-y-4 flex  items-center justify-center gap-2 place-items-center">
+                    <div className="flex flex-wrap gap-8 justify-center items-center">
                         {contacts.map((contact, index) => (
                             <div
                                 key={index}
