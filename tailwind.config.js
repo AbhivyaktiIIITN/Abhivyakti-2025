@@ -19,7 +19,7 @@ export default {
                 width: "width",
                 pulse: "pulse 1s infinite",
                 fade: "fade 5s infinite",
-                "fade-fast": "fade 2s infinite"
+                "fade-fast": "fade 2s infinite",
             },
             keyframes: {
                 width: {
@@ -33,7 +33,7 @@ export default {
                 fade: {
                     "0%, 100%": { opacity: 1 },
                     "50%": { opacity: 0 },
-                }
+                },
             },
             screens: {
                 xs: "470px",

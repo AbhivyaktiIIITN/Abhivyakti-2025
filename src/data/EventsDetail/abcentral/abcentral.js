@@ -3,5 +3,5 @@ import { rapBattle } from "./rapBattle";
 
 export const abCentral = {
     rapBattle,
-    mrAndMsAbhivyakti
-}
+    mrAndMsAbhivyakti,
+};

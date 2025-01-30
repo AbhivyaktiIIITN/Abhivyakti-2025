@@ -13,7 +13,7 @@ import Loader from "../../Components/Loader/loader";
 
 function Home() {
     const location = useLocation();
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (location.pathname === "/" && location.state?.scrollToTop) {
@@ -36,15 +36,13 @@ function Home() {
 
     useEffect(() => {
         setTimeout(() => {
-            setLoading(false)
-        }, 1000)
-        document.title = "Abhivyakti"
-    }, [])
-    
+            setLoading(false);
+        }, 1000);
+        document.title = "Abhivyakti";
+    }, []);
+
     if (loading) {
-        return (
-            <Loader />
-        )
+        return <Loader />;
     }
 
     return (

@@ -10,7 +10,7 @@ export const danceSquad = {
         leftStatueUrl: "/assets/EventDetail/dtaraxia/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/dtaraxia/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",
@@ -42,7 +42,7 @@ export const danceSquad = {
         roundsData: [
             {
                 title: "Round 1: Online Elimination",
-                highlight: [1,8],
+                highlight: [1, 8],
                 rules: [
                     "Total number of members allowed for GROUP in this event is 3-15 per team.",
                     "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",

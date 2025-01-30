@@ -10,7 +10,7 @@ export const melodyHustle = {
         leftStatueUrl: "/assets/EventDetail/dtaraxia/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/dtaraxia/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",

@@ -10,7 +10,7 @@ export const chordsOfChaos = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
@@ -47,7 +47,7 @@ export const chordsOfChaos = {
                     "Exceeding the time limit by 60 seconds will lead to disqualification.",
                     "Participants can optionally perform with a backing track, which must be emailed to '[CC_COLLEGE NAME_TEAM NAME]' for fair judgment.",
                     "Any misconduct, obscenity, or foul language can lead to on-the-spot disqualification.",
-                    'Participants must upload a PDF titled in the format: "Team Name/Participant Name_College Name_Event Name.pdf," containing a drive link to their video/audio submission per event rules. Ensure the link has proper access permissions to avoid evaluation issues. The organizing committee is not responsible for submissions that cannot be accessed.'
+                    'Participants must upload a PDF titled in the format: "Team Name/Participant Name_College Name_Event Name.pdf," containing a drive link to their video/audio submission per event rules. Ensure the link has proper access permissions to avoid evaluation issues. The organizing committee is not responsible for submissions that cannot be accessed.',
                 ],
             },
             {

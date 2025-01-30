@@ -2,19 +2,18 @@ import "./hero.css";
 import { useAnimate } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
-import "../../../css/font.css"
+import "../../../css/font.css";
 
 function Hero() {
     const [scope, animate] = useAnimate();
     const [hasClicked, setHasClicked] = useState(false);
-    const [musicPlayed, setMusicPlayed] = useState(false)
-    const [heroClicked, setHeroClicked] = useState(false)
+    const [musicPlayed, setMusicPlayed] = useState(false);
+    const [heroClicked, setHeroClicked] = useState(false);
 
-    const promptRef = useRef(null)
+    const promptRef = useRef(null);
 
     const onMouseEnter = async () => {
-
-        if (heroClicked) return
+        if (heroClicked) return;
 
         // document.querySelector("#hero").style.cursor = "url(/assets/prompt.png) !important"
 
@@ -30,8 +29,7 @@ function Hero() {
     };
 
     const onMouseLeave = async () => {
-
-        if (heroClicked) return
+        if (heroClicked) return;
 
         if (!scope.current) return;
 
@@ -90,18 +88,17 @@ function Hero() {
     };
 
     const onMouseClick = async () => {
+        if (heroClicked) return;
+        setHeroClicked(true);
 
-        if (heroClicked) return
-        setHeroClicked(true)
-
-        promptRef.current.style.display = "none"
+        promptRef.current.style.display = "none";
         if (!scope.current) return;
         setHasClicked(true);
         if (!musicPlayed) {
             const audio = new Audio("/audio/1234.mp3");
             audio.play();
         }
-        setMusicPlayed(true)
+        setMusicPlayed(true);
 
         await animate("#blue-tone", { opacity: 0.4 });
 
@@ -194,9 +191,9 @@ function Hero() {
 
     useEffect(() => {
         setTimeout(() => {
-            promptRef.current.style.display = "none"
+            promptRef.current.style.display = "none";
         }, 8000);
-    }, [])
+    }, []);
 
     return (
         <div
@@ -217,11 +214,7 @@ function Hero() {
                     src="/assets/prompt.png"
                     alt="spray"
                 />
-                <p
-                    className="humane-bold-font text-4xl"
-                >
-                    CLICK HERE !!
-                </p>
+                <p className="humane-bold-font text-4xl">CLICK HERE !!</p>
             </div>
             <div
                 className="relative mx-auto max-w-full w-[100vw] h-auto overflow-hidden"

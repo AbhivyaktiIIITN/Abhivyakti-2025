@@ -9,19 +9,16 @@ import Navbar from "../../Components/Navbar/Navbar.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 
 function Developers() {
-
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
-            setLoading(false)
-        }, 1000)
-    }, [])
+            setLoading(false);
+        }, 1000);
+    }, []);
 
     if (loading) {
-        return (
-            <Loader />
-        )
+        return <Loader />;
     }
 
     return (
@@ -45,7 +42,9 @@ function Developers() {
                     ))}
                 </div>
             </div>
-            <div className="mt-8"><Footer /></div>
+            <div className="mt-8">
+                <Footer />
+            </div>
         </div>
     );
 }

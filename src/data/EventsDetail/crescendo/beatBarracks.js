@@ -10,7 +10,7 @@ export const beatBarracks = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "24 hours before the event starts",

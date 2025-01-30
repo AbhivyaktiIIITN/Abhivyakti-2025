@@ -137,7 +137,7 @@ export const EventDropDownDetails = {
             unstopLink:
                 "https://unstop.com/p/admads-abhivyakti-2025-iiit-nagpur-1303135",
             img: "/assets/EventsPage/probe/photographyChallenge.png",
-        }
+        },
     ],
     estória: [
         {

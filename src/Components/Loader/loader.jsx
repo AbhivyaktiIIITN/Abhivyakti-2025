@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 function Loader() {
-
     return (
         <div
             className="w-screen h-screen bg-[#1e1e1e] flex justify-center items-center overflow-hidden"
             style={{
-                background: "radial-gradient(circle, rgb(30,30,30) 10%, rgba(0,0,0) 100%)"
+                background:
+                    "radial-gradient(circle, rgb(30,30,30) 10%, rgba(0,0,0) 100%)",
             }}
         >
             <img

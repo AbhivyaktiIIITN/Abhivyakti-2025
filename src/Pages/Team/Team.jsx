@@ -9,8 +9,7 @@ import "../../css/font.css";
 import Loader from "../../Components/Loader/loader.jsx";
 
 function Team() {
-
-    const [loading,setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         window.scrollTo({
@@ -20,15 +19,13 @@ function Team() {
     }, []);
 
     useEffect(() => {
-       setTimeout(() => {
-              setLoading(false)
-         }, 1000)
+        setTimeout(() => {
+            setLoading(false);
+        }, 1000);
         document.title = "Abhivyakti | Team";
-    }, [])
+    }, []);
     if (loading) {
-        return (
-            <Loader />
-        )
+        return <Loader />;
     }
 
     const sectionVariants = {

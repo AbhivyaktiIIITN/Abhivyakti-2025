@@ -7,8 +7,7 @@ import "./event.css";
 import Loader from "../../Components/Loader/loader";
 
 const Event = () => {
-    
-    const [loading,setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         window.scrollTo({
@@ -19,14 +18,12 @@ const Event = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            setLoading(false)
-        }, 1000)
+            setLoading(false);
+        }, 1000);
         document.title = "Abhivyakti | Events";
-    }, [])
+    }, []);
     if (loading) {
-        return (
-            <Loader />
-        )
+        return <Loader />;
     }
 
     return (

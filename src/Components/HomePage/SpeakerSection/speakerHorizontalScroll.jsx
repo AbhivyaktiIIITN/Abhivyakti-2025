@@ -14,7 +14,10 @@ const SpeakerHorizontalScrollCarousel = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[550vh] urbanist-font font-normal">
+        <section
+            ref={targetRef}
+            className="relative h-[550vh] urbanist-font font-normal"
+        >
             <div className="sticky top-0 flex md:h-[100vh] sm:h-[100vh] items-center overflow-scroll no-scrollbar overflow-x-hidden overflow-y-hidden">
                 <motion.div
                     style={{ x }}
@@ -99,8 +102,12 @@ const SpeakerHorizontalScrollCarousel = () => {
                                 key={index}
                             >
                                 <div className="w-1/2 h-full flex flex-col urbanist-font text-white p-10 gap-5 ">
-                                    <p className="text-3xl sm:text-7xl capitalize">{speaker.name}</p>
-                                    <p className="text-base sm:text-3xl mt-2 font-normal">{speaker.about}</p>
+                                    <p className="text-3xl sm:text-7xl capitalize">
+                                        {speaker.name}
+                                    </p>
+                                    <p className="text-base sm:text-3xl mt-2 font-normal">
+                                        {speaker.about}
+                                    </p>
                                     {/* <div className="border-l-4 sm:border-l-8 flex mt-2 sm:pl-10 pl-5 gap-2 sm:text-3xl text-xl">
                                         <a href={speaker.insta} target="_blank" rel="noreferrer">
                                             <FaInstagram />
@@ -114,7 +121,11 @@ const SpeakerHorizontalScrollCarousel = () => {
                                     </div> */}
                                 </div>
                                 <div>
-                                    <img src={speaker.image} alt="guest" className="past-guest img-radial-gradient" />
+                                    <img
+                                        src={speaker.image}
+                                        alt="guest"
+                                        className="past-guest img-radial-gradient"
+                                    />
                                 </div>
                             </div>
                         );

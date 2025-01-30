@@ -37,7 +37,11 @@ function SponsorsSection() {
     }, []);
 
     return (
-        <div ref={sectionRef} className="sponsor-container overflow-hidden urbanist-font font-normal" id="sponsors" >
+        <div
+            ref={sectionRef}
+            className="sponsor-container overflow-hidden urbanist-font font-normal"
+            id="sponsors"
+        >
             {/* <TempComponent /> */}
             <div div className="wrapper pb-12 relative ">
                 <MonaLisaAndHand animate={animate} />

@@ -10,7 +10,7 @@ export const audienceOdyssey = {
         leftStatueUrl: "/assets/EventDetail/probe/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/probe/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/probe/drip1.png",
         deadline: "15th February 2024",

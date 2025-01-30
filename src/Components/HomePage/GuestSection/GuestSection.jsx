@@ -48,7 +48,11 @@ const GuestSection = () => {
     const remainingCards = isOdd ? cardsData.slice(1) : cardsData;
 
     return (
-        <div className="guest-container urbanist-font font-normal" id="guests" ref={sectionRef}>
+        <div
+            className="guest-container urbanist-font font-normal"
+            id="guests"
+            ref={sectionRef}
+        >
             <div className="header-wrapper">
                 <img
                     src={gh}

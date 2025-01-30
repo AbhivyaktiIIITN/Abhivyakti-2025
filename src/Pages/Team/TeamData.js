@@ -118,21 +118,21 @@ const teamsData = [
         name: "Estória",
         members: [
             { name: "Aditya Shrivastava", role: "Estória Lead" },
-            { name: "Aditi Chandak", role: "Estória Co-Lead" }
+            { name: "Aditi Chandak", role: "Estória Co-Lead" },
         ],
     },
     {
         name: "Crescendo",
         members: [
             { name: "Rhythm Agrawal", role: "Crescendo Lead" },
-            { name: "Prakhar Beniwal", role: "Crescendo Co-Lead" }
+            { name: "Prakhar Beniwal", role: "Crescendo Co-Lead" },
         ],
     },
     {
         name: "D-Taraxia",
         members: [
             { name: "Jwalit Lal", role: "D-Taraxia Lead" },
-            { name: "Aditi Arya", role: "D-Taraxia Co-Lead" }
+            { name: "Aditi Arya", role: "D-Taraxia Co-Lead" },
         ],
     },
     {

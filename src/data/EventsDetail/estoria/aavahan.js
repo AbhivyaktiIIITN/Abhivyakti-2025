@@ -10,7 +10,7 @@ export const aavahan = {
         leftStatueUrl: "/assets/EventDetail/estoria/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/estoria/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/estoria/drip1.png",
         deadline: "15th February 2025",

@@ -10,7 +10,7 @@ export const musicalArmageddon = {
         leftStatueUrl: "/assets/EventDetail/crescendo/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/crescendo/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/crescendo/drip1.png",
         deadline: "15 Feb 2025",
@@ -19,7 +19,8 @@ export const musicalArmageddon = {
         prizePool: "₹ 25,000",
         description:
             "Gear up for an adrenaline-charged showdown at 'Musical Armageddon' – the ultimate battle of the bands! Brace yourself for an electrifying night as bands from across genres unleash their talent, setting the stage ablaze with performances that will leave you spellbound. With an expert panel of industry judges and a crowd hungry for rhythm, witness the rise of a new champion in this symphony of epic beats, exhilarating melodies, and unmatched energy. It's not just a competition – it's a night where legends are born, and music reigns supreme!",
-        unstopLink: "https://unstop.com/events/musical-armageddon-abhivyakti-2025-iiit-nagpur-1301050",
+        unstopLink:
+            "https://unstop.com/events/musical-armageddon-abhivyakti-2025-iiit-nagpur-1301050",
     },
 
     eventTimelineData: {
@@ -46,7 +47,7 @@ export const musicalArmageddon = {
                     "Original compositions should be mentioned, as they include extra marks.",
                     "Exceeding the time limit by 90 seconds will lead to disqualification.",
                     "Participants can perform with a backing track using a predefined instrument list. The track must be emailed to '[MA_COLLEGE NAME_TEAM NAME]' for fair judgment.",
-                    'Participants must upload a PDF titled in the format: "Team Name/Participant Name_College Name_Event Name.pdf," containing a drive link to their video/audio submission per event rules. Ensure the link has proper access permissions to avoid evaluation issues. The organizing committee is not responsible for submissions that cannot be accessed.'
+                    'Participants must upload a PDF titled in the format: "Team Name/Participant Name_College Name_Event Name.pdf," containing a drive link to their video/audio submission per event rules. Ensure the link has proper access permissions to avoid evaluation issues. The organizing committee is not responsible for submissions that cannot be accessed.',
                 ],
             },
             {

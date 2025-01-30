@@ -10,7 +10,7 @@ export const showStopper = {
         leftStatueUrl: "/assets/EventDetail/dtaraxia/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/dtaraxia/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",
@@ -42,7 +42,7 @@ export const showStopper = {
         roundsData: [
             {
                 title: "Round 1: Online Elimination",
-                highlight: [1,6],
+                highlight: [1, 6],
                 rules: [
                     "Participants have to submit a video of them performing for 1-1.5 minutes.",
                     "Participants must upload a PDF titled in the format: 'Team Name/Participant Name_CollegeName_Event Name.pdf', containing a drive link to their video/audio submission as per event rules.",

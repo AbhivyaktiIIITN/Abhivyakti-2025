@@ -8,7 +8,7 @@ export const photographyChallenge = {
         bgUrlLeft: "/assets/EventDetail/probe/Event-bg.png",
         bgUrlRight: "linear-gradient(90deg, #FDFDFB 0%, #FF006E 100%)",
         leftStatueUrl: "/assets/EventDetail/probe/statue-left.png",
-        rightStatueUrl: "/assets/EventDetail/probe/statue-right.png"
+        rightStatueUrl: "/assets/EventDetail/probe/statue-right.png",
     },
 
     eventIntroData: {
@@ -17,8 +17,10 @@ export const photographyChallenge = {
         teamSize: "Individual Participants Only",
         fee: "Free",
         prizePool: "₹ 7,500",
-        description: "Showcase your photography skills and creativity in either monochrome, astrophotography, or landscape photography. Participate online and let your work shine!",
-        unstopLink: "https://unstop.com/o/C2LOoeT?lb=GW46s6ff&utm_medium=Share&utm_source=shortUrl"
+        description:
+            "Showcase your photography skills and creativity in either monochrome, astrophotography, or landscape photography. Participate online and let your work shine!",
+        unstopLink:
+            "https://unstop.com/o/C2LOoeT?lb=GW46s6ff&utm_medium=Share&utm_source=shortUrl",
     },
 
     eventTimelineData: {
@@ -32,7 +34,7 @@ export const photographyChallenge = {
                 date: new Date("27 Feb 2025"),
                 date2: new Date("28 Feb 2025"),
             },
-        ]
+        ],
     },
 
     eventRulesAndRegulationData: {
@@ -51,9 +53,9 @@ export const photographyChallenge = {
                     "File naming format: name_college_theme.",
                     "Submissions must be sent to probe@iiitn.ac.in before the deadline.",
                     "Late submissions will not be entertained.",
-                    "The decision of the judges is final and binding."
-                ]
-            }
+                    "The decision of the judges is final and binding.",
+                ],
+            },
         ],
         judgingCriteriaData: [
             {
@@ -62,10 +64,10 @@ export const photographyChallenge = {
                     "Creativity and originality",
                     "Adherence to the theme",
                     "Technical quality and composition",
-                    "Overall impact"
-                ]
-            }
-        ]
+                    "Overall impact",
+                ],
+            },
+        ],
     },
 
     eventPrizeData: {
@@ -73,22 +75,22 @@ export const photographyChallenge = {
             {
                 position: "Winner",
                 prizeAmount: "To Be Announced",
-                imageSrc: "/assets/EventDetail/probe/First.png"
+                imageSrc: "/assets/EventDetail/probe/First.png",
             },
             {
                 position: "1st Runner Up",
                 prizeAmount: "To Be Announced",
-                imageSrc: "/assets/EventDetail/probe/Second.png"
+                imageSrc: "/assets/EventDetail/probe/Second.png",
             },
             {
                 position: "2nd Runner Up",
                 prizeAmount: "To Be Announced",
-                imageSrc: "/assets/EventDetail/probe/Third.png"
-            }
+                imageSrc: "/assets/EventDetail/probe/Third.png",
+            },
         ],
         additionalPrizes: [
-            "Participation certificates for all eligible entries"
-        ]
+            "Participation certificates for all eligible entries",
+        ],
     },
 
     eventContactData: {
@@ -105,6 +107,6 @@ export const photographyChallenge = {
                 phone: "+919889335425",
                 email: "probe@iiitn.ac.in",
             },
-        ]
-    }
-}
+        ],
+    },
+};

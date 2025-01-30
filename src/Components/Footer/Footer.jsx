@@ -37,8 +37,7 @@ function Footer() {
         e.preventDefault();
         if (window.location.pathname !== "/") {
             navigate("/", { state: { scrollToTop: true } });
-        }
-        else {
+        } else {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
     };
@@ -54,9 +53,22 @@ function Footer() {
     };
 
     return (
-        <div className="footer-container urbanist-font font-normal" id="contact" ref={footerRef} onClick={handleFooterClick}>
-            <div className="footer-animation-section" style={{ height: '100%', display: 'flex', position: 'relative', }} >
-                <div className="left-animation-section"
+        <div
+            className="footer-container urbanist-font font-normal"
+            id="contact"
+            ref={footerRef}
+            onClick={handleFooterClick}
+        >
+            <div
+                className="footer-animation-section"
+                style={{
+                    height: "100%",
+                    display: "flex",
+                    position: "relative",
+                }}
+            >
+                <div
+                    className="left-animation-section"
                     style={{
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
@@ -108,32 +120,98 @@ function Footer() {
                         <div className="footer">
                             <div className="quick">
                                 <h1>Quick Links</h1>
-                                <p> <Link to="https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835" target="_blank" className="footer-link"> Register </Link> </p>
-                                <p> <Link to="/event" className="footer-link"> Explore </Link> </p>
-                                <p> <a href="#hero" className="footer-link" onClick={handleHomeClick}>Home</a></p>
-                                <p> <Link to="/terms" className="footer-link"> Terms & Conditions </Link> </p>
+                                <p>
+                                    {" "}
+                                    <Link
+                                        to="https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835"
+                                        target="_blank"
+                                        className="footer-link"
+                                    >
+                                        {" "}
+                                        Register{" "}
+                                    </Link>{" "}
+                                </p>
+                                <p>
+                                    {" "}
+                                    <Link to="/event" className="footer-link">
+                                        {" "}
+                                        Explore{" "}
+                                    </Link>{" "}
+                                </p>
+                                <p>
+                                    {" "}
+                                    <a
+                                        href="#hero"
+                                        className="footer-link"
+                                        onClick={handleHomeClick}
+                                    >
+                                        Home
+                                    </a>
+                                </p>
+                                <p>
+                                    {" "}
+                                    <Link to="/terms" className="footer-link">
+                                        {" "}
+                                        Terms & Conditions{" "}
+                                    </Link>{" "}
+                                </p>
                             </div>
                             <div className="contact">
                                 <h1>Contact Us</h1>
-                                <p> <a href="mailto:abhivyakti@iiitn.ac.in" className="footer-link" target="_blank" > abhivyakti@iiitn.ac.in </a></p>
-                                <p> <a className="footer-link" target="_blank" onClick={copyPhoneNumber}> +91 7506103104 </a>
-                                    {copyNotification && (<div className="notification">Phone number copied!</div>)} </p>
+                                <p>
+                                    {" "}
+                                    <a
+                                        href="mailto:abhivyakti@iiitn.ac.in"
+                                        className="footer-link"
+                                        target="_blank"
+                                    >
+                                        {" "}
+                                        abhivyakti@iiitn.ac.in{" "}
+                                    </a>
+                                </p>
+                                <p>
+                                    {" "}
+                                    <a
+                                        className="footer-link"
+                                        target="_blank"
+                                        onClick={copyPhoneNumber}
+                                    >
+                                        {" "}
+                                        +91 7506103104{" "}
+                                    </a>
+                                    {copyNotification && (
+                                        <div className="notification">
+                                            Phone number copied!
+                                        </div>
+                                    )}{" "}
+                                </p>
                             </div>
                             <div className="follow">
                                 <h1>Follow Us</h1>
                                 <p>
-                                    <Link to="https://www.instagram.com/abhivyakti_iiitn?igsh=MWczeWMwa3RyZGQ5NQ==" className="footer-link" target="_blank" >
+                                    <Link
+                                        to="https://www.instagram.com/abhivyakti_iiitn?igsh=MWczeWMwa3RyZGQ5NQ=="
+                                        className="footer-link"
+                                        target="_blank"
+                                    >
                                         Instagram
                                     </Link>
                                 </p>
                                 <p>
-                                    <Link to="https://www.linkedin.com/in/abhivyakti-iiit-nagpur-b12b20260/?trk=public_profile_browsemap&originalSubdomain=in"
-                                        className="footer-link" target="_blank" >
+                                    <Link
+                                        to="https://www.linkedin.com/in/abhivyakti-iiit-nagpur-b12b20260/?trk=public_profile_browsemap&originalSubdomain=in"
+                                        className="footer-link"
+                                        target="_blank"
+                                    >
                                         LinkedIn
                                     </Link>
                                 </p>
                                 <p>
-                                    <Link to="https://x.com/AIiitn?t=HOLPsW4JHG7oHz5wcK7DnQ&s=09" className="footer-link" target="_blank" >
+                                    <Link
+                                        to="https://x.com/AIiitn?t=HOLPsW4JHG7oHz5wcK7DnQ&s=09"
+                                        className="footer-link"
+                                        target="_blank"
+                                    >
                                         Twitter
                                     </Link>
                                 </p>
@@ -142,10 +220,20 @@ function Footer() {
                         </div>
                     </div>
                     <div className="copyright">
-                        <div className="student"> Abhivyakti 2025 © All rights reserved. </div>
+                        <div className="student">
+                            {" "}
+                            Abhivyakti 2025 © All rights reserved.{" "}
+                        </div>
                         <div className="student">
                             Developed and Managed by{" "}
-                            <Link to="/developers" className="developer" target="_blank" > Students </Link>
+                            <Link
+                                to="/developers"
+                                className="developer"
+                                target="_blank"
+                            >
+                                {" "}
+                                Students{" "}
+                            </Link>
                         </div>
                     </div>
                 </div>

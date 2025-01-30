@@ -26,8 +26,7 @@ function Navbar() {
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: "smooth" });
             }
-        } 
-        else {
+        } else {
             navigate("/", { state: { scrollTo: targetId } });
         }
         closeMenu();
@@ -41,8 +40,7 @@ function Navbar() {
             if (heroElement) {
                 heroElement.scrollIntoView({ behavior: "smooth" });
             }
-        } 
-        else {
+        } else {
             navigate("/");
         }
         closeMenu();
@@ -56,8 +54,7 @@ function Navbar() {
         const handleScroll = () => {
             if (window.scrollY > 100) {
                 setShowDetails(true);
-            } 
-            else {
+            } else {
                 setShowDetails(false);
             }
         };
@@ -76,24 +73,33 @@ function Navbar() {
                     <img src={logo} alt="logo" />
                 </a>
                 <div
-                    className={`flex abhi transition-all duration-500 ${showDetails ? "visible" : "hidden"
-                        }`}
+                    className={`flex abhi transition-all duration-500 ${
+                        showDetails ? "visible" : "hidden"
+                    }`}
                 >
-                    <img src={abhi} alt="Abhivyakti" className="name slide-in" />
+                    <img
+                        src={abhi}
+                        alt="Abhivyakti"
+                        className="name slide-in"
+                    />
                     <img src={date} alt="2025" className="date slide-in" />
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
-                    <div className={`hamburger-lines ${isMenuOpen ? "open" : ""}`}>
+                    <div
+                        className={`hamburger-lines ${isMenuOpen ? "open" : ""}`}
+                    >
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
                     </div>
                 </div>
-
             </div>
             <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
                 <li className="nav-item">
-                    <a href="#about" onClick={(e) => smoothScrollOrNavigate(e, "about")}>
+                    <a
+                        href="#about"
+                        onClick={(e) => smoothScrollOrNavigate(e, "about")}
+                    >
                         ABOUT
                     </a>
                 </li>

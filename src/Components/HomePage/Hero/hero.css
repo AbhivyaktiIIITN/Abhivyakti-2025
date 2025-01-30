@@ -59,9 +59,11 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    background: radial-gradient(circle,
-            rgba(0, 0, 0, 0) 40%,
-            rgba(0, 0, 0, 0.6) 100%);
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
     opacity: 0.8;
 }
 
@@ -103,10 +105,12 @@
 
 .shine {
     background: rgb(22, 0, 0);
-    background: radial-gradient(circle,
-            rgba(22, 0, 0, 0) 0%,
-            rgba(254, 170, 0, 1) 73%,
-            rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(
+        circle,
+        rgba(22, 0, 0, 0) 0%,
+        rgba(254, 170, 0, 1) 73%,
+        rgba(0, 0, 0, 0) 100%
+    );
 }
 
 .color-class {

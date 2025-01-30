@@ -10,7 +10,7 @@ export const mrAndMsAbhivyakti = {
         leftStatueUrl: "/assets/EventDetail/abcentral/statue-left.png",
         rightStatueUrl: "/assets/EventDetail/abcentral/statue-right.png",
     },
-    
+
     eventIntroData: {
         drip: "/assets/EventDetail/abcentral/drip1.png",
         deadline: "15 Feb 2025",

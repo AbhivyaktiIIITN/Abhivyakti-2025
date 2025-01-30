@@ -39,4 +39,4 @@ export const speakers = [
         // facebook: "https://www.facebook.com/abhishek.mungoli",
         image: "/assets/HomePage/HorizontalScroll/pastSpeaker/Abhishek_Mungoli.png",
     },
-];  
+];

@@ -6,8 +6,7 @@ import "../../css/font.css";
 import Loader from "../../Components/Loader/loader";
 
 function Terms() {
-
-    const [loading,setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         window.scrollTo({
@@ -16,18 +15,15 @@ function Terms() {
         });
     }, []);
 
-    
     useEffect(() => {
         setTimeout(() => {
-            setLoading(false)
-        }, 1000)
+            setLoading(false);
+        }, 1000);
         document.title = "Abhivyakti | Terms & Conditions";
-    }, [])
-    
+    }, []);
+
     if (loading) {
-        return (
-            <Loader />
-        )
+        return <Loader />;
     }
 
     return (
