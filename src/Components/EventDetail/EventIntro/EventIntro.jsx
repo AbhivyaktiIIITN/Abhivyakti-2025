@@ -7,6 +7,7 @@ import grafftiDrip from "/assets/EventDetail/grafftiDrip.png";
 import "../../../css/font.css";
 
 const EventIntro = ({
+    isFree,
     deadline,
     teamSize,
     fee,
@@ -63,7 +64,14 @@ const EventIntro = ({
                                     <span className="font-semibold">
                                         Registration Fee:
                                     </span>
-                                    <span>{fee}</span>
+                                    {isFree ? (
+                                        <div className="flex flex-col space-y-1">
+                                            <span className="text-sm leading-[15px]">Round 1 - Free</span>
+                                            <span className="text-sm leading-[15px]">Round 2 - {fee}</span>
+                                        </div>
+                                    ) : (
+                                        <span>{fee}</span>
+                                    )}
                                 </div>
                             </li>
                             <li className="flex items-center space-x-3">
@@ -82,7 +90,7 @@ const EventIntro = ({
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-1/2 lg:w-1/2 h-auto px-5 text-white text-base md:text-base lg:text-lg  flex flex-col flex-wrap justify-center items-center">
+                    <div className="w-full text-justify md:w-1/2 lg:w-1/2 h-auto px-5 text-white text-base md:text-base lg:text-lg  flex flex-col flex-wrap justify-center items-center">
                         <p>{description}</p>
                         {description2 && (
                             <p className="font-extrabold">{description2}</p>

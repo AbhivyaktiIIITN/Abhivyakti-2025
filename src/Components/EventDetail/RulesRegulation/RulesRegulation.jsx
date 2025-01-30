@@ -46,7 +46,7 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
                         className="h-20 sm:h-[18vh] lg:h-64 mb-12"
                     />
                 </div>
-                <div className="text-lg lg:text-xl">
+                <div className="text-lg lg:text-xl text-justify">
                     {roundsData.map((round, index) => (
                         <div key={index} className="mb-8">
                             <h3 className="text-xl font-semibold mb-2 py-5">
@@ -82,7 +82,7 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
                     ))}
                     <div className="mb-8 flex flex-col">
                         {judgingCriteriaData.length > 0 &&
-                        judgingCriteriaData[0].title === "Committees" ? (
+                            judgingCriteriaData[0].title === "Committees" ? (
                             <>
                                 <h2 className="text-2xl font-semibold mb-4">
                                     Available Committes:
@@ -115,7 +115,7 @@ const RulesRegulation = ({ roundsData, judgingCriteriaData }) => {
                         ) : (
                             judgingCriteriaData.length > 0 && (
                                 <>
-                                    <h2 className="text-2xl font-semibold mb-4">
+                                    <h2 className="text-3xl text-center font-semibold mb-4">
                                         Judging Criteria:
                                     </h2>
                                     {judgingCriteriaData.map((round, index) => {

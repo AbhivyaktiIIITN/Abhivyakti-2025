@@ -12,6 +12,7 @@ export const rapBattle = {
     },
 
     eventIntroData: {
+        isFree: false,
         drip: "/assets/EventDetail/abcentral/drip1.png",
         deadline: "15th Feb 2025",
         teamSize: "Individual Participation",

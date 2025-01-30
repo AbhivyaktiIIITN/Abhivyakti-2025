@@ -12,6 +12,7 @@ export const mun = {
     },
 
     eventIntroData: {
+        isFree: false,
         drip: "/assets/EventDetail/orator/drip1.png",
         deadline: "",
         teamSize: "Solo",

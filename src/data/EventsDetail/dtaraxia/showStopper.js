@@ -12,6 +12,7 @@ export const showStopper = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "1 Member",

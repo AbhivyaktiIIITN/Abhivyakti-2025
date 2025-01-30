@@ -12,6 +12,7 @@ export const audienceOdyssey = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/probe/drip1.png",
         deadline: "15th February 2024",
         teamSize: "1-6 participants",

@@ -12,6 +12,7 @@ export const admads = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/probe/drip1.png",
         deadline: "15th February 2025",
         teamSize: "1-5 participants",

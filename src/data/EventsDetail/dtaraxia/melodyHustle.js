@@ -12,6 +12,7 @@ export const melodyHustle = {
     },
 
     eventIntroData: {
+        isFree: true,
         drip: "/assets/EventDetail/dtaraxia/drip1.png",
         deadline: "15 Feb 2025",
         teamSize: "2 Members",
