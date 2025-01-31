@@ -21,7 +21,7 @@ const teamsData = [
         name: "Corporate Team",
         members: [
             { name: "Aahil Parkar", role: "Lead" },
-            { name: "Aryan Aggarwal", role: "Co-Lead" },
+            { name: "Aryan Agarwal", role: "Co-Lead" },
         ],
     },
     {
