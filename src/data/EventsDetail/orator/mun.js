@@ -90,12 +90,12 @@ export const mun = {
     eventPrizeData: {
         prizeData: [
             {
-                position: "High Commendation",
+                position: "Best Delegate",
                 prizeAmount: "",
                 imageSrc: "/assets/EventDetail/orator/First.png",
             },
             {
-                position: "Best Delegate",
+                position: "High Commendation",
                 prizeAmount: "",
                 imageSrc: "/assets/EventDetail/orator/Second.png",
             },
@@ -104,11 +104,15 @@ export const mun = {
                 prizeAmount: "",
                 imageSrc: "/assets/EventDetail/orator/Third.png",
             },
+            {
+                position: "Honourable Mention",
+                prizeAmount: "",
+                imageSrc: "/assets/EventDetail/orator/Fourth.png",
+            },
         ],
         additionalPrizes: [
-            "Honourable Mention",
-            "Certificates",
-            "Participation certificates",
+            "Participation Certificates",
+            "Wining certificates",
             "Trophies",
         ],
     },

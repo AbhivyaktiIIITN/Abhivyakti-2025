@@ -32,13 +32,12 @@ const PrizePool = ({ prizeData, additionalPrizes }) => {
     return (
         <div className="w-full h-fit flex flex-col items-center justify-center relative mt-60 urbanist-font font-normal">
             <div
-                className="text-white py-10 px-4 w-full lg:w-1/2 "
+                className="text-white py-10 px-4 w-full lg:w-auto "
                 ref={sectionRef}
             >
                 <div
-                    className={`w-full flex flex-wrap justify-center opacity-0 header ${
-                        animate ? "slide-in" : ""
-                    }`}
+                    className={`w-full flex flex-wrap justify-center opacity-0 header ${animate ? "slide-in" : ""
+                        }`}
                 >
                     <img
                         src={PrizePoolImg}
@@ -57,10 +56,10 @@ const PrizePool = ({ prizeData, additionalPrizes }) => {
                                 alt={`${prize.position} Place`}
                                 className="w-32 h-32 md:w-44 md:h-44 hover:scale-110"
                             />
-                            <h2 className="text-xl md:text-xl font-bold mt-4">
+                            <h2 className="text-xl text-center md:text-xl font-bold mt-4">
                                 {prize.position}
                             </h2>
-                            <p className="text-lg md:text-2xl font-semibold mt-2 p-2">
+                            <p className="text-lg md:text-2xl text-center font-semibold mt-2 p-2">
                                 {prize.prizeAmount}
                             </p>
                         </div>
