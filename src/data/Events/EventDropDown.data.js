@@ -36,7 +36,7 @@ export const EventDropDownDetails = {
             title: "Singers Show-down",
             mode: "offline",
             type: "Solo Singing",
-            prizePool: "10,000",
+            prizePool: "15,000",
             exploreLink: "/events/singersShowdown",
             unstopLink:
                 "https://unstop.com/p/singers-show-down-abhivyakti-2025-iiit-nagpur-1301100",
@@ -46,7 +46,7 @@ export const EventDropDownDetails = {
             title: "Musical Armageddon",
             mode: "offline",
             type: "Band Battle",
-            prizePool: "10,000",
+            prizePool: "25,000",
             exploreLink: "/events/musicalArmageddon",
             unstopLink:
                 "https://unstop.com/p/musical-armageddon-abhivyakti-2025-iiit-nagpur-1301050",
@@ -56,7 +56,7 @@ export const EventDropDownDetails = {
             title: "Chords of Chaos",
             mode: "offline",
             type: "Instrumental",
-            prizePool: "10,000",
+            prizePool: "15,000",
             exploreLink: "/events/chordsOfChaos",
             unstopLink:
                 "https://unstop.com/p/chord-of-chaos-abhivyakti-2025-iiit-nagpur-1301115",
@@ -78,7 +78,7 @@ export const EventDropDownDetails = {
             title: "Mr & Ms Abhivyakti",
             mode: "offline",
             type: "Fashion",
-            prizePool: "₹ 10,000",
+            prizePool: "10,000",
             exploreLink: "/events/mrAndMsAbhivyakti",
             unstopLink:
                 "https://unstop.com/events/mr-ms-abhivyakti-abhivyakti-2025-iiit-nagpur-1350342",
@@ -88,7 +88,7 @@ export const EventDropDownDetails = {
             title: "Rap Battle",
             mode: "offline",
             type: "Music",
-            prizePool: "₹ 10,000",
+            prizePool: "10,000",
             exploreLink: "/events/rapBattle",
             unstopLink:
                 "https://unstop.com/events/rap-battle-abhivyakti-2025-iiit-nagpur-1350348",
