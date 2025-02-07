@@ -56,9 +56,9 @@ export const musicalArmageddon = {
                 rules: [
                     "Participants can perform any number of songs (in Hindi, English, or both) within a time limit of 12 minutes. Additional 10 minutes will be given for sound check.",
                     "Original compositions should be mentioned, as they include extra marks. Band members should also be introduced.",
-                    "Exceeding the time limit by 120 seconds will lead to disqualification.",
+                    "Exceeding the time limit by 60 seconds will lead to disqualification.",
                     "Participants can perform with a backing track using a predefined instrument list. The track must be emailed to '[MA_COLLEGE NAME_TEAM NAME]' for fair judgment.",
-                    "The instruments provided are 1 drum kit, 1 keyboard, 1 electric guitar, 1 semi-acoustic guitar, 1 tabla set, and 1 bass guitar.",
+                    "The instruments provided are 1 drum kit, 1 keyboard, 2 electric guitar, 1 semi-acoustic guitar, and 1 bass guitar.",
                 ],
             },
         ],
