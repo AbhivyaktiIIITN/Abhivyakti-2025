@@ -62,7 +62,10 @@ const teamsData = [
     },
     {
         name: "Hospitality",
-        members: [{ name: "Akshit Gangwar", role: "Lead" }],
+        members: [
+            { name: "Akshit Gangwar", role: "Lead" },
+            { name: "Raghav Gupta", role: "Co-Lead" },
+        ],
     },
     {
         name: "Stalls Operations",
