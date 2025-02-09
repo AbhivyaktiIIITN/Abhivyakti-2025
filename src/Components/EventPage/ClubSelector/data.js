@@ -1,5 +1,265 @@
 export const clubs = [
     {
+        name: "probe",
+        artform: "media",
+        color: "#FF006E",
+        exploreGradient: "#8F3761",
+        statue1: "/assets/EventsPage/probe/statue1.png",
+        statue2: "/assets/EventsPage/probe/statue2.png",
+        bg: "/assets/EventsPage/probe/bg.png",
+        events: [
+            {
+                title: "1",
+                eventheader: {
+                    clubName: "/assets/EventDetail/probe/Probe.png",
+                    eventName: "/assets/EventDetail/probe/Admads.png",
+                    eventDescription: "/assets/EventDetail/probe/ADmaking.png",
+                    ClubLogo: "/assets/EventDetail/probe/ClubLogo.png",
+                    bgUrlRight:
+                        "linear-gradient(158.35deg,#FDFDFB 0%,#FF006E 100%)",
+                    bgUrlLeft: "url(/assets/EventDetail/probe/Event-bg.png)",
+                    leftStatueUrl: "/assets/EventDetail/probe/statue-left.png",
+                    rightStatueUrl:
+                        "/assets/EventDetail/probe/statue-right.png",
+                },
+                eventPrize: {
+                    prizeData: [
+                        {
+                            position: "First Place",
+                            prizeAmount: "₹ 25,000",
+                            imageSrc: "/assets/EventDetail/probe/First.png",
+                        },
+                        {
+                            position: "Second Place",
+                            prizeAmount: "₹ 15,000",
+                            imageSrc: "/assets/EventDetail/probe/Second.png",
+                        },
+                        {
+                            position: "Third Place",
+                            prizeAmount: "₹ 10,000",
+                            imageSrc: "/assets/EventDetail/probe/Third.png",
+                        },
+                    ],
+                    additionalPrizes: [
+                        "T-shirts",
+                        "Goodies",
+                        "Swag Pack",
+                        "Certificates",
+                    ],
+                },
+            },
+            {
+                title: "2",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+        ],
+    },
+    {
+        name: "orator",
+        artform: "debate",
+        color: "#2237C6",
+        exploreGradient: "#4169E2",
+        statue1: "/assets/EventsPage/orator/statue1.png",
+        statue2: "/assets/EventsPage/orator/statue2.png",
+        bg: "/assets/EventsPage/orator/bg.png",
+        events: [
+            {
+                title: "1",
+                eventheader: {
+                    clubName: "/assets/EventDetail/orator/Orator.png",
+                    eventName: "/assets/EventDetail/orator/Title.png",
+                    eventDescription: "/assets/EventDetail/orator/MUN.png",
+                    ClubLogo: "/assets/EventDetail/orator/ClubLogo.png",
+                    bgUrlRight:
+                        "linear-gradient(158.35deg,#FDFDFB 0%,#2237C6 100%)",
+                    bgUrlLeft: "url(/assets/EventDetail/orator/Event-bg.png)",
+                    leftStatueUrl: "/assets/EventDetail/orator/statue-left.png",
+                    rightStatueUrl:
+                        "/assets/EventDetail/orator/statue-right.png",
+                },
+                eventPrize: {
+                    prizeData: [
+                        {
+                            position: "First Place",
+                            prizeAmount: "₹ 25,000",
+                            imageSrc: "/assets/EventDetail/orator/First.png",
+                        },
+                        {
+                            position: "Second Place",
+                            prizeAmount: "₹ 15,000",
+                            imageSrc: "/assets/EventDetail/orator/Second.png",
+                        },
+                        {
+                            position: "Third Place",
+                            prizeAmount: "₹ 10,000",
+                            imageSrc: "/assets/EventDetail/orator/Third.png",
+                        },
+                    ],
+                    additionalPrizes: [
+                        "T-shirts",
+                        "Goodies",
+                        "Swag Pack",
+                        "Certificates",
+                    ],
+                },
+            },
+            {
+                title: "2",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+        ],
+    },
+    {
+        name: "crescendo",
+        artform: "music",
+        color: "#34FA46",
+        exploreGradient: "#79a82c",
+        statue1: "/assets/EventsPage/crescendo/statue1.png",
+        statue2: "/assets/EventsPage/crescendo/statue2.png",
+        bg: "/assets/EventsPage/crescendo/bg.png",
+        events: [
+            {
+                title: "1",
+                eventheader: {
+                    clubName: "/assets/EventDetail/crescendo/Crescendo.png",
+                    eventName: "/assets/EventDetail/crescendo/COC.png",
+                    eventDescription:
+                        "/assets/EventDetail/crescendo/Instrumental.png",
+                    ClubLogo: "/assets/EventDetail/crescendo/ClubLogo.png",
+                    bgUrlRight:
+                        "linear-gradient(158.35deg, #FDFDFB 0%, #34FA46 100%)",
+                    bgUrlLeft:
+                        "url(/assets/EventDetail/crescendo/Event-bg.png)",
+                    leftStatueUrl:
+                        "/assets/EventDetail/crescendo/statue-left.png",
+                    rightStatueUrl:
+                        "/assets/EventDetail/crescendo/statue-right.png",
+                },
+                eventPrize: {
+                    prizeData: [
+                        {
+                            position: "First Place",
+                            prizeAmount: "₹ 25,000",
+                            imageSrc: "/assets/EventDetail/crescendo/First.png",
+                        },
+                        {
+                            position: "Second Place",
+                            prizeAmount: "₹ 15,000",
+                            imageSrc:
+                                "/assets/EventDetail/crescendo/Second.png",
+                        },
+                        {
+                            position: "Third Place",
+                            prizeAmount: "₹ 10,000",
+                            imageSrc: "/assets/EventDetail/crescendo/Third.png",
+                        },
+                    ],
+                    additionalPrizes: [
+                        "T-shirts",
+                        "Goodies",
+                        "Swag Pack",
+                        "Certificates",
+                    ],
+                },
+            },
+            {
+                title: "2",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+        ],
+    },
+    {
+        name: "ab central",
+        artform: "cultural",
+        color: "#FAF100",
+        exploreGradient: "#de9000",
+        statue1: "/assets/EventsPage/abcentral/statue1.png",
+        statue2: "/assets/EventsPage/abcentral/statue2.png",
+        bg: "/assets/EventsPage/abcentral/bg.png",
+        events: [
+            {
+                title: "1",
+                eventheader: {
+                    clubName: "/assets/EventDetail/abcentral/ABCentral.png",
+                    eventName: "/assets/EventDetail/abcentral/RP.png",
+                    eventDescription:
+                        "/assets/EventDetail/abcentral/RapShodown.png",
+                    ClubLogo: "/assets/EventDetail/abcentral/ClubLogo.png",
+                    bgUrlRight:
+                        "linear-gradient(158.35deg,#FDFDFB 0%,#FAF100 100%)",
+                    bgUrlLeft:
+                        "url(/assets/EventDetail/abcentral/Event-bg.png)",
+                    leftStatueUrl:
+                        "/assets/EventDetail/abcentral/statue-left.png",
+                    rightStatueUrl:
+                        "/assets/EventDetail/abcentral/statue-right.png",
+                },
+                eventPrize: {
+                    prizeData: [
+                        {
+                            position: "First Place",
+                            prizeAmount: "₹ 25,000",
+                            imageSrc: "/assets/EventDetail/abcentral/First.png",
+                        },
+                        {
+                            position: "Second Place",
+                            prizeAmount: "₹ 15,000",
+                            imageSrc:
+                                "/assets/EventDetail/abcentral/Second.png",
+                        },
+                        {
+                            position: "Third Place",
+                            prizeAmount: "₹ 10,000",
+                            imageSrc: "/assets/EventDetail/abcentral/Third.png",
+                        },
+                    ],
+                    additionalPrizes: [
+                        "T-shirts",
+                        "Goodies",
+                        "Swag Pack",
+                        "Certificates",
+                    ],
+                },
+            },
+            {
+                title: "2",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+            {
+                title: "3",
+            },
+        ],
+    },
+    {
         name: "d-taraxia",
         artform: "dance",
         color: "#FE5013",
@@ -40,69 +300,6 @@ export const clubs = [
                             position: "Third Place",
                             prizeAmount: "₹ 10,000",
                             imageSrc: "/assets/EventDetail/dtaraxia/Third.png",
-                        },
-                    ],
-                    additionalPrizes: [
-                        "T-shirts",
-                        "Goodies",
-                        "Swag Pack",
-                        "Certificates",
-                    ],
-                },
-            },
-            {
-                title: "2",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
-            },
-        ],
-    },
-    {
-        name: "probe",
-        artform: "media",
-        color: "#FF006E",
-        exploreGradient: "#8F3761",
-        statue1: "/assets/EventsPage/probe/statue1.png",
-        statue2: "/assets/EventsPage/probe/statue2.png",
-        bg: "/assets/EventsPage/probe/bg.png",
-        events: [
-            {
-                title: "1",
-                eventheader: {
-                    clubName: "/assets/EventDetail/probe/Probe.png",
-                    eventName: "/assets/EventDetail/probe/Admads.png",
-                    eventDescription: "/assets/EventDetail/probe/ADmaking.png",
-                    ClubLogo: "/assets/EventDetail/probe/ClubLogo.png",
-                    bgUrlRight:
-                        "linear-gradient(158.35deg,#FDFDFB 0%,#FF006E 100%)",
-                    bgUrlLeft: "url(/assets/EventDetail/probe/Event-bg.png)",
-                    leftStatueUrl: "/assets/EventDetail/probe/statue-left.png",
-                    rightStatueUrl:
-                        "/assets/EventDetail/probe/statue-right.png",
-                },
-                eventPrize: {
-                    prizeData: [
-                        {
-                            position: "First Place",
-                            prizeAmount: "₹ 25,000",
-                            imageSrc: "/assets/EventDetail/probe/First.png",
-                        },
-                        {
-                            position: "Second Place",
-                            prizeAmount: "₹ 15,000",
-                            imageSrc: "/assets/EventDetail/probe/Second.png",
-                        },
-                        {
-                            position: "Third Place",
-                            prizeAmount: "₹ 10,000",
-                            imageSrc: "/assets/EventDetail/probe/Third.png",
                         },
                     ],
                     additionalPrizes: [
@@ -307,203 +504,6 @@ export const clubs = [
             },
             {
                 title: "2",
-            },
-            {
-                title: "3",
-            },
-        ],
-    },
-    {
-        name: "orator",
-        artform: "debate",
-        color: "#2237C6",
-        exploreGradient: "#4169E2",
-        statue1: "/assets/EventsPage/orator/statue1.png",
-        statue2: "/assets/EventsPage/orator/statue2.png",
-        bg: "/assets/EventsPage/orator/bg.png",
-        events: [
-            {
-                title: "1",
-                eventheader: {
-                    clubName: "/assets/EventDetail/orator/Orator.png",
-                    eventName: "/assets/EventDetail/orator/Title.png",
-                    eventDescription: "/assets/EventDetail/orator/MUN.png",
-                    ClubLogo: "/assets/EventDetail/orator/ClubLogo.png",
-                    bgUrlRight:
-                        "linear-gradient(158.35deg,#FDFDFB 0%,#2237C6 100%)",
-                    bgUrlLeft: "url(/assets/EventDetail/orator/Event-bg.png)",
-                    leftStatueUrl: "/assets/EventDetail/orator/statue-left.png",
-                    rightStatueUrl:
-                        "/assets/EventDetail/orator/statue-right.png",
-                },
-                eventPrize: {
-                    prizeData: [
-                        {
-                            position: "First Place",
-                            prizeAmount: "₹ 25,000",
-                            imageSrc: "/assets/EventDetail/orator/First.png",
-                        },
-                        {
-                            position: "Second Place",
-                            prizeAmount: "₹ 15,000",
-                            imageSrc: "/assets/EventDetail/orator/Second.png",
-                        },
-                        {
-                            position: "Third Place",
-                            prizeAmount: "₹ 10,000",
-                            imageSrc: "/assets/EventDetail/orator/Third.png",
-                        },
-                    ],
-                    additionalPrizes: [
-                        "T-shirts",
-                        "Goodies",
-                        "Swag Pack",
-                        "Certificates",
-                    ],
-                },
-            },
-            {
-                title: "2",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
-            },
-        ],
-    },
-    {
-        name: "crescendo",
-        artform: "music",
-        color: "#34FA46",
-        exploreGradient: "#79a82c",
-        statue1: "/assets/EventsPage/crescendo/statue1.png",
-        statue2: "/assets/EventsPage/crescendo/statue2.png",
-        bg: "/assets/EventsPage/crescendo/bg.png",
-        events: [
-            {
-                title: "1",
-                eventheader: {
-                    clubName: "/assets/EventDetail/crescendo/Crescendo.png",
-                    eventName: "/assets/EventDetail/crescendo/COC.png",
-                    eventDescription:
-                        "/assets/EventDetail/crescendo/Instrumental.png",
-                    ClubLogo: "/assets/EventDetail/crescendo/ClubLogo.png",
-                    bgUrlRight:
-                        "linear-gradient(158.35deg, #FDFDFB 0%, #34FA46 100%)",
-                    bgUrlLeft:
-                        "url(/assets/EventDetail/crescendo/Event-bg.png)",
-                    leftStatueUrl:
-                        "/assets/EventDetail/crescendo/statue-left.png",
-                    rightStatueUrl:
-                        "/assets/EventDetail/crescendo/statue-right.png",
-                },
-                eventPrize: {
-                    prizeData: [
-                        {
-                            position: "First Place",
-                            prizeAmount: "₹ 25,000",
-                            imageSrc: "/assets/EventDetail/crescendo/First.png",
-                        },
-                        {
-                            position: "Second Place",
-                            prizeAmount: "₹ 15,000",
-                            imageSrc:
-                                "/assets/EventDetail/crescendo/Second.png",
-                        },
-                        {
-                            position: "Third Place",
-                            prizeAmount: "₹ 10,000",
-                            imageSrc: "/assets/EventDetail/crescendo/Third.png",
-                        },
-                    ],
-                    additionalPrizes: [
-                        "T-shirts",
-                        "Goodies",
-                        "Swag Pack",
-                        "Certificates",
-                    ],
-                },
-            },
-            {
-                title: "2",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
-            },
-        ],
-    },
-    {
-        name: "ab central",
-        artform: "cultural",
-        color: "#FAF100",
-        exploreGradient: "#de9000",
-        statue1: "/assets/EventsPage/abcentral/statue1.png",
-        statue2: "/assets/EventsPage/abcentral/statue2.png",
-        bg: "/assets/EventsPage/abcentral/bg.png",
-        events: [
-            {
-                title: "1",
-                eventheader: {
-                    clubName: "/assets/EventDetail/abcentral/ABCentral.png",
-                    eventName: "/assets/EventDetail/abcentral/RP.png",
-                    eventDescription:
-                        "/assets/EventDetail/abcentral/RapShodown.png",
-                    ClubLogo: "/assets/EventDetail/abcentral/ClubLogo.png",
-                    bgUrlRight:
-                        "linear-gradient(158.35deg,#FDFDFB 0%,#FAF100 100%)",
-                    bgUrlLeft:
-                        "url(/assets/EventDetail/abcentral/Event-bg.png)",
-                    leftStatueUrl:
-                        "/assets/EventDetail/abcentral/statue-left.png",
-                    rightStatueUrl:
-                        "/assets/EventDetail/abcentral/statue-right.png",
-                },
-                eventPrize: {
-                    prizeData: [
-                        {
-                            position: "First Place",
-                            prizeAmount: "₹ 25,000",
-                            imageSrc: "/assets/EventDetail/abcentral/First.png",
-                        },
-                        {
-                            position: "Second Place",
-                            prizeAmount: "₹ 15,000",
-                            imageSrc:
-                                "/assets/EventDetail/abcentral/Second.png",
-                        },
-                        {
-                            position: "Third Place",
-                            prizeAmount: "₹ 10,000",
-                            imageSrc: "/assets/EventDetail/abcentral/Third.png",
-                        },
-                    ],
-                    additionalPrizes: [
-                        "T-shirts",
-                        "Goodies",
-                        "Swag Pack",
-                        "Certificates",
-                    ],
-                },
-            },
-            {
-                title: "2",
-            },
-            {
-                title: "3",
-            },
-            {
-                title: "3",
             },
             {
                 title: "3",

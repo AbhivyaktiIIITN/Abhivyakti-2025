@@ -119,13 +119,13 @@ export const aavahan = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Organiser",
                 name: "Krish Bawistale",
-                phone: "+916268711336",
+                phone: "+91 6268711336",
                 email: "estoria@iiitn.ac.in",
             },
         ],

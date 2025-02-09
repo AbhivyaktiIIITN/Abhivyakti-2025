@@ -101,13 +101,13 @@ export const audienceOdyssey = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Organiser",
                 name: "Harsh Ramteke",
-                phone: "+917498806456",
+                phone: "+91 7498806456",
                 email: "probe@iiitn.ac.in",
             },
         ],

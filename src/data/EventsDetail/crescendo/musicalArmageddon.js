@@ -112,13 +112,13 @@ export const musicalArmageddon = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Crescendo",
                 name: "Rhythm Agarwal",
-                phone: "+916260778225",
+                phone: "+91 6260778225",
                 email: "crescendo@iiitn.ac.in",
             },
         ],

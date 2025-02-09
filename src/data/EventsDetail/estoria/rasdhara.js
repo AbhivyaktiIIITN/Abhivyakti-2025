@@ -90,13 +90,13 @@ export const rasdhaara = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Organiser",
                 name: "Om Naik",
-                phone: "+919082543449",
+                phone: "+91 9082543449",
                 email: "estoria@iiitn.ac.in",
             },
         ],

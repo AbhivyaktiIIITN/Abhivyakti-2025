@@ -112,13 +112,13 @@ export const singersShowDown = {
             {
                 title: "AB team",
                 name: "Abhivyakti Music Club",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "musicclub@iiitn.ac.in",
             },
             {
                 title: "Crescendo",
                 name: "Vaishnavi Newalkar",
-                phone: "+919244262279",
+                phone: "+91 9244262279",
                 email: "crescendo@iiitn.ac.in",
             },
         ],

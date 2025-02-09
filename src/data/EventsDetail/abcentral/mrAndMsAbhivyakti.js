@@ -87,7 +87,7 @@ export const mrAndMsAbhivyakti = {
             {
                 title: "Team AB",
                 name: "Team Abhivyakti IIIT Nagpur",
-                phone: "+917506103104",
+                phone: "+91 7506103104",
                 email: "abhivyakti@iiitn.ac.in",
             },
         ],

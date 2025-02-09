@@ -126,13 +126,13 @@ export const melodyHustle = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "D-Taraxia",
                 name: "Sathvika Bogam",
-                phone: "+919381469800",
+                phone: "+91 9381469800",
                 email: "dtaraxia@iiitn.ac.in",
             },
         ],

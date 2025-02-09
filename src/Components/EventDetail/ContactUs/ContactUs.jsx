@@ -41,7 +41,7 @@ const ContactUs = ({ contacts, onSubmit }) => {
     return (
         <div className="w-full h-fit flex flex-col items-center justify-center relative urbanist-font font-normal">
             <div
-                className="text-white py-10 px-4 w-full lg:w-1/2 flex flex-col items-center"
+                className="text-white py-10 px-4 w-full lg:w-2/3 flex flex-col items-center"
                 ref={sectionRef}
             >
                 <div

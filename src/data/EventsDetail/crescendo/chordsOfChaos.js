@@ -111,13 +111,13 @@ export const chordsOfChaos = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Crescendo",
                 name: "Ayush Askar",
-                phone: "+918263062862",
+                phone: "+91 8263062862",
                 email: "crescendo@iiitn.ac.in",
             },
         ],

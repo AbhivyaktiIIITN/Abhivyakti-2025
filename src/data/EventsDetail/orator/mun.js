@@ -122,13 +122,13 @@ export const mun = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Orator",
                 name: "Sanskar Yede",
-                phone: "+918602527698",
+                phone: "+91 8602527698",
                 email: "orator@iiitn.ac.in",
             },
         ],

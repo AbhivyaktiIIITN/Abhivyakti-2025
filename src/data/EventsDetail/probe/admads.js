@@ -101,13 +101,13 @@ export const admads = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Organiser",
                 name: "Kushagrah Singh",
-                phone: "+919889335425",
+                phone: "+91 9889335425",
                 email: "probe@iiitn.ac.in",
             },
         ],

@@ -108,13 +108,13 @@ export const beatBarracks = {
             {
                 title: "Crescendo",
                 name: "Prakhar Beniwal",
-                phone: "+919602039349",
+                phone: "+91 9602039349",
                 email: "crescendo@iiitn.ac.in",
             },
             {
                 title: "Marketing Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
         ],

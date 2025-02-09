@@ -121,13 +121,13 @@ export const dahaad = {
             {
                 title: "AB Team",
                 name: "Abhivyakti Marketing Team",
-                phone: "+919822464846",
+                phone: "+91 9822464846",
                 email: "abhivyakti.marketing@iiitn.ac.in",
             },
             {
                 title: "Organiser",
                 name: "Sandesh Charhate",
-                phone: "+919356110217",
+                phone: "+91 9356110217",
                 email: "estoria@iiitn.ac.in",
             },
         ],
