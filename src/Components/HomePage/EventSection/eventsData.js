@@ -1,17 +1,6 @@
 export const eventData = [
     {
         cardId: 1,
-        gradient: "linear-gradient(90deg, #fe6d3b, #FE5013)",
-        events: [
-            { name: "Showstopper", desc: "Solo Dance Competition" },
-            { name: "Melody Hustle", desc: "Duet Dance Competition" },
-            { name: "Dance Squad", desc: "Group Dance Competition" },
-        ],
-        exploreLink:
-            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
-    },
-    {
-        cardId: 2,
         gradient: "linear-gradient(90deg, #fc529c, #df0a66)",
         events: [
             {
@@ -28,19 +17,7 @@ export const eventData = [
             "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
-        cardId: 3,
-        gradient: "linear-gradient(90deg, #A658E0, #641AA5)",
-        events: [
-            { name: "Aavahan", desc: "Stage Play Competition" },
-            { name: "Dahaad", desc: "Street Play Competiton" },
-            { name: "Bahumukhi", desc: "MonoActing Competition" },
-            { name: "Rasdhaara", desc: "Poetry Competition" },
-        ],
-        exploreLink:
-            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
-    },
-    {
-        cardId: 4,
+        cardId: 2,
         gradient: "linear-gradient(90deg, #5d6cd3, #2237C6)",
         events: [
             {
@@ -52,7 +29,7 @@ export const eventData = [
             "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
-        cardId: 5,
+        cardId: 3,
         gradient: "linear-gradient(90deg, #32CD32, #228B22)",
         events: [
             { name: "Singers Show-down", desc: "Solo Singing" },
@@ -64,7 +41,7 @@ export const eventData = [
             "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
     },
     {
-        cardId: 6,
+        cardId: 4,
         gradient: "linear-gradient(90deg, #f0ea40, #d0c903)",
         events: [
             {
@@ -74,6 +51,29 @@ export const eventData = [
             { name: "Cosplay", desc: "Express creativity through characters." },
             { name: "Rap Battle", desc: "Rhythmic lyrics and flow." },
             { name: "Talk Show", desc: "Engaging discussions and insights." },
+        ],
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
+    },
+    {
+        cardId: 5,
+        gradient: "linear-gradient(90deg, #fe6d3b, #FE5013)",
+        events: [
+            { name: "Showstopper", desc: "Solo Dance Competition" },
+            { name: "Melody Hustle", desc: "Duet Dance Competition" },
+            { name: "Dance Squad", desc: "Group Dance Competition" },
+        ],
+        exploreLink:
+            "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
+    },
+    {
+        cardId: 6,
+        gradient: "linear-gradient(90deg, #A658E0, #641AA5)",
+        events: [
+            { name: "Aavahan", desc: "Stage Play Competition" },
+            { name: "Dahaad", desc: "Street Play Competiton" },
+            { name: "Bahumukhi", desc: "MonoActing Competition" },
+            { name: "Rasdhaara", desc: "Poetry Competition" },
         ],
         exploreLink:
             "https://unstop.com/college-fests/abhivyakti-2025-indian-institute-of-information-technology-iiit-nagpur-296835",
