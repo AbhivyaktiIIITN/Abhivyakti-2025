@@ -78,6 +78,13 @@ export const showStopper = {
                     "Props can be used, but they will not be considered as a judging criterion.",
                 ],
             },
+            {
+                title: "Note",
+                highlight: [1, 8],
+                rules: [
+                    "All participants competing in the ABHIVYAKTI finals and online competition must be 22 years of age or below. This rule is mandatory and ensures a fair platform for showcasing young talent.",
+                ],
+            },
         ],
         judgingCriteriaData: [
             {

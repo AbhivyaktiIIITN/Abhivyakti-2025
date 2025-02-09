@@ -68,6 +68,13 @@ export const melodyHustle = {
                     "Props that can damage the stage or harm anyone are not allowed, including fire, blades, sharp mirrors, scissors, and nails.",
                 ],
             },
+            {
+                title: "Note",
+                highlight: [1, 8],
+                rules: [
+                    "All participants competing in the ABHIVYAKTI finals and online competition must be 22 years of age or below. This rule is mandatory and ensures a fair platform for showcasing young talent.",
+                ],
+            },
         ],
         judgingCriteriaData: [
             {
