@@ -104,6 +104,14 @@ const teamsData = [
         members: [{ name: "Vaibhav Jaiswal", role: "Lead" }],
     },
     {
+        name: "Disco",
+        members: [
+            { name: "Kushagra Mehta", role: "Lead" },
+            { name: "Aarush Chandra", role: "Co-Lead" },
+            { name: "Deshant Singh Bani", role: "Co-Lead" },
+        ],
+    },
+    {
         name: "Dimensions",
         members: [
             { name: "Devashish Athawale", role: "Lead" },
