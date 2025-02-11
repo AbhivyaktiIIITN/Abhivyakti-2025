@@ -8,6 +8,7 @@ import Terms from "./Pages/Terms/Terms";
 import Developers from "./Pages/Developer/Developers";
 import Loader from "./Components/Loader/loader";
 import { HelmetProvider } from "react-helmet-async";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     {/* <Route path="/loading" element={<Loader/>} /> */}
                 </Routes>
             </div>
+            <SpeedInsights />
         </HelmetProvider>
     );
 }
