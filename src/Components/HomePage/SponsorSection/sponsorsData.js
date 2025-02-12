@@ -7,7 +7,9 @@ export const SponsorsData = {
         "/assets/HomePage/Sponsors/SponsorPic/past/decathlon.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/harleyDavidson.jpg",
         "/assets/HomePage/Sponsors/SponsorPic/past/koreanMaggiNoodles.png",
-        "/assets/HomePage/Sponsors/SponsorPic/past/abhibus.png",
+        // "/assets/HomePage/Sponsors/SponsorPic/current/abhibus.png",
+        // "/assets/HomePage/Sponsors/SponsorPic/current/escapedoor.png",
+        // "/assets/HomePage/Sponsors/SponsorPic/current/hell.png",
     ],
     right: [
         "/assets/HomePage/Sponsors/SponsorPic/past/kolourfly.png",
@@ -18,5 +20,8 @@ export const SponsorsData = {
         "/assets/HomePage/Sponsors/SponsorPic/past/ixigo.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/iiitiansNetwork.png",
         "/assets/HomePage/Sponsors/SponsorPic/past/shreeCompSystems.jpg",
+        // "/assets/HomePage/Sponsors/SponsorPic/current/stockedge.png",
+        // "/assets/HomePage/Sponsors/SponsorPic/current/tokristory.jpg",
+        // "/assets/HomePage/Sponsors/SponsorPic/current/zebronics.png",
     ],
 };
