@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaIndianRupeeSign } from "react-icons/fa6";
-// import { clubs } from "./data";
+import { clubs } from "./data";
 import "./clubSelector.css";
 import "../../../css/font.css";
 import { EventDropDownDetails } from "../../../data/Events/EventDropDown.data";
