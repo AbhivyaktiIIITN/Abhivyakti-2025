@@ -69,7 +69,7 @@ const Aboutsection = () => {
                 <img
                     src={heading}
                     alt="Sample"
-                    className="image w-[500px] h-1/3 mdlg:h-1/2 border-none"
+                    className="image w-[500px] mb-4 h-1/3 mdlg:h-1/2 border-none"
                 />
                 <motion.div
                     className="container-text w-[300px] mdlg:w-[500px] text-center"

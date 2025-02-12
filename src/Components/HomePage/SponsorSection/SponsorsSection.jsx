@@ -60,7 +60,7 @@ function SponsorsSection() {
                                 <img
                                     src={el}
                                     alt={`company-${idx}`}
-                                    className="image"
+                                    className="simage"
                                 />
                             </div>
                         ))}
@@ -71,7 +71,7 @@ function SponsorsSection() {
                                 <img
                                     src={el}
                                     alt={`company-${idx}`}
-                                    className="image"
+                                    className="simage"
                                 />
                             </div>
                         ))}
@@ -84,7 +84,7 @@ function SponsorsSection() {
                                 <img
                                     src={el}
                                     alt={`company-${idx}`}
-                                    className="image"
+                                    className="simage"
                                 />
                             </div>
                         ))}
@@ -95,7 +95,7 @@ function SponsorsSection() {
                                 <img
                                     src={el}
                                     alt={`company-${idx}`}
-                                    className="image"
+                                    className="simage"
                                 />
                             </div>
                         ))}
