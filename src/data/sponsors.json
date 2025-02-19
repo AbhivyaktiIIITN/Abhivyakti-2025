@@ -1,0 +1,232 @@
+{
+    "TantraFiesta_Sponsors_2024": {
+      "Title Sponsor": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/ongc.jpg",
+              "name":"ONGC"
+            }
+          ]
+        }
+      ],
+      "Co-Sponsor": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/sbi.png",
+              "name":"SBI"
+            },
+            {
+              "img":"images/Sponsors/current/cocaCola.png",
+              "name":"Coca-Cola"
+            }
+          ]
+        }
+      ],
+      "Powered By": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/easeMyTrip.png",
+              "name": "Ease My Trip"
+            },
+            {
+              "img": "images/Sponsors/current/benq.png",
+              "name": "BenQ"
+            }
+          ]
+        }
+      ],
+      "Brought To You By": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/canara.png",
+              "name": "Canara Bank"
+            }
+          ]
+        }
+      ],
+      "Associate": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/lavie.jpg",
+              "name": "Lavie"
+            }
+          ]
+        }
+      ],
+      "Sporting Partner": [
+        {
+          "images": [
+            {
+              "img": "images/Sponsors/current/decathlon.png",
+              "name": "Decathlon"
+            }
+          ]
+        }
+      ],
+      "Fashion Partner": [
+        {
+          "images": [
+            {
+              "img": "images/Sponsors/current/trends.jpeg",
+              "name": "Reliance Trends"
+            }
+          ]
+        }
+      ],
+      "Riding Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/harleyDavidson.jpg",
+              "name": "Harley Davidson"
+            }
+          ]
+        }
+      ],
+      "Noodles Partner": [
+        {
+          "images": [
+            {
+              "img": "images/Sponsors/current/koreanMaggiNoodles.png",
+              "name": "Korean Maggie Noodles"
+            }
+          ]
+        }
+      ],
+      "Bus Travel Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/abhibus.png",
+              "name": "AbhiBus"
+            }
+          ]
+        }
+      ],
+      "Gifting Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/kolourfly.png",
+              "name":"Kolourfly"
+            }
+          ]
+        }
+      ],
+      "Certificate Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/giveMyCertificate.png",
+              "name":"GiveMyCertificate"
+            }
+          ]
+        }
+      ],
+      "Coding Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/gfg.png",
+              "name":"GeeksForGeeks"
+            }
+          ]
+        }
+      ],
+      "Lifestyle Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/Kazo.png",
+              "name":"Kazo"
+            }
+          ]
+        }
+      ],
+      "Telecom Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/bsnl.jpg",
+              "name":"BSNL"
+            }
+          ]
+        }
+      ],
+      "Groove Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/ape.jpg",
+              "name":"APE Talent Event Host"
+            }
+          ]
+        }
+      ],
+      "Workshop Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/nvidia.jpg",
+              "name":"Nvidia"
+            }
+          ]
+        }
+      ],
+      "Athleisure Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/skechers.png",
+              "name":"Skechers"
+            }
+          ]
+        }
+      ],
+      "Travel Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/ixigo.png",
+              "name":"Ixigo"
+            }
+          ]
+        }
+      ],
+      "Community Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/iiitiansNetwork.png",
+              "name":"IIITians Network"
+            }
+          ]
+        }
+      ],
+      "News Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/hitavada.jpg",
+              "name":"Hitavada"
+            }
+          ]
+        }
+      ],
+      "Networking Partner": [
+        {
+          "images": [
+            {
+              "img":"images/Sponsors/current/shreeCompSystems.jpg",
+              "name": "Shree Comp Systems"
+            }
+          ]
+        }
+      ]
+    }
+  }

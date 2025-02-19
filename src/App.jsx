@@ -9,6 +9,7 @@ import Developers from "./Pages/Developer/Developers";
 import Loader from "./Components/Loader/loader";
 import { HelmetProvider } from "react-helmet-async";
 import { Analytics } from "@vercel/analytics/react"
+import SponsorPage from "./Pages/Sponsors/SponsorPage";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/developers" element={<Developers />} />
                     <Route path="/events/:id" element={<EventDetail />} />
                     <Route path="/terms" element={<Terms />} />
+                    <Route path="/sponsors" element={<SponsorPage />} />
                     {/* <Route path="/loading" element={<Loader/>} /> */}
                 </Routes>
             </div>
