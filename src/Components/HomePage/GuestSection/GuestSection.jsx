@@ -4,6 +4,7 @@ import cardsData from "./GuestData";
 import aboutPic from "/assets/HomePage/Guests/about.png";
 import gh from "/assets/HomePage/Guests/gh.png";
 import "../../../css/font.css";
+import { FaInstagram } from "react-icons/fa";
 
 const GuestSection = () => {
     const sectionRef = useRef(null);
@@ -60,8 +61,8 @@ const GuestSection = () => {
                     className={`header ${animate ? "slide-in" : ""}`}
                 />
             </div>
-            <div className="soon text-4xl mt-16">To be Revealed Soon</div>
-            {/* {firstCard && (
+            {/* <div className="soon text-4xl mt-16">To be Revealed Soon</div> */}
+            {firstCard && (
                 <div
                     className={`card single-card ${flippedCardIndex === 0 ? "flipped" : ""}`}
                     onClick={() => handleCardClick(0)}
@@ -74,6 +75,16 @@ const GuestSection = () => {
                         <div className="card-back">
                             <img src={aboutPic} alt="" />
                             <p>{firstCard.about}</p>
+                            {firstCard.insta && (
+                                <a
+                                    href={firstCard.insta}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="absolute bottom-[20px] left-1/2 transform -translate-x-1/2 text-[#e4405f] transition-transform duration-150 hover:scale-110 active:scale-90"
+                                >
+                                    <FaInstagram size={40} />
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -93,11 +104,21 @@ const GuestSection = () => {
                             <div className="card-back">
                                 <img src={aboutPic} alt="" />
                                 <p>{card.about}</p>
+                                {card.insta && (
+                                    <a
+                                        href={card.insta}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="absolute bottom-[20px] left-1/2 transform -translate-x-1/2 text-[#e4405f] transition-transform duration-150 hover:scale-110 active:scale-90"
+                                    >
+                                        <FaInstagram size={24} />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
                 ))}
-            </div> */}
+            </div>
         </div>
     );
 };
