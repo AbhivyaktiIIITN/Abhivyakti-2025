@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import Navbar from "../../Components/Navbar/Navbar.jsx";
 import Hero from "../../Components/PageHero/Hero.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
-import "./team.css";
 import teamsData from "./TeamData.js";
-import "../../css/font.css";
 import Loader from "../../Components/Loader/loader.jsx";
+import "./team.css";
+import "../../css/font.css";
 
 function Team() {
     const [loading, setLoading] = useState(true);

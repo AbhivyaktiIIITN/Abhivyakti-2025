@@ -16,13 +16,12 @@
     font-family: 'Poppins', 'Helvetica Neue';
 }
 
-
 .sponsor-section h3 {
     font-size: 40px;
     font-weight: bold;
-    color: #535252; 
-    background: linear-gradient(90deg, #ffa600 0%, #faf100 30%, #00a7ed 50%, #00a7ed 60%,#fdc400 80%, #ffa600 90%, #ffa600 0%);
-    background-size: 200% ;
+    color: #535252;
+    background: linear-gradient(90deg, #ffa600 0%, #faf100 30%, #efca10 50%, #f58414 60%, #fdc400 80%, #ffa600 90%, #ffa600 0%);
+    background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;
@@ -32,19 +31,21 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: 'Orbitron';
-  }
+}
 
- @keyframes moveGradient {
+@keyframes moveGradient {
     0% {
-      background-position: 0% 0;
+        background-position: 0% 0;
     }
+
     50% {
-      background-position: 100% 0;
+        background-position: 100% 0;
     }
+
     100% {
-      background-position: 0% 0;
+        background-position: 0% 0;
     }
-  }
+}
 
 .line {
     height: 3px;
@@ -92,7 +93,7 @@
     background: radial-gradient(circle at var(--mouseX, 90%) var(--mouseY, 30%), #adadadd7, transparent);
     opacity: 0.7;
     transition: background 0.3s ease;
-  }
+}
 
 
 .sponsor-img {
@@ -131,22 +132,25 @@
 }
 
 @media (max-width: 425px) {
-    .sponsor-section h3{
+    .sponsor-section h3 {
         font-size: 38px;
     }
-    .sponsor-member h4{
+
+    .sponsor-member h4 {
         font-size: 20px;
     }
 }
 
 @media (max-width: 375px) {
-    .sponsor-section h3{
+    .sponsor-section h3 {
         font-size: 32px;
     }
-    .sponsor-member h4{
+
+    .sponsor-member h4 {
         font-size: 17px;
     }
-    .sponsor-member p{
+
+    .sponsor-member p {
         font-size: 13px;
     }
 }

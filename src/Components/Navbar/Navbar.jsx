@@ -73,9 +73,8 @@ function Navbar() {
                     <img src={logo} alt="logo" />
                 </a>
                 <div
-                    className={`flex abhi transition-all duration-500 ${
-                        showDetails ? "visible" : "hidden"
-                    }`}
+                    className={`flex abhi transition-all duration-500 ${showDetails ? "visible" : "hidden"
+                        }`}
                 >
                     <img
                         src={abhi}
@@ -109,12 +108,9 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <a
-                        href="#sponsors"
-                        onClick={(e) => smoothScrollOrNavigate(e, "sponsors")}
-                    >
+                    <Link to="/sponsors" onClick={closeMenu}>
                         SPONSORS
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <a
