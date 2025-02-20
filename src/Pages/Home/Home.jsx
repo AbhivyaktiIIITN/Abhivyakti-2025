@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
 import Navbar from "../../Components/Navbar/Navbar";
 import Hero from "../../Components/HomePage/Hero/Hero";
 import EventsSection from "../../Components/HomePage/EventSection/EventsSection";
@@ -8,12 +8,14 @@ import SponsorsSection from "../../Components/HomePage/SponsorSection/SponsorsSe
 import Footer from "../../Components/Footer/Footer";
 import SpeakerHorizontalScrollCarousel from "../../Components/HomePage/SpeakerSection/speakerHorizontalScroll";
 import AboutSection from "../../Components/HomePage/AboutSection/AboutSection";
-import "./home.css";
 import Loader from "../../Components/Loader/loader";
+import "./home.css";
 
 function Home() {
     const location = useLocation();
+    const navigate = useNavigate();
     const [loading, setLoading] = useState(true);
+    const [shouldScroll, setShouldScroll] = useState(false);
 
     useEffect(() => {
         if (location.pathname === "/" && location.state?.scrollToTop) {
@@ -22,42 +24,46 @@ function Home() {
     }, [location]);
 
     useEffect(() => {
-        if (location.state?.scrollTo) {
-            const scrollTarget = location.state.scrollTo;
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+        document.title = "Abhivyakti";
+    }, []);
 
-            setTimeout(() => {
-                const targetElement = document.getElementById(scrollTarget);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: "smooth" });
-                }
-            }, 100);
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            setShouldScroll(true);
         }
     }, [location]);
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
-        document.title = "Abhivyakti";
-    }, []);
+        if (!loading && shouldScroll) {
+            setTimeout(() => {
+                const targetElement = document.getElementById(location.state.scrollTo);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                    navigate(location.pathname, { replace: true, state: {} });
+                }
+                setShouldScroll(false);
+            }, 100);
+        }
+    }, [loading, shouldScroll, navigate, location.pathname]);
 
     if (loading) {
         return <Loader />;
     }
 
     return (
-        <>
-            <div className="home-container">
-                <Navbar />
-                <Hero />
-                <AboutSection />
-                <SponsorsSection />
-                <GuestSection />
-                <EventsSection />
-                <SpeakerHorizontalScrollCarousel />
-                <Footer />
-            </div>
-        </>
+        <div className="home-container">
+            <Navbar />
+            <Hero />
+            <AboutSection />
+            <SponsorsSection />
+            <GuestSection />
+            <EventsSection />
+            <SpeakerHorizontalScrollCarousel />
+            <Footer />
+        </div>
     );
 }
 
