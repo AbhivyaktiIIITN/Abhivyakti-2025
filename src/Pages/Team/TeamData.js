@@ -122,7 +122,7 @@ const teamsData = [
         name: "Crispr",
         members: [
             { name: "Shrut Jain", role: "Lead" },
-            { name: "Jaiwardhan Bhola", role: "Co-Lead" },
+            { name: "Jaivardhan Bhola", role: "Co-Lead" },
         ],
     },
     {
