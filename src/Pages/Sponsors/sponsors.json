@@ -1,11 +1,12 @@
 {
-    "TantraFiesta_Sponsors_2024": {
+    "Abhivyakti_Sponsors_2025": {
         "Title Sponsor": [
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/ongc.jpg",
-                        "name": "ONGC"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/amul.png",
+                        "name": "Amul",
+                        "link": "https://amul.com/"
                     }
                 ]
             }
@@ -14,12 +15,9 @@
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/sbi.png",
-                        "name": "SBI"
-                    },
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/cocaCola.png",
-                        "name": "Coca-Cola"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/sbi.jpg",
+                        "name": "SBI",
+                        "link": "https://www.onlinesbi.sbi/"
                     }
                 ]
             }
@@ -28,152 +26,36 @@
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/easeMyTrip.png",
-                        "name": "Ease My Trip"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/canara.png",
+                        "name": "Canara Bank",
+                        "link": "https://canarabank.com/"
+                    }
+                ]
+            }
+        ],
+        "Associate Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/bxi.png",
+                        "name": "BXI",
+                        "link": "https://bxiworld.com/"
                     },
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/benq.png",
-                        "name": "BenQ"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/vlcc.JPG",
+                        "name": "VLCC",
+                        "link": "https://vlcc.com/"
                     }
                 ]
             }
         ],
-        "Brought To You By": [
+        "Radio Partner": [
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/canara.png",
-                        "name": "Canara Bank"
-                    }
-                ]
-            }
-        ],
-        "Associate": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/lavie.jpg",
-                        "name": "Lavie"
-                    }
-                ]
-            }
-        ],
-        "Sporting Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/decathlon.png",
-                        "name": "Decathlon"
-                    }
-                ]
-            }
-        ],
-        "Fashion Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/trends.jpeg",
-                        "name": "Reliance Trends"
-                    }
-                ]
-            }
-        ],
-        "Riding Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/harleyDavidson.jpg",
-                        "name": "Harley Davidson"
-                    }
-                ]
-            }
-        ],
-        "Noodles Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/koreanMaggiNoodles.png",
-                        "name": "Korean Maggie Noodles"
-                    }
-                ]
-            }
-        ],
-        "Bus Travel Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/abhibus.png",
-                        "name": "AbhiBus"
-                    }
-                ]
-            }
-        ],
-        "Gifting Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/kolourfly.png",
-                        "name": "Kolourfly"
-                    }
-                ]
-            }
-        ],
-        "Certificate Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/giveMyCertificate.png",
-                        "name": "GiveMyCertificate"
-                    }
-                ]
-            }
-        ],
-        "Coding Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/gfg.png",
-                        "name": "GeeksForGeeks"
-                    }
-                ]
-            }
-        ],
-        "Lifestyle Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/kazo.png",
-                        "name": "Kazo"
-                    }
-                ]
-            }
-        ],
-        "Telecom Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/bsnl.jpg",
-                        "name": "BSNL"
-                    }
-                ]
-            }
-        ],
-        "Groove Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/ape.jpg",
-                        "name": "APE Talent Event Host"
-                    }
-                ]
-            }
-        ],
-        "Workshop Partner": [
-            {
-                "images": [
-                    {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/nvidia.jpg",
-                        "name": "Nvidia"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/radio.jpg",
+                        "name": "Radio City",
+                        "link": ""
                     }
                 ]
             }
@@ -182,8 +64,113 @@
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/skechers.png",
-                        "name": "Skechers"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/skechers.png",
+                        "name": "Skechers",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Smartphone Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/vivo.png",
+                        "name": "Vivo",
+                        "link": "https://www.vivo.com/in"
+                    }
+                ]
+            }
+        ],
+        "E-Sports Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/krafton.png",
+                        "name": "Krafton Gaming",
+                        "link": "https://krafton.com/en/"
+                    }
+                ]
+            }
+        ],
+        "Snacking Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/diamond.png",
+                        "name": "Diamond Chips",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Self-Care Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/collegebrand.jpg",
+                        "name": "College Brand Connect",
+                        "link": ""
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/smart.png",
+                        "name": "Smart and Handsome",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Real Estate Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/green.jpg",
+                        "name": "SSD GReen Future",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Media Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/timesofindia.png",
+                        "name": "Times Of India",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Audio Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/zebronics.png",
+                        "name": "Zebronics",
+                        "link": "https://zebronics.com/"
+                    }
+                ]
+            }
+        ],
+        "Gifting Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/tokristory.jpg",
+                        "name": "Tokri Story",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Fandom Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/escapedoor.png",
+                        "name": "The Escape Door",
+                        "link": ""
                     }
                 ]
             }
@@ -192,38 +179,113 @@
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/ixigo.png",
-                        "name": "Ixigo"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/easemytrip.jpg",
+                        "name": "EaseMyTrip",
+                        "link": "https://www.easemytrip.com/"
                     }
                 ]
             }
         ],
-        "Community Partner": [
+        "Bus Travel Partner": [
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/iiitiansNetwork.png",
-                        "name": "IIITians Network"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/abhibus.png",
+                        "name": "AbhiBus",
+                        "link": "https://www.abhibus.com/"
                     }
                 ]
             }
         ],
-        "News Partner": [
+        "Coffee Partner": [
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/hitavada.jpg",
-                        "name": "Hitavada"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/xoldbrews.jpg",
+                        "name": "Xoldbrews",
+                        "link": "https://xoldbrews.com/"
                     }
                 ]
             }
         ],
-        "Networking Partner": [
+        "Jewellery Partner": [
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/past/shreeCompSystems.jpg",
-                        "name": "Shree Comp Systems"
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/tanishq.png",
+                        "name": "Mia by Tanishq",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Energy Drink Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/hell.png",
+                        "name": "Hell Energy",
+                        "link": "https://www.hellenergy.com/in/"
+                    }
+                ]
+            }
+        ],
+        "Community Partners": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/iiitnian.png",
+                        "name": "IIITians Network",
+                        "link": "https://github.com/IIITians-Network"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/iitnit.jpg",
+                        "name": "IIT NIT IIIT",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Financial Literacy Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/stockedge.png",
+                        "name": "StockEdge",
+                        "link": "https://stockedge.com/?srsltid=AfmBOopd8msMf6utdJpGeXxjZAfLHs7MhSxZsWzjLhSnwrMEqRWXo-Lp"
+                    }
+                ]
+            }
+        ],
+        "Blog Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/edtimes.png",
+                        "name": "ED Times",
+                        "link": "https://edtimes.in/"
+                    }
+                ]
+            }
+        ],
+        "Beverage Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/urban.png",
+                        "name": "Urban Monk",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Oral-Care Partner": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/qelica.png",
+                        "name": "Qelica",
+                        "link": "https://qelicacare.com/"
                     }
                 ]
             }

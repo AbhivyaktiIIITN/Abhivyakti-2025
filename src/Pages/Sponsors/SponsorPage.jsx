@@ -4,9 +4,10 @@ import sponsors from "./sponsors.json";
 import Navbar from "../../Components/Navbar/Navbar.jsx";
 import Hero from "../../Components/PageHero/Hero.jsx";
 import Loader from "../../Components/Loader/loader.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
 
 const SponsorPage = () => {
-    const sponsor = sponsors.TantraFiesta_Sponsors_2024;
+    const sponsor = sponsors.Abhivyakti_Sponsors_2025;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -35,6 +36,7 @@ const SponsorPage = () => {
                     <SponsorsPage key={sponsorKey} title={sponsorKey.replace('-', ' ')} sponsors={sponsor[sponsorKey]} />
                 ))}
             </div>
+            <Footer />
         </>
     );
 };

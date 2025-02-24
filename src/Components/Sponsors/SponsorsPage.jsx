@@ -22,27 +22,44 @@ const SponsorsPage = ({ title, sponsors }) => {
             <h3>{title}</h3>
             <div className="line"></div>
             <div className="sponsor-list">
-                {sponsors.map((sponsor) => (
-                    sponsor.images.map((sponsorData) => (
-                        <motion.div
-                            className="sponsor-member"
-                            key={sponsor.Name}
-                            onMouseMove={handleMouseMove}
-                            // onClick={() => handleClick(member.ytLink)} // Check if the member has a YouTube link
-                            style={{
-                                '--mouseX': mousePos.x, '--mouseY': mousePos.y
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            variants={cardVariants}
-                            viewport={{ once: true, amount: 0.3 }}
-                        >
-                            <img className="sponsor-img" src={sponsorData.img} alt="img" />
-                            <h4>{sponsorData.name}</h4>
-                            {/* <p>{sponsor.designation}</p> */}
-                        </motion.div>
-                    ))
-                ))}
+                {sponsors.map((sponsor) =>
+                    sponsor.images.map((sponsorData, idx) =>
+                        sponsorData.link ? (
+                            <a key={idx} href={sponsorData.link} target="_blank" rel="noopener noreferrer">
+                                <motion.div
+                                    className="sponsor-member"
+                                    onMouseMove={handleMouseMove}
+                                    style={{
+                                        '--mouseX': mousePos.x, '--mouseY': mousePos.y
+                                    }}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    variants={cardVariants}
+                                    viewport={{ once: true, amount: 0.3 }}
+                                >
+                                    <img className="sponsor-img" src={sponsorData.img} alt="img" />
+                                    <h4 style={{ wordSpacing: "5px" }}>{sponsorData.name.toUpperCase()}</h4>
+                                </motion.div>
+                            </a>
+                        ) : (
+                            <motion.div
+                                className="sponsor-member"
+                                key={idx}
+                                onMouseMove={handleMouseMove}
+                                style={{
+                                    '--mouseX': mousePos.x, '--mouseY': mousePos.y
+                                }}
+                                initial="hidden"
+                                whileInView="visible"
+                                variants={cardVariants}
+                                viewport={{ once: true, amount: 0.3 }}
+                            >
+                                <img className="sponsor-img" src={sponsorData.img} alt="img" />
+                                <h4 style={{ wordSpacing: "5px" }}>{sponsorData.name.toUpperCase()}</h4>
+                            </motion.div>
+                        )
+                    )
+                )}
             </div>
         </div>
     );

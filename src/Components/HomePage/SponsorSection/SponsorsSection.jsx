@@ -54,55 +54,104 @@ function SponsorsSection() {
                     />
                 </div>
                 <div className="marquee top-marquee ">
-                    <div className="marquee-group">
-                        {SponsorsData.left.map((el, idx) => (
-                            <div key={idx} className="image-group">
-                                <img
-                                    src={el}
-                                    alt={`company-${idx}`}
-                                    className="simage"
-                                />
-                            </div>
-                        ))}
+                    <div className="marquee-group cursor-pointer">
+                        {SponsorsData.left.map((el, idx) =>
+                            el.link ? (
+                                <a key={idx} href={el.link} target="_blank" rel="noopener noreferrer">
+                                    <div className="image-group">
+                                        <img
+                                            src={el.image}
+                                            alt={`company-${idx}`}
+                                            className="simage"
+                                        />
+                                    </div>
+                                </a>
+                            ) : (
+                                <div key={idx} className="image-group">
+                                    <img
+                                        src={el.image}
+                                        alt={`company-${idx}`}
+                                        className="simage"
+                                    />
+                                </div>
+                            )
+                        )}
+
                     </div>
-                    <div className="marquee-group">
-                        {SponsorsData.left.map((el, idx) => (
-                            <div key={idx} className="image-group">
-                                <img
-                                    src={el}
-                                    alt={`company-${idx}`}
-                                    className="simage"
-                                />
-                            </div>
-                        ))}
+                    <div className="marquee-group cursor-pointer">
+                        {SponsorsData.left.map((el, idx) =>
+                            el.link ? (
+                                <a key={idx} href={el.link} target="_blank" rel="noopener noreferrer">
+                                    <div className="image-group">
+                                        <img
+                                            src={el.image}
+                                            alt={`company-${idx}`}
+                                            className="simage"
+                                        />
+                                    </div>
+                                </a>
+                            ) : (
+                                <div key={idx} className="image-group">
+                                    <img
+                                        src={el.image}
+                                        alt={`company-${idx}`}
+                                        className="simage"
+                                    />
+                                </div>
+                            )
+                        )}
                     </div>
                 </div>
                 <div className="marquee bottom-marquee">
-                    <div className="marquee-group reverse">
-                        {SponsorsData.right.map((el, idx) => (
-                            <div key={idx} className="image-group">
-                                <img
-                                    src={el}
-                                    alt={`company-${idx}`}
-                                    className="simage"
-                                />
-                            </div>
-                        ))}
+                    <div className="marquee-group reverse cursor-pointer">
+                        {SponsorsData.right.map((el, idx) =>
+                            el.link ? (
+                                <a key={idx} href={el.link} target="_blank" rel="noopener noreferrer">
+                                    <div className="image-group">
+                                        <img
+                                            src={el.image}
+                                            alt={`company-${idx}`}
+                                            className="simage"
+                                        />
+                                    </div>
+                                </a>
+                            ) : (
+                                <div key={idx} className="image-group">
+                                    <img
+                                        src={el.image}
+                                        alt={`company-${idx}`}
+                                        className="simage"
+                                    />
+                                </div>
+                            )
+                        )}
                     </div>
-                    <div className="marquee-group reverse delay">
-                        {SponsorsData.right.map((el, idx) => (
-                            <div key={idx} className="image-group">
-                                <img
-                                    src={el}
-                                    alt={`company-${idx}`}
-                                    className="simage"
-                                />
-                            </div>
-                        ))}
+                    <div className="marquee-group reverse delay cursor-pointer">
+                        {SponsorsData.right.map((el, idx) =>
+                            el.link ? (
+                                <a key={idx} href={el.link} target="_blank" rel="noopener noreferrer">
+                                    <div className="image-group">
+                                        <img
+                                            src={el.image}
+                                            alt={`company-${idx}`}
+                                            className="simage"
+                                        />
+                                    </div>
+                                </a>
+                            ) : (
+                                <div key={idx} className="image-group">
+                                    <img
+                                        src={el.image}
+                                        alt={`company-${idx}`}
+                                        className="simage"
+                                    />
+                                </div>
+                            )
+                        )}
                     </div>
-                </div>
-            </div>
-        </div>
+                </div >
+            </div >
+        </div >
     );
 }
 

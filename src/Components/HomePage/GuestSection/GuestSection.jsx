@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Typed from "typed.js";
 import "./guestsection.css";
 import cardsData from "./GuestData";
 import aboutPic from "/assets/HomePage/Guests/about.png";
@@ -8,6 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const GuestSection = () => {
     const sectionRef = useRef(null);
+    const typedRef = useRef(null);
     const [animate, setAnimate] = useState(false);
     const [flippedCardIndex, setFlippedCardIndex] = useState(null);
 
@@ -17,9 +19,6 @@ const GuestSection = () => {
                 if (entry.isIntersecting) {
                     setAnimate(true);
                 }
-                // else {
-                //     setAnimate(false);
-                // }
             },
             { threshold: 0.2 },
         );
@@ -34,6 +33,20 @@ const GuestSection = () => {
             }
         };
     }, []);
+
+    useEffect(() => {
+        const typed = new Typed(typedRef.current, {
+            strings: ["More Coming Soon"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     const handleCardClick = (index) => {
         setFlippedCardIndex((prevIndex) =>
             prevIndex === index ? null : index,
@@ -61,7 +74,6 @@ const GuestSection = () => {
                     className={`header ${animate ? "slide-in" : ""}`}
                 />
             </div>
-            {/* <div className="soon text-4xl mt-16">To be Revealed Soon</div> */}
             {firstCard && (
                 <div
                     className={`card single-card ${flippedCardIndex === 0 ? "flipped" : ""}`}
@@ -118,6 +130,9 @@ const GuestSection = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="soon text-4xl mt-[-50px]">
+                <span ref={typedRef}></span>
             </div>
         </div>
     );
