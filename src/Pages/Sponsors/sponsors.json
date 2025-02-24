@@ -294,11 +294,6 @@
             {
                 "images": [
                     {
-                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/qelica.png",
-                        "name": "Qelica",
-                        "link": "https://qelicacare.com/"
-                    },
-                    {
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/unstop.png",
                         "name": "Unstop",
                         "link": "https://unstop.com/"
