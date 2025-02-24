@@ -66,7 +66,7 @@
                     {
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/skechers.png",
                         "name": "Skechers",
-                        "link": ""
+                        "link": "https://www.skechers.in/"
                     }
                 ]
             }
@@ -99,7 +99,7 @@
                     {
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/diamond.png",
                         "name": "Diamond Chips",
-                        "link": ""
+                        "link": "https://www.yellowdiamond.in/products/chips/"
                     }
                 ]
             }
@@ -137,7 +137,7 @@
                     {
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/timesofindia.png",
                         "name": "Times Of India",
-                        "link": ""
+                        "link": "https://timesofindia.indiatimes.com/"
                     }
                 ]
             }
@@ -214,7 +214,7 @@
                     {
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/tanishq.png",
                         "name": "Mia by Tanishq",
-                        "link": ""
+                        "link": "https://www.miabytanishq.com/en_IN/wedding-gifting?utm_source=Google&utm_medium=CPC&utm_campaign=HM_Google_Perf_Search_Brand&gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN75ddDfZ9HhIVauKEUrLRUe28JfTbPj01stUaCl5w-c-nxrsPTGdpBoCQN0QAvD_BwE"
                     }
                 ]
             }
@@ -286,6 +286,122 @@
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/qelica.png",
                         "name": "Qelica",
                         "link": "https://qelicacare.com/"
+                    }
+                ]
+            }
+        ],
+        "AB Central Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/qelica.png",
+                        "name": "Qelica",
+                        "link": "https://qelicacare.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/unstop.png",
+                        "name": "Unstop",
+                        "link": "https://unstop.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/anusaya.png",
+                        "name": "Anusaya Beauty World",
+                        "link": ""
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/paridhan.jpg",
+                        "name": "Paridhan",
+                        "link": ""
+                    }
+                ]
+            }
+        ],
+        "Crescendo Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/lawrence.png",
+                        "name": "Lawrence & Mayo Opticals",
+                        "link": "https://lawrenceandmayo.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/reset.png",
+                        "name": "Arogya Quest Wellness ",
+                        "link": ""
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/rowdy.jpg",
+                        "name": "Rowdy Momos",
+                        "link": "https://rowdymomos.com/"
+                    }
+                ]
+            }
+        ],
+        "D-Taraxia Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/examprep.jpg",
+                        "name": "Exam Prep Tool",
+                        "link": "https://exampreptool.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/student.png",
+                        "name": "Student Tribe",
+                        "link": "https://www.studenttribe.in/"
+                    }
+                ]
+            }
+        ],
+        "Estoria Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/truscholar.png",
+                        "name": "TruScholar",
+                        "link": "https://www.truscholar.io/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/agromania.png",
+                        "name": "Agromania",
+                        "link": "https://agromania.in/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/sheela.png",
+                        "name": "Sheela Ad Makers",
+                        "link": "https://www.sheelaadmaker.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/teztecch.jpg",
+                        "name": "TezTecch",
+                        "link": "https://teztecch.com/"
+                    }
+                ]
+            }
+        ],
+        "Orator Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/storify.jpg",
+                        "name": "Storify News",
+                        "link": "https://www.storifynews.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/timesofindia.png",
+                        "name": "Times Of India",
+                        "link": "https://timesofindia.indiatimes.com/"
+                    }
+                ]
+            }
+        ],
+        "Strokes Sponsors": [
+            {
+                "images": [
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/ideas.jpg",
+                        "name": "Ideas",
+                        "link": "https://ideasnagpur.edu.in/"
                     }
                 ]
             }

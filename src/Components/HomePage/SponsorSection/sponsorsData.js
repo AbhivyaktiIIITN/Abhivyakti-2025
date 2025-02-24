@@ -45,7 +45,7 @@ export const SponsorsData = {
         },
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/diamond.png",
-            link: ""
+            link: "https://www.yellowdiamond.in/products/chips/"
         },
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/collegebrand.jpg",
@@ -61,8 +61,36 @@ export const SponsorsData = {
         },
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/timesofindia.png",
+            link: "https://timesofindia.indiatimes.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/unstop.png",
+            link: "https://unstop.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/anusaya.png",
             link: ""
         },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/paridhan.jpg",
+            link: ""
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/lawrence.png",
+            link: "https://lawrenceandmayo.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/reset.png",
+            link: ""
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/rowdy.jpg",
+            link: "https://rowdymomos.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/examprep.jpg",
+            link: "https://exampreptool.com/"
+        }
     ],
     right: [
         // "/assets/HomePage/Sponsors/SponsorPic/past/kolourfly.png",
@@ -99,7 +127,7 @@ export const SponsorsData = {
         },
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/tanishq.png",
-            link: ""
+            link: "https://www.miabytanishq.com/en_IN/wedding-gifting?utm_source=Google&utm_medium=CPC&utm_campaign=HM_Google_Perf_Search_Brand&gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN75ddDfZ9HhIVauKEUrLRUe28JfTbPj01stUaCl5w-c-nxrsPTGdpBoCQN0QAvD_BwE"
         },
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/hell.png",
@@ -128,6 +156,34 @@ export const SponsorsData = {
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/qelica.png",
             link: "https://qelicacare.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/student.png",
+            link: "https://www.studenttribe.in/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/truscholar.png",
+            link: "https://www.truscholar.io/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/agromania.png",
+            link: "https://agromania.in/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/sheela.png",
+            link: "https://www.sheelaadmaker.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/teztecch.jpg",
+            link: "https://teztecch.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/storify.jpg",
+            link: "https://www.storifynews.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/ideas.jpg",
+            link: "https://ideasnagpur.edu.in/"
         },
     ],
 };
