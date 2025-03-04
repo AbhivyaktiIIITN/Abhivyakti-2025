@@ -370,6 +370,11 @@
                         "img": "/assets/HomePage/Sponsors/SponsorPic/current/teztecch.jpg",
                         "name": "TezTecch",
                         "link": "https://teztecch.com/"
+                    },
+                    {
+                        "img": "/assets/HomePage/Sponsors/SponsorPic/current/vacumi.jpg",
+                        "name": "Vacumi",
+                        "link": "https://vacumi.in/"
                     }
                 ]
             }

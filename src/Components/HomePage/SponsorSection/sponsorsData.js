@@ -90,6 +90,10 @@ export const SponsorsData = {
         {
             image: "/assets/HomePage/Sponsors/SponsorPic/current/examprep.jpg",
             link: "https://exampreptool.com/"
+        },
+        {
+            image: "/assets/HomePage/Sponsors/SponsorPic/current/vacumi.jpg",
+            link: "https://vacumi.in/"
         }
     ],
     right: [
